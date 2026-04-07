@@ -1,18 +1,27 @@
-name: Daily SEO Blog Post
+name: Daily SEO Blog Post & Deploy
 
 on:
   schedule:
     # Run daily at 6:00 AM UTC
     - cron: '0 6 * * *'
+  push:
+    branches: [main]
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  generate-and-publish:
+  generate:
     runs-on: ubuntu-latest
-    
+    # Only generate new content on schedule or manual trigger, not on push
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,14 +42,43 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: python seo_agent.py
 
-      - name: Build site
-        run: python build.py
-
-      - name: Commit and push
+      - name: Commit new content
         run: |
           git config user.name "Springline SEO Bot"
           git config user.email "seo-bot@springlinestays.com"
           git add -A
-          # Only commit if there are changes
           git diff --staged --quiet || git commit -m "📝 Daily blog post - $(date +%Y-%m-%d)"
           git push
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    needs: [generate]
+    if: always() && !failure() && !cancelled()
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build site
+        run: python build.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
