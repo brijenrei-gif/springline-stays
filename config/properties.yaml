@@ -1,0 +1,227 @@
+# Springline Stays — Property Configuration
+# Each property defines its market, details, booking link, and image directory.
+
+brand:
+  name: "Springline Stays"
+  tagline: "Scenic Retreats and Campus Comforts"
+  domain: "springlinestays.com"
+  booking_domain: "book.springlinestays.com"
+  hospitable_base: "https://sunandsands.hospitable.rentals"
+
+markets:
+  - id: colorado-springs
+    name: "Colorado Springs"
+    state: "CO"
+    tagline: "Mountain Views, Hot Tubs & Adventure"
+    hero_description: "Discover the magic of Pikes Peak, Garden of the Gods, and cozy mountain retreats in Colorado Springs."
+    nearby_attractions:
+      - "Garden of the Gods"
+      - "Pikes Peak"
+      - "Cheyenne Mountain Zoo"
+      - "Manitou Springs"
+      - "Red Rock Canyon"
+      - "Old Colorado City"
+      - "Seven Falls"
+      - "The Broadmoor"
+      - "Royal Gorge Bridge"
+
+  - id: gainesville
+    name: "Gainesville"
+    state: "FL"
+    tagline: "Campus Living & Sunshine Getaways"
+    hero_description: "Steps from the University of Florida, our Gainesville homes are perfect for game days, family visits, and sunshine-filled stays."
+    nearby_attractions:
+      - "University of Florida"
+      - "Ben Hill Griffin Stadium (The Swamp)"
+      - "Butterfly Rainforest"
+      - "Devil's Millhopper State Park"
+      - "Paynes Prairie Preserve"
+      - "Depot Park"
+      - "Kanapaha Botanical Gardens"
+      - "Ichetucknee Springs"
+
+  - id: panama-city-beach
+    name: "Panama City Beach"
+    state: "FL"
+    tagline: "Beachfront Bliss & Ocean Sunsets"
+    hero_description: "Wake up to ocean views and fall asleep to the sound of waves at our Panama City Beach retreat."
+    nearby_attractions:
+      - "Panama City Beach"
+      - "St. Andrews State Park"
+      - "Shell Island"
+      - "Pier Park"
+      - "Gulf World Marine Park"
+      - "Conservation Park"
+
+properties:
+  # ─── Colorado Springs ───
+  - id: arch
+    name: "Epic Family Home"
+    headline: "Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games"
+    market: colorado-springs
+    address: "1112 Arch Street, Colorado Springs, CO 80904"
+    guests: 11
+    bedrooms: 4
+    bathrooms: 3
+    description: >
+      The ultimate family retreat with mini-golf, sauna, hot tub, and a game room.
+      Located in the heart of Colorado Springs with easy access to Garden of the Gods
+      and downtown attractions.
+    booking_url: "https://sunandsands.hospitable.rentals/property/epic-family-home-mini-golf-sauna-hot-tub-games"
+    airbnb_url: "https://www.airbnb.com/rooms/1405875216467506046"
+    amenities:
+      - "Mini-Golf"
+      - "Sauna"
+      - "Hot Tub"
+      - "Game Room"
+      - "Mountain Views"
+      - "Free Parking"
+      - "WiFi"
+      - "Full Kitchen"
+    image_dir: "static/images/colorado-springs/arch"
+    active: true
+
+  - id: westmark
+    name: "26 Westmark"
+    headline: "Stunning Mountain Views, Hot Tub, Game Room"
+    market: colorado-springs
+    address: "26 Westmark Ave, Colorado Springs, CO 80906"
+    guests: 11
+    bedrooms: 4
+    bathrooms: 2.5
+    description: >
+      Breathtaking mountain views, a hot tub for relaxation, and a game room
+      for entertainment. This spacious home near The Broadmoor is perfect for
+      families and groups exploring Colorado Springs.
+    booking_url: "https://sunandsands.hospitable.rentals/property/family-friendly-firepit-hottub-views-games"
+    airbnb_url: "https://www.airbnb.com/rooms/1256209522561120264"
+    amenities:
+      - "Hot Tub"
+      - "Mountain Views"
+      - "Game Room"
+      - "Fire Pit"
+      - "Free Parking"
+      - "WiFi"
+      - "Full Kitchen"
+    image_dir: "static/images/colorado-springs/westmark"
+    active: true
+
+  - id: clover
+    name: "19 Clover"
+    headline: "Views | 2 mins to OCC | Fire Pit | Games | Pets"
+    market: colorado-springs
+    address: "19 Clover Cir E, Colorado Springs, CO 80906"
+    guests: 8
+    bedrooms: 3
+    bathrooms: 2
+    description: >
+      Mountain home walking distance to Old Colorado City and Red Rock Canyon trails.
+      Enjoy views of Pikes Peak from the second-floor porch or relax by the fire pit
+      in the fenced backyard. Pet-friendly!
+    booking_url: "https://sunandsands.hospitable.rentals/property/views-2-mins-to-occ-fire-pit-games-pets"
+    airbnb_url: "https://www.airbnb.com/rooms/1518174247602174593"
+    amenities:
+      - "Fire Pit"
+      - "Mountain Views"
+      - "Pet Friendly"
+      - "Fenced Yard"
+      - "Games"
+      - "Free Parking"
+      - "WiFi"
+      - "Full Kitchen"
+    image_dir: "static/images/colorado-springs/clover"
+    active: true
+
+  # ─── Gainesville ───
+  - id: 818_1
+    name: "818-1"
+    headline: "Walk to UF Stadium, No Cleanup, Cozy Townhome"
+    market: gainesville
+    address: "818 Northwest 3rd Avenue, Gainesville, FL 32601"
+    guests: 6
+    bedrooms: 2
+    bathrooms: 2
+    description: >
+      Walk to UF Stadium and downtown Gainesville from this cozy townhome.
+      Perfect for game days, visiting students, or work trips near Shands Hospital.
+    booking_url: "https://sunandsands.hospitable.rentals/property/walk-to-campus-restaurants-cozy-townhome"
+    airbnb_url: "https://www.airbnb.com/rooms/1603294220341305768"
+    amenities:
+      - "Walk to UF"
+      - "Free Parking"
+      - "WiFi"
+      - "Full Kitchen"
+      - "Smart TV"
+    image_dir: "static/images/gainesville/818-1"
+    active: true
+
+  - id: 818_2
+    name: "818-2"
+    headline: "Walk to University, Pet Friendly, Cozy Townhome"
+    market: gainesville
+    address: "818 Northwest 3rd Avenue, Gainesville, FL 32601"
+    guests: 6
+    bedrooms: 2
+    bathrooms: 2
+    description: >
+      Pet-friendly townhome just 5 minutes from the University of Florida campus.
+      Great for families, visiting scholars, or anyone looking for a comfortable
+      Gainesville base.
+    booking_url: "https://sunandsands.hospitable.rentals/property/walk-to-university-pet-friendly-5-min-to-uf"
+    airbnb_url: "https://www.airbnb.com/rooms/1483574469856376090"
+    amenities:
+      - "Pet Friendly"
+      - "Walk to UF"
+      - "Free Parking"
+      - "WiFi"
+      - "Full Kitchen"
+    image_dir: "static/images/gainesville/818-2"
+    active: true
+
+  - id: 4403
+    name: "4403"
+    headline: "Spacious Retreat Near UF & Shands"
+    market: gainesville
+    address: "4403 Northwest 43rd Place, Gainesville, FL 32606"
+    guests: 12
+    bedrooms: 4
+    bathrooms: 2
+    description: >
+      Spacious home just 4 minutes from the University of Florida and Shands Hospital.
+      With room for 12 guests and a full BBQ setup, this is ideal for large families
+      and group trips.
+    booking_url: "https://sunandsands.hospitable.rentals/property/4-minutes-to-universityshands-bbq-spacious"
+    airbnb_url: "https://www.airbnb.com/rooms/1603294220341305768"
+    amenities:
+      - "BBQ Grill"
+      - "Spacious"
+      - "Near UF & Shands"
+      - "Free Parking"
+      - "WiFi"
+      - "Full Kitchen"
+    image_dir: "static/images/gainesville/4403"
+    active: true
+
+  # ─── Panama City Beach ───
+  - id: pcb
+    name: "Beachfront Condo"
+    headline: "On the Beach | Ocean Views | Sleeps 6"
+    market: panama-city-beach
+    address: "Panama City Beach, FL"
+    guests: 6
+    bedrooms: 1
+    bathrooms: 2
+    description: >
+      Wake up to ocean views and fall asleep to the sound of waves. This beachfront
+      condo offers direct beach access, a hot tub, and stunning Gulf of Mexico sunsets.
+    booking_url: "https://sunandsands.hospitable.rentals/property/beachfront-hot-tub-ocean-views-sleeps-6"
+    airbnb_url: ""
+    amenities:
+      - "Beachfront"
+      - "Ocean Views"
+      - "Hot Tub"
+      - "Beach Access"
+      - "WiFi"
+      - "Full Kitchen"
+    image_dir: "static/images/panama-city-beach/pcb"
+    active: true

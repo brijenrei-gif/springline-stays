@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% set transparent_nav = true %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+  <!-- Background Image & Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img src="/static/images/hero.jpg" alt="Springline Stays Hero" class="w-full h-full object-cover object-center" />
+    <div class="absolute inset-0 bg-brand-charcoal/60 bg-gradient-to-b from-transparent to-brand-charcoal/90"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center mt-16 md:mt-0">
+    <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl text-brand-cream font-medium mb-6 leading-tight drop-shadow-lg">
+      Your Next Great Stay Starts Here
+    </h1>
+    <p class="font-body text-lg md:text-xl text-brand-cream/90 mb-10 max-w-2xl font-light drop-shadow">
+      Scenic Retreats and Campus Comforts in Colorado and Florida
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+      <a href="#properties" class="font-body bg-brand-gold text-brand-charcoal px-8 py-3 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
+        Explore Properties
+      </a>
+      <a href="/blog" class="font-body bg-transparent border border-brand-cream text-brand-cream px-8 py-3 rounded hover:bg-brand-cream hover:text-brand-charcoal transition-colors duration-300 font-medium">
+        Read Our Blog
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Markets Section -->
+<section id="markets" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Where We Are</h2>
+      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">Discover our premium destinations.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {% for market in markets %}
+      <a href="/market/{{ market.id }}" class="group relative block aspect-[4/5] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+        <img src="/static/images/market-{{ market.id }}.jpg" alt="{{ market.name }}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" />
+        <div class="absolute inset-0 bg-brand-charcoal/40 group-hover:bg-brand-charcoal/30 transition-colors duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/90 via-transparent to-transparent"></div>
+        
+        <div class="absolute bottom-0 left-0 p-8 w-full">
+          <p class="font-body text-brand-light-gold text-sm uppercase tracking-widest font-semibold mb-2">{{ market.state }}</p>
+          <h3 class="font-heading text-3xl text-brand-cream mb-2">{{ market.name }}</h3>
+          <p class="font-body text-brand-cream/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">{{ market.tagline }}</p>
+          <span class="inline-flex items-center font-body text-brand-gold text-sm font-medium">Explore &rarr;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Featured Properties Section -->
+<section id="properties" class="bg-white py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Our Properties</h2>
+        <p class="mt-4 font-body text-brand-charcoal/70 text-lg">Curated stays for the discerning traveler.</p>
+      </div>
+      <a href="/properties" class="hidden md:inline-flex mt-6 md:mt-0 items-center font-body text-brand-sage hover:text-brand-charcoal transition-colors">
+        View All Properties <span class="ml-2">&rarr;</span>
+      </a>
+    </div>
+
+    <!-- Properties Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {% for property in properties %}
+      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden">
+          <img src="/static/images/property-{{ property.id }}.jpg" alt="{{ property.name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" />
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+            {{ property.market }}
+          </div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">{{ property.headline }}</h3>
+          <p class="font-body text-brand-sage text-sm mb-4">{{ property.name }}</p>
+          
+          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
+            <div class="flex items-center gap-1">
+              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              <span>{{ property.guests }} Guests</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+              <span>{{ property.bedrooms }} Beds</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              <span>{{ property.bathrooms }} Baths</span>
+            </div>
+          </div>
+          
+          <div class="mt-auto">
+            <a href="{{ property.booking_url }}" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="mt-10 text-center md:hidden">
+      <a href="/properties" class="inline-flex items-center font-body text-brand-sage font-medium">
+        View All Properties <span class="ml-2">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="bg-brand-gold py-20 px-4 sm:px-6 text-center">
+  <div class="max-w-3xl mx-auto flex flex-col items-center">
+    <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal mb-4">Book Direct & Save</h2>
+    <p class="font-body text-xl text-brand-charcoal/80 mb-8">Skip the platform fees. Book directly with us for the best rates and personalized service.</p>
+    <a href="/properties" class="font-body bg-white text-brand-charcoal px-8 py-3 rounded font-medium hover:bg-brand-charcoal hover:text-white transition-colors duration-300 shadow-sm">
+      View All Properties
+    </a>
+  </div>
+</section>
+
+<!-- Latest Blog Posts -->
+<section class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">From Our Blog</h2>
+      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">Travel guides, property updates, and local insights.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for post in latest_posts %}
+      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
+        <a href="{{ post.url }}" class="block relative aspect-video overflow-hidden">
+          <img src="{{ post.hero_image }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" />
+          <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
+            {{ post.market }}
+          </div>
+        </a>
+        <div class="p-6">
+          <p class="font-body text-brand-sage text-sm mb-2">{{ post.date }}</p>
+          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+            {{ post.description }}
+          </p>
+          <a href="{{ post.url }}" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+            Read More <span class="ml-1">&rarr;</span>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a href="/blog" class="font-body inline-block border border-brand-charcoal text-brand-charcoal px-8 py-3 rounded hover:bg-brand-charcoal hover:text-brand-cream transition-colors duration-300">
+        Read All Posts
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
