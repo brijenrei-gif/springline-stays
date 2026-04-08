@@ -11,12 +11,13 @@ markets:
     pillar: Activities
     status: published
     title: 'Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views'
-  - keywords:
+  - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/exploring-old-colorado-city-a-locals-guide-to.md
+    keywords:
     - old colorado city dining
     - occ art walk
     - things to do in old colorado city
     pillar: Stay/Local
-    status: planned
+    status: published
     title: 'Exploring Old Colorado City: A Local''s Guide to Dining and Art'
   gainesville:
   - file: content/gainesville/ultimate-gainesville-travel-guide.md
