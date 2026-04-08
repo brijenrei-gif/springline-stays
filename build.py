@@ -77,6 +77,11 @@ def collect_posts():
                 blog_images_dir = os.path.join(STATIC_DIR, 'images', 'blog', market_id)
                 os.makedirs(blog_images_dir, exist_ok=True)
                 hero_image = fetch_unsplash_image(title, blog_images_dir)
+                
+                if not hero_image:
+                    print(f"  Failed to fetch image for title. Trying market fallback for '{market_id}'...")
+                    hero_image = fetch_unsplash_image(market_id, blog_images_dir)
+                
                 if hero_image:
                     print(f"  Successfully fetched image: {hero_image}")
                     

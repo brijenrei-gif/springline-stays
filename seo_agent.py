@@ -20,9 +20,11 @@ import requests
 import yaml
 from datetime import date, datetime
 from pathlib import Path
-from dotenv import load_dotenv
-
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    print("  ⚠  dotenv module not found, relying on system environment variables")
 
 # ─── Paths ───
 BASE_DIR = Path(__file__).parent
