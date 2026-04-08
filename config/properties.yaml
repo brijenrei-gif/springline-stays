@@ -82,6 +82,7 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/colorado-springs/arch"
+    image_url: "/static/images/properties/1112_Arch_St_d4c293a8.jpg"
     active: true
 
   - id: westmark
@@ -107,6 +108,7 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/colorado-springs/westmark"
+    image_url: "/static/images/properties/26_Westmark_6ff9988e.jpg"
     active: true
 
   - id: clover
@@ -133,6 +135,7 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/colorado-springs/clover"
+    image_url: "/static/images/properties/19_Clover_758e44ee.jpg"
     active: true
 
   # ─── Gainesville ───
@@ -156,6 +159,7 @@ properties:
       - "Full Kitchen"
       - "Smart TV"
     image_dir: "static/images/gainesville/818-1"
+    image_url: "/static/images/properties/818_1_fe9c9d06.jpg"
     active: true
 
   - id: 818_2
@@ -179,6 +183,7 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/gainesville/818-2"
+    image_url: "/static/images/properties/818_2_5ca938d3.jpg"
     active: true
 
   - id: 4403
@@ -203,6 +208,7 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/gainesville/4403"
+    image_url: "/static/images/properties/4403_7dca1071.jpg"
     active: true
 
   # ─── Panama City Beach ───
