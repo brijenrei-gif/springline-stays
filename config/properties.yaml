@@ -233,4 +233,5 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/panama-city-beach/pcb"
+    image_url: "/static/images/properties/pcb.jpg"
     active: true
