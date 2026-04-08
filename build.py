@@ -50,6 +50,9 @@ def parse_markdown_file(filepath):
         extensions=['extra', 'codehilite', 'toc', 'tables', 'smarty'],
     )
 
+    # Post-process HTML to add lazy loading to images
+    html_content = re.sub(r'<img\b', r'<img loading="lazy"', html_content)
+
     # Estimate reading time (~200 words per minute)
     word_count = len(md_content.split())
     meta['reading_time'] = max(1, math.ceil(word_count / 200))
