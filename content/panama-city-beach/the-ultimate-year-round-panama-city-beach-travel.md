@@ -2,7 +2,7 @@
 title: "The Ultimate Year-Round Panama City Beach Travel Guide: Sun, Sand, and Secluded Shores"
 date: 2024-04-23
 description: "Explore Panama City Beach, FL with our ultimate travel guide. Discover things to do, where to stay, hidden gems, and book your perfect PCB vacation rental."
-hero_image: "/images/pcb-beach-hero.jpg" # Placeholder: Replace with an actual image path
+hero_image: ""
 tags:
   - Panama City Beach
   - Florida

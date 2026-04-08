@@ -15,6 +15,7 @@ import yaml
 import markdown
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
+from seo_agent import fetch_unsplash_image
 
 # ─── Paths ───
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -69,11 +70,21 @@ def collect_posts():
             meta, html_content = parse_markdown_file(md_file)
             slug = os.path.splitext(os.path.basename(md_file))[0]
 
+            hero_image = meta.get('hero_image', '')
+            if not hero_image:
+                title = meta.get('title', 'Untitled')
+                print(f"  Topic image missing for '{title}'. Fetching from Unsplash...")
+                blog_images_dir = os.path.join(STATIC_DIR, 'images', 'blog', market_id)
+                os.makedirs(blog_images_dir, exist_ok=True)
+                hero_image = fetch_unsplash_image(title, blog_images_dir)
+                if hero_image:
+                    print(f"  Successfully fetched image: {hero_image}")
+
             post = {
                 'title': meta.get('title', 'Untitled'),
                 'date': str(meta.get('date', '')),
                 'description': meta.get('description', ''),
-                'hero_image': meta.get('hero_image', ''),
+                'hero_image': hero_image,
                 'tags': meta.get('tags', []),
                 'market': market_id,
                 'content': html_content,
@@ -200,7 +211,9 @@ def build():
         for post in market_posts:
             print(f"  Building post: {post['slug']}...")
 
-            sidebar_property = pick_sidebar_property(market_id, properties)
+            sidebar_properties = [p for p in properties if p.get('market') == market_id and p.get('active')]
+            if not sidebar_properties:
+                sidebar_properties = [p for p in properties if p.get('active')]
             related_posts = find_related_posts(post, all_posts)
 
             post_html = post_template.render(
@@ -208,7 +221,7 @@ def build():
                 page_description=post['description'],
                 post=post,
                 market=market,
-                sidebar_property=sidebar_property,
+                sidebar_properties=sidebar_properties,
                 related_posts=related_posts,
                 booking_domain=brand.get('hospitable_base', '#'),
             )

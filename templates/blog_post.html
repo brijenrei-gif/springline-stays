@@ -111,38 +111,34 @@
                 <div class="sticky top-24 space-y-12">
                     
                     <!-- Book Your Stay Card -->
-                    {% if sidebar_property %}
-                    <div class="bg-white rounded-2xl shadow-lg border border-brand-light-gold overflow-hidden group">
-                        <div class="relative h-56 overflow-hidden">
-                            <img src="{{ sidebar_property.image_url | default('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80') }}" alt="{{ sidebar_property.name }}" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-4 left-4 right-4">
-                                <span class="text-xs font-semibold uppercase tracking-wider text-brand-cream/90 shadow-sm">{{ sidebar_property.location }}</span>
-                                <h3 class="font-heading text-2xl text-white mt-1 drop-shadow-md">{{ sidebar_property.name }}</h3>
+                    {% if sidebar_properties %}
+                    <div class="bg-white rounded-2xl shadow-lg border border-brand-light-gold overflow-hidden p-6">
+                        <h3 class="font-heading text-2xl text-brand-charcoal mb-6">Book Your Stay</h3>
+                        <div class="space-y-6">
+                            {% for prop in sidebar_properties %}
+                            <div class="flex gap-4 items-center border-b border-brand-sage/10 pb-4 last:border-b-0 last:pb-0">
+                                <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                                    <img src="{{ prop.image_url | default('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=200&q=80') }}" alt="{{ prop.name }}" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-grow">
+                                    <h4 class="font-heading text-lg text-brand-charcoal hover:text-brand-gold transition-colors">
+                                        <a href="{{ prop.booking_url }}">{{ prop.name }}</a>
+                                    </h4>
+                                    <div class="text-xs text-gray-600 font-body mt-1">
+                                        <span>{{ prop.guests }} Guests</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span>{{ prop.beds }} Beds</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span>{{ prop.baths }} Baths</span>
+                                    </div>
+                                    <a href="{{ prop.booking_url }}" class="inline-block mt-2 text-sm font-semibold text-brand-gold hover:text-[#b08230] transition-colors">
+                                        Check Availability &rarr;
+                                    </a>
+                                </div>
                             </div>
+                            {% endfor %}
                         </div>
-                        <div class="p-6">
-                            <div class="flex text-sm text-gray-600 mb-5 font-body space-x-2 items-center justify-center bg-gray-50 py-2 rounded-lg">
-                                <span>{{ sidebar_property.guests }} Guests</span>
-                                <span class="text-brand-gold">&bull;</span>
-                                <span>{{ sidebar_property.beds }} Beds</span>
-                                <span class="text-brand-gold">&bull;</span>
-                                <span>{{ sidebar_property.baths }} Baths</span>
-                            </div>
-
-                            {% if sidebar_property.top_amenities %}
-                            <div class="flex flex-wrap gap-2 mb-8 justify-center">
-                                {% for amenity in sidebar_property.top_amenities[:3] %}
-                                <span class="bg-brand-cream border border-brand-light-gold text-brand-charcoal text-xs px-3 py-1 rounded-full font-medium">{{ amenity }}</span>
-                                {% endfor %}
-                            </div>
-                            {% endif %}
-                            
-                            <a href="{{ sidebar_property.booking_url }}" class="block w-full text-center bg-brand-gold hover:bg-[#b08230] text-white font-semibold py-4 rounded-lg transition duration-300 shadow-md">
-                                Check Availability &rarr;
-                            </a>
-                            <p class="text-center text-sm text-gray-500 mt-4 font-body">Book direct & save on fees</p>
-                        </div>
+                        <p class="text-center text-sm text-gray-500 mt-6 font-body">Book direct & save on fees</p>
                     </div>
                     {% endif %}
 

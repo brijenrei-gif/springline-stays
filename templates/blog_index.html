@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 
+{% set fallback_images = {
+    'colorado-springs': 'https://images.unsplash.com/photo-1588156979401-db3dc3b827cc?auto=format&fit=crop&w=1200&q=80',
+    'gainesville': 'https://images.unsplash.com/photo-1597123260735-0a4146617fa6?auto=format&fit=crop&w=1200&q=80',
+    'panama-city-beach': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
+} %}
+
 {% block content %}
 <!-- Header -->
 <div class="bg-brand-cream pt-24 pb-12 px-4 border-b border-brand-sage/20">
@@ -51,7 +57,7 @@
         {% for post in posts %}
         <article class="flex flex-col group">
             <a href="{{ post.url }}" class="block relative w-full h-72 md:h-80 overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-md transition-shadow">
-                <img src="{{ post.hero_image | default('/static/images/placeholder_blog.jpg') }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="{{ post.hero_image if post.hero_image else fallback_images[post.market] | default('/static/images/placeholder_blog.jpg') }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 {% if post.market_tag %}
                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded shadow-sm">
                     <span class="font-body text-xs font-bold text-brand-gold uppercase tracking-wide">{{ post.market_tag }}</span>
