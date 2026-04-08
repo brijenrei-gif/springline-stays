@@ -29,6 +29,7 @@ jobs:
       - name: Run blog generator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           python seo_agent.py
 
