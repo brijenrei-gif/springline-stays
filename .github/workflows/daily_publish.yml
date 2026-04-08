@@ -72,6 +72,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build site
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: python build.py
 
       - name: Setup Pages
