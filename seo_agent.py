@@ -113,7 +113,9 @@ def fetch_unsplash_image(query, save_dir):
 
         # Save to static/images/blog/
         os.makedirs(save_dir, exist_ok=True)
-        slug = query.lower().replace(' ', '-').replace(',', '')[:50]
+        slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
+        slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
+        slug = slug.strip('-')
         filename = f"{slug}-{random.randint(1000, 9999)}.jpg"
         filepath = os.path.join(save_dir, filename)
 
