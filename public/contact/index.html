@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>{% block title %}Springline Stays - Premium Vacation Rentals{% endblock %}</title>
-    <meta name="description" content="{% block description %}Discover luxury vacation rentals in Colorado Springs, Gainesville, and Panama City Beach with Springline Stays.{% endblock %}">
+    <title>Contact Us — Springline Stays</title>
+    <meta name="description" content="Get in touch with Springline Stays. We are here to help with your vacation rental inquiries.">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
-    <meta property="og:description" content="{% block og_description %}{{ self.description() }}{% endblock %}">
-    <meta property="og:image" content="{% block og_image %}/static/images/og-image.jpg{% endblock %}">
-    <meta property="og:url" content="{% block og_url %}{{ request.url if request else '' }}{% endblock %}">
-    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="Contact Us — Springline Stays">
+    <meta property="og:description" content="Get in touch with Springline Stays. We are here to help with your vacation rental inquiries.">
+    <meta property="og:image" content="/static/images/og-image.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
-    <meta name="twitter:description" content="{% block twitter_description %}{{ self.description() }}{% endblock %}">
-    <meta name="twitter:image" content="{% block twitter_image %}/static/images/og-image.jpg{% endblock %}">
+    <meta name="twitter:title" content="Contact Us — Springline Stays">
+    <meta name="twitter:description" content="Get in touch with Springline Stays. We are here to help with your vacation rental inquiries.">
+    <meta name="twitter:image" content="/static/images/og-image.jpg">
 
     <!-- Canonical Tag -->
-    <link rel="canonical" href="{{ site_url|default('https://springlinestays.com') }}{{ request_path|default('/') }}">
+    <link rel="canonical" href="https://springlinestays.com/contact/">
 
     <!-- Google Analytics -->
-    {% if brand.google_analytics_id %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ brand.google_analytics_id }}"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9BRBB2S9B"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', '{{ brand.google_analytics_id }}');
+      gtag('config', 'G-Y9BRBB2S9B');
     </script>
-    {% endif %}
+    
 
     <!-- Structured Data -->
-    {% block structured_data %}{% endblock %}
+    
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
@@ -85,11 +85,11 @@
         }
     </style>
 
-    {% block extra_head %}{% endblock %}
+    
 </head>
 <body class="flex flex-col min-h-screen">
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 transition-all duration-300 {% if transparent_nav %}bg-transparent text-white{% else %}bg-white text-brand-charcoal shadow-sm{% endif %}" id="navbar">
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white text-brand-charcoal shadow-sm" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
@@ -107,7 +107,7 @@
                     <a href="/panama-city-beach" class="hover:text-brand-gold transition duration-200">Panama City Beach</a>
                     <a href="/blog" class="hover:text-brand-gold transition duration-200">Blog</a>
                     <a href="/contact/" class="hover:text-brand-gold transition duration-200">Contact</a>
-                    <a href="{{ booking_domain|default('#') }}" class="bg-brand-gold hover:bg-brand-gold/90 text-white font-medium py-2.5 px-6 rounded-md transition duration-200 block">
+                    <a href="https://book.springlinestays.com" class="bg-brand-gold hover:bg-brand-gold/90 text-white font-medium py-2.5 px-6 rounded-md transition duration-200 block">
                         Book Now
                     </a>
                 </div>
@@ -131,14 +131,60 @@
                 <a href="/panama-city-beach" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Panama City Beach</a>
                 <a href="/blog" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Blog</a>
                 <a href="/contact/" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Contact</a>
-                <a href="{{ booking_domain|default('#') }}" class="block px-3 py-2 mt-4 text-center bg-brand-gold text-white rounded-md font-medium hover:bg-brand-gold/90">Book Now</a>
+                <a href="https://book.springlinestays.com" class="block px-3 py-2 mt-4 text-center bg-brand-gold text-white rounded-md font-medium hover:bg-brand-gold/90">Book Now</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="flex-grow">
-        {% block content %}{% endblock %}
+        
+<section class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight mb-4">Contact Us</h1>
+      <p class="font-body text-brand-charcoal/70 text-lg">Have questions about a property or your stay? Send us a message.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-sm p-8 md:p-10">
+      <!-- 
+        IMPORTANT: Replace 'YOUR_FORMSPREE_ID' with your actual Formspree form ID.
+        Get one at https://formspree.io/
+      -->
+      <form action="https://formspree.io/f/mreodvbk" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-brand-charcoal">Name</label>
+          <input type="text" name="name" id="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring-brand-gold sm:text-sm p-3 border">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-brand-charcoal">Email</label>
+          <input type="email" name="_replyto" id="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring-brand-gold sm:text-sm p-3 border">
+        </div>
+
+        <div>
+          <label for="phone" class="block text-sm font-medium text-brand-charcoal">Phone (Optional)</label>
+          <input type="tel" name="phone" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring-brand-gold sm:text-sm p-3 border">
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-brand-charcoal">Message</label>
+          <textarea name="message" id="message" rows="5" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-gold focus:ring-brand-gold sm:text-sm p-3 border"></textarea>
+        </div>
+
+        <!-- Anti-spam honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <div>
+          <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-brand-charcoal hover:bg-brand-sage focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-gold transition-colors duration-300">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <!-- Footer -->
@@ -183,7 +229,7 @@
             </div>
             
             <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm text-gray-500">
-                <p>&copy; {% block copyright_year %}{{ current_year|default(2026) }}{% endblock %} Springline Stays. All rights reserved.</p>
+                <p>&copy; 2026 Springline Stays. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -199,7 +245,7 @@
         // Navbar Scroll Effect
         window.addEventListener('scroll', function() {
             var navbar = document.getElementById('navbar');
-            var isTransparentNav = {{ 'true' if transparent_nav else 'false' }};
+            var isTransparentNav = false;
             
             if (isTransparentNav) {
                 if (window.scrollY > 10) {

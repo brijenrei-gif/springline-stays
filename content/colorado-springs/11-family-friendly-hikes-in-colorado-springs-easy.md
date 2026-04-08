@@ -9,6 +9,7 @@ tags:
 - family travel
 - outdoor activities
 market: colorado-springs
+hero_image: /static/images/blog/colorado-springs/11-family-friendly-hikes-in-colorado-springs-easy-2129.jpg
 ---
 
 Welcome to Colorado Springs! As locals who live and breathe this mountain air, we know the secret: this city is one giant, breathtaking playground. From the majestic shadow of Pikes Peak to the whimsical red rock formations, there's an adventure waiting around every corner. But when you're traveling with kids, the question isn't *if* you should go hiking, but *where*. How do you find a trail that will wow the whole family without resulting in tired legs and meltdowns?

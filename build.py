@@ -319,6 +319,19 @@ def build():
     with open(os.path.join(OUTPUT_DIR, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(home_html)
 
+    # ─── Build Contact Page ───
+    print("Building contact page...")
+    contact_template = env.get_template('contact.html')
+    contact_dir = os.path.join(OUTPUT_DIR, 'contact')
+    os.makedirs(contact_dir, exist_ok=True)
+    urls.append("/contact/")
+    contact_html = contact_template.render(
+        booking_domain=brand.get('hospitable_base', '#'),
+        request_path='/contact/',
+    )
+    with open(os.path.join(contact_dir, 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(contact_html)
+
     # ─── Build Market Pages ───
     for market in markets:
         market_id = market['id']

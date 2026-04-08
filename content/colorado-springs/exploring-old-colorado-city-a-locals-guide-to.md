@@ -1,13 +1,15 @@
 ---
-title: "Exploring Old Colorado City: A Local's Guide to Dining, Art & More"
+title: 'Exploring Old Colorado City: A Local''s Guide to Dining, Art & More'
 date: 2026-04-08
-description: "Discover the best of Old Colorado City dining, art galleries, and shops with our insider's guide. Find top restaurants, the OCC Art Walk, and more."
+description: Discover the best of Old Colorado City dining, art galleries, and shops
+  with our insider's guide. Find top restaurants, the OCC Art Walk, and more.
 tags:
-  - Old Colorado City
-  - Colorado Springs
-  - Dining Guide
-  - Art Galleries
+- Old Colorado City
+- Colorado Springs
+- Dining Guide
+- Art Galleries
 market: colorado-springs
+hero_image: /static/images/blog/colorado-springs/exploring-old-colorado-city-a-locals-guide-to-dini-8600.jpg
 ---
 
 Welcome to Old Colorado City, the historic heart and soul of Colorado Springs! Long before it was a neighborhood, this was the original capital of the Colorado Territory, a bustling hub for gold miners, pioneers, and dreamers. Today, that independent, artistic spirit lives on. The Victorian buildings that once housed saloons and general stores are now home to a vibrant collection of award-winning restaurants, eclectic art galleries, and one-of-a-kind boutiques.
