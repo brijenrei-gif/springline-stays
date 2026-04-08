@@ -69,7 +69,7 @@ Red Rock Canyon is the local's alternative to Garden of the Gods. While tourists
 
 The Contemplative Trail is a gentle 1.5-mile loop perfect for families. For mountain bikers, the Mesa Trail offers a moderately technical ride with excellent views. Dogs are allowed on-leash throughout the park.
 
-Our [Views | 2 mins to OCC | Fire Pit | Games | Pets](https://sunandsands.hospitable.rentals/property/views-2-mins-to-occ-fire-pit-games-pets) property is walking distance from Red Rock Canyon — you can literally hike from your front door and be on the trails in minutes.
+Our [Views | 2 mins to OCC | Fire Pit | Games | Pets](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets) property is walking distance from Red Rock Canyon — you can literally hike from your front door and be on the trails in minutes.
 
 ## Old Colorado City
 
@@ -101,11 +101,13 @@ Location matters in Colorado Springs because the best attractions are spread acr
 
 Our Colorado Springs properties are positioned specifically for this:
 
-- **[Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](https://sunandsands.hospitable.rentals/property/epic-family-home-mini-golf-sauna-hot-tub-games)** — The ultimate family retreat with 4 bedrooms, room for 11 guests, and entertainment that keeps everyone happy between excursions.
+- **[Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)** — The ultimate family retreat with 4 bedrooms, room for 11 guests, and entertainment that keeps everyone happy between excursions.
 
-- **[Stunning Mountain Views, Hot Tub, Game Room](https://sunandsands.hospitable.rentals/property/family-friendly-firepit-hottub-views-games)** — Breathtaking views of the Front Range, a hot tub for post-hike recovery, and a game room for rainy afternoon entertainment.
+- **[Stunning Mountain Views, Hot Tub, Game Room](https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games)** — Breathtaking views of the Front Range, a hot tub for post-hike recovery, and a game room for rainy afternoon entertainment.
 
-- **[Views | 2 mins to OCC | Fire Pit | Games | Pets](https://sunandsands.hospitable.rentals/property/views-2-mins-to-occ-fire-pit-games-pets)** — Walking distance to Red Rock Canyon trails and Old Colorado City. Perfect for active travelers who want to step off the porch and onto the trails.
+- **[Views | 2 mins to OCC | Fire Pit | Games | Pets](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets)** — Walking distance to Red Rock Canyon trails and Old Colorado City. Perfect for active travelers who want to step off the porch and onto the trails.
+
+![Modern Vacation Rental Living Room](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80)
 
 Booking directly through Springline Stays means you skip the 14-16% service fees that Airbnb and VRBO add to the same properties. On a multi-night stay, that difference adds up to real savings — money better spent on Pikes Peak donuts and giraffe food.
 

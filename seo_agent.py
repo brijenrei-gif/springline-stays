@@ -117,21 +117,49 @@ def pick_property_images(properties, count=2):
     """Pick random property images to include in the blog post.
     
     Returns a list of dicts with image_path, property_name, and booking_url.
+    Falls back to Unsplash if no local images exist for a property.
     """
     property_images = []
+    # Unsplash queries to use when no local photos exist
+    fallback_queries = [
+        "modern vacation rental living room",
+        "cozy bedroom vacation home",
+        "vacation rental patio outdoor",
+        "luxury vacation home kitchen",
+        "vacation rental pool backyard",
+    ]
 
     for prop in random.sample(properties, min(count, len(properties))):
         image_dir = BASE_DIR / prop.get('image_dir', '')
+        img_path = None
+
+        # Try local images first
         if image_dir.exists():
             images = list(image_dir.glob('*.jpg')) + list(image_dir.glob('*.png'))
             if images:
                 img = random.choice(images)
-                rel_path = f"/{os.path.relpath(img, BASE_DIR)}"
-                property_images.append({
-                    'image_path': rel_path,
-                    'property_name': prop['headline'],
-                    'booking_url': prop['booking_url'],
-                })
+                img_path = f"/{os.path.relpath(img, BASE_DIR)}"
+
+        # Fallback: use Unsplash URL directly (no download needed for property cards)
+        if not img_path:
+            query = random.choice(fallback_queries)
+            print(f"  📷 No local images for '{prop['headline']}', using Unsplash: '{query}'")
+            blog_images_dir = STATIC_DIR / 'images' / 'blog' / prop.get('market', 'general')
+            img_path = fetch_unsplash_image(query, str(blog_images_dir))
+
+        if img_path:
+            property_images.append({
+                'image_path': img_path,
+                'property_name': prop['headline'],
+                'booking_url': prop['booking_url'],
+            })
+        else:
+            # Last resort: use a static Unsplash URL directly
+            property_images.append({
+                'image_path': 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80',
+                'property_name': prop['headline'],
+                'booking_url': prop['booking_url'],
+            })
 
     return property_images
 

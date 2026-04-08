@@ -163,7 +163,9 @@ Panama City Beach offers different atmospheres depending on where you stay:
 
 When it comes to finding the perfect **where to stay in Panama City Beach**, Springline Stays offers carefully curated properties designed for comfort, convenience, and an authentic local experience. We pride ourselves on providing exceptional accommodations that feel like your own private slice of paradise.
 
-For an unforgettable beachfront experience that comfortably sleeps up to 6 guests, perfect for a family vacation, a romantic escape, or a group of friends, we highly recommend our exceptional property: **[On the Beach | Ocean Views | Sleeps 6](https://sunandsands.hospitable.rentals/property/beachfront-hot-tub-ocean-views-sleeps-6)**.
+For an unforgettable beachfront experience that comfortably sleeps up to 6 guests, perfect for a family vacation, a romantic escape, or a group of friends, we highly recommend our exceptional property: **[On the Beach | Ocean Views | Sleeps 6](https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6)**.
+
+![Beachfront Vacation Rental Patio](https://images.unsplash.com/photo-1515362778563-6a8d0e44bc0b?auto=format&fit=crop&w=800&q=80)
 
 Imagine waking up to the gentle sounds of the Gulf, stepping out onto your private balcony with a cup of coffee, and enjoying breathtaking panoramic ocean views. This stunning beachfront vacation rental offers direct beach access, allowing you to go from your doorstep to the sugar-white sands in mere moments. After a day of sun and adventure, unwind in the private beachfront hot tub, soaking away your cares as the sun dips below the horizon. It's the quintessential Panama City Beach experience, combining luxury, convenience, and direct access to everything that makes PCB special.
 

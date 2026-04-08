@@ -32,7 +32,7 @@ Ben Hill Griffin Stadium (The Swamp) holds 88,548 people and is genuinely one of
 - **Tailgating**: The best tailgate spots are along University Avenue and in the grassy areas near Lake Alice. Arrive 3-4 hours before kickoff for the full experience.
 - **After the game**: The bars along University Avenue and Midtown fill up immediately. Salty Dog Saloon and The Swamp Restaurant are the classic post-game spots.
 
-Our [Walk to UF Stadium](https://sunandsands.hospitable.rentals/property/walk-to-campus-restaurants-cozy-townhome) townhome is walking distance from The Swamp — skip the parking nightmare entirely.
+Our [Walk to UF Stadium](https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome) townhome is walking distance from The Swamp — skip the parking nightmare entirely.
 
 ## Natural Springs
 
@@ -69,11 +69,13 @@ Devil's Millhopper is a 120-foot-deep sinkhole with a lush miniature rainforest 
 
 Proximity to UF campus is the key factor for most Gainesville visitors, whether you are here for a game, a campus tour, a Shands appointment, or a graduation ceremony. Our Gainesville properties put you within walking distance or a very short drive of campus:
 
-- **[Walk to UF Stadium, No Cleanup, Cozy Townhome](https://sunandsands.hospitable.rentals/property/walk-to-campus-restaurants-cozy-townhome)** — Walking distance from The Swamp and downtown restaurants. 2 bed / 2 bath, sleeps 6.
+- **[Walk to UF Stadium, No Cleanup, Cozy Townhome](https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome)** — Walking distance from The Swamp and downtown restaurants. 2 bed / 2 bath, sleeps 6.
 
-- **[Walk to University, Pet Friendly, Cozy Townhome](https://sunandsands.hospitable.rentals/property/walk-to-university-pet-friendly-5-min-to-uf)** — Pet-friendly and just 5 minutes from campus. Same great location, bring your pup.
+- **[Walk to University, Pet Friendly, Cozy Townhome](https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf)** — Pet-friendly and just 5 minutes from campus. Same great location, bring your pup.
 
-- **[Spacious Retreat Near UF & Shands](https://sunandsands.hospitable.rentals/property/4-minutes-to-universityshands-bbq-spacious)** — Our largest Gainesville property with 4 bedrooms, room for 12 guests, and BBQ. Perfect for multi-family game day trips or graduation celebrations.
+- **[Spacious Retreat Near UF & Shands](https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious)** — Our largest Gainesville property with 4 bedrooms, room for 12 guests, and BBQ. Perfect for multi-family game day trips or graduation celebrations.
+
+![Cozy Bedroom Vacation Home](https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80)
 
 Book direct through Springline Stays and skip the Airbnb service fees — on a game day weekend, that saves you real money.
 

@@ -4,7 +4,12 @@
 <!-- Hero Section -->
 <div class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center">
     <div class="absolute inset-0 z-0">
-        <img src="{{ post.hero_image | default('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80', true) }}" alt="{{ post.title }}" class="w-full h-full object-cover">
+        {% set fallbacks = {
+            'colorado-springs': 'https://images.unsplash.com/photo-1580824495336-3583157dcdee?auto=format&fit=crop&w=1600&q=80',
+            'gainesville': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+            'panama-city-beach': 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80'
+        } %}
+        <img src="{{ post.hero_image | default(fallbacks[market.id] | default('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'), true) }}" alt="{{ post.title }}" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-brand-charcoal bg-opacity-50"></div>
     </div>
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center mt-12">
