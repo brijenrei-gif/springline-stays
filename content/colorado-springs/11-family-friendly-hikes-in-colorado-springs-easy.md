@@ -4,7 +4,6 @@ date: 2026-04-08
 description: Planning a trip to Colorado Springs with kids? Discover our guide to
   the best family-friendly hikes in Colorado Springs, featuring easy trails with stunning
   mountain views.
-hero_image: /static/images/blog/colorado-springs/11-family-friendly-hikes-in-colorado-springs-easy-4447.jpg
 tags:
 - colorado springs hiking
 - family travel
