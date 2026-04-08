@@ -70,7 +70,7 @@
             {% for property in market_properties %}
             <div class="group flex flex-col bg-brand-cream rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="{{ property.image_url | default('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80') }}" alt="{{ property.headline }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="{{ property.image_url | default('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80') }}" alt="{{ property.headline }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="font-heading text-2xl font-bold text-brand-charcoal mb-2 line-clamp-1">{{ property.headline }}</h3>
@@ -123,7 +123,7 @@
             {% for post in market_posts %}
             <article class="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-brand-cream">
                 <a href="{{ post.url }}" class="block relative h-56 overflow-hidden group">
-                    <img src="{{ post.hero_image or '/static/images/placeholder_blog.jpg' }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="{{ post.hero_image or '/static/images/placeholder_blog.jpg' }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 </a>
                 <div class="p-6 flex flex-col flex-grow">
                     <time class="text-xs font-body tracking-wider text-brand-sage uppercase mb-2 block">{{ post.date | default('Recent') }}</time>
