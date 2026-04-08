@@ -50,7 +50,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8">
         {% for post in posts %}
         <article class="flex flex-col group">
-            <a href="/blog/{{ post.slug }}" class="block relative w-full h-72 md:h-80 overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-md transition-shadow">
+            <a href="{{ post.url }}" class="block relative w-full h-72 md:h-80 overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-md transition-shadow">
                 <img src="{{ post.hero_image | default('/static/images/placeholder_blog.jpg') }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 {% if post.market_tag %}
                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded shadow-sm">
@@ -67,7 +67,7 @@
                 </div>
                 
                 <h2 class="font-heading text-2xl font-bold text-brand-charcoal mb-3 leading-snug group-hover:text-brand-gold transition-colors">
-                    <a href="/blog/{{ post.slug }}">{{ post.title }}</a>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
                 </h2>
                 
                 <p class="font-body text-brand-charcoal/70 mb-5 line-clamp-3">
@@ -75,7 +75,7 @@
                 </p>
                 
                 <div class="mt-auto">
-                    <a href="/blog/{{ post.slug }}" class="inline-flex items-center font-body text-sm font-bold text-brand-charcoal hover:text-brand-gold transition-colors pb-1 border-b-2 border-brand-gold/30 hover:border-brand-gold">
+                    <a href="{{ post.url }}" class="inline-flex items-center font-body text-sm font-bold text-brand-charcoal hover:text-brand-gold transition-colors pb-1 border-b-2 border-brand-gold/30 hover:border-brand-gold">
                         Read More
                         <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
