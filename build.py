@@ -102,7 +102,10 @@ def collect_posts():
                 if src_match:
                     src = src_match.group(1)
                     if src.startswith('/static/images/blog/'):
-                        local_path = os.path.join(STATIC_DIR, src.lstrip('/'))
+                        relative_src = src.lstrip('/')
+                        if relative_src.startswith('static/'):
+                            relative_src = relative_src[len('static/'):]
+                        local_path = os.path.join(STATIC_DIR, relative_src)
                         if not os.path.exists(local_path):
                             print(f"  Missing body image: {src}")
                             alt_match = re.search(r'alt="([^"]+)"', img_attrs)
