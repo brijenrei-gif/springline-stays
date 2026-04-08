@@ -123,7 +123,7 @@ properties:
       - "WiFi"
       - "Full Kitchen"
     image_dir: "static/images/colorado-springs/westmark"
-    image_url: "/static/images/properties/26_Westmark_6ff9988e.jpg"
+    image_url: "/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg"
     active: true
 
   - id: clover
