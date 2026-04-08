@@ -14,7 +14,7 @@ markets:
     state: "CO"
     tagline: "Mountain Views, Hot Tubs & Adventure"
     hero_description: "Discover the magic of Pikes Peak, Garden of the Gods, and cozy mountain retreats in Colorado Springs."
-    image_url: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    image_url: "/static/images/blog/colorado-springs/top-10-things-to-do-in-colorado-springs-this-seaso-3199.jpg"
     nearby_attractions:
       - "Garden of the Gods"
       - "Pikes Peak"
@@ -31,7 +31,7 @@ markets:
     state: "FL"
     tagline: "Campus Living & Sunshine Getaways"
     hero_description: "Steps from the University of Florida, our Gainesville homes are perfect for game days, family visits, and sunshine-filled stays."
-    image_url: "https://images.unsplash.com/photo-1592079907431-3baec24c2d55?auto=format&fit=crop&w=800&q=80"
+    image_url: "https://images.unsplash.com/photo-1519046904884-53103b34b206"
     nearby_attractions:
       - "University of Florida"
       - "Ben Hill Griffin Stadium (The Swamp)"
