@@ -129,6 +129,7 @@ def collect_posts():
                 'date': str(meta.get('date', '')),
                 'description': meta.get('description', ''),
                 'hero_image': hero_image,
+                'thumbnail_url': hero_image,
                 'tags': meta.get('tags', []),
                 'market': market_id,
                 'content': html_content,

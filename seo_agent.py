@@ -201,10 +201,19 @@ def generate_blog_post(config, market_id, planned_post=None):
     attractions = market.get('nearby_attractions', [])
     
     # Build property context for the prompt
-    property_context = "\n".join([
-        f"  - {p['headline']} ({p['guests']} guests, {p['bedrooms']} beds) — {p['booking_url']}"
-        for p in properties
-    ])
+    property_context_list = []
+    for p in properties:
+        prop_str = f"  - {p['headline']} ({p['guests']} guests, {p['bedrooms']} beds) — {p['booking_url']}"
+        image_dir = BASE_DIR / p.get('image_dir', '')
+        if image_dir.exists():
+            images = list(image_dir.glob('*.jpg')) + list(image_dir.glob('*.png'))
+            if images:
+                prop_str += f"\n    Images available:"
+                for img in sorted(images)[:3]:  # Sort for determinism, limit to 3
+                    img_path = f"/{os.path.relpath(img, BASE_DIR)}"
+                    prop_str += f"\n      - {img_path}"
+        property_context_list.append(prop_str)
+    property_context = "\n".join(property_context_list)
 
     today = date.today().isoformat()
 
@@ -236,11 +245,12 @@ Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website S
 1. {topic_instruction}
 2. Write in an authoritative, friendly tone — like a well-traveled local sharing insider tips.
 3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
-4. Include a Table of Contents with anchor links.
-5. Include a FAQ section (3-5 questions) at the bottom targeting Google featured snippets.
-6. End with a soft CTA encouraging readers to book directly with Springline Stays.
-7. Use H2 and H3 headings liberally for SEO.
-8. Include specific details — addresses, drive times, tips, seasonal info.
+4. **Images**: When mentioning our properties, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos.
+5. Include a Table of Contents with anchor links.
+6. Include a FAQ section (3-5 questions) at the bottom targeting Google featured snippets.
+7. End with a soft CTA encouraging readers to book directly with Springline Stays.
+8. Use H2 and H3 headings liberally for SEO.
+9. Include specific details — addresses, drive times, tips, seasonal info.
 
 **Output format**: Start with YAML frontmatter enclosed by `---`:
 

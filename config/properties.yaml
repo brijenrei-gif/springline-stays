@@ -96,8 +96,8 @@ properties:
       - "Free Parking"
       - "WiFi"
       - "Full Kitchen"
-    image_dir: "static/images/colorado-springs/arch"
-    image_url: "/static/images/properties/1112_Arch_St_d4c293a8.jpg"
+    image_dir: "static/images/properties/arch"
+    image_url: "/static/images/properties/arch/image_1.jpg"
     active: true
 
   - id: westmark
@@ -122,7 +122,7 @@ properties:
       - "Free Parking"
       - "WiFi"
       - "Full Kitchen"
-    image_dir: "static/images/colorado-springs/westmark"
+    image_dir: "static/images/properties/family-friendly-firepit-hottub-views-games"
     image_url: "/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg"
     active: true
 
@@ -149,8 +149,8 @@ properties:
       - "Free Parking"
       - "WiFi"
       - "Full Kitchen"
-    image_dir: "static/images/colorado-springs/clover"
-    image_url: "/static/images/properties/19_Clover_758e44ee.jpg"
+    image_dir: "static/images/properties/clover"
+    image_url: "/static/images/properties/clover/image_1.jpg"
     active: true
 
   # ─── Gainesville ───
@@ -173,8 +173,8 @@ properties:
       - "WiFi"
       - "Full Kitchen"
       - "Smart TV"
-    image_dir: "static/images/gainesville/818-1"
-    image_url: "/static/images/properties/818_1_fe9c9d06.jpg"
+    image_dir: "static/images/properties/818_1"
+    image_url: "/static/images/properties/818_1/image_1.jpg"
     active: true
 
   - id: 818_2
@@ -197,8 +197,8 @@ properties:
       - "Free Parking"
       - "WiFi"
       - "Full Kitchen"
-    image_dir: "static/images/gainesville/818-2"
-    image_url: "/static/images/properties/818_2_5ca938d3.jpg"
+    image_dir: "static/images/properties/818_2"
+    image_url: "/static/images/properties/818_2/image_1.jpg"
     active: true
 
   - id: 4403
@@ -222,8 +222,8 @@ properties:
       - "Free Parking"
       - "WiFi"
       - "Full Kitchen"
-    image_dir: "static/images/gainesville/4403"
-    image_url: "/static/images/properties/4403_7dca1071.jpg"
+    image_dir: "static/images/properties/4403"
+    image_url: "/static/images/properties/4403/image_1.jpg"
     active: true
 
   # ─── Panama City Beach ───
@@ -247,6 +247,6 @@ properties:
       - "Beach Access"
       - "WiFi"
       - "Full Kitchen"
-    image_dir: "static/images/panama-city-beach/pcb"
-    image_url: "/static/images/properties/pcb.jpg"
+    image_dir: "static/images/properties/pcb"
+    image_url: "/static/images/properties/pcb/image_1.jpg"
     active: true

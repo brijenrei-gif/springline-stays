@@ -1,6 +1,7 @@
 ---
 title: "Exploring Old Colorado City: A Local's Guide to Dining, Art & More"
 date: 2026-04-08
+hero_image: "/static/images/properties/arch/image_1.jpg"
 description: "Discover the best of Old Colorado City dining, art galleries, and shops with our insider's guide. Find top restaurants, the OCC Art Walk, and more."
 tags:
   - Old Colorado City

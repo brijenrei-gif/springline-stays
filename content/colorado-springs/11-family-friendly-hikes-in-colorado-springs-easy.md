@@ -1,6 +1,7 @@
 ---
 title: '11 Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views'
 date: 2026-04-08
+hero_image: "/static/images/properties/clover/image_1.jpg"
 description: Planning a trip to Colorado Springs with kids? Discover our guide to
   the best family-friendly hikes in Colorado Springs, featuring easy trails with stunning
   mountain views.
@@ -213,9 +214,9 @@ When you're ready to plan your trip, skip the booking fees and impersonal servic
 
 [Explore Our Colorado Springs Homes and Book Your Family's Next Adventure Today!](https://www.springlinestays.com/)
 
-![Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80)
+![Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](/static/images/properties/family-friendly-firepit-hottub-views-games/image_2.jpg)
 *[Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games — Book your stay →](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)*
 
 
-![Stunning Mountain Views, Hot Tub, Game Room](https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80)
+![Stunning Mountain Views, Hot Tub, Game Room](/static/images/properties/family-friendly-firepit-hottub-views-games/image_3.jpg)
 *[Stunning Mountain Views, Hot Tub, Game Room — Book your stay →](https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games)*
