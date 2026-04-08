@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
+{% block title %}{{ market.name }} Vacation Rentals — Springline Stays{% endblock %}
+{% block description %}Find the perfect stay in {{ market.name }}. {{ market.tagline }}{% endblock %}
+
 {% block structured_data %}
 <script type="application/ld+json">
 {

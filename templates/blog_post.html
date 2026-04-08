@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
+{% block title %}{{ post.title }} — Springline Stays{% endblock %}
+{% block description %}{{ post.description }}{% endblock %}
+
 {% block structured_data %}
 <script type="application/ld+json">
 {

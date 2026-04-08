@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Let Us Manage Your Vacation Property | Springline Stays</title>
+    <meta name="description" content="Unlock the full potential of your vacation rental. Contact us today for a free consultation!">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Let Us Manage Your Vacation Property | Springline Stays">
+    <meta property="og:description" content="Unlock the full potential of your vacation rental. Contact us today for a free consultation!">
+    <meta property="og:image" content="/static/images/og-image.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Let Us Manage Your Vacation Property | Springline Stays">
+    <meta name="twitter:description" content="Unlock the full potential of your vacation rental. Contact us today for a free consultation!">
+    <meta name="twitter:image" content="/static/images/og-image.jpg">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://springlinestays.com/property-management/">
+
+    <!-- Google Analytics -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9BRBB2S9B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y9BRBB2S9B');
+    </script>
+    
+
+    <!-- Structured Data -->
+    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#C8963E',
+                        'brand-sage': '#8B9D83',
+                        'brand-cream': '#FAFAF8',
+                        'brand-light-gold': '#F5EBD9',
+                        'brand-charcoal': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'heading': ['"Playfair Display"', 'serif'],
+                        'body': ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .font-heading {
+                font-family: 'Playfair Display', serif;
+            }
+            .font-body {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        body {
+            @apply font-body bg-brand-cream text-brand-charcoal;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-heading;
+        }
+    </style>
+
+    
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white text-brand-charcoal shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="font-heading font-bold text-2xl tracking-wide flex flex-col">
+                        <span>Springline Stays<span class="text-brand-gold">.</span></span>
+                        <span class="font-body text-xs uppercase tracking-widest text-brand-gold mt-0.5">Vacation Rentals</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="/colorado-springs" class="hover:text-brand-gold transition duration-200">Colorado Springs</a>
+                    <a href="/gainesville" class="hover:text-brand-gold transition duration-200">Gainesville</a>
+                    <a href="/panama-city-beach" class="hover:text-brand-gold transition duration-200">Panama City Beach</a>
+                    <a href="/blog" class="hover:text-brand-gold transition duration-200">Blog</a>
+                    <a href="/property-management" class="hover:text-brand-gold transition duration-200">Property Management</a>
+                    <a href="/contact/" class="hover:text-brand-gold transition duration-200">Contact</a>
+                    <a href="https://book.springlinestays.com" class="bg-brand-gold hover:bg-brand-gold/90 text-white font-medium py-2.5 px-6 rounded-md transition duration-200 block">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="hover:text-brand-gold focus:outline-none focus:text-brand-gold transition" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white text-brand-charcoal shadow-lg absolute w-full top-20 left-0" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="/colorado-springs" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Colorado Springs</a>
+                <a href="/gainesville" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Gainesville</a>
+                <a href="/panama-city-beach" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Panama City Beach</a>
+                <a href="/blog" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Blog</a>
+                <a href="/property-management" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Property Management</a>
+                <a href="/contact/" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Contact</a>
+                <a href="https://book.springlinestays.com" class="block px-3 py-2 mt-4 text-center bg-brand-gold text-white rounded-md font-medium hover:bg-brand-gold/90">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+<main class="bg-gray-50 min-h-screen">
+    <!-- Hero Section -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracki-tight lg:text-6xl">
+                    Let Us Manage Your Vacation Property
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    Unlock the full potential of your vacation rental. Contact us today for a free consultation!
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="/contact/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                        Schedule Time With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs & Content Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900">Full-Service Management</h2>
+            <p class="mt-4 text-lg text-gray-500">We take care of everything, so you can relax and enjoy the profits.</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            
+            <button 
+                onclick="switchTab('property-mgmt')"
+                id="tab-btn-property-mgmt"
+                class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 bg-indigo-600 text-white"
+            >
+                Property Mgmt
+            </button>
+            
+            <button 
+                onclick="switchTab('guest-relations')"
+                id="tab-btn-guest-relations"
+                class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 bg-white text-gray-700 hover:bg-gray-100"
+            >
+                Guest Relations
+            </button>
+            
+            <button 
+                onclick="switchTab('housekeeping')"
+                id="tab-btn-housekeeping"
+                class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 bg-white text-gray-700 hover:bg-gray-100"
+            >
+                Housekeeping
+            </button>
+            
+            <button 
+                onclick="switchTab('owners')"
+                id="tab-btn-owners"
+                class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 bg-white text-gray-700 hover:bg-gray-100"
+            >
+                Owners
+            </button>
+            
+        </div>
+
+        <!-- Tab Content -->
+        <div>
+            
+            <div 
+                id="tab-content-property-mgmt" 
+                class="tab-content "
+            >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🛠️</span>
+                            <h3 class="text-lg font-bold text-gray-900">In-House Maintenance</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Employs staff rather than contractors, saving owners money by reducing outsourcing costs and ensuring consistent quality and responsiveness.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🔍</span>
+                            <h3 class="text-lg font-bold text-gray-900">Property Inspections</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Regular and thorough checks of the property to identify and address maintenance issues, ensure compliance with safety standards, and verify that amenities are in good condition.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">💾</span>
+                            <h3 class="text-lg font-bold text-gray-900">Tech Package</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Include smart locks, cameras, a home hub, and Wi-Fi routers to enhance security, convenience, and connectivity for guests and safety for homes.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🏊</span>
+                            <h3 class="text-lg font-bold text-gray-900">Pool/Hot Tub Maintenance</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Regular cleaning and chemical balancing to ensure safe, enjoyable amenities for guests.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">📅</span>
+                            <h3 class="text-lg font-bold text-gray-900">Preventative Maintenance</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Regular property inspections and upkeep to ensure guest satisfaction and prolong the life of rental assets. Ex. Furnace checks & AC tuneups.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🚨</span>
+                            <h3 class="text-lg font-bold text-gray-900">Emergency Repairs</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Swift, effective solutions to unexpected issues, ensuring guest safety and comfort while minimizing downtime.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🔥</span>
+                            <h3 class="text-lg font-bold text-gray-900">Propane Tank Service</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Regular monitoring and refilling to ensure uninterrupted heating and cooking facilities for guests.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">❄️</span>
+                            <h3 class="text-lg font-bold text-gray-900">Snow Removal</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Timely clearing of driveways and walkways, maintaining safe and accessible properties for guests.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🌱</span>
+                            <h3 class="text-lg font-bold text-gray-900">Lawn Care</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Routine mowing, watering, and landscaping to enhance curb appeal and guest satisfaction.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div 
+                id="tab-content-guest-relations" 
+                class="tab-content hidden"
+            >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🔑</span>
+                            <h3 class="text-lg font-bold text-gray-900">Check-in / Check-out Support</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Streamlines guest transitions with efficient processes and personalized assistance, enhancing overall satisfaction.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">💬</span>
+                            <h3 class="text-lg font-bold text-gray-900">24/7 Guest Communication</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Round-the-clock support, addressing inquiries and resolving issues promptly to improve guest experiences.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🗓️</span>
+                            <h3 class="text-lg font-bold text-gray-900">Calendar Management</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Optimizes booking schedules, avoids double bookings, and maximizes occupancy rates for increased revenue.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🛡️</span>
+                            <h3 class="text-lg font-bold text-gray-900">Guest Screenings</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Verifying identities and assessing risk to ensure responsible occupancy and property safety.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">📝</span>
+                            <h3 class="text-lg font-bold text-gray-900">Damage Claims</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Assessing, documenting, and resolving property damages caused by guests to maintain standards and manage financial risks.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🧷</span>
+                            <h3 class="text-lg font-bold text-gray-900">Insurance Coverage</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Protects owners against property damage, liability, and loss of income, ensuring financial stability and risk management.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div 
+                id="tab-content-housekeeping" 
+                class="tab-content hidden"
+            >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🧹</span>
+                            <h3 class="text-lg font-bold text-gray-900">Turnover Cleaning</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Efficiently coordinating cleaning, maintenance, and restocking tasks between guest check-outs and check-ins to ensure the property is pristine and ready for the next visitors.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🧻</span>
+                            <h3 class="text-lg font-bold text-gray-900">Supplies & Stocking</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Ensures essential items are replenished regularly, maintaining high standards of comfort and convenience for guests.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">👥</span>
+                            <h3 class="text-lg font-bold text-gray-900">Cleaner Management</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Coordinates housekeeping schedules and standards to ensure properties are immaculate for each guest's arrival.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🔄</span>
+                            <h3 class="text-lg font-bold text-gray-900">Replacement Item Services</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Timely replenishment of essentials like toiletries and linens to maintain guest satisfaction and comfort.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🛏️</span>
+                            <h3 class="text-lg font-bold text-gray-900">Linen Refresh Program</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Provides regular replacement and laundering of linens, maintaining a fresh and inviting atmosphere for guests.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">✨</span>
+                            <h3 class="text-lg font-bold text-gray-900">Deep Cleaning Program</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Thorough cleaning services twice a year, ensuring pristine conditions for guest comfort and property care.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div 
+                id="tab-content-owners" 
+                class="tab-content hidden"
+            >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🏠</span>
+                            <h3 class="text-lg font-bold text-gray-900">Flexible Owner Stays</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Allows property owners to enjoy their space while maximizing rental income by blocking off dates as needed.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">💻</span>
+                            <h3 class="text-lg font-bold text-gray-900">Owners Portal</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Real-time access to property performance data, financial reports, and booking details for owners' convenience.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">💰</span>
+                            <h3 class="text-lg font-bold text-gray-900">Trust Accounting</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Managing funds received from guests, such as rental payments, in a separate trust account to ensure transparency and legal compliance. This process helps safeguard guest funds until they are rightfully earned by the property owner.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">⚖️</span>
+                            <h3 class="text-lg font-bold text-gray-900">Licensing/Regulation Advocacy</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Obtaining permits and adhering to regulations to legally operate rental properties, ensuring compliance and guest safety.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">📊</span>
+                            <h3 class="text-lg font-bold text-gray-900">Owner Statements</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Detailed financial breakdowns, keeping property owners informed about income, expenses, and occupancy.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">🤝</span>
+                            <h3 class="text-lg font-bold text-gray-900">Preferred Contract Network</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Comprises trusted vendors offering discounted rates for property maintenance and services.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+<!-- Tab Switching Script -->
+<script>
+    function switchTab(tabId) {
+        // Hide all content
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+        
+        // Show active content
+        document.getElementById('tab-content-' + tabId).classList.remove('hidden');
+        
+        // Reset all tab buttons
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('bg-indigo-600', 'text-white');
+            btn.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+        });
+        
+        // Set active tab button
+        const activeBtn = document.getElementById('tab-btn-' + tabId);
+        activeBtn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+        activeBtn.classList.add('bg-indigo-600', 'text-white');
+    }
+</script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2D2D2D] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- About -->
+                <div>
+                    <h3 class="font-heading text-2xl font-semibold mb-4">Springline Stays</h3>
+                    <p class="text-gray-400 font-body leading-relaxed">
+                        Curating exceptional vacation experiences with premium properties in sought-after destinations. Where comfort meets unforgettable memories.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-xl font-medium mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="/colorado-springs" class="hover:text-brand-gold transition">Colorado Springs</a></li>
+                        <li><a href="/gainesville" class="hover:text-brand-gold transition">Gainesville</a></li>
+                        <li><a href="/panama-city-beach" class="hover:text-brand-gold transition">Panama City Beach</a></li>
+                        <li><a href="/blog" class="hover:text-brand-gold transition">Our Blog</a></li>
+                        <li><a href="/contact/" class="hover:text-brand-gold transition">Contact</a></li>
+                        <li><a href="/faq/" class="hover:text-brand-gold transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Follow Us -->
+                <div>
+                    <h4 class="font-heading text-xl font-medium mb-4">Follow Us</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest properties and travel guides.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-brand-gold transition">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-brand-gold transition">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2026 Springline Stays. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            var isTransparentNav = false;
+            
+            if (isTransparentNav) {
+                if (window.scrollY > 10) {
+                    navbar.classList.remove('bg-transparent', 'text-white');
+                    navbar.classList.add('bg-white', 'text-brand-charcoal', 'shadow-sm');
+                } else {
+                    navbar.classList.add('bg-transparent', 'text-white');
+                    navbar.classList.remove('bg-white', 'text-brand-charcoal', 'shadow-sm');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

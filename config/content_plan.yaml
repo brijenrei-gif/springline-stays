@@ -23,12 +23,13 @@ markets:
   - file: content/gainesville/ultimate-gainesville-travel-guide.md
     status: published
     title: 'Ultimate Gainesville Travel Guide: Beyond the Campus'
-  - keywords:
+  - file: /usr/local/google/home/braval/projects/springline-stays/content/gainesville/the-ultimate-guide-to-the-best-natural-springs.md
+    keywords:
     - gainesville springs
     - natural springs near gainesville
     - day trips from gainesville
     pillar: Activities
-    status: planned
+    status: published
     title: Best Natural Springs Near Gainesville for a Day Trip
   - keywords:
     - uf game day

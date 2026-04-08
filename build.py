@@ -94,6 +94,13 @@ def collect_posts():
             html_content = auto_link_content(html_content, markets)
             slug = os.path.splitext(os.path.basename(md_file))[0]
 
+            # Skip future dated posts
+            post_date_str = str(meta.get('date', ''))
+            today_str = datetime.now().strftime('%Y-%m-%d')
+            if post_date_str > today_str:
+                print(f"  Skipping future post: {slug} (Date: {post_date_str})")
+                continue
+
             # Scan for missing images in the body
             img_matches = re.finditer(r'<img([^>]+)>', html_content)
             for match in img_matches:
@@ -331,6 +338,28 @@ def build():
     )
     with open(os.path.join(contact_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(contact_html)
+
+    # ─── Build Property Management Page ───
+    print("Building property management page...")
+    pm_template = env.get_template('property_management.html')
+    pm_dir = os.path.join(OUTPUT_DIR, 'property-management')
+    os.makedirs(pm_dir, exist_ok=True)
+    urls.append("/property-management/")
+    
+    # Load property management config
+    pm_config_path = os.path.join(os.path.dirname(CONFIG_PATH), 'property_management.yaml')
+    pm_data = {}
+    if os.path.exists(pm_config_path):
+        with open(pm_config_path, 'r', encoding='utf-8') as f:
+            pm_data = yaml.safe_load(f) or {}
+            
+    pm_html = pm_template.render(
+        booking_domain=brand.get('hospitable_base', '#'),
+        request_path='/property-management/',
+        **pm_data
+    )
+    with open(os.path.join(pm_dir, 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(pm_html)
 
     # ─── Build FAQ Page ───
     print("Building FAQ page...")

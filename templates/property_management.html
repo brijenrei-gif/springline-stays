@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}{{ hero.title }} | Springline Stays{% endblock %}
+{% block description %}{{ hero.subtitle }}{% endblock %}
+
+{% block content %}
+<main class="bg-gray-50 min-h-screen">
+    <!-- Hero Section -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracki-tight lg:text-6xl">
+                    {{ hero.title }}
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    {{ hero.subtitle }}
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="{{ hero.cta_link }}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                        {{ hero.cta_text }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs & Content Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900">Full-Service Management</h2>
+            <p class="mt-4 text-lg text-gray-500">We take care of everything, so you can relax and enjoy the profits.</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            {% for section in sections %}
+            <button 
+                onclick="switchTab('{{ section.id }}')"
+                id="tab-btn-{{ section.id }}"
+                class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 {% if loop.first %}bg-indigo-600 text-white{% else %}bg-white text-gray-700 hover:bg-gray-100{% endif %}"
+            >
+                {{ section.title }}
+            </button>
+            {% endfor %}
+        </div>
+
+        <!-- Tab Content -->
+        <div>
+            {% for section in sections %}
+            <div 
+                id="tab-content-{{ section.id }}" 
+                class="tab-content {% if not loop.first %}hidden{% endif %}"
+            >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {% for service in section.services %}
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">{{ service.icon }}</span>
+                            <h3 class="text-lg font-bold text-gray-900">{{ service.title }}</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">{{ service.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+
+<!-- Tab Switching Script -->
+<script>
+    function switchTab(tabId) {
+        // Hide all content
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+        
+        // Show active content
+        document.getElementById('tab-content-' + tabId).classList.remove('hidden');
+        
+        // Reset all tab buttons
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('bg-indigo-600', 'text-white');
+            btn.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+        });
+        
+        // Set active tab button
+        const activeBtn = document.getElementById('tab-btn-' + tabId);
+        activeBtn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+        activeBtn.classList.add('bg-indigo-600', 'text-white');
+    }
+</script>
+{% endblock %}
