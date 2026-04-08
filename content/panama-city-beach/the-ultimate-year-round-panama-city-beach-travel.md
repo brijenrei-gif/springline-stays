@@ -1,18 +1,20 @@
 ---
-title: "The Ultimate Year-Round Panama City Beach Travel Guide: Sun, Sand, and Secluded Shores"
+title: 'The Ultimate Year-Round Panama City Beach Travel Guide: Sun, Sand, and Secluded
+  Shores'
 date: 2024-04-23
-description: "Explore Panama City Beach, FL with our ultimate travel guide. Discover things to do, where to stay, hidden gems, and book your perfect PCB vacation rental."
-hero_image: ""
+description: Explore Panama City Beach, FL with our ultimate travel guide. Discover
+  things to do, where to stay, hidden gems, and book your perfect PCB vacation rental.
+hero_image: /static/images/blog/panama-city-beach/the-ultimate-year-round-panama-city-beach-travel-g-2681.jpg
 tags:
-  - Panama City Beach
-  - Florida
-  - travel guide
-  - vacation
-  - beach
-  - PCB
-  - things to do
-  - Springline Stays
-  - Gulf Coast
+- Panama City Beach
+- Florida
+- travel guide
+- vacation
+- beach
+- PCB
+- things to do
+- Springline Stays
+- Gulf Coast
 market: panama-city-beach
 ---
 

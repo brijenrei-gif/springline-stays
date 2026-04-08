@@ -79,6 +79,22 @@ def collect_posts():
                 hero_image = fetch_unsplash_image(title, blog_images_dir)
                 if hero_image:
                     print(f"  Successfully fetched image: {hero_image}")
+                    
+                    # Write back to markdown file to lock it in
+                    try:
+                        with open(md_file, 'r', encoding='utf-8') as f:
+                            raw = f.read()
+                        if raw.startswith('---'):
+                            parts = raw.split('---', 2)
+                            frontmatter = yaml.safe_load(parts[1]) or {}
+                            frontmatter['hero_image'] = hero_image
+                            new_frontmatter_str = yaml.dump(frontmatter, sort_keys=False)
+                            new_raw = f"---\n{new_frontmatter_str}---{parts[2]}"
+                            with open(md_file, 'w', encoding='utf-8') as f:
+                                f.write(new_raw)
+                            print(f"  Updated frontmatter in {md_file}")
+                    except Exception as e:
+                        print(f"  ⚠  Failed to update markdown file: {e}")
 
             post = {
                 'title': meta.get('title', 'Untitled'),

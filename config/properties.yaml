@@ -56,18 +56,18 @@ markets:
 properties:
   # ─── Colorado Springs ───
   - id: arch
-    name: "Epic Family Home"
-    headline: "Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games"
+    name: "1112 Arch St"
+    headline: "Views | 2 mins to OCC | Fire Pit | Games | Pets"
     market: colorado-springs
     address: "1112 Arch Street, Colorado Springs, CO 80904"
-    guests: 11
-    bedrooms: 4
-    bathrooms: 3
+    guests: 8
+    bedrooms: 3
+    bathrooms: 2
     description: >
-      The ultimate family retreat with mini-golf, sauna, hot tub, and a game room.
-      Located in the heart of Colorado Springs with easy access to Garden of the Gods
-      and downtown attractions.
-    booking_url: "https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games"
+      Mountain home walking distance to Old Colorado City and Red Rock Canyon trails.
+      Enjoy views of Pikes Peak from the second-floor porch or relax by the fire pit
+      in the fenced backyard. Pet-friendly!
+    booking_url: "https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets"
     airbnb_url: "https://www.airbnb.com/rooms/1405875216467506046"
     amenities:
       - "Mini-Golf"
@@ -108,17 +108,17 @@ properties:
 
   - id: clover
     name: "19 Clover"
-    headline: "Views | 2 mins to OCC | Fire Pit | Games | Pets"
+    headline: "Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games"
     market: colorado-springs
     address: "19 Clover Cir E, Colorado Springs, CO 80906"
-    guests: 8
-    bedrooms: 3
-    bathrooms: 2
+    guests: 11
+    bedrooms: 4
+    bathrooms: 3
     description: >
-      Mountain home walking distance to Old Colorado City and Red Rock Canyon trails.
-      Enjoy views of Pikes Peak from the second-floor porch or relax by the fire pit
-      in the fenced backyard. Pet-friendly!
-    booking_url: "https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets"
+      The ultimate family retreat with mini-golf, sauna, hot tub, and a game room.
+      Located in the heart of Colorado Springs with easy access to Garden of the Gods
+      and downtown attractions.
+    booking_url: "https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games"
     airbnb_url: "https://www.airbnb.com/rooms/1518174247602174593"
     amenities:
       - "Fire Pit"

@@ -1,14 +1,16 @@
 ---
-title: "Top 10 Things to Do in Colorado Springs This Season"
+title: Top 10 Things to Do in Colorado Springs This Season
 date: 2026-04-07
-description: "Discover the best things to do in Colorado Springs — from Garden of the Gods to Pikes Peak. Your complete Colorado Springs travel guide with insider tips."
-hero_image: ""
+description: "Discover the best things to do in Colorado Springs \u2014 from Garden\
+  \ of the Gods to Pikes Peak. Your complete Colorado Springs travel guide with insider\
+  \ tips."
+hero_image: /static/images/blog/colorado-springs/top-10-things-to-do-in-colorado-springs-this-seaso-3345.jpg
 tags:
-  - things-to-do-colorado-springs
-  - colorado-springs-travel-guide
-  - garden-of-the-gods
-  - pikes-peak
-  - colorado-springs-vacation-rental
+- things-to-do-colorado-springs
+- colorado-springs-travel-guide
+- garden-of-the-gods
+- pikes-peak
+- colorado-springs-vacation-rental
 market: colorado-springs
 ---
 

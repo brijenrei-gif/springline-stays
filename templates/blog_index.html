@@ -57,7 +57,7 @@
         {% for post in posts %}
         <article class="flex flex-col group">
             <a href="{{ post.url }}" class="block relative w-full h-72 md:h-80 overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-md transition-shadow">
-                <img src="{{ post.hero_image if post.hero_image else fallback_images[post.market] | default('/static/images/placeholder_blog.jpg') }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="{{ post.hero_image or fallback_images.get(post.market) or '/static/images/placeholder_blog.jpg' }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 {% if post.market_tag %}
                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded shadow-sm">
                     <span class="font-body text-xs font-bold text-brand-gold uppercase tracking-wide">{{ post.market_tag }}</span>
