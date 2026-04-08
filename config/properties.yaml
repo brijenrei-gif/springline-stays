@@ -6,7 +6,7 @@ brand:
   tagline: "Scenic Retreats and Campus Comforts"
   domain: "springlinestays.com"
   booking_domain: "book.springlinestays.com"
-  hospitable_base: "https://sunandsands.hospitable.rentals"
+  hospitable_base: "https://book.springlinestays.com"
 
 markets:
   - id: colorado-springs
@@ -67,7 +67,7 @@ properties:
       The ultimate family retreat with mini-golf, sauna, hot tub, and a game room.
       Located in the heart of Colorado Springs with easy access to Garden of the Gods
       and downtown attractions.
-    booking_url: "https://sunandsands.hospitable.rentals/property/epic-family-home-mini-golf-sauna-hot-tub-games"
+    booking_url: "https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games"
     airbnb_url: "https://www.airbnb.com/rooms/1405875216467506046"
     amenities:
       - "Mini-Golf"
@@ -93,7 +93,7 @@ properties:
       Breathtaking mountain views, a hot tub for relaxation, and a game room
       for entertainment. This spacious home near The Broadmoor is perfect for
       families and groups exploring Colorado Springs.
-    booking_url: "https://sunandsands.hospitable.rentals/property/family-friendly-firepit-hottub-views-games"
+    booking_url: "https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games"
     airbnb_url: "https://www.airbnb.com/rooms/1256209522561120264"
     amenities:
       - "Hot Tub"
@@ -118,7 +118,7 @@ properties:
       Mountain home walking distance to Old Colorado City and Red Rock Canyon trails.
       Enjoy views of Pikes Peak from the second-floor porch or relax by the fire pit
       in the fenced backyard. Pet-friendly!
-    booking_url: "https://sunandsands.hospitable.rentals/property/views-2-mins-to-occ-fire-pit-games-pets"
+    booking_url: "https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets"
     airbnb_url: "https://www.airbnb.com/rooms/1518174247602174593"
     amenities:
       - "Fire Pit"
@@ -144,7 +144,7 @@ properties:
     description: >
       Walk to UF Stadium and downtown Gainesville from this cozy townhome.
       Perfect for game days, visiting students, or work trips near Shands Hospital.
-    booking_url: "https://sunandsands.hospitable.rentals/property/walk-to-campus-restaurants-cozy-townhome"
+    booking_url: "https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome"
     airbnb_url: "https://www.airbnb.com/rooms/1603294220341305768"
     amenities:
       - "Walk to UF"
@@ -167,7 +167,7 @@ properties:
       Pet-friendly townhome just 5 minutes from the University of Florida campus.
       Great for families, visiting scholars, or anyone looking for a comfortable
       Gainesville base.
-    booking_url: "https://sunandsands.hospitable.rentals/property/walk-to-university-pet-friendly-5-min-to-uf"
+    booking_url: "https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf"
     airbnb_url: "https://www.airbnb.com/rooms/1483574469856376090"
     amenities:
       - "Pet Friendly"
@@ -190,7 +190,7 @@ properties:
       Spacious home just 4 minutes from the University of Florida and Shands Hospital.
       With room for 12 guests and a full BBQ setup, this is ideal for large families
       and group trips.
-    booking_url: "https://sunandsands.hospitable.rentals/property/4-minutes-to-universityshands-bbq-spacious"
+    booking_url: "https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious"
     airbnb_url: "https://www.airbnb.com/rooms/1603294220341305768"
     amenities:
       - "BBQ Grill"
@@ -214,7 +214,7 @@ properties:
     description: >
       Wake up to ocean views and fall asleep to the sound of waves. This beachfront
       condo offers direct beach access, a hot tub, and stunning Gulf of Mexico sunsets.
-    booking_url: "https://sunandsands.hospitable.rentals/property/beachfront-hot-tub-ocean-views-sleeps-6"
+    booking_url: "https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6"
     airbnb_url: ""
     amenities:
       - "Beachfront"
