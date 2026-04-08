@@ -353,13 +353,46 @@ def build():
         with open(pm_config_path, 'r', encoding='utf-8') as f:
             pm_data = yaml.safe_load(f) or {}
             
+    # Filter posts for property management
+    pm_posts = [p for p in all_posts if p.get('market') == 'property-management']
+            
     pm_html = pm_template.render(
         booking_domain=brand.get('hospitable_base', '#'),
         request_path='/property-management/',
+        posts=pm_posts,
         **pm_data
     )
     with open(os.path.join(pm_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(pm_html)
+
+    # ─── Build Property Management Blog Posts ───
+    pm_blog_dir = os.path.join(pm_dir, 'blog')
+    os.makedirs(pm_blog_dir, exist_ok=True)
+    post_template = env.get_template('blog_post.html')
+    
+    synthetic_market = {'id': 'property-management', 'name': 'Property Management'}
+    
+    for post in pm_posts:
+        print(f"  Building property management post: {post['slug']}...")
+        
+        sidebar_properties = [p for p in properties if p.get('active')]
+        related_posts = find_related_posts(post, all_posts)
+        
+        urls.append(post['url'])
+        post_html = post_template.render(
+            page_title=f"{post['title']} — Springline Stays",
+            page_description=post['description'],
+            post=post,
+            market=synthetic_market,
+            sidebar_properties=sidebar_properties,
+            related_posts=related_posts,
+            booking_domain=brand.get('hospitable_base', '#'),
+            request_path=post['url'],
+        )
+        
+        post_path = os.path.join(pm_blog_dir, f"{post['slug']}.html")
+        with open(post_path, 'w', encoding='utf-8') as f:
+            f.write(post_html)
 
     # ─── Build FAQ Page ───
     print("Building FAQ page...")
