@@ -93,6 +93,35 @@ def collect_posts():
             html_content = auto_link_content(html_content, markets)
             slug = os.path.splitext(os.path.basename(md_file))[0]
 
+            # Scan for missing images in the body
+            img_matches = re.finditer(r'<img([^>]+)>', html_content)
+            for match in img_matches:
+                img_attrs = match.group(1)
+                src_match = re.search(r'src="([^"]+)"', img_attrs)
+                if src_match:
+                    src = src_match.group(1)
+                    if src.startswith('/static/images/blog/'):
+                        local_path = os.path.join(STATIC_DIR, src.lstrip('/'))
+                        if not os.path.exists(local_path):
+                            print(f"  Missing body image: {src}")
+                            alt_match = re.search(r'alt="([^"]+)"', img_attrs)
+                            query = alt_match.group(1) if alt_match else slug
+                            
+                            print(f"  Fetching missing body image for query: '{query}'...")
+                            blog_images_dir = os.path.dirname(local_path)
+                            os.makedirs(blog_images_dir, exist_ok=True)
+                            
+                            fetched_path = fetch_unsplash_image(query, blog_images_dir)
+                            if fetched_path:
+                                print(f"  Successfully fetched body image: {fetched_path}")
+                                # Rename to match requested path
+                                fetched_local_path = os.path.join(BASE_DIR, fetched_path.lstrip('/'))
+                                try:
+                                    os.rename(fetched_local_path, local_path)
+                                    print(f"  Renamed fetched file to match request: {local_path}")
+                                except Exception as e:
+                                    print(f"  Failed to rename fetched file: {e}")
+
             hero_image = meta.get('hero_image', '')
             if not hero_image:
                 title = meta.get('title', 'Untitled')

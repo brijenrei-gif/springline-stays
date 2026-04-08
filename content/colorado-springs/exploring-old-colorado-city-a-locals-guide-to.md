@@ -211,9 +211,9 @@ Ready to explore the historic streets and vibrant culture for yourself? Find the
 *The Broadmoor — a must-visit near our Colorado Springs properties.*
 
 
-![Stunning Mountain Views, Hot Tub, Game Room](/static/images/blog/colorado-springs/vacation-rental-patio-outdoor-8598.jpg)
+![Stunning Mountain Views, Hot Tub, Game Room](/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg)
 *[Stunning Mountain Views, Hot Tub, Game Room — Book your stay →](https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games)*
 
 
-![Views | 2 mins to OCC | Fire Pit | Games | Pets](/static/images/blog/colorado-springs/vacation-rental-pool-backyard-6641.jpg)
+![Views | 2 mins to OCC | Fire Pit | Games | Pets](/static/images/properties/arch/image_1.jpg)
 *[Views | 2 mins to OCC | Fire Pit | Games | Pets — Book your stay →](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets)*
