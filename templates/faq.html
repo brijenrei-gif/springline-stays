@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Frequently Asked Questions — Springline Stays{% endblock %}
+{% block description %}Find answers to common questions about booking, cancellations, pets, and more at Springline Stays.{% endblock %}
+
+{% block content %}
+<section class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight mb-4">Frequently Asked Questions</h1>
+      <p class="font-body text-brand-charcoal/70 text-lg">Everything you need to know about your stay.</p>
+    </div>
+
+    <div class="space-y-6">
+      <!-- FAQ Item 1 -->
+      <details class="bg-white rounded-lg shadow-sm group" open>
+        <summary class="flex justify-between items-center p-6 cursor-pointer focus:outline-none">
+          <h3 class="text-lg font-medium text-brand-charcoal font-heading">What is your cancellation policy?</h3>
+          <span class="text-brand-gold group-open:rotate-180 transition-transform duration-200">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </summary>
+        <div class="px-6 pb-6 text-brand-charcoal/70 font-body leading-relaxed">
+          <ul class="list-disc pl-5 space-y-2">
+            <li><strong>100% refund</strong> until 24 hours after booking accepted.</li>
+            <li><strong>100% refund</strong> until 30 days before check-in.</li>
+            <li><strong>50% refund</strong> until 14 days before check-in.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- FAQ Item 2 -->
+      <details class="bg-white rounded-lg shadow-sm group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer focus:outline-none">
+          <h3 class="text-lg font-medium text-brand-charcoal font-heading">What time is check-in/out?</h3>
+          <span class="text-brand-gold group-open:rotate-180 transition-transform duration-200">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </summary>
+        <div class="px-6 pb-6 text-brand-charcoal/70 font-body leading-relaxed">
+          <p>Standard check-in is at <strong>4:00 PM</strong> and check-out is at <strong>10:00 AM</strong>.</p>
+          <p class="mt-2">For our <strong>Gainesville</strong> properties, check-out is at <strong>11:00 AM</strong>.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 3 -->
+      <details class="bg-white rounded-lg shadow-sm group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer focus:outline-none">
+          <h3 class="text-lg font-medium text-brand-charcoal font-heading">What is not allowed?</h3>
+          <span class="text-brand-gold group-open:rotate-180 transition-transform duration-200">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </summary>
+        <div class="px-6 pb-6 text-brand-charcoal/70 font-body leading-relaxed">
+          <ul class="list-disc pl-5 space-y-2">
+            <li><strong>No smoking</strong> inside any of our properties.</li>
+            <li><strong>No parties</strong> or large events.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- FAQ Item 4 -->
+      <details class="bg-white rounded-lg shadow-sm group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer focus:outline-none">
+          <h3 class="text-lg font-medium text-brand-charcoal font-heading">Do you allow pets?</h3>
+          <span class="text-brand-gold group-open:rotate-180 transition-transform duration-200">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </summary>
+        <div class="px-6 pb-6 text-brand-charcoal/70 font-body leading-relaxed">
+          <p>Yes, pets are allowed at all our properties <strong>except</strong> our condo at Panama City Beach.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 5 -->
+      <details class="bg-white rounded-lg shadow-sm group">
+        <summary class="flex justify-between items-center p-6 cursor-pointer focus:outline-none">
+          <h3 class="text-lg font-medium text-brand-charcoal font-heading">Why are there still fees?</h3>
+          <span class="text-brand-gold group-open:rotate-180 transition-transform duration-200">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </summary>
+        <div class="px-6 pb-6 text-brand-charcoal/70 font-body leading-relaxed space-y-4">
+          <p>The fees paid by us and you help ensure both groups are covered with insurance. The fees on this site are <strong>10% less than Airbnb</strong> for a guest though (4% here vs 14% on Airbnb).</p>
+          <p>Cleaning fees are what our cleaners charge and go directly to them, there is no additional padding on the cleaning fee. This ensures our cleaners are paid a living wage in expensive tourist areas.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+{% endblock %}

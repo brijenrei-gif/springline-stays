@@ -332,6 +332,19 @@ def build():
     with open(os.path.join(contact_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(contact_html)
 
+    # ─── Build FAQ Page ───
+    print("Building FAQ page...")
+    faq_template = env.get_template('faq.html')
+    faq_dir = os.path.join(OUTPUT_DIR, 'faq')
+    os.makedirs(faq_dir, exist_ok=True)
+    urls.append("/faq/")
+    faq_html = faq_template.render(
+        booking_domain=brand.get('hospitable_base', '#'),
+        request_path='/faq/',
+    )
+    with open(os.path.join(faq_dir, 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(faq_html)
+
     # ─── Build Market Pages ───
     for market in markets:
         market_id = market['id']
