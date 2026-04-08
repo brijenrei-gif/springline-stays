@@ -1,39 +1,57 @@
 markets:
-  gainesville:
-    - title: "Ultimate Gainesville Travel Guide: Beyond the Campus"
-      status: published
-      file: "content/gainesville/ultimate-gainesville-travel-guide.md"
-    - title: "Best Natural Springs Near Gainesville for a Day Trip"
-      status: planned
-      pillar: Activities
-      keywords: ["gainesville springs", "natural springs near gainesville", "day trips from gainesville"]
-    - title: "The Ultimate UF Game Day Survival Guide"
-      status: planned
-      pillar: Events
-      keywords: ["uf game day", "gainesville gators game", "where to stay for uf games"]
-
   colorado-springs:
-    - title: "Top 10 Things to Do in Colorado Springs This Season"
-      status: published
-      file: "content/colorado-springs/top-10-things-to-do-colorado-springs.md"
-    - title: "Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views"
-      status: planned
-      pillar: Activities
-      keywords: ["family hikes colorado springs", "easy trails colorado springs", "colorado springs with kids"]
-    - title: "Exploring Old Colorado City: A Local's Guide to Dining and Art"
-      status: planned
-      pillar: Stay/Local
-      keywords: ["old colorado city dining", "occ art walk", "things to do in old colorado city"]
-
+  - file: content/colorado-springs/top-10-things-to-do-colorado-springs.md
+    status: published
+    title: Top 10 Things to Do in Colorado Springs This Season
+  - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/11-family-friendly-hikes-in-colorado-springs-easy.md
+    keywords:
+    - family hikes colorado springs
+    - easy trails colorado springs
+    - colorado springs with kids
+    pillar: Activities
+    status: published
+    title: 'Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views'
+  - keywords:
+    - old colorado city dining
+    - occ art walk
+    - things to do in old colorado city
+    pillar: Stay/Local
+    status: planned
+    title: 'Exploring Old Colorado City: A Local''s Guide to Dining and Art'
+  gainesville:
+  - file: content/gainesville/ultimate-gainesville-travel-guide.md
+    status: published
+    title: 'Ultimate Gainesville Travel Guide: Beyond the Campus'
+  - keywords:
+    - gainesville springs
+    - natural springs near gainesville
+    - day trips from gainesville
+    pillar: Activities
+    status: planned
+    title: Best Natural Springs Near Gainesville for a Day Trip
+  - keywords:
+    - uf game day
+    - gainesville gators game
+    - where to stay for uf games
+    pillar: Events
+    status: planned
+    title: The Ultimate UF Game Day Survival Guide
   panama-city-beach:
-    - title: "The Ultimate Year-Round Panama City Beach Travel Guide: Sun, Sand, and Secluded Shores"
-      status: published
-      file: "content/panama-city-beach/the-ultimate-year-round-panama-city-beach-travel.md"
-    - title: "Shell Island Guide: How to Visit Panama City Beach's Best Kept Secret"
-      status: planned
-      pillar: Activities
-      keywords: ["shell island panama city beach", "how to get to shell island", "best beaches in pcb"]
-    - title: "Best Seafood Restaurants in Panama City Beach: A Local's Guide"
-      status: planned
-      pillar: Local
-      keywords: ["best seafood in pcb", "panama city beach dining", "local fresh seafood"]
+  - file: content/panama-city-beach/the-ultimate-year-round-panama-city-beach-travel.md
+    status: published
+    title: 'The Ultimate Year-Round Panama City Beach Travel Guide: Sun, Sand, and
+      Secluded Shores'
+  - keywords:
+    - shell island panama city beach
+    - how to get to shell island
+    - best beaches in pcb
+    pillar: Activities
+    status: planned
+    title: 'Shell Island Guide: How to Visit Panama City Beach''s Best Kept Secret'
+  - keywords:
+    - best seafood in pcb
+    - panama city beach dining
+    - local fresh seafood
+    pillar: Local
+    status: planned
+    title: 'Best Seafood Restaurants in Panama City Beach: A Local''s Guide'

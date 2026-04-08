@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Springline Stays - Premium Vacation Rentals</title>
+    <meta name="description" content="Discover luxury vacation rentals in Colorado Springs, Gainesville, and Panama City Beach with Springline Stays.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Springline Stays - Premium Vacation Rentals">
+    <meta property="og:description" content="Discover luxury vacation rentals in Colorado Springs, Gainesville, and Panama City Beach with Springline Stays.">
+    <meta property="og:image" content="/static/images/og-image.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Springline Stays - Premium Vacation Rentals">
+    <meta name="twitter:description" content="Discover luxury vacation rentals in Colorado Springs, Gainesville, and Panama City Beach with Springline Stays.">
+    <meta name="twitter:image" content="/static/images/og-image.jpg">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://springlinestays.com/colorado-springs/blog/top-10-things-to-do-colorado-springs.html">
+
+    <!-- Structured Data -->
+    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#C8963E',
+                        'brand-sage': '#8B9D83',
+                        'brand-cream': '#FAFAF8',
+                        'brand-light-gold': '#F5EBD9',
+                        'brand-charcoal': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'heading': ['"Playfair Display"', 'serif'],
+                        'body': ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .font-heading {
+                font-family: 'Playfair Display', serif;
+            }
+            .font-body {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        body {
+            @apply font-body bg-brand-cream text-brand-charcoal;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-heading;
+        }
+    </style>
+
+    
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white text-brand-charcoal shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="font-heading font-bold text-2xl tracking-wide flex flex-col">
+                        <span>Springline Stays<span class="text-brand-gold">.</span></span>
+                        <span class="font-body text-xs uppercase tracking-widest text-brand-gold mt-0.5">Vacation Rentals</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="/colorado-springs" class="hover:text-brand-gold transition duration-200">Colorado Springs</a>
+                    <a href="/gainesville" class="hover:text-brand-gold transition duration-200">Gainesville</a>
+                    <a href="/panama-city-beach" class="hover:text-brand-gold transition duration-200">Panama City Beach</a>
+                    <a href="/blog" class="hover:text-brand-gold transition duration-200">Blog</a>
+                    <a href="https://book.springlinestays.com" class="bg-brand-gold hover:bg-brand-gold/90 text-white font-medium py-2.5 px-6 rounded-md transition duration-200 block">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="hover:text-brand-gold focus:outline-none focus:text-brand-gold transition" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white text-brand-charcoal shadow-lg absolute w-full top-20 left-0" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="/colorado-springs" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Colorado Springs</a>
+                <a href="/gainesville" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Gainesville</a>
+                <a href="/panama-city-beach" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Panama City Beach</a>
+                <a href="/blog" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Blog</a>
+                <a href="https://book.springlinestays.com" class="block px-3 py-2 mt-4 text-center bg-brand-gold text-white rounded-md font-medium hover:bg-brand-gold/90">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+<!-- Hero Section -->
+<div class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center">
+    <div class="absolute inset-0 z-0">
+        
+        <img src="/static/images/blog/colorado-springs/top-10-things-to-do-in-colorado-springs-this-seaso-3345.jpg" alt="Top 10 Things to Do in Colorado Springs This Season" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-brand-charcoal bg-opacity-50"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center mt-12">
+        
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading text-white leading-tight mb-6 drop-shadow-md">
+            Top 10 Things to Do in Colorado Springs This Season
+        </h1>
+        <div class="flex items-center justify-center space-x-3 text-brand-cream text-sm md:text-base font-body tracking-wide drop-shadow-sm">
+            <span>2026-04-07</span>
+            <span class="text-brand-gold opacity-70">&bull;</span>
+            <span>8 min read</span>
+        </div>
+    </div>
+</div>
+
+<!-- Main Section -->
+<div class="bg-brand-cream py-16 lg:py-24">
+    <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+        <div class="flex flex-col lg:flex-row gap-16">
+            
+            <!-- Main Content (Left) -->
+            <article class="w-full lg:w-[70%] text-brand-charcoal font-body">
+                
+                <!-- Table of Contents -->
+                
+
+                <!-- Content Body -->
+                <div class="prose max-w-none 
+                            prose-headings:font-heading prose-headings:font-normal prose-headings:text-brand-charcoal
+                            prose-h2:text-3xl lg:prose-h2:text-4xl prose-h2:mt-14 prose-h2:mb-6 prose-h2:border-b prose-h2:border-brand-light-gold prose-h2:pb-3
+                            prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4
+                            prose-p:font-body prose-p:leading-[1.8] prose-p:text-gray-700 prose-p:mb-6 prose-p:text-lg
+                            prose-a:text-brand-gold prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-1 hover:prose-a:underline-offset-4 transition-all
+                            prose-blockquote:border-l-4 prose-blockquote:border-brand-gold prose-blockquote:bg-brand-light-gold/30 prose-blockquote:py-4 prose-blockquote:px-8 prose-blockquote:my-8 prose-blockquote:rounded-r-lg prose-blockquote:italic prose-blockquote:text-gray-800 prose-blockquote:font-serif
+                            prose-img:rounded-xl shadow-sm prose-img:w-full prose-img:my-10
+                            prose-ul:list-none prose-ul:pl-0 prose-li:relative prose-li:pl-6 prose-li:mb-2
+                            prose-ol:list-decimal prose-ol:pl-6 prose-ol:mb-6
+                            prose-li:text-gray-700 prose-li:text-lg">
+                    <!-- Inline style for custom bullet points -->
+                    <style>
+                        .prose ul li::before {
+                            content: "•";
+                            color: #C8963E; /* brand-gold */
+                            font-size: 1.5em;
+                            line-height: 1;
+                            position: absolute;
+                            left: 0;
+                            top: -0.1em;
+                        }
+                    </style>
+                    <p><a href="/colorado-springs/" class="text-brand-gold hover:underline">Colorado Springs</a> sits at the base of Pikes Peak, where the Great Plains meet the Rocky Mountains. With over 300 days of sunshine a year and some of the most dramatic natural landscapes in the American West, it is one of those rare destinations that delivers on every front: outdoor adventure, family fun, cultural depth, and genuine relaxation.</p>
+<p>Whether you are planning a weekend escape or a full-week family vacation, this guide covers the best things to do in Colorado Springs with the kind of specific, practical detail that actually makes trip planning easier. Planning a trip? Check out our <a href="/colorado-springs/">Colorado Springs vacation rentals</a> to find the perfect home base.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#garden-of-the-gods">Garden of the Gods</a></li>
+<li><a href="#pikes-peak">Pikes Peak</a></li>
+<li><a href="#manitou-springs">Manitou Springs</a></li>
+<li><a href="#cheyenne-mountain-zoo">Cheyenne Mountain Zoo</a></li>
+<li><a href="#red-rock-canyon">Red Rock Canyon Open Space</a></li>
+<li><a href="#old-colorado-city">Old Colorado City</a></li>
+<li><a href="#seven-falls">Seven Falls</a></li>
+<li><a href="#the-broadmoor">The Broadmoor</a></li>
+<li><a href="#royal-gorge-bridge">Royal Gorge Bridge</a></li>
+<li><a href="#where-to-stay">Where to Stay</a></li>
+</ul>
+<h2 id="garden-of-the-gods">Garden of the Gods</h2>
+<p>Garden of the Gods is a registered National Natural Landmark and, remarkably, completely free to visit. The park covers 1,367 acres of dramatic red sandstone formations that tower up to 300 feet against the backdrop of snow-capped Pikes Peak. The Perkins Central Garden Trail is a flat, paved 1.5-mile loop that passes the most iconic formations and is accessible for strollers and wheelchairs.</p>
+<p>For more adventurous visitors, the park offers approved rock climbing routes on several formations. Permits are free but required — pick one up at the Visitor and Nature Center. The best time to visit is early morning (before 8am) or late afternoon for photography. Midday in summer brings crowds and heat.</p>
+<p><strong>Pro tip</strong>: Drive to the Garden of the Gods Trading Post parking area for the best unobstructed view of the Kissing Camels formation with Pikes Peak behind it.</p>
+<h2 id="pikes-peak">Pikes Peak</h2>
+<p>At 14,115 feet, Pikes Peak is the highest summit of the southern Front Range and inspired Katharine Lee Bates to write &ldquo;America the Beautiful&rdquo; in 1893. You have three ways up:</p>
+<ol>
+<li><strong>Pikes Peak Highway</strong> — 19-mile toll road you can drive yourself. Allow 2-3 hours round trip. $15 per adult.</li>
+<li><strong>Pikes Peak Cog Railway</strong> — The highest cog railway in the world, recently rebuilt in 2021. Round trip takes about 3 hours. Book 2-3 weeks in advance for summer.</li>
+<li><strong>Barr Trail</strong> — 13.5 miles one way with 7,400 feet of elevation gain. For experienced hikers only. Most people do it as an overnight with a stay at Barr Camp.</li>
+</ol>
+<p>The summit house serves fresh donuts made at 14,000 feet — they taste different at altitude, and that is not marketing speak.</p>
+<h2 id="manitou-springs">Manitou Springs</h2>
+<p>Manitou Springs is a quirky, walkable arts district about 10 minutes west of Colorado Springs proper. The town sits at the entrance to the Pikes Peak Highway and is built around natural mineral springs — there are eight public springs you can taste for free throughout town. Each has a distinctly different mineral flavor.</p>
+<p>The Manitou Incline is here: 2,768 steps climbing 2,000 vertical feet in less than a mile. It is one of the most popular fitness challenges in Colorado. Start before 6am on weekends to avoid the crowds and the afternoon thunderstorms that roll in most summer days by 2pm.</p>
+<p>After the Incline, reward yourself at one of the restaurants on Manitou Avenue. The Loop has excellent Mexican food. Sahara Cafe does Middle Eastern classics.</p>
+<h2 id="cheyenne-mountain-zoo">Cheyenne Mountain Zoo</h2>
+<p>Cheyenne Mountain Zoo is the only mountain zoo in the country, built at 6,800 feet on the side of Cheyenne Mountain. The star attraction is hand-feeding giraffes — it is one of the few zoos in the US where you can do this, and the experience is genuinely magical for kids and adults alike.</p>
+<p>The Mountaineer Sky Ride chairlift takes you above the zoo for panoramic views of the city. On a clear day, you can see the entire Front Range stretching north toward Denver.</p>
+<p><strong>Timing</strong>: Visit on weekday mornings for the shortest lines at the giraffe feeding area. The zoo is open year-round, and winter visits are surprisingly pleasant with smaller crowds.</p>
+<h2 id="red-rock-canyon-open-space">Red Rock Canyon Open Space</h2>
+<p>Red Rock Canyon is the local&rsquo;s alternative to Garden of the Gods. While tourists crowd the main park, Colorado Springs residents hike, mountain bike, and trail run through Red Rock Canyon&rsquo;s network of trails with many of the same stunning red rock formations and significantly fewer people.</p>
+<p>The Contemplative Trail is a gentle 1.5-mile loop perfect for families. For mountain bikers, the Mesa Trail offers a moderately technical ride with excellent views. Dogs are allowed on-leash throughout the park.</p>
+<p>Our <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets">Views | 2 mins to OCC | Fire Pit | Games | Pets</a> property is walking distance from Red Rock Canyon — you can literally hike from your front door and be on the trails in minutes.</p>
+<h2 id="old-colorado-city">Old Colorado City</h2>
+<p>Old Colorado City (OCC) is the original Colorado Springs — it was founded in 1859, two years before Colorado Springs itself. Today it is a vibrant arts district along West Colorado Avenue with galleries, boutiques, restaurants, and a genuine creative energy that sets it apart from the chain-restaurant corridors elsewhere in the city.</p>
+<p>First Friday Art Walks happen monthly and are worth planning around. The galleries stay open late, food trucks line the street, and live music spills out of several venues.</p>
+<h2 id="seven-falls">Seven Falls</h2>
+<p>Seven Falls is a series of seven cascading waterfalls in a narrow box canyon. The falls drop 181 feet over seven distinct steps, and you can climb a 224-step staircase right alongside them. At night, the falls are illuminated with colored lights — it is genuinely dramatic and one of the more unique evening activities in the area.</p>
+<p>The Midnight Falls experience (summer only) adds food, drinks, and extended lighting.</p>
+<h2 id="the-broadmoor">The Broadmoor</h2>
+<p>Even if you are not staying at The Broadmoor resort, it is worth visiting for a meal, a walk around the lake, or a round of golf. The property has operated continuously since 1918 and maintains a level of polish that you rarely see outside of European grand hotels.</p>
+<p>The Penrose Room is their fine dining restaurant — jacket required, views spectacular. For something more casual, the Golden Bee is a British-style pub on the grounds with live ragtime piano and yard-long ales.</p>
+<h2 id="royal-gorge-bridge">Royal Gorge Bridge</h2>
+<p>The Royal Gorge Bridge spans 1,260 feet across the Arkansas River canyon at a height of 956 feet. It held the record as the world&rsquo;s highest bridge for decades. The bridge itself is walkable, and the park includes a gondola ride across the canyon, a zip line, and a via ferrata climbing route on the canyon walls.</p>
+<p>The drive from Colorado Springs takes about 45 minutes on Highway 115 — it is a scenic route worth the trip even without the bridge.</p>
+<h2 id="where-to-stay-in-colorado-springs">Where to Stay in Colorado Springs</h2>
+<p>Location matters in Colorado Springs because the best attractions are spread across the western side of the city. Staying near Old Colorado City or the Westside puts you within 5-15 minutes of Garden of the Gods, Red Rock Canyon, Manitou Springs, and Cheyenne Mountain Zoo without fighting I-25 traffic.</p>
+<p>Our Colorado Springs properties are positioned specifically for this:</p>
+<ul>
+<li>
+<p><strong><a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games">Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games</a></strong> — The ultimate family retreat with 4 bedrooms, room for 11 guests, and entertainment that keeps everyone happy between excursions.</p>
+</li>
+<li>
+<p><strong><a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games">Stunning Mountain Views, Hot Tub, Game Room</a></strong> — Breathtaking views of the Front Range, a hot tub for post-hike recovery, and a game room for rainy afternoon entertainment.</p>
+</li>
+<li>
+<p><strong><a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets">Views | 2 mins to OCC | Fire Pit | Games | Pets</a></strong> — Walking distance to Red Rock Canyon trails and Old Colorado City. Perfect for active travelers who want to step off the porch and onto the trails.</p>
+</li>
+</ul>
+<p><img loading="lazy" alt="Modern living room in a Colorado Springs vacation rental with mountain views" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" /></p>
+<p>Booking directly through Springline Stays means you skip the 14-16% service fees that Airbnb and VRBO add to the same properties. On a multi-night stay, that difference adds up to real savings — money better spent on Pikes Peak donuts and giraffe food.</p>
+<hr />
+<h2 id="faq">FAQ</h2>
+<h3 id="what-is-the-best-time-of-year-to-visit-colorado-springs">What is the best time of year to visit Colorado Springs?</h3>
+<p>September and October offer the best combination of warm days, cool nights, minimal crowds, and spectacular fall colors along the Front Range. Summer (June-August) is peak season with the most activities open but also the most visitors. Winter brings excellent hiking conditions on clear days and easy access to skiing at nearby Monarch or Breckenridge.</p>
+<h3 id="is-garden-of-the-gods-really-free">Is Garden of the Gods really free?</h3>
+<p>Yes. Garden of the Gods is 100% free to enter, park, and explore. It is managed by the City of Colorado Springs and has been free since it was donated in 1909 with the stipulation that it remain free to the public forever.</p>
+<h3 id="how-many-days-do-you-need-in-colorado-springs">How many days do you need in Colorado Springs?</h3>
+<p>Three to four days is ideal. Day one: Garden of the Gods and Manitou Springs. Day two: Pikes Peak and Old Colorado City. Day three: Cheyenne Mountain Zoo and Seven Falls. Add a fourth day for Royal Gorge Bridge or a deeper exploration of Red Rock Canyon and the local food scene.</p>
+<h3 id="what-is-the-elevation-of-colorado-springs">What is the elevation of Colorado Springs?</h3>
+<p>Colorado Springs sits at 6,035 feet above sea level. If you are coming from sea level, drink extra water for the first day or two and take it easy on strenuous hikes until you acclimate. The elevation is noticeable but manageable for most people within 24-48 hours.</p>
+                </div>
+
+                <!-- Tags / SEO Pills -->
+                
+                <div class="mt-16 pt-8 border-t border-brand-light-gold/50">
+                    <div class="flex flex-wrap gap-3">
+                        
+                        <a href="/blog/tag/things-to-do-colorado-springs" class="px-5 py-2 bg-white text-sm text-gray-600 rounded-full font-body border border-gray-200 hover:border-brand-gold hover:text-brand-gold transition duration-200 shadow-sm">
+                            things-to-do-colorado-springs
+                        </a>
+                        
+                        <a href="/blog/tag/colorado-springs-travel-guide" class="px-5 py-2 bg-white text-sm text-gray-600 rounded-full font-body border border-gray-200 hover:border-brand-gold hover:text-brand-gold transition duration-200 shadow-sm">
+                            colorado-springs-travel-guide
+                        </a>
+                        
+                        <a href="/blog/tag/garden-of-the-gods" class="px-5 py-2 bg-white text-sm text-gray-600 rounded-full font-body border border-gray-200 hover:border-brand-gold hover:text-brand-gold transition duration-200 shadow-sm">
+                            garden-of-the-gods
+                        </a>
+                        
+                        <a href="/blog/tag/pikes-peak" class="px-5 py-2 bg-white text-sm text-gray-600 rounded-full font-body border border-gray-200 hover:border-brand-gold hover:text-brand-gold transition duration-200 shadow-sm">
+                            pikes-peak
+                        </a>
+                        
+                        <a href="/blog/tag/colorado-springs-vacation-rental" class="px-5 py-2 bg-white text-sm text-gray-600 rounded-full font-body border border-gray-200 hover:border-brand-gold hover:text-brand-gold transition duration-200 shadow-sm">
+                            colorado-springs-vacation-rental
+                        </a>
+                        
+                    </div>
+                </div>
+                
+
+                <!-- Author Section -->
+                
+            </article>
+
+            <!-- Sidebar (Right) -->
+            <aside class="w-full lg:w-[30%]">
+                <div class="sticky top-24 space-y-12">
+                    
+                    <!-- Book Your Stay Card -->
+                    
+                    <div class="bg-white rounded-2xl shadow-lg border border-brand-light-gold overflow-hidden p-6">
+                        <h3 class="font-heading text-2xl text-brand-charcoal mb-6">Book Your Stay</h3>
+                        <div class="space-y-6">
+                            
+                            <div class="flex gap-4 items-center border-b border-brand-sage/10 pb-4 last:border-b-0 last:pb-0">
+                                <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                                    <img src="/static/images/properties/1112_Arch_St_d4c293a8.jpg" alt="1112 Arch St" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-grow">
+                                    <h4 class="font-heading text-lg text-brand-charcoal hover:text-brand-gold transition-colors">
+                                        <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets">1112 Arch St</a>
+                                    </h4>
+                                    <div class="text-xs text-gray-600 font-body mt-1">
+                                        <span>8 Guests</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span> Beds</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span> Baths</span>
+                                    </div>
+                                    <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets" class="inline-block mt-2 text-sm font-semibold text-brand-gold hover:text-[#b08230] transition-colors">
+                                        Check Availability &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-4 items-center border-b border-brand-sage/10 pb-4 last:border-b-0 last:pb-0">
+                                <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                                    <img src="/static/images/properties/26_Westmark_6ff9988e.jpg" alt="26 Westmark" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-grow">
+                                    <h4 class="font-heading text-lg text-brand-charcoal hover:text-brand-gold transition-colors">
+                                        <a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games">26 Westmark</a>
+                                    </h4>
+                                    <div class="text-xs text-gray-600 font-body mt-1">
+                                        <span>11 Guests</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span> Beds</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span> Baths</span>
+                                    </div>
+                                    <a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games" class="inline-block mt-2 text-sm font-semibold text-brand-gold hover:text-[#b08230] transition-colors">
+                                        Check Availability &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-4 items-center border-b border-brand-sage/10 pb-4 last:border-b-0 last:pb-0">
+                                <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                                    <img src="/static/images/properties/19_Clover_758e44ee.jpg" alt="19 Clover" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-grow">
+                                    <h4 class="font-heading text-lg text-brand-charcoal hover:text-brand-gold transition-colors">
+                                        <a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games">19 Clover</a>
+                                    </h4>
+                                    <div class="text-xs text-gray-600 font-body mt-1">
+                                        <span>11 Guests</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span> Beds</span>
+                                        <span class="text-brand-gold">&bull;</span>
+                                        <span> Baths</span>
+                                    </div>
+                                    <a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games" class="inline-block mt-2 text-sm font-semibold text-brand-gold hover:text-[#b08230] transition-colors">
+                                        Check Availability &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <p class="text-center text-sm text-gray-500 mt-6 font-body">Book direct & save on fees</p>
+                    </div>
+                    
+
+                    <!-- Related Posts -->
+                    
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-brand-light-gold/30">
+                        <h3 class="font-heading text-2xl text-brand-charcoal mb-6 flex items-center justify-between">
+                            Keep Reading
+                        </h3>
+                        <div class="space-y-6">
+                            
+                            <a href="/colorado-springs/blog/11-family-friendly-hikes-in-colorado-springs-easy.html" class="group flex gap-4 items-center">
+                                <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                                    <img src="" alt="11 Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                                </div>
+                                <div class="flex flex-col">
+                                    <h4 class="font-heading text-lg text-brand-charcoal group-hover:text-brand-gold transition-colors line-clamp-2 leading-snug">
+                                        11 Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views
+                                    </h4>
+                                    <p class="text-sm text-gray-500 font-body mt-2">2026-04-08</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom CTA Section -->
+
+<div class="w-full bg-brand-gold py-24 text-center px-4 bg-[url('/static/images/pattern-overlay.png')] bg-blend-soft-light bg-cover bg-center">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-heading text-white mb-6 drop-shadow-md">
+            Planning your trip to Colorado Springs?
+        </h2>
+        <p class="text-xl md:text-2xl text-brand-cream mb-10 font-body font-light opacity-90">
+            Browse our Colorado Springs properties and book direct.
+        </p>
+        <a href="/colorado-springs/" class="inline-block bg-white text-brand-charcoal font-semibold uppercase tracking-[0.1em] text-sm py-4 px-10 rounded hover:bg-brand-charcoal hover:text-white transition duration-300 shadow-xl">
+            Explore Colorado Springs Stays
+        </a>
+    </div>
+</div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2D2D2D] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- About -->
+                <div>
+                    <h3 class="font-heading text-2xl font-semibold mb-4">Springline Stays</h3>
+                    <p class="text-gray-400 font-body leading-relaxed">
+                        Curating exceptional vacation experiences with premium properties in sought-after destinations. Where comfort meets unforgettable memories.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-xl font-medium mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="/colorado-springs" class="hover:text-brand-gold transition">Colorado Springs</a></li>
+                        <li><a href="/gainesville" class="hover:text-brand-gold transition">Gainesville</a></li>
+                        <li><a href="/panama-city-beach" class="hover:text-brand-gold transition">Panama City Beach</a></li>
+                        <li><a href="/blog" class="hover:text-brand-gold transition">Our Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Follow Us -->
+                <div>
+                    <h4 class="font-heading text-xl font-medium mb-4">Follow Us</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest properties and travel guides.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-brand-gold transition">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-brand-gold transition">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2026 Springline Stays. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            var isTransparentNav = false;
+            
+            if (isTransparentNav) {
+                if (window.scrollY > 10) {
+                    navbar.classList.remove('bg-transparent', 'text-white');
+                    navbar.classList.add('bg-white', 'text-brand-charcoal', 'shadow-sm');
+                } else {
+                    navbar.classList.add('bg-transparent', 'text-white');
+                    navbar.classList.remove('bg-white', 'text-brand-charcoal', 'shadow-sm');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
