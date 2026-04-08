@@ -1,5 +1,28 @@
 {% extends 'base.html' %}
 
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {% for property in market_properties %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "VacationRental",
+        "name": "{{ property.headline }}",
+        "image": "{{ site_url|default('https://springlinestays.com') }}{{ property.image_url }}",
+        "url": "{{ property.booking_url }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <section class="relative w-full h-[60vh] min-h-[400px] flex items-center justify-center">

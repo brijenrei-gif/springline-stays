@@ -14,6 +14,18 @@
     <meta property="og:url" content="{% block og_url %}{{ request.url if request else '' }}{% endblock %}">
     <meta property="og:type" content="{% block og_type %}website{% endblock %}">
 
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}{{ self.description() }}{% endblock %}">
+    <meta name="twitter:image" content="{% block twitter_image %}/static/images/og-image.jpg{% endblock %}">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="{{ site_url|default('https://springlinestays.com') }}{{ request_path|default('/') }}">
+
+    <!-- Structured Data -->
+    {% block structured_data %}{% endblock %}
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
 

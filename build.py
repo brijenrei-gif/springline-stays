@@ -157,6 +157,9 @@ def build():
     env.globals['brand'] = brand
     env.globals['markets'] = markets
     env.globals['current_year'] = datetime.now().year
+    env.globals['site_url'] = 'https://springlinestays.com'
+
+    urls = ['/']
 
     # Collect all posts
     print("Collecting blog posts...")
@@ -171,6 +174,10 @@ def build():
     # Copy static files
     if os.path.exists(STATIC_DIR):
         shutil.copytree(STATIC_DIR, os.path.join(OUTPUT_DIR, 'static'))
+        # Copy robots.txt to root
+        robots_src = os.path.join(STATIC_DIR, 'robots.txt')
+        if os.path.exists(robots_src):
+            shutil.copy(robots_src, os.path.join(OUTPUT_DIR, 'robots.txt'))
         print("Copied static files")
 
     # ─── Build Homepage ───
@@ -184,6 +191,7 @@ def build():
         latest_posts=all_posts[:6],
         transparent_nav=True,
         booking_domain=brand.get('hospitable_base', '#'),
+        request_path='/',
     )
     with open(os.path.join(OUTPUT_DIR, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(home_html)
@@ -200,6 +208,7 @@ def build():
         market_posts = [p for p in all_posts if p['market'] == market_id]
 
         hub_template = env.get_template('location_hub.html')
+        urls.append(f"/{market_id}/")
         hub_html = hub_template.render(
             page_title=f"{market['name']}, {market['state']} — Springline Stays",
             page_description=market['hero_description'],
@@ -207,6 +216,7 @@ def build():
             market_properties=market_properties,
             market_posts=market_posts[:9],
             booking_domain=brand.get('hospitable_base', '#'),
+            request_path=f'/{market_id}/',
         )
         with open(os.path.join(market_dir, 'index.html'), 'w', encoding='utf-8') as f:
             f.write(hub_html)
@@ -216,6 +226,7 @@ def build():
         os.makedirs(blog_dir, exist_ok=True)
 
         blog_index_template = env.get_template('blog_index.html')
+        urls.append(f"/{market_id}/blog/")
         blog_index_html = blog_index_template.render(
             page_title=f"Blog — {market['name']} — Springline Stays",
             page_description=f"Travel guides, tips, and things to do in {market['name']}, {market['state']}.",
@@ -223,6 +234,7 @@ def build():
             posts=market_posts,
             markets=markets,
             booking_domain=brand.get('hospitable_base', '#'),
+            request_path=f'/{market_id}/blog/',
         )
         with open(os.path.join(blog_dir, 'index.html'), 'w', encoding='utf-8') as f:
             f.write(blog_index_html)
@@ -237,6 +249,7 @@ def build():
                 sidebar_properties = [p for p in properties if p.get('active')]
             related_posts = find_related_posts(post, all_posts)
 
+            urls.append(post['url'])
             post_html = post_template.render(
                 page_title=f"{post['title']} — Springline Stays",
                 page_description=post['description'],
@@ -245,6 +258,7 @@ def build():
                 sidebar_properties=sidebar_properties,
                 related_posts=related_posts,
                 booking_domain=brand.get('hospitable_base', '#'),
+                request_path=post['url'],
             )
 
             post_path = os.path.join(blog_dir, f"{post['slug']}.html")
@@ -257,6 +271,7 @@ def build():
     os.makedirs(blog_all_dir, exist_ok=True)
 
     blog_index_template = env.get_template('blog_index.html')
+    urls.append('/blog/')
     blog_all_html = blog_index_template.render(
         page_title="Blog — Springline Stays",
         page_description="Travel guides, tips, and things to do near our vacation rentals.",
@@ -264,12 +279,37 @@ def build():
         posts=all_posts,
         markets=markets,
         booking_domain=brand.get('hospitable_base', '#'),
+        request_path='/blog/',
     )
     with open(os.path.join(blog_all_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(blog_all_html)
 
+    # ─── Build Sitemap ───
+    print("Building sitemap.xml...")
+    generate_sitemap(urls, os.path.join(OUTPUT_DIR, 'sitemap.xml'))
+
     print(f"\n✅ Build complete! {len(all_posts)} posts generated.")
     print(f"   Output: {OUTPUT_DIR}/")
+
+
+def generate_sitemap(urls, output_path):
+    """Generate sitemap.xml from a list of URLs."""
+    now = datetime.now().strftime('%Y-%m-%d')
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>']
+    xml.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+    
+    for url in urls:
+        full_url = f"https://springlinestays.com{url}"
+        xml.append('  <url>')
+        xml.append(f'    <loc>{full_url}</loc>')
+        xml.append(f'    <lastmod>{now}</lastmod>')
+        xml.append('    <priority>0.8</priority>')
+        xml.append('  </url>')
+        
+    xml.append('</urlset>')
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(xml))
 
 
 if __name__ == '__main__':
