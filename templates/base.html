@@ -23,6 +23,18 @@
     <!-- Canonical Tag -->
     <link rel="canonical" href="{{ site_url|default('https://springlinestays.com') }}{{ request_path|default('/') }}">
 
+    <!-- Google Analytics -->
+    {% if brand.google_analytics_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ brand.google_analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ brand.google_analytics_id }}');
+    </script>
+    {% endif %}
+
     <!-- Structured Data -->
     {% block structured_data %}{% endblock %}
 
