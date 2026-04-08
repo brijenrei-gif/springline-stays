@@ -29,6 +29,7 @@ except ImportError:
 # ─── Paths ───
 BASE_DIR = Path(__file__).parent
 CONFIG_PATH = BASE_DIR / 'config' / 'properties.yaml'
+CONTENT_PLAN_PATH = BASE_DIR / 'config' / 'content_plan.yaml'
 CONTENT_DIR = BASE_DIR / 'content'
 STATIC_DIR = BASE_DIR / 'static'
 
@@ -41,6 +42,20 @@ def load_config():
     """Load properties configuration."""
     with open(CONFIG_PATH, 'r') as f:
         return yaml.safe_load(f)
+
+
+def load_content_plan():
+    """Load content plan."""
+    if not CONTENT_PLAN_PATH.exists():
+        return {'markets': {}}
+    with open(CONTENT_PLAN_PATH, 'r') as f:
+        return yaml.safe_load(f) or {'markets': {}}
+
+
+def save_content_plan(plan):
+    """Save content plan."""
+    with open(CONTENT_PLAN_PATH, 'w') as f:
+        yaml.safe_dump(plan, f, default_flow_style=False)
 
 
 def get_market_properties(config, market_id):
@@ -166,7 +181,7 @@ def pick_property_images(properties, count=2):
     return property_images
 
 
-def generate_blog_post(config, market_id):
+def generate_blog_post(config, market_id, planned_post=None):
     """Generate a blog post for a given market using Gemini."""
     from google import genai
 
@@ -190,6 +205,21 @@ def generate_blog_post(config, market_id):
 
     today = date.today().isoformat()
 
+    if planned_post:
+        topic_instruction = f"Write about the specific topic: '{planned_post['title']}'."
+        keywords_list = planned_post.get('keywords', [])
+    else:
+        topic_instruction = f"Choose a compelling topic about visiting {market['name']} — things to do, seasonal guides, local dining, hidden gems, best neighborhoods, etc."
+        keywords_list = [
+            f"things to do in {market['name']}",
+            f"{market['name']} vacation rental",
+            f"where to stay in {market['name']}",
+            f"{market['name']} travel guide",
+            f"book direct {market['name']}"
+        ]
+
+    keywords_str = "\n".join([f"- {k}" for k in keywords_list])
+
     prompt = f"""You are an expert SEO content writer specializing in short-term vacation rentals.
 
 Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website SpringlineStays.com.
@@ -200,7 +230,7 @@ Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website S
 {property_context}
 
 **Requirements**:
-1. Choose a compelling topic about visiting {market['name']} — things to do, seasonal guides, local dining, hidden gems, best neighborhoods, etc.
+1. {topic_instruction}
 2. Write in an authoritative, friendly tone — like a well-traveled local sharing insider tips.
 3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
 4. Include a Table of Contents with anchor links.
@@ -228,11 +258,7 @@ market: {market_id}
 Then write the full blog post in Markdown format. Do NOT include the title again as an H1 — the template handles that.
 
 **SEO keywords to target** (use naturally):
-- things to do in {market['name']}
-- {market['name']} vacation rental
-- where to stay in {market['name']}
-- {market['name']} travel guide
-- book direct {market['name']}
+{keywords_str}
 """
 
     # Call Gemini
@@ -312,6 +338,18 @@ Then write the full blog post in Markdown format. Do NOT include the title again
         f.write(content)
 
     print(f"✅ Saved: {output_path}")
+
+    if planned_post:
+        plan = load_content_plan()
+        market_posts = plan.get('markets', {}).get(market_id, [])
+        for p in market_posts:
+            if p['title'] == planned_post['title'] and p['status'] == 'planned':
+                p['status'] = 'published'
+                p['file'] = str(output_path)
+                break
+        save_content_plan(plan)
+        print(f"📝 Updated content plan for: {planned_post['title']}")
+
     return str(output_path)
 
 
@@ -327,15 +365,49 @@ def main():
 
     config = load_config()
     market_ids = [m['id'] for m in config['markets']]
+    plan = load_content_plan()
 
     for i in range(args.count):
+        planned_post = None
+        target_market = None
+        
         if args.market:
             target_market = args.market
+            # Find a planned post for this specific market
+            market_posts = plan.get('markets', {}).get(target_market, [])
+            for p in market_posts:
+                if p['status'] == 'planned':
+                    planned_post = p
+                    break
         else:
-            # Rotate through markets
-            target_market = market_ids[i % len(market_ids)]
+            # Find the first available planned post across all markets
+            for market_id in market_ids:
+                market_posts = plan.get('markets', {}).get(market_id, [])
+                for p in market_posts:
+                    if p['status'] == 'planned':
+                        planned_post = p
+                        target_market = market_id
+                        break
+                if planned_post:
+                    break
+            
+            if not planned_post:
+                print("ℹ️ No planned posts found in content plan. Falling back to random topics.")
+                target_market = market_ids[i % len(market_ids)]
 
-        generate_blog_post(config, target_market)
+        if planned_post:
+            print(f"🎯 Selected planned post: '{planned_post['title']}' for market '{target_market}'")
+        
+        generate_blog_post(config, target_market, planned_post)
+
+    # Trigger build
+    print("\n🔨 Triggering site build...")
+    import subprocess
+    try:
+        subprocess.run([sys.executable, 'build.py'], check=True)
+        print("✅ Site build completed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Site build failed: {e}")
 
 
 if __name__ == '__main__':
