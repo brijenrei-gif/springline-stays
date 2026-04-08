@@ -13,7 +13,7 @@ market: gainesville
 
 Gainesville is more than a college town. Yes, the University of Florida anchors the city with 50,000+ students and one of the most passionate fan bases in the SEC. But beyond the orange and blue, Gainesville sits in a region of exceptional natural beauty — crystal-clear springs, ancient hardwood hammocks, and prairie preserves that feel a world away from campus.
 
-Whether you are visiting for a Gators game, checking out UF with your prospective student, here for a medical appointment at Shands, or just looking for a Florida getaway that does not involve theme parks, this guide covers everything worth doing in Gainesville.
+Whether you are visiting for a Gators game, checking out UF with your prospective student, here for a medical appointment at Shands, or just looking for a Florida getaway that does not involve theme parks, this guide covers everything worth doing in Gainesville. Looking for a place to stay? Explore our [Gainesville vacation rentals](/gainesville/) located close to campus.
 
 ## Table of Contents
 

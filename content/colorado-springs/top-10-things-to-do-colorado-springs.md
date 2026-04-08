@@ -16,7 +16,7 @@ market: colorado-springs
 
 Colorado Springs sits at the base of Pikes Peak, where the Great Plains meet the Rocky Mountains. With over 300 days of sunshine a year and some of the most dramatic natural landscapes in the American West, it is one of those rare destinations that delivers on every front: outdoor adventure, family fun, cultural depth, and genuine relaxation.
 
-Whether you are planning a weekend escape or a full-week family vacation, this guide covers the best things to do in Colorado Springs with the kind of specific, practical detail that actually makes trip planning easier.
+Whether you are planning a weekend escape or a full-week family vacation, this guide covers the best things to do in Colorado Springs with the kind of specific, practical detail that actually makes trip planning easier. Planning a trip? Check out our [Colorado Springs vacation rentals](/colorado-springs/) to find the perfect home base.
 
 ## Table of Contents
 
@@ -109,7 +109,7 @@ Our Colorado Springs properties are positioned specifically for this:
 
 - **[Views | 2 mins to OCC | Fire Pit | Games | Pets](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets)** — Walking distance to Red Rock Canyon trails and Old Colorado City. Perfect for active travelers who want to step off the porch and onto the trails.
 
-![Modern Vacation Rental Living Room](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80)
+![Modern living room in a Colorado Springs vacation rental with mountain views](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80)
 
 Booking directly through Springline Stays means you skip the 14-16% service fees that Airbnb and VRBO add to the same properties. On a multi-night stay, that difference adds up to real savings — money better spent on Pikes Peak donuts and giraffe food.
 
