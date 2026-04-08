@@ -60,9 +60,28 @@ def parse_markdown_file(filepath):
     return meta, html_content
 
 
+def auto_link_content(html_content, markets):
+    """Automatically link market names to their hubs if not already linked."""
+    for market in markets:
+        name = market['name']
+        market_id = market['id']
+        url = f"/{market_id}/"
+        
+        # Regex to avoid linking if already inside an <a> tag
+        pattern = rf'(?!<a[^>]*>)\b({re.escape(name)})\b(?![^<]*<\/a>)'
+        replacement = rf'<a href="{url}" class="text-brand-gold hover:underline">{name}</a>'
+        
+        # Replace first occurrence
+        html_content = re.sub(pattern, replacement, html_content, count=1)
+        
+    return html_content
+
+
 def collect_posts():
     """Collect all blog posts from content/ directories."""
     posts = []
+    config = load_config()
+    markets = config.get('markets', [])
 
     for market_dir in glob.glob(os.path.join(CONTENT_DIR, '*')):
         if not os.path.isdir(market_dir):
@@ -71,6 +90,7 @@ def collect_posts():
 
         for md_file in glob.glob(os.path.join(market_dir, '*.md')):
             meta, html_content = parse_markdown_file(md_file)
+            html_content = auto_link_content(html_content, markets)
             slug = os.path.splitext(os.path.basename(md_file))[0]
 
             hero_image = meta.get('hero_image', '')

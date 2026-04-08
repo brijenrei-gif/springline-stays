@@ -25,6 +25,11 @@ markets:
       - "Seven Falls"
       - "The Broadmoor"
       - "Royal Gorge Bridge"
+    faqs:
+      - question: "What is the best time to visit Colorado Springs?"
+        answer: "Summer and Fall offer the best weather for hiking, while winter is great for snow sports."
+      - question: "Are your properties pet-friendly?"
+        answer: "Yes, many of our Colorado Springs properties welcome pets. Please check the specific property details."
 
   - id: gainesville
     name: "Gainesville"
@@ -41,6 +46,11 @@ markets:
       - "Depot Park"
       - "Kanapaha Botanical Gardens"
       - "Ichetucknee Springs"
+    faqs:
+      - question: "How close are the properties to the UF campus?"
+        answer: "Most of our Gainesville properties are within walking distance or a short 5-minute drive to the University of Florida."
+      - question: "Is parking available for game days?"
+        answer: "Yes, all our properties include on-site parking, making game days stress-free."
 
   - id: panama-city-beach
     name: "Panama City Beach"
@@ -55,6 +65,11 @@ markets:
       - "Pier Park"
       - "Gulf World Marine Park"
       - "Conservation Park"
+    faqs:
+      - question: "Do the properties have direct beach access?"
+        answer: "Yes, our Panama City Beach beachfront condo offers direct access to the beach."
+      - question: "Are beach chairs and umbrellas provided?"
+        answer: "Yes, we provide complimentary beach gear for our guests."
 
 properties:
   # ─── Colorado Springs ───
