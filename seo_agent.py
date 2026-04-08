@@ -18,6 +18,7 @@ import random
 import argparse
 import requests
 import yaml
+import time
 from datetime import date, datetime
 from pathlib import Path
 try:
@@ -264,15 +265,26 @@ Then write the full blog post in Markdown format. Do NOT include the title again
     # Call Gemini
     client = genai.Client(api_key=GEMINI_API_KEY)
 
-    try:
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=prompt,
-        )
-        content = response.text
-    except Exception as e:
-        print(f"❌ Gemini error: {e}")
-        return None
+    max_retries = 3
+    base_delay = 5
+    content = None
+    
+    for attempt in range(max_retries):
+        try:
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
+            )
+            content = response.text
+            break
+        except Exception as e:
+            print(f"❌ Gemini error (attempt {attempt+1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt)
+                print(f"Retrying in {delay} seconds...")
+                time.sleep(delay)
+            else:
+                return None
 
     # Clean up: remove markdown code fences if present
     content = content.strip()
