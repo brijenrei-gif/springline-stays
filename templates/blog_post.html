@@ -1,5 +1,46 @@
 {% extends 'base.html' %}
 
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ post.title }}",
+  "image": "{{ post.hero_image }}",
+  "datePublished": "{{ post.date }}",
+  "description": "{{ post.description }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Springline Stays"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Springline Stays",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://springlinestays.com/static/images/logo.png"
+    }
+  },
+  {% if post.referenced_properties %}
+  "mentions": [
+    {% for prop in post.referenced_properties %}
+    {
+      "@type": "VacationRental",
+      "name": "{{ prop.headline }}",
+      "url": "{{ prop.booking_url }}",
+      "image": "{{ prop.image_url }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ prop.address }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+  {% endif %}
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <div class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center">

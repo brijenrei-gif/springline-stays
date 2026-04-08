@@ -8,6 +8,7 @@ and outputs a complete static site to public/.
 
 import os
 import glob
+import sys
 import re
 import math
 import shutil
@@ -153,11 +154,24 @@ def collect_posts():
                     except Exception as e:
                         print(f"  ⚠  Failed to update markdown file: {e}")
 
+            # Extract referenced properties
+            referenced_props = []
+            booking_domain = config.get('brand', {}).get('hospitable_base', 'https://book.springlinestays.com')
+            prop_urls = re.findall(fr'{re.escape(booking_domain)}/property/([a-zA-Z0-9-]+)', html_content)
+            
+            for prop_slug in prop_urls:
+                for p in config.get('properties', []):
+                    if prop_slug in p.get('booking_url', ''):
+                        if p not in referenced_props:
+                            referenced_props.append(p)
+                        break
+
             post = {
                 'title': meta.get('title', 'Untitled'),
                 'date': str(meta.get('date', '')),
                 'description': meta.get('description', ''),
                 'hero_image': hero_image,
+                'referenced_properties': referenced_props,
                 'thumbnail_url': hero_image,
                 'tags': meta.get('tags', []),
                 'market': market_id,
@@ -195,6 +209,56 @@ def pick_sidebar_property(market_id, properties):
     return None
 
 
+def verify_assets_and_links(all_posts, markets, properties):
+    """Verify that all linked assets exist and internal links are valid."""
+    print("Verifying assets and links...")
+    errors = []
+
+    # Build valid routes
+    valid_routes = {'/', '/blog/'}
+    for m in markets:
+        valid_routes.add(f"/{m['id']}/")
+        valid_routes.add(f"/{m['id']}/blog/")
+    for p in all_posts:
+        valid_routes.add(p['url'])
+
+    # Check all posts
+    for post in all_posts:
+        html_content = post['content']
+        slug = post['slug']
+        
+        # Extract links and images
+        img_matches = re.finditer(r'<img([^>]+)>', html_content)
+        for match in img_matches:
+            img_attrs = match.group(1)
+            src_match = re.search(r'src="([^"]+)"', img_attrs)
+            if src_match:
+                src = src_match.group(1)
+                if src.startswith('/static/'):
+                    local_path = os.path.join(BASE_DIR, src.lstrip('/'))
+                    if not os.path.exists(local_path):
+                        errors.append(f"Post '{slug}': Missing asset '{src}'")
+
+        link_matches = re.finditer(r'<a([^>]+)>', html_content)
+        for match in link_matches:
+            link_attrs = match.group(1)
+            href_match = re.search(r'href="([^"]+)"', link_attrs)
+            if href_match:
+                href = href_match.group(1)
+                if href.startswith('/'):
+                    if href not in valid_routes and not href.startswith('/static/'):
+                        if not href.startswith('#'):
+                            errors.append(f"Post '{slug}': Broken internal link '{href}'")
+
+    if errors:
+        print(f"\n❌ Verification failed with {len(errors)} errors:")
+        for err in errors:
+            print(f"  - {err}")
+        sys.exit(1)
+    else:
+        print("✅ All assets and links verified successfully!")
+
+
 def build():
     """Main build function."""
     print("Loading configuration...")
@@ -218,6 +282,9 @@ def build():
     print("Collecting blog posts...")
     all_posts = collect_posts()
     print(f"  Found {len(all_posts)} posts")
+
+    # Verify assets and links
+    verify_assets_and_links(all_posts, markets, properties)
 
     # Clean and create output directory
     if os.path.exists(OUTPUT_DIR):
