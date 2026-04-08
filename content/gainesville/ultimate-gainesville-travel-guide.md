@@ -2,7 +2,7 @@
 title: "Ultimate Gainesville Travel Guide: Beyond the Campus"
 date: 2026-04-05
 description: "Your complete guide to Gainesville, FL — from UF game days to natural springs, local dining, and the best places to stay near campus."
-hero_image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+hero_image: "https://i.ytimg.com/vi/7zY-YPHycpw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCpQrc7zDKJ49shjevYbO5PMtSkuQ"
 tags:
   - gainesville-travel-guide
   - things-to-do-gainesville
