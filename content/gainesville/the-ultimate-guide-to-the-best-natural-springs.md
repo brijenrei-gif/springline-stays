@@ -1,13 +1,14 @@
 ---
-title: "The Ultimate Guide to the Best Natural Springs Near Gainesville, FL"
+title: The Ultimate Guide to the Best Natural Springs Near Gainesville, FL
 date: 2026-04-08
-description: "Discover the best natural springs near Gainesville, FL for the perfect day trip. Our local's guide covers Ichetucknee, Ginnie, Rainbow Springs, and more!"
-hero_image: ""
+description: Discover the best natural springs near Gainesville, FL for the perfect
+  day trip. Our local's guide covers Ichetucknee, Ginnie, Rainbow Springs, and more!
+hero_image: /static/images/blog/gainesville/the-ultimate-guide-to-the-best-natural-springs-nea-8523.jpg
 tags:
-  - Gainesville
-  - Day Trips
-  - Florida Springs
-  - Outdoor Adventure
+- Gainesville
+- Day Trips
+- Florida Springs
+- Outdoor Adventure
 market: gainesville
 ---
 

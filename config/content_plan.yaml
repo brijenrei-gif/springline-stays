@@ -31,12 +31,13 @@ markets:
     pillar: Activities
     status: published
     title: Best Natural Springs Near Gainesville for a Day Trip
-  - keywords:
+  - file: /home/runner/work/springline-stays/springline-stays/content/gainesville/the-ultimate-uf-game-day-survival-guide-in.md
+    keywords:
     - uf game day
     - gainesville gators game
     - where to stay for uf games
     pillar: Events
-    status: planned
+    status: published
     title: The Ultimate UF Game Day Survival Guide
   panama-city-beach:
   - file: content/panama-city-beach/the-ultimate-year-round-panama-city-beach-travel.md
