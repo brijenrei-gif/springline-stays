@@ -44,12 +44,13 @@ markets:
     status: published
     title: 'The Ultimate Year-Round Panama City Beach Travel Guide: Sun, Sand, and
       Secluded Shores'
-  - keywords:
+  - file: /home/runner/work/springline-stays/springline-stays/content/panama-city-beach/shell-island-guide-how-to-visit-panama-city.md
+    keywords:
     - shell island panama city beach
     - how to get to shell island
     - best beaches in pcb
     pillar: Activities
-    status: planned
+    status: published
     title: 'Shell Island Guide: How to Visit Panama City Beach''s Best Kept Secret'
   - keywords:
     - best seafood in pcb
