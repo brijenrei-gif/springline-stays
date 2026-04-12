@@ -165,7 +165,7 @@
     <main class="flex-grow">
         
 <!-- Hero Section -->
-<section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+<section class="relative min-h-[90vh] flex items-center justify-center text-center px-4 overflow-hidden">
   <!-- Background Image & Overlay -->
   <div class="absolute inset-0 z-0">
     <img src="/static/images/hero.jpg" alt="Springline Stays Hero" class="w-full h-full object-cover object-center" />
@@ -173,13 +173,39 @@
   </div>
 
   <!-- Content -->
-  <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center mt-16 md:mt-0">
-    <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl text-brand-cream font-medium mb-6 leading-tight drop-shadow-lg">
-      Your Next Great Stay Starts Here
+  <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center mt-16 md:mt-0">
+    <h1 class="font-heading text-5xl md:text-7xl text-brand-cream font-medium mb-6 leading-tight drop-shadow-lg">
+      Your Perfect Stay Awaits
     </h1>
     <p class="font-body text-lg md:text-xl text-brand-cream/90 mb-10 max-w-2xl font-light drop-shadow">
-      Scenic Retreats and Campus Comforts in Colorado and Florida
+      Discover handpicked luxury rentals for your next getaway.
     </p>
+    
+    <!-- Search Bar Placeholder -->
+    <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row gap-4 w-full max-w-4xl text-left mb-10">
+      <div class="flex-1">
+        <label class="block text-xs text-brand-charcoal/60 font-semibold uppercase mb-1">Check-in</label>
+        <input type="text" placeholder="MM/DD/YYYY" class="w-full p-2 border border-brand-sage/20 rounded" />
+      </div>
+      <div class="flex-1">
+        <label class="block text-xs text-brand-charcoal/60 font-semibold uppercase mb-1">Check-out</label>
+        <input type="text" placeholder="MM/DD/YYYY" class="w-full p-2 border border-brand-sage/20 rounded" />
+      </div>
+      <div class="flex-1">
+        <label class="block text-xs text-brand-charcoal/60 font-semibold uppercase mb-1">Guests</label>
+        <select class="w-full p-2 border border-brand-sage/20 rounded text-brand-charcoal">
+          <option>1 Adult</option>
+          <option selected>2 Adults, 1 Child</option>
+          <option>4 Adults</option>
+        </select>
+      </div>
+      <div class="flex-none flex items-end">
+        <button class="bg-brand-gold text-brand-charcoal px-8 py-2 rounded hover:bg-brand-light-gold transition-colors font-medium h-10 w-full md:w-auto">
+          Search
+        </button>
+      </div>
+    </div>
+
     <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
       <a href="#properties" class="font-body bg-brand-gold text-brand-charcoal px-8 py-3 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
         Explore Properties
@@ -187,6 +213,74 @@
       <a href="/blog" class="font-body bg-transparent border border-brand-cream text-brand-cream px-8 py-3 rounded hover:bg-brand-cream hover:text-brand-charcoal transition-colors duration-300 font-medium">
         Read Our Blog
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- Guest Reviews Section -->
+<section id="reviews" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Guest Love</h2>
+      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">What our guests say about their stays.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="text-brand-gold mb-4">
+            ★★★★★
+          </div>
+          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"The house was big enough for my 5 family members to sleep in, backyard was a perfect size for my dog, the house was close to so much to do. Would definitely stay here again. Thanks for hosting for us!"</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+            s
+          </div>
+          <div>
+            <p class="font-body text-sm font-semibold text-brand-charcoal">so</p>
+            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="text-brand-gold mb-4">
+            ★★★★★
+          </div>
+          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"We stayed for 8 days with pets and the home was accommodating. There were dozens of games inside the home and ample household items that are ideal for those traveling with the bare minimum. The hosts were very responsive and even provided us with emergency assistance for when our cat decided to be a bit too adventurous inside the home. Overall id recommend this as a quiet Airbnb getaway."</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+            V
+          </div>
+          <div>
+            <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
+            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="text-brand-gold mb-4">
+            ★★★★★
+          </div>
+          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"This place was awesome, very clean and well kept up!! Disha was an amazing host, any questions I ask,  it was reply in a quick and professional manner!! Too bad we are moving to Colorado because I would stay here again!!  Very good place for your little furbabies!!! All 5 stars!!!"</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+            s
+          </div>
+          <div>
+            <p class="font-body text-sm font-semibold text-brand-charcoal">so</p>
+            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -508,131 +602,7 @@
   </div>
 </section>
 
-<!-- Guest Reviews Section -->
-<section id="reviews" class="bg-white py-24 px-4 sm:px-6 lg:px-8 border-t border-brand-sage/10">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Guest Reviews</h2>
-      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">What our guests say about their stays.</p>
-      <div class="flex items-center justify-center mt-2 gap-1 text-brand-gold">
-        <span>★★★★★</span>
-        <span class="text-brand-charcoal font-body text-sm font-medium ml-1">4.9/5 from 500+ reviews</span>
-      </div>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <div class="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="text-brand-gold mb-4">
-            ★★★★★
-          </div>
-          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"The house was big enough for my 5 family members to sleep in, backyard was a perfect size for my dog, the house was close to so much to do. Would definitely stay here again. Thanks for hosting for us!"</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-            s
-          </div>
-          <div>
-            <p class="font-body text-sm font-semibold text-brand-charcoal">so</p>
-            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="text-brand-gold mb-4">
-            ★★★★★
-          </div>
-          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"We stayed for 8 days with pets and the home was accommodating. There were dozens of games inside the home and ample household items that are ideal for those traveling with the bare minimum. The hosts were very responsive and even provided us with emergency assistance for when our cat decided to be a bit too adventurous inside the home. Overall id recommend this as a quiet Airbnb getaway."</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-            V
-          </div>
-          <div>
-            <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="text-brand-gold mb-4">
-            ★★★★★
-          </div>
-          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"This place was awesome, very clean and well kept up!! Disha was an amazing host, any questions I ask,  it was reply in a quick and professional manner!! Too bad we are moving to Colorado because I would stay here again!!  Very good place for your little furbabies!!! All 5 stars!!!"</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-            s
-          </div>
-          <div>
-            <p class="font-body text-sm font-semibold text-brand-charcoal">so</p>
-            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="text-brand-gold mb-4">
-            ★★★★★
-          </div>
-          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"The house was great and all looked like the pictures. It’s close to all major tourist attractions and I-25, even though we came for a pickleball tournament. In this case, the house was comfy and inviting after a long day of playing hard. We would stay here again."</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-            V
-          </div>
-          <div>
-            <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="text-brand-gold mb-4">
-            ★★★★★
-          </div>
-          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Amazing house, host, and stay. The backyard makes the whole house worth it!"</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-            V
-          </div>
-          <div>
-            <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Stunning Mountain Views, Hot Tub, Game Room</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col justify-between">
-        <div>
-          <div class="text-brand-gold mb-4">
-            ★★★★★
-          </div>
-          <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Home was as represented, great amenities, all necessities were provided, location was very good for our activities."</p>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-            V
-          </div>
-          <div>
-            <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-            <p class="font-body text-xs text-brand-charcoal/60">Stayed at Stunning Mountain Views, Hot Tub, Game Room</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
 
 <!-- CTA Banner -->
 <section class="bg-brand-gold py-20 px-4 sm:px-6 text-center">
