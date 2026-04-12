@@ -90,9 +90,9 @@
       <p class="mt-4 font-body text-brand-charcoal/70 text-lg">What our guests say about their stays.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {% for review in reviews[:3] %}
-      <div class="bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
+    <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6">
+      {% for review in reviews %}
+      <div class="flex-none w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
         <div>
           <div class="text-brand-gold mb-4">
             {% for i in range(review.rating) %}★{% endfor %}

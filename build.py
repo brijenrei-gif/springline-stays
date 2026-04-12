@@ -284,6 +284,21 @@ def build():
         with open(reviews_path, 'r', encoding='utf-8') as f:
             reviews = yaml.safe_load(f) or []
 
+    # Alternate reviews from different properties to ensure diversity
+    if reviews:
+        from collections import defaultdict
+        reviews_by_prop = defaultdict(list)
+        for r in reviews:
+            reviews_by_prop[r.get('property_name') or r.get('property_public_name')].append(r)
+        
+        alternated_reviews = []
+        max_len = max(len(lst) for lst in reviews_by_prop.values()) if reviews_by_prop else 0
+        for i in range(max_len):
+            for prop in reviews_by_prop:
+                if i < len(reviews_by_prop[prop]):
+                    alternated_reviews.append(reviews_by_prop[prop][i])
+        reviews = alternated_reviews
+
     # Create Jinja2 environment
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 
@@ -326,7 +341,7 @@ def build():
         markets=markets,
         properties=[p for p in properties if p.get('active')],
         latest_posts=all_posts[:6],
-        reviews=reviews[:6],
+        reviews=reviews[:12],
         transparent_nav=True,
         booking_domain=brand.get('hospitable_base', '#'),
         request_path='/',
