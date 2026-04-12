@@ -229,6 +229,10 @@ def generate_blog_post(config, market_id, planned_post=None):
             f"{market['name']} travel guide",
             f"book direct {market['name']}"
         ]
+        # Add property-specific keywords to capture direct booking intent
+        for p in properties:
+            keywords_list.append(f"{p['name']} Springline Stays")
+            keywords_list.append(f"{p['headline']} Springline Stays")
 
     keywords_str = "\n".join([f"- {k}" for k in keywords_list])
 

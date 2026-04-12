@@ -276,6 +276,13 @@ def build():
     brand = config['brand']
     markets = config['markets']
     properties = config['properties']
+    
+    # Load reviews if available
+    reviews_path = os.path.join(BASE_DIR, 'config', 'reviews.yaml')
+    reviews = []
+    if os.path.exists(reviews_path):
+        with open(reviews_path, 'r', encoding='utf-8') as f:
+            reviews = yaml.safe_load(f) or []
 
     # Create Jinja2 environment
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
@@ -319,6 +326,7 @@ def build():
         markets=markets,
         properties=[p for p in properties if p.get('active')],
         latest_posts=all_posts[:6],
+        reviews=reviews[:6],
         transparent_nav=True,
         booking_domain=brand.get('hospitable_base', '#'),
         request_path='/',
