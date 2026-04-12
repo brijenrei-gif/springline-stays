@@ -1,12 +1,13 @@
 ---
-title: "The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do"
+title: 'The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do'
 date: 2026-04-12
-description: "Planning a trip? Discover the best things to do in Colorado Springs, from Garden of the Gods to Pikes Peak. Your complete travel guide is here."
-hero_image: ""
+description: Planning a trip? Discover the best things to do in Colorado Springs,
+  from Garden of the Gods to Pikes Peak. Your complete travel guide is here.
+hero_image: /static/images/blog/colorado-springs/the-ultimate-colorado-springs-travel-guide-15-unfo-9112.jpg
 tags:
-  - colorado springs
-  - travel guide
-  - things to do
+- colorado springs
+- travel guide
+- things to do
 market: colorado-springs
 ---
 
