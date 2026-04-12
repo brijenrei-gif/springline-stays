@@ -534,10 +534,21 @@ def generate_sitemap(urls, output_path):
     
     for url in urls:
         full_url = f"https://springlinestays.com{url}"
+        
+        # Determine priority based on URL structure
+        if url == '/':
+            priority = '1.0'
+        elif url == '/blog/' or re.match(r'^/[a-zA-Z0-9-]+/blog/$', url):
+            priority = '0.8'
+        elif url == '/property-management/' or (re.match(r'^/[a-zA-Z0-9-]+/$', url) and url not in ['/faq/', '/contact/']):
+            priority = '0.9'
+        else:
+            priority = '0.7'
+            
         xml.append('  <url>')
         xml.append(f'    <loc>{full_url}</loc>')
         xml.append(f'    <lastmod>{now}</lastmod>')
-        xml.append('    <priority>0.8</priority>')
+        xml.append(f'    <priority>{priority}</priority>')
         xml.append('  </url>')
         
     xml.append('</urlset>')
