@@ -72,6 +72,19 @@ markets:
       - question: "Are beach chairs and umbrellas provided?"
         answer: "Yes, we provide complimentary beach gear for our guests."
 
+  - id: property-management
+    name: "Property Management"
+    state: "General"
+    tagline: "Maximize Your Rental Income"
+    hero_description: "Expert property management services for short-term rentals. We handle everything so you can relax."
+    image_url: "/static/images/blog/property-management/maximizing-your-roi-short-term-rental-tips.jpg"
+    nearby_attractions: []
+    faqs:
+      - question: "What services do you include in property management?"
+        answer: "We handle listing optimization, guest communication, cleaning coordination, dynamic pricing, and maintenance."
+      - question: "How do you maximize rental income?"
+        answer: "We use dynamic pricing algorithms and multi-channel distribution to ensure high occupancy and optimal rates."
+
 properties:
   # ─── Colorado Springs ───
   - id: arch
