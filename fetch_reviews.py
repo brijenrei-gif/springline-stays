@@ -59,24 +59,18 @@ def main():
         for rev in reviews_data:
             rating = rev.get('public', {}).get('rating')
             if rating == 5:
-                # Try to guess author from response if possible, or use fallback
-                response_text = rev.get('public', {}).get('response') or ''
+                text = rev.get('public', {}).get('review')
+                if not text or not text.strip():
+                    continue
+                    
                 author = "Verified Guest"
-                if response_text.startswith("Thanks "):
-                    parts = response_text.split()
-                    if len(parts) > 1:
-                        author = parts[1].rstrip(',')
-                elif response_text.startswith("Thank you "):
-                    parts = response_text.split()
-                    if len(parts) > 2:
-                        author = parts[2].rstrip(',')
                 
                 all_reviews.append({
                     'property_name': hp_name,
                     'property_public_name': hp_public_name,
                     'author': author,
                     'rating': rating,
-                    'text': rev.get('public', {}).get('review'),
+                    'text': text,
                     'date': rev.get('reviewed_at')
                 })
 

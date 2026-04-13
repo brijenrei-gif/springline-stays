@@ -1,6 +1,6 @@
 - property_name: 1112 Arch St
   property_public_name: Views | 2 mins to OCC | Fire Pit | Games | Pets
-  author: so
+  author: Verified Guest
   rating: 5
   text: The house was big enough for my 5 family members to sleep in, backyard was
     a perfect size for my dog, the house was close to so much to do. Would definitely
@@ -18,7 +18,7 @@
   date: '2026-02-03T18:53:16+00:00'
 - property_name: 1112 Arch St
   property_public_name: Views | 2 mins to OCC | Fire Pit | Games | Pets
-  author: so
+  author: Verified Guest
   rating: 5
   text: This place was awesome, very clean and well kept up!! Disha was an amazing
     host, any questions I ask,  it was reply in a quick and professional manner!!
@@ -65,7 +65,7 @@
   date: '2026-03-21T23:57:05+00:00'
 - property_name: 26 Westmark
   property_public_name: Stunning Mountain Views, Hot Tub, Game Room
-  author: Leonard
+  author: Verified Guest
   rating: 5
   text: Me and family drove from Texas to CO and we loved this place. The location
     was great and near everything we needed to explore the city. The view is awesome
@@ -75,7 +75,7 @@
   date: '2026-03-19T23:50:12+00:00'
 - property_name: 26 Westmark
   property_public_name: Stunning Mountain Views, Hot Tub, Game Room
-  author: so
+  author: Verified Guest
   rating: 5
   text: Disha's house is beautiful and comfortable- the perfect setting for dinner
     with good friends.
@@ -152,18 +152,12 @@
   property_public_name: Walk to UF Stadium, No Cleanup, Cozy Townhome
   author: Verified Guest
   rating: 5
-  text: ''
-  date: '2026-01-27T00:55:06+00:00'
-- property_name: 818-1
-  property_public_name: Walk to UF Stadium, No Cleanup, Cozy Townhome
-  author: for
-  rating: 5
   text: Nice spacious place and an easy walk to campus and downtown. Hosts respond
     quickly.
   date: '2025-12-13T04:27:14+00:00'
 - property_name: 818-1
   property_public_name: Walk to UF Stadium, No Cleanup, Cozy Townhome
-  author: for
+  author: Verified Guest
   rating: 5
   text: This location was super walkable for game day. Easy walk for food, bars, and
     to the stadium. Everything looked exactly as pictured and Disha was very responsive
@@ -173,6 +167,20 @@
     was rented and they had 2 cars as well. Overall was a great stay and would stay
     there again for a game day !
   date: '2025-12-05T16:06:45+00:00'
+- property_name: '4403'
+  property_public_name: Spacious Retreat Near UF & Shands
+  author: Verified Guest
+  rating: 5
+  text: 'Great host, gave us clear instructions and was available if we needed anything.
+    Very comfortable and spacious property with large dining table and living room
+    for large groups. We were visiting family in the area and some of the meals they
+    joined us at the rental. We enjoyed the propane fire pit in the back yard, roasting
+    marshmallows (family in the area provided the roasting sticks).
+
+
+    Wifi worked well for those of us that needed to work remotely some of the time
+    during the stay. Nice work area with sit/stand desk.'
+  date: '2026-04-12T04:48:20+00:00'
 - property_name: '4403'
   property_public_name: Spacious Retreat Near UF & Shands
   author: Verified Guest
@@ -215,7 +223,7 @@
   date: '2026-02-10T05:19:17+00:00'
 - property_name: '4403'
   property_public_name: Spacious Retreat Near UF & Shands
-  author: so
+  author: Verified Guest
   rating: 5
   text: "We loved the space. We appreciate Disha\u2019s hospitality!"
   date: '2026-01-17T16:14:11+00:00'
@@ -237,7 +245,7 @@
   date: '2026-01-10T01:38:28+00:00'
 - property_name: '4403'
   property_public_name: Spacious Retreat Near UF & Shands
-  author: so
+  author: Verified Guest
   rating: 5
   text: "I highly recommend Disha as a host. She responds quickly. One of my daughters\
     \ and two of my grandchildren were stuck in Iowa for a day due to a blizzard,\
@@ -248,19 +256,6 @@
     \ due to cleaning schedules, but she made it happen, and we very much appreciated\
     \ it. Thanks again Disha!"
   date: '2026-01-04T16:29:14+00:00'
-- property_name: '4403'
-  property_public_name: Spacious Retreat Near UF & Shands
-  author: Verified Guest
-  rating: 5
-  text: Disha was a wonderful host! Any question I had she was quick to respond and
-    offer reassurance or advice. Would absolutely stay with her again.
-  date: '2025-12-26T20:12:46+00:00'
-- property_name: 818-2
-  property_public_name: Walk to University, Pet Friendly, Cozy Townhome
-  author: Verified Guest
-  rating: 5
-  text: ''
-  date: '2026-04-11T20:28:42+00:00'
 - property_name: 818-2
   property_public_name: Walk to University, Pet Friendly, Cozy Townhome
   author: Verified Guest
@@ -294,12 +289,6 @@
   property_public_name: Walk to University, Pet Friendly, Cozy Townhome
   author: Verified Guest
   rating: 5
-  text: ''
-  date: '2026-01-27T00:54:46+00:00'
-- property_name: 818-2
-  property_public_name: Walk to University, Pet Friendly, Cozy Townhome
-  author: Verified Guest
-  rating: 5
   text: This was our second stay and it was comfortable and clean. The host was very
     responsive and pleasant to communicate with. We would stay again.
   date: '2026-01-21T21:36:24+00:00'
@@ -326,6 +315,13 @@
   text: "We love Disha\u2019s place and would recommend it to anyone in the area.\
     \ She usually responds within five minutes, which is amazing!"
   date: '2025-12-08T22:28:09+00:00'
+- property_name: Shruti 2109
+  property_public_name: On the beach | Ocean Views | Sleeps 6
+  author: Verified Guest
+  rating: 5
+  text: "Amazing views of the pool and ocean. The location was perfect. Can\u2019\
+    t wait to visit again!"
+  date: '2026-04-12T20:47:42+00:00'
 - property_name: Shruti 2109
   property_public_name: On the beach | Ocean Views | Sleeps 6
   author: Verified Guest
@@ -381,7 +377,7 @@
   date: '2026-02-22T16:11:05+00:00'
 - property_name: Shruti 2109
   property_public_name: On the beach | Ocean Views | Sleeps 6
-  author: so
+  author: Verified Guest
   rating: 5
   text: We had a wonderful last minute stay at this perfect condo!  We could not have
     asked for better accommodations or communication with Disha!  Her responses to
@@ -391,7 +387,7 @@
   date: '2026-01-29T19:17:36+00:00'
 - property_name: Shruti 2109
   property_public_name: On the beach | Ocean Views | Sleeps 6
-  author: Taylor
+  author: Verified Guest
   rating: 5
   text: We had a great
   date: '2026-01-19T18:12:25+00:00'
@@ -402,13 +398,6 @@
   text: "Pasamos unas vacaciones maravillosas, estamos encantados con el lugar y con\
     \ la atenci\xF3n inmejorable de Disha."
   date: '2026-01-04T20:31:47+00:00'
-- property_name: Shruti 2109
-  property_public_name: On the beach | Ocean Views | Sleeps 6
-  author: Verified Guest
-  rating: 5
-  text: Quick and easy check in. Disha helped me with a last minute spur of the moment
-    booking and allowed my family to disconnect for a few days
-  date: '2025-12-28T23:06:35+00:00'
 - property_name: 6424 Teramo (co-host)
   property_public_name: Family Friendly | BBQ | Pool Table
   author: Verified Guest
@@ -444,7 +433,7 @@
   date: '2026-01-30T00:11:15+00:00'
 - property_name: 6424 Teramo (co-host)
   property_public_name: Family Friendly | BBQ | Pool Table
-  author: for
+  author: Verified Guest
   rating: 5
   text: Great host & good communication. Would definitely come back and I recommend
     anyone to stay here. Thank you!
@@ -492,7 +481,7 @@
   date: '2026-03-28T16:07:51+00:00'
 - property_name: 19 Clover
   property_public_name: 'Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games'
-  author: Cooper
+  author: Verified Guest
   rating: 5
   text: Awesome place and exactly as described. Thank you for hosting us!
   date: '2026-03-22T22:06:26+00:00'
@@ -511,7 +500,7 @@
   date: '2026-03-20T16:41:18+00:00'
 - property_name: 19 Clover
   property_public_name: 'Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games'
-  author: for
+  author: Verified Guest
   rating: 5
   text: Disha is the best host. She was very responsive and made sure our stay was
     memorable! The location was only 10 minutes drive to all of the Colorado Springs
