@@ -155,68 +155,6 @@
   </div>
 </section>
 
-<!-- Guest Reviews Section -->
-<section id="reviews" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Guest Love</h2>
-      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">What our guests say about their stays.</p>
-    </div>
-
-    <div class="relative">
-      <!-- Left Arrow -->
-      <button id="prev-reviews" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-md z-10 hidden md:block -translate-x-1/2 hover:bg-brand-cream transition-colors">
-        <svg class="w-6 h-6 text-brand-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-      </button>
-
-      <div id="reviews-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth">
-        {% for review in reviews %}
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              {% for i in range(review.rating) %}★{% endfor %}
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"{{ review.text }}"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              {{ review.author[0] if review.author else 'G' }}
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">{{ review.author }}</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at {{ review.property_public_name or review.property_name }}</p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-
-      <!-- Right Arrow -->
-      <button id="next-reviews" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-md z-10 hidden md:block translate-x-1/2 hover:bg-brand-cream transition-colors">
-        <svg class="w-6 h-6 text-brand-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      </button>
-    </div>
-  </div>
-</section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('reviews-container');
-    const prevBtn = document.getElementById('prev-reviews');
-    const nextBtn = document.getElementById('next-reviews');
-
-    if (container && prevBtn && nextBtn) {
-      prevBtn.addEventListener('click', () => {
-        container.scrollBy({ left: -container.offsetWidth / 2, behavior: 'smooth' });
-      });
-
-      nextBtn.addEventListener('click', () => {
-        container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
-      });
-    }
-  });
-</script>
-
 <!-- Markets Section -->
 <section id="markets" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
@@ -303,6 +241,68 @@
     </div>
   </div>
 </section>
+
+<!-- Guest Reviews Section -->
+<section id="reviews" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Guest Love</h2>
+      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">What our guests say about their stays.</p>
+    </div>
+
+    <div class="relative">
+      <!-- Left Arrow -->
+      <button id="prev-reviews" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-md z-10 hidden md:block -translate-x-1/2 hover:bg-brand-cream transition-colors">
+        <svg class="w-6 h-6 text-brand-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+
+      <div id="reviews-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth">
+        {% for review in reviews %}
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              {% for i in range(review.rating) %}★{% endfor %}
+            </div>
+            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"{{ review.text }}"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              {{ review.author[0] if review.author else 'G' }}
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-charcoal">{{ review.author }}</p>
+              <p class="font-body text-xs text-brand-charcoal/60">Stayed at {{ review.property_public_name or review.property_name }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Right Arrow -->
+      <button id="next-reviews" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-md z-10 hidden md:block translate-x-1/2 hover:bg-brand-cream transition-colors">
+        <svg class="w-6 h-6 text-brand-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('reviews-container');
+    const prevBtn = document.getElementById('prev-reviews');
+    const nextBtn = document.getElementById('next-reviews');
+
+    if (container && prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        container.scrollBy({ left: -container.offsetWidth / 2, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
+      });
+    }
+  });
+</script>
 
 
 
