@@ -1,6 +1,7 @@
 import os
 import json
 import requests
+from datetime import datetime, timedelta
 
 def load_env():
     env = {}
@@ -38,12 +39,16 @@ def main():
 
     availability_data = {}
 
+    # Calculate date range for next 12 months
+    start_date = datetime.now().strftime('%Y-%m-%d')
+    end_date = (datetime.now() + timedelta(days=365)).strftime('%Y-%m-%d')
+
     for prop in properties:
         prop_id = prop['id']
         name = prop['name']
         print(f"Fetching calendar for {name} ({prop_id})...")
 
-        cal_url = f"{base_url}/properties/{prop_id}/calendar"
+        cal_url = f"{base_url}/properties/{prop_id}/calendar?start_date={start_date}&end_date={end_date}"
         cal_resp = requests.get(cal_url, headers=headers)
 
         if cal_resp.status_code != 200:
