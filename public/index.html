@@ -241,6 +241,10 @@
         }
     </style>
 
+    <!-- Flatpickr Datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     
 </head>
 <body class="flex flex-col min-h-screen">
@@ -375,10 +379,10 @@
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              s
+              V
             </div>
             <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">so</p>
+              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
               <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
             </div>
           </div>
@@ -425,7 +429,9 @@
             <div class="text-brand-gold mb-4">
               ★★★★★
             </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Disha was extremely helpful and would respond to my messages quick. Airbnb was clean and accommodated to me and my group. AC was cold, water got hot and had good pressure in shower heads (greatly appreciated)."</p>
+            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Great host, gave us clear instructions and was available if we needed anything. Very comfortable and spacious property with large dining table and living room for large groups. We were visiting family in the area and some of the meals they joined us at the rental. We enjoyed the propane fire pit in the back yard, roasting marshmallows (family in the area provided the roasting sticks).
+
+Wifi worked well for those of us that needed to work remotely some of the time during the stay. Nice work area with sit/stand desk."</p>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
@@ -443,7 +449,7 @@
             <div class="text-brand-gold mb-4">
               ★★★★★
             </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">""</p>
+            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Solid place. Especially for Gainesville"</p>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
@@ -461,9 +467,7 @@
             <div class="text-brand-gold mb-4">
               ★★★★★
             </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Everything was perfect the place the stay my hostesses! Communication was immediate response and helpful tips. Also surprisingly the additional bunk bed space was surprisingly a room with attached bath. That was icing on a cake for my boys who had their own space. It felt like home away from home with a beach 🏖️😁 we loved it and will be coming back again. We absolutely loved being on one of the top floors we called it our penthouse 🤣. The family wanted to stay longer. Next time we will extend our trip to a week or more. Best spring break thus far. Thank you so much 
-
-Janicka"</p>
+            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Amazing views of the pool and ocean. The location was perfect. Can’t wait to visit again!"</p>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
@@ -571,7 +575,7 @@ Janicka"</p>
             <div class="text-brand-gold mb-4">
               ★★★★★
             </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"We had 7 adults, 4 children, 1 infant and 2 dogs and the house was comfortable and we felt right at home. The couches in the living pulled out for a fun sleep for the kids and the 4 bedrooms were spacious and clean. Disha is quick to respond. We had a great stay!"</p>
+            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Disha was extremely helpful and would respond to my messages quick. Airbnb was clean and accommodated to me and my group. AC was cold, water got hot and had good pressure in shower heads (greatly appreciated)."</p>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
@@ -607,6 +611,49 @@ Janicka"</p>
 
       nextBtn.addEventListener('click', () => {
         container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
+      });
+    }
+
+    // Initialize Flatpickr for property cards
+    if (typeof flatpickr !== 'undefined') {
+      document.querySelectorAll('.date-picker').forEach(input => {
+        const baseRate = parseFloat(input.dataset.baseRate);
+        const propertyId = input.dataset.id;
+        const bookingUrl = input.dataset.bookingUrl;
+        const breakdown = document.getElementById(`price-breakdown-${propertyId}`);
+        const directSpan = document.getElementById(`direct-price-${propertyId}`);
+        const airbnbSpan = document.getElementById(`airbnb-price-${propertyId}`);
+        const vrboSpan = document.getElementById(`vrbo-price-${propertyId}`);
+        const bookNowBtn = document.getElementById(`book-now-${propertyId}`);
+
+        flatpickr(input, {
+          mode: "range",
+          minDate: "today",
+          dateFormat: "Y-m-d",
+          onClose: function(selectedDates) {
+            if (selectedDates.length === 2) {
+              const checkin = selectedDates[0];
+              const checkout = selectedDates[1];
+              const nights = Math.ceil((checkout - checkin) / (1000 * 60 * 60 * 24));
+              
+              if (nights > 0) {
+                const directTotal = baseRate * nights;
+                const airbnbTotal = Math.round(directTotal * 1.142);
+                const vrboTotal = Math.round(directTotal * 1.10);
+                
+                directSpan.textContent = `$${directTotal}`;
+                airbnbSpan.textContent = `$${airbnbTotal}`;
+                vrboSpan.textContent = `$${vrboTotal}`;
+                breakdown.classList.remove('hidden');
+                
+                // Update Book Now URL
+                const formattedCheckin = checkin.toISOString().split('T')[0];
+                const formattedCheckout = checkout.toISOString().split('T')[0];
+                bookNowBtn.href = `${bookingUrl}?checkin=${formattedCheckin}&checkout=${formattedCheckout}`;
+              }
+            }
+          }
+        });
       });
     }
   });
@@ -661,6 +708,19 @@ Janicka"</p>
         </div>
       </a>
       
+      <a href="/property-management/" class="group relative block aspect-[4/5] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+        <img src="/static/images/blog/property-management/maximizing-your-roi-short-term-rental-tips.jpg" alt="Vacation rentals in Property Management" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" />
+        <div class="absolute inset-0 bg-brand-charcoal/40 group-hover:bg-brand-charcoal/30 transition-colors duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/90 via-transparent to-transparent"></div>
+        
+        <div class="absolute bottom-0 left-0 p-8 w-full">
+          <p class="font-body text-brand-light-gold text-sm uppercase tracking-widest font-semibold mb-2">General</p>
+          <h3 class="font-heading text-3xl text-brand-cream mb-2">Property Management</h3>
+          <p class="font-body text-brand-cream/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Maximize Your Rental Income</p>
+          <span class="inline-flex items-center font-body text-brand-gold text-sm font-medium">Explore &rarr;</span>
+        </div>
+      </a>
+      
     </div>
   </div>
 </section>
@@ -707,8 +767,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="250"
+                   data-booking-url="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets"
+                   data-id="arch" />
+            
+            <div id="price-breakdown-arch" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-arch" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-arch">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-arch">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets" id="book-now-arch" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -741,8 +825,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="350"
+                   data-booking-url="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games"
+                   data-id="westmark" />
+            
+            <div id="price-breakdown-westmark" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-westmark" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-westmark">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-westmark">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games" id="book-now-westmark" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -775,8 +883,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="350"
+                   data-booking-url="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games"
+                   data-id="clover" />
+            
+            <div id="price-breakdown-clover" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-clover" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-clover">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-clover">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games" id="book-now-clover" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -809,8 +941,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="150"
+                   data-booking-url="https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome"
+                   data-id="8181" />
+            
+            <div id="price-breakdown-8181" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-8181" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-8181">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-8181">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome" id="book-now-8181" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -843,8 +999,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="150"
+                   data-booking-url="https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf"
+                   data-id="8182" />
+            
+            <div id="price-breakdown-8182" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-8182" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-8182">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-8182">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf" id="book-now-8182" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -877,8 +1057,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="300"
+                   data-booking-url="https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious"
+                   data-id="4403" />
+            
+            <div id="price-breakdown-4403" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-4403" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-4403">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-4403">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious" id="book-now-4403" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -911,8 +1115,32 @@ Janicka"</p>
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="200"
+                   data-booking-url="https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6"
+                   data-id="pcb" />
+            
+            <div id="price-breakdown-pcb" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-pcb" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-pcb">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-pcb">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6" id="book-now-pcb" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -974,29 +1202,8 @@ Janicka"</p>
       </article>
       
       <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable-1.html" class="block relative aspect-video overflow-hidden">
-          <img src="/static/images/blog/colorado-springs/colorado-springs-co-scenic-4667.jpg" alt="The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
-            colorado-springs
-          </div>
-        </a>
-        <div class="p-6">
-          <p class="font-body text-brand-sage text-sm mb-2">2026-04-12</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
-            <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable-1.html">The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do</a>
-          </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
-            Planning a trip? Discover the absolute best things to do in Colorado Springs, from Garden of the Gods to Pikes Peak. Your complete travel guide is here.
-          </p>
-          <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable-1.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
-            Read More <span class="ml-1">&rarr;</span>
-          </a>
-        </div>
-      </article>
-      
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
         <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html" class="block relative aspect-video overflow-hidden">
-          <img src="/static/images/blog/colorado-springs/the-ultimate-colorado-springs-travel-guide-15-unfo-9112.jpg" alt="The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
+          <img src="/static/images/blog/colorado-springs/colorado-springs-co-scenic-4667.jpg" alt="The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             colorado-springs
           </div>
@@ -1007,7 +1214,7 @@ Janicka"</p>
             <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html">The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do</a>
           </h3>
           <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
-            Planning a trip? Discover the best things to do in Colorado Springs, from Garden of the Gods to Pikes Peak. Your complete travel guide is here.
+            Planning a trip? Discover the absolute best things to do in Colorado Springs, from Garden of the Gods to Pikes Peak. Your complete travel guide is here.
           </p>
           <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
@@ -1073,6 +1280,27 @@ Janicka"</p>
             Heading to a Gainesville Gators game? Our UF game day guide covers everything from parking and tailgating to where to stay for the ultimate weekend.
           </p>
           <a href="/gainesville/blog/the-ultimate-uf-game-day-survival-guide-in.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+            Read More <span class="ml-1">&rarr;</span>
+          </a>
+        </div>
+      </article>
+      
+      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
+        <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html" class="block relative aspect-video overflow-hidden">
+          <img src="/static/images/blog/gainesville/the-ultimate-guide-to-the-best-natural-springs-nea-8523.jpg" alt="The Ultimate Guide to the Best Natural Springs Near Gainesville, FL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
+          <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
+            gainesville
+          </div>
+        </a>
+        <div class="p-6">
+          <p class="font-body text-brand-sage text-sm mb-2">2026-04-08</p>
+          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+            <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html">The Ultimate Guide to the Best Natural Springs Near Gainesville, FL</a>
+          </h3>
+          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+            Discover the best natural springs near Gainesville, FL for the perfect day trip. Our local's guide covers Ichetucknee, Ginnie, Rainbow Springs, and more!
+          </p>
+          <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>

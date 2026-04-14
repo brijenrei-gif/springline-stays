@@ -166,6 +166,49 @@
         container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
       });
     }
+
+    // Initialize Flatpickr for property cards
+    if (typeof flatpickr !== 'undefined') {
+      document.querySelectorAll('.date-picker').forEach(input => {
+        const baseRate = parseFloat(input.dataset.baseRate);
+        const propertyId = input.dataset.id;
+        const bookingUrl = input.dataset.bookingUrl;
+        const breakdown = document.getElementById(`price-breakdown-${propertyId}`);
+        const directSpan = document.getElementById(`direct-price-${propertyId}`);
+        const airbnbSpan = document.getElementById(`airbnb-price-${propertyId}`);
+        const vrboSpan = document.getElementById(`vrbo-price-${propertyId}`);
+        const bookNowBtn = document.getElementById(`book-now-${propertyId}`);
+
+        flatpickr(input, {
+          mode: "range",
+          minDate: "today",
+          dateFormat: "Y-m-d",
+          onClose: function(selectedDates) {
+            if (selectedDates.length === 2) {
+              const checkin = selectedDates[0];
+              const checkout = selectedDates[1];
+              const nights = Math.ceil((checkout - checkin) / (1000 * 60 * 60 * 24));
+              
+              if (nights > 0) {
+                const directTotal = baseRate * nights;
+                const airbnbTotal = Math.round(directTotal * 1.142);
+                const vrboTotal = Math.round(directTotal * 1.10);
+                
+                directSpan.textContent = `$${directTotal}`;
+                airbnbSpan.textContent = `$${airbnbTotal}`;
+                vrboSpan.textContent = `$${vrboTotal}`;
+                breakdown.classList.remove('hidden');
+                
+                // Update Book Now URL
+                const formattedCheckin = checkin.toISOString().split('T')[0];
+                const formattedCheckout = checkout.toISOString().split('T')[0];
+                bookNowBtn.href = `${bookingUrl}?checkin=${formattedCheckin}&checkout=${formattedCheckout}`;
+              }
+            }
+          }
+        });
+      });
+    }
   });
 </script>
 
@@ -238,8 +281,32 @@
             </div>
           </div>
           
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-brand-charcoal/60 uppercase mb-1">Dates & Price Comparison</label>
+            <input type="text" class="date-picker w-full p-2 border border-brand-sage/20 rounded text-sm mb-2 bg-white text-brand-charcoal" 
+                   placeholder="Select dates to compare prices"
+                   data-base-rate="{{ property.base_rate | default(200) }}"
+                   data-booking-url="{{ property.booking_url }}"
+                   data-id="{{ property.id }}" />
+            
+            <div id="price-breakdown-{{ property.id }}" class="hidden text-xs space-y-1 bg-white p-3 rounded border border-brand-sage/20 mb-2">
+              <div class="flex justify-between text-brand-charcoal font-semibold">
+                <span>Direct Booking (Save 15%):</span>
+                <span id="direct-price-{{ property.id }}" class="text-brand-gold">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>Airbnb:</span>
+                <span id="airbnb-price-{{ property.id }}">--</span>
+              </div>
+              <div class="flex justify-between text-brand-charcoal/60">
+                <span>VRBO:</span>
+                <span id="vrbo-price-{{ property.id }}">--</span>
+              </div>
+            </div>
+          </div>
+          
           <div class="mt-auto">
-            <a href="{{ property.booking_url }}" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="{{ property.booking_url }}" id="book-now-{{ property.id }}" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
