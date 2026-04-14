@@ -88,6 +88,7 @@ markets:
 properties:
   # ─── Colorado Springs ───
   - id: arch
+    hospitable_id: "d4c293a8-c0f1-4284-8606-c5701ccc28ab"
     name: "1112 Arch St"
     headline: "Views | 2 mins to OCC | Fire Pit | Games | Pets"
     market: colorado-springs
@@ -115,6 +116,7 @@ properties:
     active: true
 
   - id: westmark
+    hospitable_id: "6ff9988e-3a56-4d98-bb0b-a1ab4a966df6"
     name: "26 Westmark"
     headline: "Stunning Mountain Views, Hot Tub, Game Room"
     market: colorado-springs
@@ -141,6 +143,7 @@ properties:
     active: true
 
   - id: clover
+    hospitable_id: "758e44ee-cdb7-49e7-8162-bc0439b16557"
     name: "19 Clover"
     headline: "Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games"
     market: colorado-springs
