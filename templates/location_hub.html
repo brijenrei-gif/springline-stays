@@ -17,7 +17,21 @@
         "@type": "VacationRental",
         "name": "{{ property.headline }}",
         "image": "{{ site_url|default('https://springlinestays.com') }}{{ property.image_url }}",
-        "url": "{{ property.booking_url }}"
+        "url": "{{ property.booking_url }}",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "{{ market.name }}",
+          "addressRegion": "{{ market.state }}"
+        },
+        "containsPlace": {
+          "@type": "Accommodation",
+          "numberOfBedrooms": {{ property.bedrooms }},
+          "numberOfBathroomsTotal": {{ property.bathrooms }},
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "value": {{ property.guests }}
+          }
+        }
       }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
