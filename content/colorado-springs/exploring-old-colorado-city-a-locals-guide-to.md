@@ -182,7 +182,7 @@ After a full day of exploring historic streets, savoring delicious meals, and ad
 
 If you want to be as close as possible to the action, our [**Views**](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets) property is an absolute gem. Located just a two-minute drive from the heart of Old Colorado City, this home for up to 8 guests is perfect for families or groups of friends. Imagine spending your day gallery-hopping and then coming back to unwind by the fire pit with stunning city and mountain views—it's the perfect end to a perfect day.
 
-For larger groups or families looking for an unforgettable experience with all the bells and whistles, the [**Epic Family Home**](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games) offers a vacation in itself. After a day of exploring OCC and nearby Garden of the Gods, you can challenge the family to a round of mini-golf, relax in the private sauna, or soak in the hot tub under the vast Colorado sky. It’s the ultimate blend of local adventure and private relaxation.
+For larger groups or families looking for an unforgettable experience with all the bells and whistles, the [**Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games**](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games) offers a vacation in itself. After a day of exploring OCC and nearby Garden of the Gods, you can challenge the family to a round of mini-golf, relax in the private sauna, or soak in the hot tub under the vast Colorado sky. It’s the ultimate blend of local adventure and private relaxation.
 
 <a id="faq"></a>
 ## Frequently Asked Questions
@@ -219,3 +219,7 @@ Ready to explore the historic streets and vibrant culture for yourself? Find the
 
 ![Views | 2 mins to OCC | Fire Pit | Games | Pets](/static/images/properties/arch/image_1.jpg)
 *[Views | 2 mins to OCC | Fire Pit | Games | Pets — Book your stay →](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets)*
+
+
+![Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](/static/images/properties/clover/image_1.jpg)
+*[Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games — Book your stay →](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)*

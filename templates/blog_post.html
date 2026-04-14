@@ -27,16 +27,7 @@
   {% if post.referenced_properties %}
   "mentions": [
     {% for prop in post.referenced_properties %}
-    {
-      "@type": "VacationRental",
-      "name": "{{ prop.headline }}",
-      "url": "{{ prop.booking_url }}",
-      "image": "{{ prop.image_url }}",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "{{ prop.address }}"
-      }
-    }{% if not loop.last %},{% endif %}
+    {{ prop.json_ld_str }}{% if not loop.last %},{% endif %}
     {% endfor %}
   ]
   {% endif %}

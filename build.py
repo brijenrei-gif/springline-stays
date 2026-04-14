@@ -78,7 +78,7 @@ def auto_link_content(html_content, markets):
     return html_content
 
 
-def collect_posts():
+def collect_posts(properties):
     """Collect all blog posts from content/ directories."""
     posts = []
     config = load_config()
@@ -170,7 +170,7 @@ def collect_posts():
             prop_urls = re.findall(fr'{re.escape(booking_domain)}/property/([a-zA-Z0-9-]+)', html_content)
             
             for prop_slug in prop_urls:
-                for p in config.get('properties', []):
+                for p in properties:
                     if prop_slug in p.get('booking_url', ''):
                         if p not in referenced_props:
                             referenced_props.append(p)
@@ -337,6 +337,47 @@ def build():
         else:
             p['aggregate_rating'] = None
 
+        # 3. Generate JSON-LD for properties
+        address_dict = {"@type": "PostalAddress"}
+        if p.get('street_address'): address_dict["streetAddress"] = p['street_address']
+        if p.get('address_locality'): address_dict["addressLocality"] = p['address_locality']
+        if p.get('address_region'): address_dict["addressRegion"] = p['address_region']
+        if p.get('postal_code'): address_dict["postalCode"] = p['postal_code']
+        if p.get('address_country'): address_dict["addressCountry"] = p['address_country']
+        
+        # Fallback to full address if street_address is missing
+        if "streetAddress" not in address_dict and p.get('address'):
+            address_dict["streetAddress"] = p['address']
+
+        json_ld = {
+            "@type": "VacationRental",
+            "name": p.get('headline'),
+            "url": p.get('booking_url'),
+            "description": p.get('description', '').replace('\n', ' '),
+            "image": [f"https://springlinestays.com{img}" for img in p.get('images', [])],
+            "address": address_dict
+        }
+
+        if p.get('aggregate_rating'):
+            json_ld["aggregateRating"] = {
+                "@type": "AggregateRating",
+                "ratingValue": str(p['aggregate_rating']['rating_value']),
+                "reviewCount": str(p['aggregate_rating']['review_count'])
+            }
+
+        if p.get('reviews'):
+            json_ld["review"] = [
+                {
+                    "@type": "Review",
+                    "author": {"@type": "Person", "name": r.get('author')},
+                    "reviewBody": r.get('text')
+                }
+                for r in p['reviews']
+            ]
+
+        import json
+        p['json_ld_str'] = json.dumps(json_ld, indent=2)
+
     # Create Jinja2 environment
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 
@@ -350,7 +391,7 @@ def build():
 
     # Collect all posts
     print("Collecting blog posts...")
-    all_posts = collect_posts()
+    all_posts = collect_posts(properties)
     print(f"  Found {len(all_posts)} posts")
 
     # Verify assets and links
