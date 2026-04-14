@@ -1294,6 +1294,7 @@ document.addEventListener('DOMContentLoaded', () => {
         flatpickr(calendarInput, {
           mode: "range",
           dateFormat: "Y-m-d",
+          minDate: "today",
           disable: data.blocked_dates || [],
           onChange: function(selectedDates) {
             if (selectedDates.length === 2) {
