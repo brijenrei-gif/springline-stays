@@ -93,6 +93,11 @@ properties:
     headline: "Views | 2 mins to OCC | Fire Pit | Games | Pets"
     market: colorado-springs
     address: "1112 Arch Street, Colorado Springs, CO 80904"
+    street_address: "1112 Arch Street"
+    address_locality: "Colorado Springs"
+    address_region: "CO"
+    postal_code: "80904"
+    address_country: "US"
     latitude: 38.8369971
     longitude: -104.86596074
     guests: 8
@@ -123,6 +128,11 @@ properties:
     headline: "Stunning Mountain Views, Hot Tub, Game Room"
     market: colorado-springs
     address: "26 Westmark Ave, Colorado Springs, CO 80906"
+    street_address: "26 Westmark Ave"
+    address_locality: "Colorado Springs"
+    address_region: "CO"
+    postal_code: "80906"
+    address_country: "US"
     latitude: 38.7790168
     longitude: -104.7926448
     guests: 11
@@ -152,6 +162,11 @@ properties:
     headline: "Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games"
     market: colorado-springs
     address: "19 Clover Cir E, Colorado Springs, CO 80906"
+    street_address: "19 Clover Cir E"
+    address_locality: "Colorado Springs"
+    address_region: "CO"
+    postal_code: "80906"
+    address_country: "US"
     latitude: 38.7776783
     longitude: -104.7970936
     guests: 11
@@ -182,6 +197,11 @@ properties:
     headline: "Walk to UF Stadium, No Cleanup, Cozy Townhome"
     market: gainesville
     address: "818 Northwest 3rd Avenue, Gainesville, FL 32601"
+    street_address: "818 Northwest 3rd Avenue"
+    address_locality: "Gainesville"
+    address_region: "FL"
+    postal_code: "32601"
+    address_country: "US"
     latitude: 29.6540192
     longitude: -82.3335956
     guests: 6
@@ -207,6 +227,11 @@ properties:
     headline: "Walk to University, Pet Friendly, Cozy Townhome"
     market: gainesville
     address: "818 Northwest 3rd Avenue, Gainesville, FL 32601"
+    street_address: "818 Northwest 3rd Avenue"
+    address_locality: "Gainesville"
+    address_region: "FL"
+    postal_code: "32601"
+    address_country: "US"
     latitude: 29.6540192
     longitude: -82.3335956
     guests: 6
@@ -233,6 +258,11 @@ properties:
     headline: "Spacious Retreat Near UF & Shands"
     market: gainesville
     address: "4403 Northwest 43rd Place, Gainesville, FL 32606"
+    street_address: "4403 Northwest 43rd Place"
+    address_locality: "Gainesville"
+    address_region: "FL"
+    postal_code: "32606"
+    address_country: "US"
     latitude: 29.6945266
     longitude: -82.3900397
     guests: 12
@@ -261,6 +291,9 @@ properties:
     headline: "On the Beach | Ocean Views | Sleeps 6"
     market: panama-city-beach
     address: "Panama City Beach, FL"
+    address_locality: "Panama City Beach"
+    address_region: "FL"
+    address_country: "US"
     latitude: 30.176556
     longitude: -85.8059089
     guests: 6

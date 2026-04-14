@@ -299,6 +299,44 @@ def build():
                     alternated_reviews.append(reviews_by_prop[prop][i])
         reviews = alternated_reviews
 
+    # Enrich properties with images and reviews
+    for p in properties:
+        # 1. Images
+        image_dir = p.get('image_dir')
+        if image_dir:
+            abs_image_dir = os.path.join(BASE_DIR, image_dir)
+            if os.path.exists(abs_image_dir):
+                images = glob.glob(os.path.join(abs_image_dir, '*.jpg'))
+                # Convert to relative paths for web
+                p['images'] = ['/' + os.path.relpath(img, BASE_DIR) for img in images]
+            else:
+                p['images'] = [p.get('image_url')] if p.get('image_url') else []
+        else:
+             p['images'] = [p.get('image_url')] if p.get('image_url') else []
+             
+        # 2. Reviews
+        prop_reviews = []
+        prop_name = p.get('name')
+        prop_headline = p.get('headline')
+        
+        for r in reviews:
+            r_prop_name = r.get('property_name')
+            r_prop_public = r.get('property_public_name')
+            
+            if (prop_name and r_prop_name == prop_name) or (prop_headline and r_prop_public == prop_headline):
+                prop_reviews.append(r)
+                
+        p['reviews'] = prop_reviews
+        
+        if prop_reviews:
+            ratings = [float(r.get('rating', 5)) for r in prop_reviews]
+            p['aggregate_rating'] = {
+                'rating_value': sum(ratings) / len(ratings),
+                'review_count': len(ratings)
+            }
+        else:
+            p['aggregate_rating'] = None
+
     # Create Jinja2 environment
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 

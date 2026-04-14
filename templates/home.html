@@ -43,13 +43,46 @@
           },
           "name": {{ property.headline | tojson }},
           "description": {{ property.description | replace('\n', ' ') | tojson }},
-          "image": {{ ("https://springlinestays.com" ~ property.image_url) | tojson }},
+          "image": [
+            {% for img in property.images %}
+            {{ ("https://springlinestays.com" ~ img) | tojson }}{% if not loop.last %},{% endif %}
+            {% endfor %}
+          ],
           "url": {{ property.booking_url | tojson }},
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": {{ property_market.name | tojson }},
-            "addressRegion": {{ property_market.state | tojson }}
-          },
+            {% if property.street_address %}"streetAddress": {{ property.street_address | tojson }},{% endif %}
+            {% if property.address_locality %}"addressLocality": {{ property.address_locality | tojson }},{% else %}"addressLocality": {{ property_market.name | tojson }},{% endif %}
+            {% if property.address_region %}"addressRegion": {{ property.address_region | tojson }},{% else %}"addressRegion": {{ property_market.state | tojson }},{% endif %}
+            {% if property.postal_code %}"postalCode": {{ property.postal_code | tojson }},{% endif %}
+            "addressCountry": {{ property.address_country | default("US") | tojson }}
+          }
+          {% if property.aggregate_rating %},
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": {{ property.aggregate_rating.rating_value | round(1) }},
+            "reviewCount": {{ property.aggregate_rating.review_count }}
+          }
+          {% endif %}
+          {% if property.reviews %},
+          "review": [
+            {% for r in property.reviews %}
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": {{ r.author | tojson }}
+              },
+              "datePublished": {{ r.date | tojson }},
+              "reviewBody": {{ r.text | tojson }},
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": {{ r.rating }}
+              }
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+          ]
+          {% endif %},
           "containsPlace": {
             "@type": "Accommodation",
             "numberOfBedrooms": {{ property.bedrooms }},
