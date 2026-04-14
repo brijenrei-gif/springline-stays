@@ -112,7 +112,6 @@ properties:
       - "Full Kitchen"
     image_dir: "static/images/properties/arch"
     image_url: "/static/images/properties/arch/image_1.jpg"
-    base_rate: 250
     active: true
 
   - id: westmark
@@ -139,7 +138,6 @@ properties:
       - "Full Kitchen"
     image_dir: "static/images/properties/family-friendly-firepit-hottub-views-games"
     image_url: "/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg"
-    base_rate: 350
     active: true
 
   - id: clover
@@ -167,7 +165,6 @@ properties:
       - "Full Kitchen"
     image_dir: "static/images/properties/clover"
     image_url: "/static/images/properties/clover/image_1.jpg"
-    base_rate: 350
     active: true
 
   # ─── Gainesville ───
@@ -192,7 +189,6 @@ properties:
       - "Smart TV"
     image_dir: "static/images/properties/818_1"
     image_url: "/static/images/properties/818_1/image_1.jpg"
-    base_rate: 150
     active: true
 
   - id: 818_2
@@ -217,7 +213,6 @@ properties:
       - "Full Kitchen"
     image_dir: "static/images/properties/818_2"
     image_url: "/static/images/properties/818_2/image_1.jpg"
-    base_rate: 150
     active: true
 
   - id: 4403
@@ -243,7 +238,6 @@ properties:
       - "Full Kitchen"
     image_dir: "static/images/properties/4403"
     image_url: "/static/images/properties/4403/image_1.jpg"
-    base_rate: 300
     active: true
 
   # ─── Panama City Beach ───
@@ -269,5 +263,4 @@ properties:
       - "Full Kitchen"
     image_dir: "static/images/properties/pcb"
     image_url: "/static/images/properties/pcb/image_1.jpg"
-    base_rate: 200
     active: true
