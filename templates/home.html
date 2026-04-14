@@ -35,6 +35,12 @@
         "position": {{ loop.index }},
         "item": {
           "@type": "VacationRental",
+          "identifier": {{ property.id | tojson }},
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": {{ property.latitude }},
+            "longitude": {{ property.longitude }}
+          },
           "name": {{ property.headline | tojson }},
           "description": {{ property.description | replace('\n', ' ') | tojson }},
           "image": {{ ("https://springlinestays.com" ~ property.image_url) | tojson }},

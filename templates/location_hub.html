@@ -15,6 +15,12 @@
       "position": {{ loop.index }},
       "item": {
         "@type": "VacationRental",
+        "identifier": "{{ property.id }}",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": {{ property.latitude }},
+          "longitude": {{ property.longitude }}
+        },
         "name": "{{ property.headline }}",
         "image": "{{ site_url|default('https://springlinestays.com') }}{{ property.image_url }}",
         "url": "{{ property.booking_url }}",
