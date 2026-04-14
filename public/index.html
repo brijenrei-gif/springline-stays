@@ -1295,7 +1295,14 @@ document.addEventListener('DOMContentLoaded', () => {
           mode: "range",
           dateFormat: "Y-m-d",
           minDate: "today",
-          disable: data.blocked_dates || [],
+          onDayCreate: function(dObj, dStr, fp, dayElem) {
+            const dateStr = dayElem.dateObj.toISOString().split('T')[0];
+            if (data.blocked_dates && data.blocked_dates.includes(dateStr)) {
+              dayElem.classList.add('blocked-night');
+              dayElem.style.color = '#ccc';
+              dayElem.style.textDecoration = 'line-through';
+            }
+          },
           onChange: function(selectedDates) {
             if (selectedDates.length === 2) {
               const start = selectedDates[0];
@@ -1303,10 +1310,23 @@ document.addEventListener('DOMContentLoaded', () => {
               
               let totalBase = 0;
               let currentDate = new Date(start);
+              let isValid = true;
+
               while (currentDate < end) {
                 const dateStr = currentDate.toISOString().split('T')[0];
-                totalBase += (data.prices && data.prices[dateStr]) || 150; // Fallback to 150
+                if (data.blocked_dates && data.blocked_dates.includes(dateStr)) {
+                  isValid = false;
+                  break;
+                }
+                totalBase += (data.prices && data.prices[dateStr]) || 150;
                 currentDate.setDate(currentDate.getDate() + 1);
+              }
+
+              if (!isValid) {
+                alert("Selected dates include occupied nights. Please choose available dates.");
+                this.clear();
+                breakdownEl.classList.add('hidden');
+                return;
               }
 
               const directTotal = totalBase * 1.10;
