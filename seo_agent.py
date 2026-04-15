@@ -217,6 +217,12 @@ def generate_blog_post(config, market_id, planned_post=None):
 
     today = date.today().isoformat()
 
+    # Get existing titles for this market to avoid duplicates
+    plan = load_content_plan()
+    market_posts = plan.get('markets', {}).get(market_id, [])
+    existing_titles = [p['title'] for p in market_posts if 'title' in p]
+    existing_titles_str = "\n".join([f"- {t}" for t in existing_titles])
+
     if planned_post:
         topic_instruction = f"Write about the specific topic: '{planned_post['title']}'."
         keywords_list = planned_post.get('keywords', [])
@@ -244,6 +250,10 @@ Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website S
 **Nearby attractions**: {', '.join(attractions)}
 **Our properties in this market**:
 {property_context}
+
+**IMPORTANT: Avoid Duplicate Topics**
+We already have posts with the following titles in this market. You MUST NOT write a post with a similar title or topic. Choose a distinctly different angle or focus.
+{existing_titles_str}
 
 **Requirements**:
 1. {topic_instruction}
