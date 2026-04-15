@@ -8,25 +8,25 @@
 
 {% block content %}
 <!-- Header -->
-<div class="bg-brand-cream pt-24 pb-12 px-4 border-b border-brand-sage/20">
+<div class="bg-brand-charcoal pt-24 pb-12 px-4 border-b border-white/10">
     <div class="max-w-7xl mx-auto text-center">
-        <nav class="mb-4 flex flex-wrap justify-center font-body text-sm font-medium text-brand-sage/80 uppercase tracking-widest gap-2">
+        <nav class="mb-4 flex flex-wrap justify-center font-body text-sm font-medium text-brand-cream/60 uppercase tracking-widest gap-2">
             <a href="/" class="hover:text-brand-gold transition-colors">Home</a>
             <span>/</span>
             {% if market %}
             <a href="/markets/{{ market.id }}" class="hover:text-brand-gold transition-colors">{{ market.name }}</a>
             <span>/</span>
             {% endif %}
-            <span class="text-brand-charcoal">Blog</span>
+            <span class="text-brand-cream">Blog</span>
         </nav>
-        <h1 class="font-heading text-4xl md:text-6xl font-bold text-brand-charcoal">
+        <h1 class="font-heading text-4xl md:text-6xl font-bold text-brand-cream">
             {% if market %}
             {{ market.name }} Journal
             {% else %}
             The Journal
             {% endif %}
         </h1>
-        <p class="mt-4 font-body text-lg text-brand-charcoal/60 max-w-2xl mx-auto">
+        <p class="mt-4 font-body text-lg text-brand-cream/80 max-w-2xl mx-auto">
             Discover local guides, travel inspiration, and property highlights.
         </p>
     </div>
@@ -34,19 +34,19 @@
 
 <div class="max-w-7xl mx-auto px-4 py-12 md:py-16">
     <!-- Filters -->
-    <div class="mb-12 flex flex-col md:flex-row items-center justify-center gap-4 border-b border-brand-sage/10 pb-8">
-        <span class="font-heading italic text-brand-sage md:mr-4">Filter by destination:</span>
+    <div class="mb-12 flex flex-col md:flex-row items-center justify-center gap-4 border-b border-white/10 pb-8">
+        <span class="font-heading italic text-brand-cream/60 md:mr-4">Filter by destination:</span>
         <div class="flex flex-wrap justify-center gap-3">
-            <a href="/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if not market %}bg-brand-gold text-white border-brand-gold{% else %}bg-transparent text-brand-charcoal border-brand-sage/30 hover:border-brand-gold hover:text-brand-gold{% endif %}">
+            <a href="/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if not market %}bg-brand-cream text-brand-charcoal border-brand-cream{% else %}bg-transparent text-brand-cream border-white/20 hover:border-brand-gold hover:text-brand-gold{% endif %}">
                 All
             </a>
-            <a href="/colorado-springs/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if market and market.id == 'colorado-springs' %}bg-brand-gold text-white border-brand-gold{% else %}bg-transparent text-brand-charcoal border-brand-sage/30 hover:border-brand-gold hover:text-brand-gold{% endif %}">
+            <a href="/colorado-springs/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if market and market.id == 'colorado-springs' %}bg-brand-cream text-brand-charcoal border-brand-cream{% else %}bg-transparent text-brand-cream border-white/20 hover:border-brand-gold hover:text-brand-gold{% endif %}">
                 Colorado Springs
             </a>
-            <a href="/gainesville/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if market and market.id == 'gainesville' %}bg-brand-gold text-white border-brand-gold{% else %}bg-transparent text-brand-charcoal border-brand-sage/30 hover:border-brand-gold hover:text-brand-gold{% endif %}">
+            <a href="/gainesville/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if market and market.id == 'gainesville' %}bg-brand-cream text-brand-charcoal border-brand-cream{% else %}bg-transparent text-brand-cream border-white/20 hover:border-brand-gold hover:text-brand-gold{% endif %}">
                 Gainesville
             </a>
-            <a href="/panama-city-beach/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if market and market.id == 'panama-city-beach' %}bg-brand-gold text-white border-brand-gold{% else %}bg-transparent text-brand-charcoal border-brand-sage/30 hover:border-brand-gold hover:text-brand-gold{% endif %}">
+            <a href="/panama-city-beach/blog" class="px-5 py-2 rounded-full font-body text-sm font-semibold transition-all duration-200 border {% if market and market.id == 'panama-city-beach' %}bg-brand-cream text-brand-charcoal border-brand-cream{% else %}bg-transparent text-brand-cream border-white/20 hover:border-brand-gold hover:text-brand-gold{% endif %}">
                 Panama City Beach
             </a>
         </div>
@@ -56,32 +56,32 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8">
         {% for post in posts %}
         <article class="flex flex-col group">
-            <a href="{{ post.url }}" class="block relative w-full h-72 md:h-80 overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-md transition-shadow">
+            <a href="{{ post.url }}" class="block relative w-full h-72 md:h-80 overflow-hidden rounded-2xl mb-6 group">
                 <img src="{{ post.hero_image or fallback_images.get(post.market) or '/static/images/placeholder_blog.jpg' }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 {% if post.market_tag %}
-                <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded shadow-sm">
-                    <span class="font-body text-xs font-bold text-brand-gold uppercase tracking-wide">{{ post.market_tag }}</span>
+                <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 rounded shadow-sm">
+                    <span class="font-body text-xs font-bold text-brand-cream uppercase tracking-wide">{{ post.market_tag }}</span>
                 </div>
                 {% endif %}
             </a>
             
             <div class="flex-grow flex flex-col">
                 <div class="flex items-center mb-3">
-                    <time class="font-body text-sm text-brand-sage">{{ post.date }}</time>
-                    <div class="w-1 h-1 rounded-full bg-brand-sage/50 mx-3"></div>
-                    <span class="font-body text-sm text-brand-charcoal/50">Travel Guide</span>
+                    <time class="font-body text-sm text-brand-cream/60">{{ post.date }}</time>
+                    <div class="w-1 h-1 rounded-full bg-white/20 mx-3"></div>
+                    <span class="font-body text-sm text-brand-cream/60">Travel Guide</span>
                 </div>
                 
-                <h2 class="font-heading text-2xl font-bold text-brand-charcoal mb-3 leading-snug group-hover:text-brand-gold transition-colors">
+                <h2 class="font-heading text-2xl font-bold text-brand-cream mb-3 leading-snug group-hover:text-brand-gold transition-colors">
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </h2>
                 
-                <p class="font-body text-brand-charcoal/70 mb-5 line-clamp-3">
+                <p class="font-body text-brand-cream/70 mb-5 line-clamp-3">
                     {{ post.excerpt }}
                 </p>
                 
                 <div class="mt-auto">
-                    <a href="{{ post.url }}" class="inline-flex items-center font-body text-sm font-bold text-brand-charcoal hover:text-brand-gold transition-colors pb-1 border-b-2 border-brand-gold/30 hover:border-brand-gold">
+                    <a href="{{ post.url }}" class="inline-flex items-center font-body text-sm font-bold text-brand-cream hover:text-brand-gold transition-colors pb-1 border-b-2 border-brand-gold/30 hover:border-brand-gold">
                         Read More
                         <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -93,9 +93,9 @@
         {% endfor %}
         
         {% if not posts %}
-        <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-20 bg-brand-cream rounded-2xl">
-            <h3 class="font-heading text-2xl text-brand-charcoal mb-2">No posts found</h3>
-            <p class="font-body text-brand-charcoal/60">Check back later for updates from this destination.</p>
+        <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-20 bg-white/5 rounded-2xl">
+            <h3 class="font-heading text-2xl text-brand-cream mb-2">No posts found</h3>
+            <p class="font-body text-brand-cream/60">Check back later for updates from this destination.</p>
         </div>
         {% endif %}
     </div>
