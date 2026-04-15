@@ -64,19 +64,30 @@ def parse_markdown_file(filepath):
 
 def auto_link_content(html_content, markets):
     """Automatically link market names to their hubs if not already linked."""
-    for market in markets:
-        name = market['name']
-        market_id = market['id']
-        url = f"/{market_id}/"
-        
-        # Regex to avoid linking if already inside an <a> tag
-        pattern = rf'(?!<a[^>]*>)\b({re.escape(name)})\b(?![^<]*<\/a>)'
-        replacement = rf'<a href="{url}" class="text-brand-gold hover:underline">{name}</a>'
-        
-        # Replace first occurrence
-        html_content = re.sub(pattern, replacement, html_content, count=1)
-        
-    return html_content
+    parts = re.split(r'(<[^>]+>)', html_content)
+    in_link = False
+    for i in range(len(parts)):
+        if i % 2 == 1:  # It's a tag
+            tag = parts[i].lower()
+            if tag.startswith('<a'):
+                in_link = True
+            elif tag == '</a>':
+                in_link = False
+        else:  # It's text
+            if not in_link:
+                for market in markets:
+                    name = market['name']
+                    market_id = market['id']
+                    url = f"/{market_id}/"
+                    
+                    pattern = rf'\b({re.escape(name)})\b'
+                    replacement = rf'<a href="{url}" class="text-brand-gold hover:underline">{name}</a>'
+                    
+                    new_text, count = re.subn(pattern, replacement, parts[i], count=1)
+                    if count > 0:
+                        parts[i] = new_text
+                        break  # Only link one market per text part
+    return "".join(parts)
 
 
 def check_for_similar_posts(all_posts, threshold=0.8):
