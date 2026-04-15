@@ -143,23 +143,23 @@ The short-term rental landscape is becoming increasingly regulated. Staying on t
 <a id="the-financial-breakdown"></a>
 ## The Financial Breakdown: Self-Management vs. Professional Management
 
-It's easy to look at a 20-25% management fee and think, "I can save that by doing it myself." But this is often a false economy. Let's look at a hypothetical comparison for a 3-bedroom home over one year.
+It's easy to look at a 20% management fee and think, "I can save that by doing it myself." But this is often a false economy. Let's look at a hypothetical comparison for a 3-bedroom home over one year.
 
 | Metric | Self-Managed Owner | Professionally Managed (by Springline Stays) |
 | :--- | :--- | :--- |
 | **Average Daily Rate (ADR)** | $250 (Static Pricing) | $325 (Dynamic Pricing) |
 | **Occupancy Rate** | 60% (1-2 Listing Sites) | 75% (Multi-Channel Marketing) |
 | **Gross Annual Revenue** | $54,750 | $88,906 |
-| **Management Fee** | $0 | -$22,226 (at 25%) |
-| **Net Revenue (Pre-Expenses)** | **$54,750** | **$66,680** |
-| **Increase in Net Revenue** | - | **+$11,930 (21.8% Lift)** |
+| **Management Fee** | $0 | -$17,781 (at 20%) |
+| **Net Revenue (Pre-Expenses)** | **$54,750** | **$71,125** |
+| **Increase in Net Revenue** | - | **+$16,375 (29.9% Lift)** |
 | **Owner Time Spent** | 10-15 hours/week | 0-1 hour/week |
 
-In this scenario, despite the management fee, the owner who partnered with a professional firm netted nearly **$12,000 more** in income. And that's *before* factoring in the value of their reclaimed time and the peace of mind that comes with expert oversight.
+In this scenario, despite the management fee, the owner who partnered with a professional firm netted over **$16,000 more** in income. And that's *before* factoring in the value of their reclaimed time and the peace of mind that comes with expert oversight.
 
-For larger properties, this effect is amplified. A property like **[The Lakeside Retreat](booking_url)**, which can host groups of up to 12, has a much higher revenue ceiling. A professional manager can market it effectively for high-value bookings like family reunions or corporate retreats, securing week-long stays at premium rates that a self-managing owner, with limited marketing reach, might miss entirely.
+For larger properties, this effect is amplified. A property like **[Epic Family Home](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)**, which can host groups of up to 11, has a much higher revenue ceiling. A professional manager can market it effectively for high-value bookings like family reunions or corporate retreats, securing week-long stays at premium rates that a self-managing owner, with limited marketing reach, might miss entirely.
 
-![A spacious deck with a grill and comfortable seating overlooking a serene lake at sunset.](/images/placeholder-property-2.jpg)
+![A beautiful family home in Colorado Springs with a hot tub and mountain views.](/static/images/properties/clover/image_1.jpg)
 
 <a id="choosing-the-right-partner"></a>
 ## Choosing the Right Partner for Your Property
@@ -206,6 +206,6 @@ Dynamic pricing uses sophisticated software to analyze vast amounts of data in r
 
 ### Your Next Great Decision Starts Here
 
-Your vacation rental is more than just a property; it's a significant investment. Let us help you make it as profitable and stress-free as possible. Explore our collection of beautifully managed properties and see the Springline Stays difference for yourself.
+Your vacation rental is more than just a property; it's a significant investment. Let us help you make it as profitable and stress-free as possible.
 
-[**Book Your Next Getaway with Springline Stays**](https://www.springlinestays.com/all-rentals)
+Ready to maximize your ROI? **[Schedule a Call with Us](https://www.springlinestays.com/property-management)** or explore our services to see how we can help you succeed.
