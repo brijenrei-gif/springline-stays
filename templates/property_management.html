@@ -4,93 +4,93 @@
 {% block description %}{{ hero.subtitle }}{% endblock %}
 
 {% block content %}
-<main class="bg-gray-50 min-h-screen">
-    <!-- Hero Section -->
-    <div class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-            <div class="text-center">
-                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracki-tight lg:text-6xl">
-                    {{ hero.title }}
-                </h1>
-                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
-                    {{ hero.subtitle }}
-                </p>
-                <div class="mt-8 flex justify-center">
-                    <a href="{{ hero.cta_link }}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-                        {{ hero.cta_text }}
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tabs & Content Section -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">Full-Service Management</h2>
-            <p class="mt-4 text-lg text-gray-500">We take care of everything, so you can relax and enjoy the profits.</p>
-        </div>
-
-        <!-- Tabs Navigation -->
-        <div class="flex flex-wrap justify-center gap-2 mb-8">
-            {% for section in sections %}
-            <button 
-                onclick="switchTab('{{ section.id }}')"
-                id="tab-btn-{{ section.id }}"
-                class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 {% if loop.first %}bg-indigo-600 text-white{% else %}bg-white text-gray-700 hover:bg-gray-100{% endif %}"
-            >
-                {{ section.title }}
-            </button>
-            {% endfor %}
-        </div>
-
-        <!-- Tab Content -->
-        <div>
-            {% for section in sections %}
-            <div 
-                id="tab-content-{{ section.id }}" 
-                class="tab-content {% if not loop.first %}hidden{% endif %}"
-            >
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {% for service in section.services %}
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-150">
-                        <div class="flex items-center mb-4">
-                            <span class="text-2xl mr-3">{{ service.icon }}</span>
-                            <h3 class="text-lg font-bold text-gray-900">{{ service.title }}</h3>
-                        </div>
-                        <p class="text-gray-600 text-sm">{{ service.description }}</p>
+    <main class="bg-brand-charcoal text-brand-cream min-h-screen">
+        <!-- Hero Section -->
+        <div class="bg-brand-charcoal border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+                <div class="text-center">
+                    <h1 class="font-heading text-5xl md:text-7xl font-bold mb-4 tracking-tight text-brand-cream">
+                        {{ hero.title }}
+                    </h1>
+                    <p class="font-body text-xl md:text-2xl font-light tracking-wide text-brand-light-gold drop-shadow-md mt-5 max-w-xl mx-auto">
+                        {{ hero.subtitle }}
+                    </p>
+                    <div class="mt-8 flex justify-center">
+                        <a href="{{ hero.cta_link }}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-gold hover:bg-brand-gold/90">
+                            {{ hero.cta_text }}
+                        </a>
                     </div>
-                    {% endfor %}
                 </div>
             </div>
-            {% endfor %}
         </div>
-    </div>
+
+        <!-- Tabs & Content Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-brand-cream">Full-Service Management</h2>
+                <p class="mt-4 text-lg text-brand-cream/70">We take care of everything, so you can relax and enjoy the profits.</p>
+            </div>
+    
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                {% for section in sections %}
+                <button 
+                    onclick="switchTab('{{ section.id }}')"
+                    id="tab-btn-{{ section.id }}"
+                    class="tab-btn px-4 py-2 rounded-full text-sm font-medium focus:outline-none transition-colors duration-150 {% if loop.first %}bg-brand-gold text-white{% else %}bg-white/5 text-brand-cream hover:bg-white/10{% endif %}"
+                >
+                    {{ section.title }}
+                </button>
+                {% endfor %}
+            </div>
+    
+            <!-- Tab Content -->
+            <div>
+                {% for section in sections %}
+                <div 
+                    id="tab-content-{{ section.id }}" 
+                    class="tab-content {% if not loop.first %}hidden{% endif %}"
+                >
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {% for service in section.services %}
+                        <div class="bg-white/5 rounded-lg shadow-sm border border-white/10 p-6 hover:shadow-md transition-shadow duration-150">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">{{ service.icon }}</span>
+                                <h3 class="text-lg font-bold text-brand-cream">{{ service.title }}</h3>
+                            </div>
+                            <p class="text-brand-cream/70 text-sm">{{ service.description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
 
     <!-- Blog Section -->
     {% if posts %}
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-white/10">
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">Latest Insights</h2>
-            <p class="mt-4 text-lg text-gray-500">Tips and advice for property owners.</p>
+            <h2 class="text-3xl font-bold text-brand-cream">Latest Insights</h2>
+            <p class="mt-4 text-lg text-brand-cream/70">Tips and advice for property owners.</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for post in posts %}
-            <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-150">
+            <div class="bg-white/5 rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-150">
                 {% if post.hero_image %}
                 <img class="h-48 w-full object-cover" src="{{ post.hero_image }}" alt="{{ post.title }}">
                 {% endif %}
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">
-                        <a href="{{ post.url }}" class="hover:text-indigo-600">
+                    <h3 class="text-xl font-bold text-brand-cream mb-2 hover:text-brand-gold">
+                        <a href="{{ post.url }}">
                             {{ post.title }}
                         </a>
                     </h3>
-                    <p class="text-gray-600 text-sm mb-4">{{ post.description }}</p>
+                    <p class="text-brand-cream/70 text-sm mb-4">{{ post.description }}</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-gray-500 text-xs">{{ post.date }}</span>
-                        <a href="{{ post.url }}" class="text-indigo-600 hover:text-indigo-500 font-medium text-sm">Read more &rarr;</a>
+                        <span class="text-brand-cream/60 text-xs">{{ post.date }}</span>
+                        <a href="{{ post.url }}" class="text-brand-gold hover:text-brand-gold/80 font-medium text-sm">Read more &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -113,14 +113,14 @@
         
         // Reset all tab buttons
         document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.classList.remove('bg-indigo-600', 'text-white');
-            btn.classList.add('bg-white', 'text-gray-700', 'hover:bg-gray-100');
+            btn.classList.remove('bg-brand-gold', 'text-white');
+            btn.classList.add('bg-white/5', 'text-brand-cream', 'hover:bg-white/10');
         });
         
         // Set active tab button
         const activeBtn = document.getElementById('tab-btn-' + tabId);
-        activeBtn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-gray-100');
-        activeBtn.classList.add('bg-indigo-600', 'text-white');
+        activeBtn.classList.remove('bg-white/5', 'text-brand-cream', 'hover:bg-white/10');
+        activeBtn.classList.add('bg-brand-gold', 'text-white');
     }
 </script>
 {% endblock %}
