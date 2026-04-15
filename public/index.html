@@ -1246,7 +1246,7 @@
             }
         }
         body {
-            @apply font-body bg-brand-cream text-brand-charcoal;
+            @apply font-body bg-brand-charcoal text-brand-cream;
         }
         h1, h2, h3, h4, h5, h6 {
             @apply font-heading;
@@ -1326,30 +1326,6 @@
       Discover handpicked luxury rentals for your next getaway.
     </p>
     
-    <!-- Search Bar Placeholder -->
-    <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row gap-4 w-full max-w-4xl text-left mb-10">
-      <div class="flex-1">
-        <label class="block text-xs text-brand-charcoal/60 font-semibold uppercase mb-1">Check-in</label>
-        <input type="text" placeholder="MM/DD/YYYY" class="w-full p-2 border border-brand-sage/20 rounded" />
-      </div>
-      <div class="flex-1">
-        <label class="block text-xs text-brand-charcoal/60 font-semibold uppercase mb-1">Check-out</label>
-        <input type="text" placeholder="MM/DD/YYYY" class="w-full p-2 border border-brand-sage/20 rounded" />
-      </div>
-      <div class="flex-1">
-        <label class="block text-xs text-brand-charcoal/60 font-semibold uppercase mb-1">Guests</label>
-        <select class="w-full p-2 border border-brand-sage/20 rounded text-brand-charcoal">
-          <option>1 Adult</option>
-          <option selected>2 Adults, 1 Child</option>
-          <option>4 Adults</option>
-        </select>
-      </div>
-      <div class="flex-none flex items-end">
-        <button class="bg-brand-gold text-brand-charcoal px-8 py-2 rounded hover:bg-brand-light-gold transition-colors font-medium h-10 w-full md:w-auto">
-          Search
-        </button>
-      </div>
-    </div>
 
     <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
       <a href="#properties" class="font-body bg-brand-gold text-brand-charcoal px-8 py-3 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
@@ -1362,274 +1338,12 @@
   </div>
 </section>
 
-<!-- Guest Reviews Section -->
-<section id="reviews" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Guest Love</h2>
-      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">What our guests say about their stays.</p>
-    </div>
-
-    <div class="relative">
-      <!-- Left Arrow -->
-      <button id="prev-reviews" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-md z-10 hidden md:block -translate-x-1/2 hover:bg-brand-cream transition-colors">
-        <svg class="w-6 h-6 text-brand-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-      </button>
-
-      <div id="reviews-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth">
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"The house was big enough for my 5 family members to sleep in, backyard was a perfect size for my dog, the house was close to so much to do. Would definitely stay here again. Thanks for hosting for us!"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Amazing house, host, and stay. The backyard makes the whole house worth it!"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Stunning Mountain Views, Hot Tub, Game Room</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Disha was super helpful and allowed us to check in right away, even though we arrived a bit early. The location was walkable to UF campus and made for a comfortable stay with a great kitchen and comfy beds."</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Walk to UF Stadium, No Cleanup, Cozy Townhome</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Great host, gave us clear instructions and was available if we needed anything. Very comfortable and spacious property with large dining table and living room for large groups. We were visiting family in the area and some of the meals they joined us at the rental. We enjoyed the propane fire pit in the back yard, roasting marshmallows (family in the area provided the roasting sticks).
-
-Wifi worked well for those of us that needed to work remotely some of the time during the stay. Nice work area with sit/stand desk."</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Spacious Retreat Near UF & Shands</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Solid place. Especially for Gainesville"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Walk to University, Pet Friendly, Cozy Townhome</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Amazing views of the pool and ocean. The location was perfect. Can’t wait to visit again!"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at On the beach | Ocean Views | Sleeps 6</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"My group and I really enjoyed staying here! It was very spacious and open for my group to hang out in. It was also very clean when we got there and the host did a really good job at communicating with us! Would stay here again!!"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Family Friendly | BBQ | Pool Table</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Fantastic place to stay whether it's adults only or with kids. So much fun to be had for everyone. Exceptionally clean and very easy to find everything you need during the stay. Quite neighborhood and very conveniently located if you looking to the explore the mountain activities. Disha communicated wonderfully. Will definitely be booking this place again on our next Colorado adventure."</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"We stayed for 8 days with pets and the home was accommodating. There were dozens of games inside the home and ample household items that are ideal for those traveling with the bare minimum. The hosts were very responsive and even provided us with emergency assistance for when our cat decided to be a bit too adventurous inside the home. Overall id recommend this as a quiet Airbnb getaway."</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Home was as represented, great amenities, all necessities were provided, location was very good for our activities."</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Stunning Mountain Views, Hot Tub, Game Room</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"We had a great stay! The house was clean, spacious, looked just like the photos! Only con is the parking in the back of the house makes it difficult if you have a large vehicle and if the other unit also has large vehicles staying as well. Other than that, highly recommend! Disha was a pleasure!"</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Walk to UF Stadium, No Cleanup, Cozy Townhome</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-white p-8 rounded-lg shadow-sm flex flex-col justify-between snap-center">
-          <div>
-            <div class="text-brand-gold mb-4">
-              ★★★★★
-            </div>
-            <p class="font-body text-brand-charcoal/80 text-base italic mb-6">"Disha was extremely helpful and would respond to my messages quick. Airbnb was clean and accommodated to me and my group. AC was cold, water got hot and had good pressure in shower heads (greatly appreciated)."</p>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
-              V
-            </div>
-            <div>
-              <p class="font-body text-sm font-semibold text-brand-charcoal">Verified Guest</p>
-              <p class="font-body text-xs text-brand-charcoal/60">Stayed at Spacious Retreat Near UF & Shands</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <!-- Right Arrow -->
-      <button id="next-reviews" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-md z-10 hidden md:block translate-x-1/2 hover:bg-brand-cream transition-colors">
-        <svg class="w-6 h-6 text-brand-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      </button>
-    </div>
-  </div>
-</section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('reviews-container');
-    const prevBtn = document.getElementById('prev-reviews');
-    const nextBtn = document.getElementById('next-reviews');
-
-    if (container && prevBtn && nextBtn) {
-      prevBtn.addEventListener('click', () => {
-        container.scrollBy({ left: -container.offsetWidth / 2, behavior: 'smooth' });
-      });
-
-      nextBtn.addEventListener('click', () => {
-        container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
-      });
-    }
-  });
-</script>
-
 <!-- Markets Section -->
-<section id="markets" class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+<section id="markets" class="bg-brand-charcoal py-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Where We Are</h2>
-      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">Discover our premium destinations.</p>
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-cream tracking-tight">Where We Are</h2>
+      <p class="mt-4 font-body text-brand-cream/70 text-lg">Discover our premium destinations.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -1691,14 +1405,14 @@ Wifi worked well for those of us that needed to work remotely some of the time d
 </section>
 
 <!-- Featured Properties Section -->
-<section id="properties" class="bg-white py-24 px-4 sm:px-6 lg:px-8">
+<section id="properties" class="bg-brand-charcoal py-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
       <div>
-        <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">Our Properties</h2>
-        <p class="mt-4 font-body text-brand-charcoal/70 text-lg">Curated stays for the discerning traveler.</p>
+        <h2 class="font-heading text-4xl md:text-5xl text-brand-cream tracking-tight">Our Properties</h2>
+        <p class="mt-4 font-body text-brand-cream/70 text-lg">Curated stays for the discerning traveler.</p>
       </div>
-      <a href="#properties" class="hidden md:inline-flex mt-6 md:mt-0 items-center font-body text-brand-sage hover:text-brand-charcoal transition-colors">
+      <a href="#properties" class="hidden md:inline-flex mt-6 md:mt-0 items-center font-body text-brand-sage hover:text-brand-cream transition-colors">
         View All Properties <span class="ml-2">&rarr;</span>
       </a>
     </div>
@@ -1706,238 +1420,161 @@ Wifi worked well for those of us that needed to work remotely some of the time d
     <!-- Properties Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/arch/image_1.jpg" alt="Views | 2 mins to OCC | Fire Pit | Games | Pets - 1112 Arch St" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             colorado-springs
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">Views | 2 mins to OCC | Fire Pit | Games | Pets</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">1112 Arch St</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">1112 Arch St</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">Views | 2 mins to OCC | Fire Pit | Games | Pets</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>8 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>3 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>2 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            8 guests · 3 beds · 2 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
         </div>
       </div>
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg" alt="Stunning Mountain Views, Hot Tub, Game Room - 26 Westmark" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             colorado-springs
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">Stunning Mountain Views, Hot Tub, Game Room</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">26 Westmark</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">26 Westmark</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">Stunning Mountain Views, Hot Tub, Game Room</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>11 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>4 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>2.5 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            11 guests · 4 beds · 2.5 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
         </div>
       </div>
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/clover/image_1.jpg" alt="Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games - 19 Clover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             colorado-springs
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">19 Clover</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">19 Clover</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>11 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>4 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>3 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            11 guests · 4 beds · 3 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
         </div>
       </div>
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/818_1/image_1.jpg" alt="Walk to UF Stadium, No Cleanup, Cozy Townhome - 818-1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             gainesville
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">Walk to UF Stadium, No Cleanup, Cozy Townhome</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">818-1</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">818-1</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">Walk to UF Stadium, No Cleanup, Cozy Townhome</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>6 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>2 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>2 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            6 guests · 2 beds · 2 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/walk-to-campus-restaurants-cozy-townhome" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
         </div>
       </div>
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/818_2/image_1.jpg" alt="Walk to University, Pet Friendly, Cozy Townhome - 818-2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             gainesville
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">Walk to University, Pet Friendly, Cozy Townhome</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">818-2</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">818-2</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">Walk to University, Pet Friendly, Cozy Townhome</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>6 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>2 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>2 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            6 guests · 2 beds · 2 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/walk-to-university-pet-friendly-5-min-to-uf" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
         </div>
       </div>
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/4403/image_1.jpg" alt="Spacious Retreat Near UF & Shands - 4403" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             gainesville
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">Spacious Retreat Near UF & Shands</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">4403</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">4403</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">Spacious Retreat Near UF & Shands</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>12 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>4 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>2 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            12 guests · 4 beds · 2 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/4-minutes-to-universityshands-bbq-spacious" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
         </div>
       </div>
       
-      <div class="bg-brand-cream rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col group">
-        <div class="relative aspect-[3/2] overflow-hidden">
+      <div class="flex flex-col group">
+        <div class="relative aspect-[3/2] overflow-hidden rounded-xl">
           <img src="/static/images/properties/pcb/image_1.jpg" alt="On the Beach | Ocean Views | Sleeps 6 - Beachfront Condo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
-          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-charcoal font-body">
+          <div class="absolute top-4 right-4 bg-brand-charcoal/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-brand-cream font-body">
             panama-city-beach
           </div>
         </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-2">On the Beach | Ocean Views | Sleeps 6</h3>
-          <p class="font-body text-brand-sage text-sm mb-4">Beachfront Condo</p>
+        <div class="pt-4 flex flex-col flex-grow">
+          <p class="font-body text-brand-sage text-xs uppercase tracking-wider mb-1">Beachfront Condo</p>
+          <h3 class="font-heading text-xl text-brand-cream mb-2">On the Beach | Ocean Views | Sleeps 6</h3>
           
-          <div class="flex items-center gap-4 border-y border-brand-sage/20 py-3 mb-6 font-body text-sm text-brand-charcoal/80">
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-              <span>6 Guests</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-              <span>1 Beds</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="w-4 h-4 text-brand-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              <span>2 Baths</span>
-            </div>
+          <div class="font-body text-sm text-brand-cream/70 mb-4">
+            6 guests · 1 beds · 2 baths
           </div>
           
           <div class="mt-auto">
-            <a href="https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6" class="block w-full text-center font-body bg-brand-charcoal text-brand-cream py-3 rounded hover:bg-brand-sage transition-colors duration-300 font-medium">
+            <a href="https://book.springlinestays.com/property/beachfront-hot-tub-ocean-views-sleeps-6" class="block w-full text-center font-body bg-brand-cream text-brand-charcoal py-2.5 rounded hover:bg-brand-light-gold transition-colors duration-300 font-medium">
               Book Now
             </a>
           </div>
@@ -1954,6 +1591,268 @@ Wifi worked well for those of us that needed to work remotely some of the time d
   </div>
 </section>
 
+<!-- Guest Reviews Section -->
+<section id="reviews" class="bg-brand-charcoal py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-cream tracking-tight">Guest Love</h2>
+      <p class="mt-4 font-body text-brand-cream/70 text-lg">What our guests say about their stays.</p>
+    </div>
+
+    <div class="relative">
+      <!-- Left Arrow -->
+      <button id="prev-reviews" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-3 shadow-md z-10 hidden md:block -translate-x-1/2 hover:bg-brand-charcoal transition-colors">
+        <svg class="w-6 h-6 text-brand-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+
+      <div id="reviews-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 scroll-smooth">
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"The house was big enough for my 5 family members to sleep in, backyard was a perfect size for my dog, the house was close to so much to do. Would definitely stay here again. Thanks for hosting for us!"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Amazing house, host, and stay. The backyard makes the whole house worth it!"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Stunning Mountain Views, Hot Tub, Game Room</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Disha was super helpful and allowed us to check in right away, even though we arrived a bit early. The location was walkable to UF campus and made for a comfortable stay with a great kitchen and comfy beds."</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Walk to UF Stadium, No Cleanup, Cozy Townhome</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Great host, gave us clear instructions and was available if we needed anything. Very comfortable and spacious property with large dining table and living room for large groups. We were visiting family in the area and some of the meals they joined us at the rental. We enjoyed the propane fire pit in the back yard, roasting marshmallows (family in the area provided the roasting sticks).
+
+Wifi worked well for those of us that needed to work remotely some of the time during the stay. Nice work area with sit/stand desk."</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Spacious Retreat Near UF & Shands</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Solid place. Especially for Gainesville"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Walk to University, Pet Friendly, Cozy Townhome</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Amazing views of the pool and ocean. The location was perfect. Can’t wait to visit again!"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at On the beach | Ocean Views | Sleeps 6</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"My group and I really enjoyed staying here! It was very spacious and open for my group to hang out in. It was also very clean when we got there and the host did a really good job at communicating with us! Would stay here again!!"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Family Friendly | BBQ | Pool Table</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Fantastic place to stay whether it's adults only or with kids. So much fun to be had for everyone. Exceptionally clean and very easy to find everything you need during the stay. Quite neighborhood and very conveniently located if you looking to the explore the mountain activities. Disha communicated wonderfully. Will definitely be booking this place again on our next Colorado adventure."</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"We stayed for 8 days with pets and the home was accommodating. There were dozens of games inside the home and ample household items that are ideal for those traveling with the bare minimum. The hosts were very responsive and even provided us with emergency assistance for when our cat decided to be a bit too adventurous inside the home. Overall id recommend this as a quiet Airbnb getaway."</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Views | 2 mins to OCC | Fire Pit | Games | Pets</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Home was as represented, great amenities, all necessities were provided, location was very good for our activities."</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Stunning Mountain Views, Hot Tub, Game Room</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"We had a great stay! The house was clean, spacious, looked just like the photos! Only con is the parking in the back of the house makes it difficult if you have a large vehicle and if the other unit also has large vehicles staying as well. Other than that, highly recommend! Disha was a pleasure!"</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Walk to UF Stadium, No Cleanup, Cozy Townhome</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-none w-[85%] sm:w-[calc(45%-0.75rem)] md:w-[calc(30%-1rem)] bg-black p-8 rounded-lg flex flex-col justify-between snap-center">
+          <div>
+            <div class="text-brand-gold mb-4">
+              ★★★★★
+            </div>
+            <p class="font-body text-brand-cream/80 text-base italic mb-6">"Disha was extremely helpful and would respond to my messages quick. Airbnb was clean and accommodated to me and my group. AC was cold, water got hot and had good pressure in shower heads (greatly appreciated)."</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-brand-sage rounded-full flex items-center justify-center text-brand-cream font-semibold">
+              V
+            </div>
+            <div>
+              <p class="font-body text-sm font-semibold text-brand-cream">Verified Guest</p>
+              <p class="font-body text-xs text-brand-cream/60">Stayed at Spacious Retreat Near UF & Shands</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Right Arrow -->
+      <button id="next-reviews" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-3 shadow-md z-10 hidden md:block translate-x-1/2 hover:bg-brand-charcoal transition-colors">
+        <svg class="w-6 h-6 text-brand-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('reviews-container');
+    const prevBtn = document.getElementById('prev-reviews');
+    const nextBtn = document.getElementById('next-reviews');
+
+    if (container && prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        container.scrollBy({ left: -container.offsetWidth / 2, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
+      });
+    }
+  });
+</script>
+
 
 
 <!-- CTA Banner -->
@@ -1968,136 +1867,136 @@ Wifi worked well for those of us that needed to work remotely some of the time d
 </section>
 
 <!-- Latest Blog Posts -->
-<section class="bg-brand-cream py-24 px-4 sm:px-6 lg:px-8">
+<section class="bg-brand-charcoal py-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="font-heading text-4xl md:text-5xl text-brand-charcoal tracking-tight">From Our Blog</h2>
-      <p class="mt-4 font-body text-brand-charcoal/70 text-lg">Travel guides, property updates, and local insights.</p>
+      <h2 class="font-heading text-4xl md:text-5xl text-brand-cream tracking-tight">From Our Blog</h2>
+      <p class="mt-4 font-body text-brand-cream/70 text-lg">Travel guides, property updates, and local insights.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-10-cant.html" class="block relative aspect-video overflow-hidden">
+      <article class="flex flex-col group">
+        <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-10-cant.html" class="block relative aspect-video overflow-hidden rounded-lg">
           <img src="/static/images/blog/colorado-springs/colorado-springs-co-scenic-8900.jpg" alt="The Ultimate Colorado Springs Travel Guide: 10 Can't-Miss Experiences" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             colorado-springs
           </div>
         </a>
-        <div class="p-6">
+        <div class="pt-4 flex flex-col flex-grow">
           <p class="font-body text-brand-sage text-sm mb-2">2026-04-13</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+          <h3 class="font-heading text-2xl text-brand-cream mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
             <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-10-cant.html">The Ultimate Colorado Springs Travel Guide: 10 Can't-Miss Experiences</a>
           </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+          <p class="font-body text-brand-cream/70 mb-4 line-clamp-3">
             Planning a trip? Discover the top 10 things to do in Colorado Springs, from Pikes Peak to Garden of the Gods. Your ultimate local travel guide is here.
           </p>
-          <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-10-cant.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+          <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-10-cant.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-cream hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>
       </article>
       
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html" class="block relative aspect-video overflow-hidden">
+      <article class="flex flex-col group">
+        <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html" class="block relative aspect-video overflow-hidden rounded-lg">
           <img src="/static/images/blog/colorado-springs/colorado-springs-co-scenic-4667.jpg" alt="The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             colorado-springs
           </div>
         </a>
-        <div class="p-6">
+        <div class="pt-4 flex flex-col flex-grow">
           <p class="font-body text-brand-sage text-sm mb-2">2026-04-12</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+          <h3 class="font-heading text-2xl text-brand-cream mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
             <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html">The Ultimate Colorado Springs Travel Guide: 15 Unforgettable Things To Do</a>
           </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+          <p class="font-body text-brand-cream/70 mb-4 line-clamp-3">
             Planning a trip? Discover the absolute best things to do in Colorado Springs, from Garden of the Gods to Pikes Peak. Your complete travel guide is here.
           </p>
-          <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+          <a href="/colorado-springs/blog/the-ultimate-colorado-springs-travel-guide-15-unforgettable.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-cream hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>
       </article>
       
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/panama-city-beach/blog/best-seafood-restaurants-in-panama-city-beach-a.html" class="block relative aspect-video overflow-hidden">
+      <article class="flex flex-col group">
+        <a href="/panama-city-beach/blog/best-seafood-restaurants-in-panama-city-beach-a.html" class="block relative aspect-video overflow-hidden rounded-lg">
           <img src="/static/images/blog/panama-city-beach/panama-city-beach-fl-scenic-5471.jpg" alt="Best Seafood Restaurants in Panama City Beach: A Local's Guide" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             panama-city-beach
           </div>
         </a>
-        <div class="p-6">
+        <div class="pt-4 flex flex-col flex-grow">
           <p class="font-body text-brand-sage text-sm mb-2">2026-04-11</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+          <h3 class="font-heading text-2xl text-brand-cream mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
             <a href="/panama-city-beach/blog/best-seafood-restaurants-in-panama-city-beach-a.html">Best Seafood Restaurants in Panama City Beach: A Local's Guide</a>
           </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+          <p class="font-body text-brand-cream/70 mb-4 line-clamp-3">
             Craving the best seafood in PCB? Our local's guide reveals the top Panama City Beach dining spots for fresh catches, from rustic oyster bars to upscale eateries.
           </p>
-          <a href="/panama-city-beach/blog/best-seafood-restaurants-in-panama-city-beach-a.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+          <a href="/panama-city-beach/blog/best-seafood-restaurants-in-panama-city-beach-a.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-cream hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>
       </article>
       
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/panama-city-beach/blog/shell-island-guide-how-to-visit-panama-city.html" class="block relative aspect-video overflow-hidden">
+      <article class="flex flex-col group">
+        <a href="/panama-city-beach/blog/shell-island-guide-how-to-visit-panama-city.html" class="block relative aspect-video overflow-hidden rounded-lg">
           <img src="/static/images/blog/panama-city-beach/panama-city-beach-fl-scenic-2912.jpg" alt="Shell Island Guide: How to Visit Panama City Beach's Best Kept Secret" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             panama-city-beach
           </div>
         </a>
-        <div class="p-6">
+        <div class="pt-4 flex flex-col flex-grow">
           <p class="font-body text-brand-sage text-sm mb-2">2026-04-10</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+          <h3 class="font-heading text-2xl text-brand-cream mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
             <a href="/panama-city-beach/blog/shell-island-guide-how-to-visit-panama-city.html">Shell Island Guide: How to Visit Panama City Beach's Best Kept Secret</a>
           </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+          <p class="font-body text-brand-cream/70 mb-4 line-clamp-3">
             Your ultimate guide to visiting Shell Island in Panama City Beach, FL. Learn how to get there, what to do, and insider tips for an unforgettable trip.
           </p>
-          <a href="/panama-city-beach/blog/shell-island-guide-how-to-visit-panama-city.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+          <a href="/panama-city-beach/blog/shell-island-guide-how-to-visit-panama-city.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-cream hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>
       </article>
       
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/gainesville/blog/the-ultimate-uf-game-day-survival-guide-in.html" class="block relative aspect-video overflow-hidden">
+      <article class="flex flex-col group">
+        <a href="/gainesville/blog/the-ultimate-uf-game-day-survival-guide-in.html" class="block relative aspect-video overflow-hidden rounded-lg">
           <img src="/static/images/blog/gainesville/gainesville-fl-scenic-7972.jpg" alt="The Ultimate UF Game Day Survival Guide in Gainesville, FL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             gainesville
           </div>
         </a>
-        <div class="p-6">
+        <div class="pt-4 flex flex-col flex-grow">
           <p class="font-body text-brand-sage text-sm mb-2">2026-04-09</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+          <h3 class="font-heading text-2xl text-brand-cream mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
             <a href="/gainesville/blog/the-ultimate-uf-game-day-survival-guide-in.html">The Ultimate UF Game Day Survival Guide in Gainesville, FL</a>
           </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+          <p class="font-body text-brand-cream/70 mb-4 line-clamp-3">
             Heading to a Gainesville Gators game? Our UF game day guide covers everything from parking and tailgating to where to stay for the ultimate weekend.
           </p>
-          <a href="/gainesville/blog/the-ultimate-uf-game-day-survival-guide-in.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+          <a href="/gainesville/blog/the-ultimate-uf-game-day-survival-guide-in.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-cream hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>
       </article>
       
-      <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-        <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html" class="block relative aspect-video overflow-hidden">
+      <article class="flex flex-col group">
+        <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html" class="block relative aspect-video overflow-hidden rounded-lg">
           <img src="/static/images/blog/gainesville/the-ultimate-guide-to-the-best-natural-springs-nea-8523.jpg" alt="The Ultimate Guide to the Best Natural Springs Near Gainesville, FL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='/static/images/hero.jpg'" loading="lazy" />
           <div class="absolute top-4 left-4 bg-brand-light-gold text-brand-charcoal px-3 py-1 text-xs font-semibold font-body rounded uppercase tracking-wider">
             gainesville
           </div>
         </a>
-        <div class="p-6">
+        <div class="pt-4 flex flex-col flex-grow">
           <p class="font-body text-brand-sage text-sm mb-2">2026-04-08</p>
-          <h3 class="font-heading text-2xl text-brand-charcoal mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
+          <h3 class="font-heading text-2xl text-brand-cream mb-3 group-hover:text-brand-sage transition-colors line-clamp-2">
             <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html">The Ultimate Guide to the Best Natural Springs Near Gainesville, FL</a>
           </h3>
-          <p class="font-body text-brand-charcoal/70 mb-4 line-clamp-3">
+          <p class="font-body text-brand-cream/70 mb-4 line-clamp-3">
             Discover the best natural springs near Gainesville, FL for the perfect day trip. Our local's guide covers Ichetucknee, Ginnie, Rainbow Springs, and more!
           </p>
-          <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors">
+          <a href="/gainesville/blog/the-ultimate-guide-to-the-best-natural-springs.html" class="inline-flex items-center font-body text-sm font-semibold text-brand-cream hover:text-brand-gold transition-colors">
             Read More <span class="ml-1">&rarr;</span>
           </a>
         </div>
@@ -2106,7 +2005,7 @@ Wifi worked well for those of us that needed to work remotely some of the time d
     </div>
     
     <div class="mt-12 text-center">
-      <a href="/blog" class="font-body inline-block border border-brand-charcoal text-brand-charcoal px-8 py-3 rounded hover:bg-brand-charcoal hover:text-brand-cream transition-colors duration-300">
+      <a href="/blog" class="font-body inline-block border border-brand-cream text-brand-cream px-8 py-3 rounded hover:bg-brand-cream hover:text-brand-charcoal transition-colors duration-300">
         Read All Posts
       </a>
     </div>
@@ -2116,7 +2015,7 @@ Wifi worked well for those of us that needed to work remotely some of the time d
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#2D2D2D] text-white pt-16 pb-8">
+    <footer class="bg-black text-white pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <!-- About -->
