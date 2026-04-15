@@ -35,6 +35,7 @@
         "position": {{ loop.index }},
         "item": {
           "@type": "VacationRental",
+          "additionalType": "http://www.productontology.org/id/Vacation_rental",
           "identifier": {{ property.id | tojson }},
           "geo": {
             "@type": "GeoCoordinates",
@@ -56,6 +57,25 @@
             {% if property.address_region %}"addressRegion": {{ property.address_region | tojson }},{% else %}"addressRegion": {{ property_market.state | tojson }},{% endif %}
             {% if property.postal_code %}"postalCode": {{ property.postal_code | tojson }},{% endif %}
             "addressCountry": {{ property.address_country | default("US") | tojson }}
+          },
+          "containsPlace": {
+            "@type": "Accommodation",
+            "additionalType": "EntirePlace",
+            "numberOfBedrooms": {{ property.bedrooms }},
+            "numberOfBathroomsTotal": {{ property.bathrooms }},
+            "occupancy": {
+              "@type": "QuantitativeValue",
+              "value": {{ property.guests }}
+            },
+            "amenityFeature": [
+              {% for amenity in property.amenities %}
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": {{ amenity | tojson }},
+                "value": true
+              }{% if not loop.last %},{% endif %}
+              {% endfor %}
+            ]
           }
           {% if property.aggregate_rating %},
           "aggregateRating": {

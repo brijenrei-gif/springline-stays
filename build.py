@@ -351,11 +351,30 @@ def build():
 
         json_ld = {
             "@type": "VacationRental",
+            "additionalType": "http://www.productontology.org/id/Vacation_rental",
+            "identifier": p.get('id'),
             "name": p.get('headline'),
             "url": p.get('booking_url'),
             "description": p.get('description', '').replace('\n', ' '),
             "image": [f"https://springlinestays.com{img}" for img in p.get('images', [])],
-            "address": address_dict
+            "address": address_dict,
+            "containsPlace": {
+                "@type": "Accommodation",
+                "additionalType": "EntirePlace",
+                "numberOfBedrooms": p.get('bedrooms'),
+                "numberOfBathroomsTotal": p.get('bathrooms'),
+                "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "value": p.get('guests')
+                },
+                "amenityFeature": [
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": amenity,
+                        "value": True
+                    } for amenity in p.get('amenities', [])
+                ]
+            }
         }
 
         if p.get('aggregate_rating'):
@@ -370,7 +389,8 @@ def build():
                 {
                     "@type": "Review",
                     "author": {"@type": "Person", "name": r.get('author')},
-                    "reviewBody": r.get('text')
+                    "reviewBody": r.get('text'),
+                    "datePublished": r.get('date')
                 }
                 for r in p['reviews']
             ]
