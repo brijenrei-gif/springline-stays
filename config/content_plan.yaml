@@ -61,10 +61,11 @@ markets:
     status: published
     title: 'Best Seafood Restaurants in Panama City Beach: A Local''s Guide'
   property-management:
-  - keywords:
+  - file: /home/runner/work/springline-stays/springline-stays/content/property-management/the-owners-playbook-how-to-maximize-your-short.md
+    keywords:
     - short term rental roi
     - vacation rental management
     - maximize rental income
     pillar: ROI
-    status: planned
-    title: 'How to Maximize Your ROI with Professional Property Management'
+    status: published
+    title: How to Maximize Your ROI with Professional Property Management
