@@ -599,6 +599,8 @@ def build():
     # ─── Build Market Pages ───
     for market in markets:
         market_id = market['id']
+        if market_id == 'property-management':
+            continue
         print(f"Building market page: {market_id}...")
 
         market_dir = os.path.join(OUTPUT_DIR, market_id)
