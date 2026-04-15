@@ -16,6 +16,7 @@ import yaml
 import markdown
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
+import difflib
 from seo_agent import fetch_unsplash_image
 
 # ─── Paths ───
@@ -76,6 +77,58 @@ def auto_link_content(html_content, markets):
         html_content = re.sub(pattern, replacement, html_content, count=1)
         
     return html_content
+
+
+def check_for_similar_posts(all_posts, threshold=0.8):
+    """Check for posts with highly similar titles and print warnings."""
+    print("\n🔍 Checking for similar posts...")
+    for i, post1 in enumerate(all_posts):
+        for post2 in all_posts[i+1:]:
+            title1 = post1['title']
+            title2 = post2['title']
+            
+            ratio = difflib.SequenceMatcher(None, title1, title2).ratio()
+            
+            if ratio >= threshold:
+                print(f"  ⚠ Warning: Highly similar titles detected ({int(ratio*100)}%):")
+                print(f"    - {title1} ({post1['market']})")
+                print(f"    - {title2} ({post2['market']})")
+
+
+def select_balanced_posts(all_posts, count=6):
+    """Select posts randomly but balanced across markets."""
+    import random
+    
+    # Group posts by market
+    market_groups = {}
+    for post in all_posts:
+        market = post['market']
+        if market not in market_groups:
+            market_groups[market] = []
+        market_groups[market].append(post)
+        
+    # Shuffle posts within each market
+    for market in market_groups:
+        random.shuffle(market_groups[market])
+        
+    selected_posts = []
+    markets = list(market_groups.keys())
+    
+    # Round-robin selection
+    while len(selected_posts) < count and market_groups:
+        for market in list(markets):
+            if market_groups[market]:
+                selected_posts.append(market_groups[market].pop(0))
+                if len(selected_posts) >= count:
+                    break
+            else:
+                # Remove empty market group
+                del market_groups[market]
+                markets.remove(market)
+                
+    # Shuffle the final selection so they don't appear grouped by market
+    random.shuffle(selected_posts)
+    return selected_posts
 
 
 def collect_posts(properties):
@@ -413,6 +466,9 @@ def build():
     print("Collecting blog posts...")
     all_posts = collect_posts(properties)
     print(f"  Found {len(all_posts)} posts")
+    
+    # Check for similar posts
+    check_for_similar_posts(all_posts)
 
     # Verify assets and links
     verify_assets_and_links(all_posts, markets, properties)
@@ -439,7 +495,7 @@ def build():
         page_description="Vacation rentals in Colorado Springs, Gainesville, and Panama City Beach. Book direct and save.",
         markets=markets,
         properties=[p for p in properties if p.get('active')],
-        latest_posts=all_posts[:6],
+        latest_posts=select_balanced_posts(all_posts, 6),
         reviews=reviews[:12],
         transparent_nav=True,
         booking_domain=brand.get('hospitable_base', '#'),
