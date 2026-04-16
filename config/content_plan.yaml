@@ -19,6 +19,46 @@ markets:
     pillar: Stay/Local
     status: published
     title: 'Exploring Old Colorado City: A Local''s Guide to Dining and Art'
+  - file: content/colorado-springs/secret-hiking-trails-in-colorado-springs-a-locals.md
+    keywords:
+    - secret hikes colorado springs
+    - local trails colorado springs
+    - hidden gems hiking co springs
+    pillar: Activities
+    status: planned
+    title: 'Secret Hiking Trails in Colorado Springs: A Local''s Guide'
+  - file: content/colorado-springs/the-ultimate-3-day-pikes-peak-adventure-itinerary.md
+    keywords:
+    - pikes peak itinerary
+    - colorado springs 3 day itinerary
+    - pikes peak adventure guide
+    pillar: Itineraries
+    status: planned
+    title: 'The Ultimate 3-Day Pikes Peak Adventure Itinerary'
+  - file: content/colorado-springs/top-10-instagram-worthy-spots-in-colorado-springs.md
+    keywords:
+    - instagrammable colorado springs
+    - best photo spots colorado springs
+    - colorado springs photography
+    pillar: Social
+    status: planned
+    title: 'Top 10 Instagram-Worthy Spots in Colorado Springs'
+  - file: content/colorado-springs/best-dog-friendly-activities-in-colorado-springs.md
+    keywords:
+    - dog friendly colorado springs
+    - pet friendly trails co springs
+    - dog activities colorado springs
+    pillar: Activities
+    status: planned
+    title: 'Best Dog-Friendly Activities in Colorado Springs'
+  - file: content/colorado-springs/a-guide-to-colorado-springs-thriving-microbrewery-scene.md
+    keywords:
+    - colorado springs breweries
+    - craft beer co springs
+    - best breweries colorado springs
+    pillar: Dining/Nightlife
+    status: planned
+    title: 'A Guide to Colorado Springs'' Thriving Microbrewery Scene'
   gainesville:
   - file: content/gainesville/ultimate-gainesville-travel-guide.md
     status: published
@@ -39,6 +79,46 @@ markets:
     pillar: Events
     status: published
     title: The Ultimate UF Game Day Survival Guide
+  - file: content/gainesville/best-coffee-shops-for-remote-work-in-gainesville.md
+    keywords:
+    - gainesville coffee shops
+    - remote work gainesville
+    - study spots gainesville
+    pillar: Lifestyle
+    status: planned
+    title: 'Best Coffee Shops for Remote Work in Gainesville'
+  - file: content/gainesville/day-trip-to-ichetucknee-springs-from-gainesville-complete.md
+    keywords:
+    - ichetucknee springs day trip
+    - gainesville to ichetucknee
+    - tubing near gainesville
+    pillar: Activities
+    status: planned
+    title: 'Day Trip to Ichetucknee Springs from Gainesville: Complete Guide'
+  - file: content/gainesville/insta-worthy-gainesville-best-photo-ops-on-campus-and-in.md
+    keywords:
+    - instagrammable gainesville
+    - photo spots gainesville
+    - uf campus photo spots
+    pillar: Social
+    status: planned
+    title: 'Insta-Worthy Gainesville: Best Photo Ops on Campus and in Nature'
+  - file: content/gainesville/top-free-things-to-do-in-gainesville-for-families.md
+    keywords:
+    - free things to do gainesville
+    - budget gainesville activities
+    - gainesville with kids
+    pillar: Activities
+    status: planned
+    title: 'Top Free Things to Do in Gainesville for Families'
+  - file: content/gainesville/a-weekend-in-gainesville-the-perfect-itinerary-for-uf-parents.md
+    keywords:
+    - uf parents weekend
+    - gainesville itinerary parents
+    - visiting uf guide
+    pillar: Events/Itineraries
+    status: planned
+    title: 'A Weekend in Gainesville: The Perfect Itinerary for UF Parents'
   panama-city-beach:
   - file: content/panama-city-beach/the-ultimate-year-round-panama-city-beach-travel.md
     status: published
@@ -60,6 +140,46 @@ markets:
     pillar: Local
     status: published
     title: 'Best Seafood Restaurants in Panama City Beach: A Local''s Guide'
+  - file: content/panama-city-beach/a-locals-guide-to-the-best-seafood-in-panama-city.md
+    keywords:
+    - best seafood pcb
+    - local seafood panama city beach
+    - pcb restaurants seafood
+    pillar: Dining
+    status: planned
+    title: 'A Local''s Guide to the Best Seafood in Panama City Beach'
+  - file: content/panama-city-beach/where-to-watch-4th-of-July-fireworks-in-panama-city.md
+    keywords:
+    - pcb 4th of july
+    - fireworks panama city beach
+    - pcb independence day
+    pillar: Events
+    status: planned
+    title: 'Where to Watch 4th of July Fireworks in Panama City Beach'
+  - file: content/panama-city-beach/the-most-instagrammable-spots-in-panama-city-beach.md
+    keywords:
+    - instagrammable pcb
+    - best photo spots panama city beach
+    - pcb aesthetic
+    pillar: Social
+    status: planned
+    title: 'The Most Instagrammable Spots in Panama City Beach'
+  - file: content/panama-city-beach/pcb-with-toddlers-best-family-friendly-activities.md
+    keywords:
+    - pcb with toddlers
+    - family friendly panama city beach
+    - toddler activities pcb
+    pillar: Activities
+    status: planned
+    title: 'PCB with Toddlers: Best Family-Friendly Activities'
+  - file: content/panama-city-beach/rainy-day-guide-to-panama-city-beach-best-indoor-activities.md
+    keywords:
+    - rainy day pcb
+    - indoor activities panama city beach
+    - what to do in pcb when it rains
+    pillar: Activities
+    status: planned
+    title: 'Rainy Day Guide to Panama City Beach: Best Indoor Activities'
 topics:
   property-management:
   - file: /home/runner/work/springline-stays/springline-stays/content/property-management/the-owners-playbook-how-to-maximize-your-short.md
@@ -70,3 +190,52 @@ topics:
     pillar: ROI
     status: published
     title: How to Maximize Your ROI with Professional Property Management
+  - file: content/property-management/how-we-maintained-90-percent-occupancy-last-summer.md
+    keywords:
+    - short term rental occupancy
+    - str management case study
+    - maximize rental income
+    pillar: Case Study
+    status: planned
+    title: 'How We Maintained 90% Occupancy Last Summer'
+  - file: content/property-management/the-real-cost-of-self-managing-your-short-term-rental.md
+    keywords:
+    - self managing str cost
+    - vacation rental management fees
+    - str management vs self managing
+    pillar: ROI
+    status: planned
+    title: 'The Real Cost of Self-Managing Your Short-Term Rental'
+  - file: content/property-management/how-to-turn-your-vacation-home-into-a-passive-income-stream.md
+    keywords:
+    - passive income vacation home
+    - str investment
+    - turnkey property management
+    pillar: Strategy
+    status: planned
+    title: 'How to Turn Your Vacation Home into a Passive Income Stream'
+  - file: content/property-management/top-amenities-that-boost-short-term-rental-bookings.md
+    keywords:
+    - str amenities boost bookings
+    - vacation rental top amenities
+    - increase str revenue
+    pillar: ROI
+    status: planned
+    title: 'Top Amenities That Boost Short-Term Rental Bookings'
+  travel-tips:
+  - file: content/travel-tips/the-ultimate-guide-to-booking-direct-save-money-on.md
+    keywords:
+    - book direct save money
+    - direct booking vs airbnb
+    - springline stays direct
+    pillar: Booking Strategy
+    status: planned
+    title: 'The Ultimate Guide to Booking Direct: Save Money on Your Next Stay'
+  - file: content/travel-tips/how-to-find-the-best-vacation-rental-for-large-groups.md
+    keywords:
+    - large group vacation rental
+    - group stays guide
+    - finding big group rentals
+    pillar: Planning
+    status: planned
+    title: 'How to Find the Best Vacation Rental for Large Groups'
