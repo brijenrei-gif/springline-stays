@@ -60,6 +60,7 @@ markets:
     pillar: Local
     status: published
     title: 'Best Seafood Restaurants in Panama City Beach: A Local''s Guide'
+topics:
   property-management:
   - file: /home/runner/work/springline-stays/springline-stays/content/property-management/the-owners-playbook-how-to-maximize-your-short.md
     keywords:

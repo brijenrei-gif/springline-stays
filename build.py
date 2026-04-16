@@ -249,6 +249,7 @@ def collect_posts(properties):
                 'thumbnail_url': hero_image,
                 'tags': meta.get('tags', []),
                 'market': market_id,
+                'is_topic': market_id == 'property-management',
                 'content': html_content,
                 'reading_time': meta.get('reading_time', 5),
                 'slug': slug,

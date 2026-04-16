@@ -239,7 +239,7 @@
 </div>
 
 <!-- Bottom CTA Section -->
-{% if market %}
+{% if market and not post.is_topic %}
 <div class="w-full bg-brand-gold py-24 text-center px-4 bg-[url('/static/images/pattern-overlay.png')] bg-blend-soft-light bg-cover bg-center">
     <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-heading text-white mb-6 drop-shadow-md">
@@ -250,6 +250,20 @@
         </p>
         <a href="/{{ market.id }}/" class="inline-block bg-white text-brand-charcoal font-semibold uppercase tracking-[0.1em] text-sm py-4 px-10 rounded hover:bg-brand-charcoal hover:text-white transition duration-300 shadow-xl">
             Explore {{ market.name }} Stays
+        </a>
+    </div>
+</div>
+{% elif post.is_topic %}
+<div class="w-full bg-brand-gold py-24 text-center px-4 bg-[url('/static/images/pattern-overlay.png')] bg-blend-soft-light bg-cover bg-center">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-heading text-white mb-6 drop-shadow-md">
+            Interested in our Property Management services?
+        </h2>
+        <p class="text-xl md:text-2xl text-brand-cream mb-10 font-body font-light opacity-90">
+            Learn how we can help you maximize your ROI.
+        </p>
+        <a href="/property-management/" class="inline-block bg-white text-brand-charcoal font-semibold uppercase tracking-[0.1em] text-sm py-4 px-10 rounded hover:bg-brand-charcoal hover:text-white transition duration-300 shadow-xl">
+            Learn More
         </a>
     </div>
 </div>
