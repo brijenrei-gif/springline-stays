@@ -65,7 +65,7 @@ This trail is for those who don't mind earning their solitude. It’s a steady, 
 ### Local's Tip
 Start early to get a parking spot at Starsmore and to enjoy the cool morning air on your climb. The trail is mostly shaded, making it a great option on warmer days. After a challenging ascent like this, a little recovery is in order. Imagine returning to your own private sauna and hot tub to soothe those tired muscles. For large families or groups, the [Epic Family Home](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games) offers these incredible amenities and more—like a mini-golf course!—just a short drive from the canyon.
 
-![The amazing backyard amenities at the Epic Family Home, including a hot tub and sauna.](static/images/properties/clover/image_1.jpg)
+![The amazing backyard amenities at the Epic Family Home, including a hot tub and sauna.](/static/images/properties/clover/image_1.jpg)
 
 ## Austin Bluffs Open Space: An Urban Oasis
 <a name="austin-bluffs-open-space-an-urban-oasis"></a>
@@ -118,7 +118,7 @@ While the trailhead is popular, most people do a simple out-and-back on one of t
 ### Local's Tip
 Hike the loop counter-clockwise. This gets the steepest, most grueling section (the "incline" portion of Section 16) out of the way first, leaving you with a long, beautiful, and more gradual descent through the forest on the Palmer Trail. After exploring these rugged trails, you're just minutes from the historic charm of Old Colorado City. A cozy place like the pet-friendly [Views | 2 mins to OCC home](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets) is the perfect basecamp, complete with a fire pit to relax by and recount the day's adventure.
 
-![A cozy and modern living room with a fireplace, perfect for relaxing after a hike.](static/images/properties/arch/image_2.jpg)
+![A cozy and modern living room with a fireplace, perfect for relaxing after a hike.](/static/images/properties/arch/image_2.jpg)
 
 ---
 
