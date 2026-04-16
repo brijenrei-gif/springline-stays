@@ -226,6 +226,7 @@ def generate_blog_post(config, market_id, planned_post=None):
     if planned_post:
         topic_instruction = f"Write about the specific topic: '{planned_post['title']}'."
         keywords_list = planned_post.get('keywords', [])
+        description_val = f'"{planned_post.get("meta_description", "")}"' if planned_post.get('meta_description') else '"A 150-160 character meta description with primary keyword."'
     else:
         topic_instruction = f"Choose a compelling topic about visiting {market['name']} — things to do, seasonal guides, local dining, hidden gems, best neighborhoods, etc."
         keywords_list = [
@@ -235,6 +236,7 @@ def generate_blog_post(config, market_id, planned_post=None):
             f"{market['name']} travel guide",
             f"book direct {market['name']}"
         ]
+        description_val = '"A 150-160 character meta description with primary keyword."'
         # Add property-specific keywords to capture direct booking intent
         for p in properties:
             keywords_list.append(f"{p['name']} Springline Stays")
@@ -272,7 +274,7 @@ We already have posts with the following titles in this market. You MUST NOT wri
 ---
 title: "Your SEO-Optimized Title (Include Location)"
 date: {today}
-description: "A 150-160 character meta description with primary keyword."
+description: {description_val}
 hero_image: ""
 tags:
   - tag-one

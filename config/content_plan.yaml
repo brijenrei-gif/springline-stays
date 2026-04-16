@@ -24,6 +24,7 @@ markets:
     - secret hikes colorado springs
     - local trails colorado springs
     - hidden gems hiking co springs
+    meta_description: "Escape the crowds! Discover the best secret hiking trails in Colorado Springs known only to locals. Find your next quiet trail with big views."
     pillar: Activities
     status: planned
     title: 'Secret Hiking Trails in Colorado Springs: A Local''s Guide'
@@ -32,6 +33,7 @@ markets:
     - pikes peak itinerary
     - colorado springs 3 day itinerary
     - pikes peak adventure guide
+    meta_description: "Planning a trip to Pikes Peak? Follow our ultimate 3-day Colorado Springs itinerary for the best adventure, dining, and photo spots."
     pillar: Itineraries
     status: planned
     title: 'The Ultimate 3-Day Pikes Peak Adventure Itinerary'
@@ -40,6 +42,7 @@ markets:
     - instagrammable colorado springs
     - best photo spots colorado springs
     - colorado springs photography
+    meta_description: "Level up your feed! Here are the top 10 most Instagrammable spots in Colorado Springs you need to visit on your next vacation."
     pillar: Social
     status: planned
     title: 'Top 10 Instagram-Worthy Spots in Colorado Springs'
@@ -48,6 +51,7 @@ markets:
     - dog friendly colorado springs
     - pet friendly trails co springs
     - dog activities colorado springs
+    meta_description: "Bringing your pup to Colorado Springs? Discover the best dog-friendly activities, parks, and pet-friendly trails for a perfect trip."
     pillar: Activities
     status: planned
     title: 'Best Dog-Friendly Activities in Colorado Springs'
@@ -56,6 +60,7 @@ markets:
     - colorado springs breweries
     - craft beer co springs
     - best breweries colorado springs
+    meta_description: "Thirsty? Explore the thriving craft beer scene in Colorado Springs with our local guide to the best microbreweries and taprooms."
     pillar: Dining/Nightlife
     status: planned
     title: 'A Guide to Colorado Springs'' Thriving Microbrewery Scene'
@@ -84,6 +89,7 @@ markets:
     - gainesville coffee shops
     - remote work gainesville
     - study spots gainesville
+    meta_description: "Need to get work done in Gainesville? Here are the best coffee shops for remote work and studying with great Wi-Fi and strong brew."
     pillar: Lifestyle
     status: planned
     title: 'Best Coffee Shops for Remote Work in Gainesville'
@@ -92,6 +98,7 @@ markets:
     - ichetucknee springs day trip
     - gainesville to ichetucknee
     - tubing near gainesville
+    meta_description: "Plan the perfect day trip to Ichetucknee Springs from Gainesville. Everything you need to know about tubing, kayaking, and wildlife."
     pillar: Activities
     status: planned
     title: 'Day Trip to Ichetucknee Springs from Gainesville: Complete Guide'
@@ -100,6 +107,7 @@ markets:
     - instagrammable gainesville
     - photo spots gainesville
     - uf campus photo spots
+    meta_description: "Find the most Instagrammable spots in Gainesville! From UF campus landmarks to stunning natural springs, get your camera ready."
     pillar: Social
     status: planned
     title: 'Insta-Worthy Gainesville: Best Photo Ops on Campus and in Nature'
@@ -108,6 +116,7 @@ markets:
     - free things to do gainesville
     - budget gainesville activities
     - gainesville with kids
+    meta_description: "Explore Gainesville on a budget! Discover the top free things to do in Gainesville for families with kids of all ages."
     pillar: Activities
     status: planned
     title: 'Top Free Things to Do in Gainesville for Families'
@@ -116,6 +125,7 @@ markets:
     - uf parents weekend
     - gainesville itinerary parents
     - visiting uf guide
+    meta_description: "Visiting your student at UF? Follow the perfect weekend itinerary for UF parents, featuring local dining, campus tours, and more."
     pillar: Events/Itineraries
     status: planned
     title: 'A Weekend in Gainesville: The Perfect Itinerary for UF Parents'
@@ -145,6 +155,7 @@ markets:
     - best seafood pcb
     - local seafood panama city beach
     - pcb restaurants seafood
+    meta_description: "Craving fresh seafood? Discover the best local seafood restaurants in Panama City Beach that the locals actually eat at."
     pillar: Dining
     status: planned
     title: 'A Local''s Guide to the Best Seafood in Panama City Beach'
@@ -153,6 +164,7 @@ markets:
     - pcb 4th of july
     - fireworks panama city beach
     - pcb independence day
+    meta_description: "Don't miss the best views! Here is where to watch 4th of July fireworks in Panama City Beach for an unforgettable Independence Day."
     pillar: Events
     status: planned
     title: 'Where to Watch 4th of July Fireworks in Panama City Beach'
@@ -161,6 +173,7 @@ markets:
     - instagrammable pcb
     - best photo spots panama city beach
     - pcb aesthetic
+    meta_description: "Capture the perfect beach aesthetic! Discover the most Instagrammable spots in Panama City Beach for your vacation feed."
     pillar: Social
     status: planned
     title: 'The Most Instagrammable Spots in Panama City Beach'
@@ -169,6 +182,7 @@ markets:
     - pcb with toddlers
     - family friendly panama city beach
     - toddler activities pcb
+    meta_description: "Traveling to PCB with small kids? Here are the best family-friendly activities and calm beaches perfect for toddlers."
     pillar: Activities
     status: planned
     title: 'PCB with Toddlers: Best Family-Friendly Activities'
@@ -177,6 +191,7 @@ markets:
     - rainy day pcb
     - indoor activities panama city beach
     - what to do in pcb when it rains
+    meta_description: "Rain in the forecast? Don't let it ruin your vacation with our rainy day guide to the best indoor activities in Panama City Beach."
     pillar: Activities
     status: planned
     title: 'Rainy Day Guide to Panama City Beach: Best Indoor Activities'
@@ -195,6 +210,7 @@ topics:
     - short term rental occupancy
     - str management case study
     - maximize rental income
+    meta_description: "Case Study: Learn the exact strategies we used to maintain a 90% short-term rental occupancy rate all summer long."
     pillar: Case Study
     status: planned
     title: 'How We Maintained 90% Occupancy Last Summer'
@@ -203,6 +219,7 @@ topics:
     - self managing str cost
     - vacation rental management fees
     - str management vs self managing
+    meta_description: "Is self-managing your STR worth the time? Discover the real hidden costs of self-managing vs hiring a professional."
     pillar: ROI
     status: planned
     title: 'The Real Cost of Self-Managing Your Short-Term Rental'
@@ -211,6 +228,7 @@ topics:
     - passive income vacation home
     - str investment
     - turnkey property management
+    meta_description: "Ready to earn hands-free income? Learn how to turn your vacation home into a passive income stream with turnkey management."
     pillar: Strategy
     status: planned
     title: 'How to Turn Your Vacation Home into a Passive Income Stream'
@@ -219,6 +237,7 @@ topics:
     - str amenities boost bookings
     - vacation rental top amenities
     - increase str revenue
+    meta_description: "Want to increase bookings? Discover the top vacation rental amenities that high-paying guests are searching for right now."
     pillar: ROI
     status: planned
     title: 'Top Amenities That Boost Short-Term Rental Bookings'
@@ -228,6 +247,7 @@ topics:
     - book direct save money
     - direct booking vs airbnb
     - springline stays direct
+    meta_description: "Stop paying extra fees! Learn why booking direct with Springline Stays is the best way to save money on your next vacation."
     pillar: Booking Strategy
     status: planned
     title: 'The Ultimate Guide to Booking Direct: Save Money on Your Next Stay'
@@ -236,6 +256,7 @@ topics:
     - large group vacation rental
     - group stays guide
     - finding big group rentals
+    meta_description: "Planning a group trip? Here is how to find and book the best large group vacation rentals for a stress-free stay."
     pillar: Planning
     status: planned
     title: 'How to Find the Best Vacation Rental for Large Groups'
