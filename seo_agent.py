@@ -334,7 +334,7 @@ We already have posts with the following titles in this market. You MUST NOT wri
 6. Include a FAQ section (3-5 questions) at the bottom targeting Google featured snippets.
 7. End with a soft CTA encouraging readers to book directly with Springline Stays.
 8. Use H2 and H3 headings liberally for SEO.
-9. Include specific details — addresses, drive times, tips, seasonal info.
+9. Include specific details — addresses, drive times, tips, seasonal info. **IMPORTANT**: When providing an address, wrap it in a markdown link to a Google Maps search for that address. Example: `[1023 SE 4th Ave](https://www.google.com/maps/search/?api=1&query=1023+SE+4th+Ave+Gainesville+FL)`.
 
 **Output format**: Start with YAML frontmatter enclosed by `---`:
 

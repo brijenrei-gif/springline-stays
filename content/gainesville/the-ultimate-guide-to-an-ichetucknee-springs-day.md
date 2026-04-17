@@ -64,10 +64,10 @@ While the 72-degree water feels amazing on a hot summer day, every season offers
 Ichetucknee Springs State Park has two main entrances, and choosing the right one is crucial for your planned activity. They are about a 15-minute drive from each other.
 
 *   **North Entrance (Main Entrance):**
-    *   **Address:** 8294 SW Elim Church Rd, Fort White, FL 32038
+    *   **Address:** [8294 SW Elim Church Rd, Fort White, FL 32038](https://www.google.com/maps/search/?api=1&query=8294+SW+Elim+Church+Rd+Fort+White+FL+32038)
     *   **Best For:** The full tubing run (3.5 hours, summer only), kayaking/canoeing, and swimming at Blue Hole Spring. This entrance has access to the Headspring and Blue Hole Spring.
 *   **South Entrance:**
-    *   **Address:** 12087 SW US Highway 27, Fort White, FL 32038
+    *   **Address:** [12087 SW US Highway 27, Fort White, FL 32038](https://www.google.com/maps/search/?api=1&query=12087+SW+US+Highway+27+Fort+White+FL+32038)
     *   **Best For:** Shorter tubing runs (1.5 hours from Dampier's Landing or 45 minutes from Midpoint). This is where the main concessions, tube rentals, and tram/shuttle services are located.
 
 **General Rule of Thumb:** If you want the longest float or plan to swim in Blue Hole, head to the North Entrance. If you want a shorter float and easy access to rentals, head to the South Entrance.
