@@ -2,7 +2,7 @@
 title: "The Ultimate Guide to Gainesville's Best Coffee Shops for Remote Work & Studying"
 date: 2026-04-17
 description: "Need to get work done in Gainesville? Here are the best coffee shops for remote work and studying, complete with details on Wi-Fi, outlets, and the best brew."
-hero_image: "a modern coffee shop with laptops and people working"
+hero_image: ""
 tags:
   - gainesville
   - remote work
@@ -50,6 +50,8 @@ Here are our tried-and-true favorites, each offering a unique environment for ta
 
 **Address**: 202 SE 2nd Ave, Gainesville, FL 32601
 
+![Wyatt's Coffee](/static/images/blog/gainesville/wyatts-coffee.jpg)
+
 If you thrive in clean, bright, and aesthetically pleasing environments, Wyatt's Coffee is your spot. Located in the heart of downtown Gainesville, its minimalist design with white walls, light wood, and plenty of natural light creates an atmosphere of calm focus. It's a popular spot for professionals and creatives.
 
 *   **The Vibe**: Bright, modern, and focused. It feels like a high-end coworking space that happens to serve exceptional coffee. The background music is typically chill indie or lofi, perfect for concentration.
@@ -60,6 +62,8 @@ If you thrive in clean, bright, and aesthetically pleasing environments, Wyatt's
 ### 2. Pascal's Coffeehouse: The Cozy Study Sanctuary
 
 **Address**: 112 NW 16th St, Gainesville, FL 32603
+
+![Pascal's Coffeehouse](/static/images/blog/gainesville/pascals-coffeehouse.jpg)
 
 Located just off University Avenue, Pascal's is a non-profit coffeehouse that feels like a home away from home. It occupies a charming, historic two-story house, with different rooms offering different study environments. It’s a quintessential **study spot in Gainesville**, beloved by UF students.
 
@@ -78,6 +82,8 @@ Our **[Walk to University, Pet Friendly, Cozy Townhome](https://book.springlines
 
 **Address**: 2029 NW 6th St, Gainesville, FL 32609
 
+![Curia on the Drag](/static/images/blog/gainesville/curia-on-the-drag.jpg)
+
 Curia is more than just a coffee shop; it's a sprawling compound of creativity. It features a main coffee bar, an art gallery, a vintage shop, and a separate, fully vegan food truck (Curia on the Run). The huge outdoor patio and garden area provide a fantastic alternative to indoor seating.
 
 *   **The Vibe**: Eclectic, artsy, and laid-back. This is where Gainesville's creative community congregates. The atmosphere is relaxed and social, making it great for creative brainstorming or tasks that don't require intense, silent focus.
@@ -88,6 +94,8 @@ Curia is more than just a coffee shop; it's a sprawling compound of creativity. 
 ### 4. Opus Coffee: The Convenient Campus Go-To
 
 **Locations**: Multiple, including Innovation Square (1023 SE 4th Ave) and Shands Hospital
+
+![Opus Coffee](/static/images/blog/gainesville/opus-coffee.jpg)
 
 Opus is a local Gainesville chain that has perfected the art of the convenient, high-quality coffee experience. Their Innovation Square location, in particular, is a hotspot for tech professionals, entrepreneurs, and researchers from the surrounding buildings.
 
@@ -100,6 +108,8 @@ Opus is a local Gainesville chain that has perfected the art of the convenient, 
 
 **Address**: 48 SW 2nd St, Gainesville, FL 32601
 
+![Volta Coffee, Tea & Chocolate](/static/images/blog/gainesville/volta-coffee.jpg)
+
 If you are a true aficionado of coffee, tea, or chocolate, Volta is your paradise. This downtown spot is dedicated to the craft of the beverage. They source and roast some of the finest beans and leaves from around the world, and their baristas are true artists.
 
 *   **The Vibe**: Sophisticated, calm, and intimate. It's a smaller space with a serious, focused energy. People come here to savor the product and often to engage in quiet work or reading. It's less social and more studious than many other downtown spots.
@@ -110,6 +120,8 @@ If you are a true aficionado of coffee, tea, or chocolate, Volta is your paradis
 ### 6. Maude's Classic Cafe: The Downtown Institution
 
 **Address**: 101 SE 2nd Pl, Gainesville, FL 32601
+
+![Maude's Classic Cafe](/static/images/blog/gainesville/maudes-classic-cafe.jpg)
 
 A Gainesville icon, Maude's has been serving the community for decades. Located in the charming historic opera house building, it features a cozy indoor space and a sprawling, beautiful courtyard patio.
 

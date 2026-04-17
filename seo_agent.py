@@ -261,7 +261,7 @@ We already have posts with the following titles in this market. You MUST NOT wri
 1. {topic_instruction}
 2. Write in an authoritative, friendly tone — like a well-traveled local sharing insider tips.
 3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
-4. **Images**: When mentioning our properties in the body, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos. **DO NOT** use these property images as the `hero_image` in the frontmatter. The `hero_image` should be left empty or set to a relevant search term so `build.py` can fetch a topic-relevant image from Unsplash.
+4. **Images**: When mentioning our properties in the body, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos. **DO NOT** use these property images as the `hero_image` in the frontmatter. The `hero_image` should be left empty (""). The build system will automatically fetch a topic-relevant image from Unsplash.
 5. Include a Table of Contents with anchor links.
 6. Include a FAQ section (3-5 questions) at the bottom targeting Google featured snippets.
 7. End with a soft CTA encouraging readers to book directly with Springline Stays.
