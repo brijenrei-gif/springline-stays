@@ -99,7 +99,7 @@ markets:
     pillar: Lifestyle
     status: published
     title: Best Coffee Shops for Remote Work in Gainesville
-  - file: content/gainesville/day-trip-to-ichetucknee-springs-from-gainesville-complete.md
+  - file: /usr/local/google/home/braval/projects/springline-stays/content/gainesville/the-ultimate-guide-to-an-ichetucknee-springs-day.md
     keywords:
     - ichetucknee springs day trip
     - gainesville to ichetucknee
@@ -107,7 +107,7 @@ markets:
     meta_description: Plan the perfect day trip to Ichetucknee Springs from Gainesville.
       Everything you need to know about tubing, kayaking, and wildlife.
     pillar: Activities
-    status: planned
+    status: published
     title: 'Day Trip to Ichetucknee Springs from Gainesville: Complete Guide'
   - file: content/gainesville/insta-worthy-gainesville-best-photo-ops-on-campus-and-in.md
     keywords:

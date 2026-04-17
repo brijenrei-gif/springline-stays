@@ -133,6 +133,74 @@ def fetch_unsplash_image(query, save_dir):
         return ""
 
 
+def fetch_google_maps_image(query, save_dir):
+    """Fetch a relevant image from Google Maps Places API and save it locally.
+    
+    Returns the relative path to the saved image, or empty string on failure.
+    """
+    api_key = os.getenv('GOOGLE_MAPS_API_KEY')
+    if not api_key:
+        print("  ⚠  No Google Maps API key, skipping image fetch")
+        return ""
+
+    try:
+        # 1. Search for the place
+        search_url = "https://places.googleapis.com/v1/places:searchText"
+        headers = {
+            'Content-Type': 'application/json',
+            'X-Goog-Api-Key': api_key,
+            'X-Goog-FieldMask': 'places.photos,places.displayName'
+        }
+        data = {'textQuery': query}
+        
+        resp = requests.post(search_url, headers=headers, json=data, timeout=10)
+        resp.raise_for_status()
+        results = resp.json().get('places', [])
+
+        if not results:
+            print(f"  ⚠  No Google Maps results for '{query}'")
+            return ""
+
+        # Pick the first place
+        place = results[0]
+        photos = place.get('photos', [])
+        if not photos:
+            print(f"  ⚠  No photos found for '{query}'")
+            return ""
+
+        # Pick a random photo from top available
+        photo = random.choice(photos[:5])
+        photo_name = photo['name']
+
+        # 2. Get photo media URI
+        media_url = f"https://places.googleapis.com/v1/{photo_name}/media?key={api_key}"
+
+        # Download image
+        img_resp = requests.get(media_url, timeout=30)
+        img_resp.raise_for_status()
+
+        # Save to static/images/blog/
+        os.makedirs(save_dir, exist_ok=True)
+        slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
+        slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
+        slug = slug.strip('-')
+        filename = f"{slug}-gmaps-{random.randint(1000, 9999)}.jpg"
+        filepath = os.path.join(save_dir, filename)
+
+        with open(filepath, 'wb') as f:
+            f.write(img_resp.content)
+
+        print(f"  📸 Downloaded from Google Maps: {filename}")
+
+        # Return path relative to public/
+        rel_path = os.path.relpath(filepath, BASE_DIR)
+        return f"/{rel_path}"
+
+    except Exception as e:
+        print(f"  ⚠  Google Maps API error: {e}")
+        return ""
+
+
 def pick_property_images(properties, count=2):
     """Pick random property images to include in the blog post.
     
@@ -336,7 +404,10 @@ Then write the full blog post in Markdown format. Do NOT include the title again
     if attractions:
         for attraction in random.sample(attractions, min(2, len(attractions))):
             query = f"{attraction} {market['name']} {market['state']}"
-            img_path = fetch_unsplash_image(query, str(blog_images_dir))
+            img_path = fetch_google_maps_image(query, str(blog_images_dir))
+            if not img_path:
+                print(f"  ⚠  Google Maps failed for '{query}', falling back to Unsplash")
+                img_path = fetch_unsplash_image(query, str(blog_images_dir))
             if img_path:
                 # Append image reference at the end of post content for the builder to use
                 content += f"\n\n![{attraction}]({img_path})\n*{attraction} — a must-visit near our {market['name']} properties.*\n"
