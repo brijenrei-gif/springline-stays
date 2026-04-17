@@ -84,6 +84,17 @@ def fetch_unsplash_image(query, save_dir):
         print("  ⚠  No Unsplash API key, skipping image fetch")
         return ""
 
+    slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
+    slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
+    slug = slug.strip('-')
+    filename = f"{slug}.jpg"
+    filepath = os.path.join(save_dir, filename)
+    
+    if os.path.exists(filepath):
+        print(f"  📸 Image already exists: {filename}")
+        rel_path = os.path.relpath(filepath, BASE_DIR)
+        return f"/{rel_path}"
+
     try:
         resp = requests.get(
             'https://api.unsplash.com/search/photos',
@@ -113,11 +124,7 @@ def fetch_unsplash_image(query, save_dir):
 
         # Save to static/images/blog/
         os.makedirs(save_dir, exist_ok=True)
-        slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
-        slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
-        slug = slug.strip('-')
-        filename = f"{slug}-{random.randint(1000, 9999)}.jpg"
-        filepath = os.path.join(save_dir, filename)
+
 
         with open(filepath, 'wb') as f:
             f.write(img_resp.content)
@@ -142,6 +149,17 @@ def fetch_google_maps_image(query, save_dir):
     if not api_key:
         print("  ⚠  No Google Maps API key, skipping image fetch")
         return ""
+
+    slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
+    slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
+    slug = slug.strip('-')
+    filename = f"{slug}-gmaps.jpg"
+    filepath = os.path.join(save_dir, filename)
+    
+    if os.path.exists(filepath):
+        print(f"  📸 Image already exists: {filename}")
+        rel_path = os.path.relpath(filepath, BASE_DIR)
+        return f"/{rel_path}"
 
     try:
         # 1. Search for the place
@@ -181,11 +199,7 @@ def fetch_google_maps_image(query, save_dir):
 
         # Save to static/images/blog/
         os.makedirs(save_dir, exist_ok=True)
-        slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
-        slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
-        slug = slug.strip('-')
-        filename = f"{slug}-gmaps-{random.randint(1000, 9999)}.jpg"
-        filepath = os.path.join(save_dir, filename)
+
 
         with open(filepath, 'wb') as f:
             f.write(img_resp.content)
