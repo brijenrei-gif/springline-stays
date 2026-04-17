@@ -48,7 +48,7 @@ Here are our tried-and-true favorites, each offering a unique environment for ta
 
 ### 1. Wyatt's Coffee: The Modern Minimalist's Dream
 
-**Address**: 202 SE 2nd Ave, Gainesville, FL 32601
+**Address**: [202 SE 2nd Ave, Gainesville, FL 32601](https://www.google.com/maps/search/?api=1&query=202+SE+2nd+Ave+Gainesville+FL+32601)
 
 ![Wyatt's Coffee](/static/images/blog/gainesville/wyatts-coffee.jpg)
 
@@ -61,7 +61,7 @@ If you thrive in clean, bright, and aesthetically pleasing environments, Wyatt's
 
 ### 2. Pascal's Coffeehouse: The Cozy Study Sanctuary
 
-**Address**: 112 NW 16th St, Gainesville, FL 32603
+**Address**: [112 NW 16th St, Gainesville, FL 32603](https://www.google.com/maps/search/?api=1&query=112+NW+16th+St+Gainesville+FL+32603)
 
 ![Pascal's Coffeehouse](/static/images/blog/gainesville/pascals-coffeehouse.jpg)
 
@@ -80,7 +80,7 @@ Our **[Walk to University, Pet Friendly, Cozy Townhome](https://book.springlines
 
 ### 3. Curia on the Drag: The Eclectic Creative Hub
 
-**Address**: 2029 NW 6th St, Gainesville, FL 32609
+**Address**: [2029 NW 6th St, Gainesville, FL 32609](https://www.google.com/maps/search/?api=1&query=2029+NW+6th+St+Gainesville+FL+32609)
 
 ![Curia on the Drag](/static/images/blog/gainesville/curia-on-the-drag.jpg)
 
@@ -93,7 +93,7 @@ Curia is more than just a coffee shop; it's a sprawling compound of creativity. 
 
 ### 4. Opus Coffee: The Convenient Campus Go-To
 
-**Locations**: Multiple, including Innovation Square (1023 SE 4th Ave) and Shands Hospital
+**Locations**: Multiple, including Innovation Square ([1023 SE 4th Ave](https://www.google.com/maps/search/?api=1&query=1023+SE+4th+Ave+Gainesville+FL)) and Shands Hospital
 
 ![Opus Coffee](/static/images/blog/gainesville/opus-coffee.jpg)
 
@@ -106,7 +106,7 @@ Opus is a local Gainesville chain that has perfected the art of the convenient, 
 
 ### 5. Volta Coffee, Tea & Chocolate: The Connoisseur's Choice
 
-**Address**: 48 SW 2nd St, Gainesville, FL 32601
+**Address**: [48 SW 2nd St, Gainesville, FL 32601](https://www.google.com/maps/search/?api=1&query=48+SW+2nd+St+Gainesville+FL+32601)
 
 ![Volta Coffee, Tea & Chocolate](/static/images/blog/gainesville/volta-coffee.jpg)
 
@@ -119,7 +119,7 @@ If you are a true aficionado of coffee, tea, or chocolate, Volta is your paradis
 
 ### 6. Maude's Classic Cafe: The Downtown Institution
 
-**Address**: 101 SE 2nd Pl, Gainesville, FL 32601
+**Address**: [101 SE 2nd Pl, Gainesville, FL 32601](https://www.google.com/maps/search/?api=1&query=101+SE+2nd+Pl+Gainesville+FL+32601)
 
 ![Maude's Classic Cafe](/static/images/blog/gainesville/maudes-classic-cafe.jpg)
 
