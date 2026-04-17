@@ -53,7 +53,7 @@ These are the landmarks that put Colorado Springs on the map. If you only have a
 
 ### 1. Marvel at Garden of the Gods Park
 
-**Address:** 1805 N 30th St, Colorado Springs, CO 80904
+**Address:** [1805 N 30th St, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=1805+N+30th+St+Colorado+Springs+CO+80904)
 **Why it's a must-see:** This National Natural Landmark is simply breathtaking. Towering sandstone rock formations, some over 300 million years old, jut dramatically from the earth against a backdrop of the snow-capped Pikes Peak. The best part? It's completely free to enter.
 
 **Insider Tips:**
@@ -79,7 +79,7 @@ These are the landmarks that put Colorado Springs on the map. If you only have a
 
 ### 3. Ascend to The Broadmoor Seven Falls
 
-**Address:** 1045 Lower Gold Camp Rd, Colorado Springs, CO 80905
+**Address:** [1045 Lower Gold Camp Rd, Colorado Springs, CO 80905](https://www.google.com/maps/search/?api=1&query=1045+Lower+Gold+Camp+Rd+Colorado+Springs+CO+80905)
 **Why it's a must-see:** Tucked away in a stunning 1,250-foot-wall box canyon, Seven Falls is a series of seven cascading waterfalls with a total drop of 181 feet. It's often called the "Grandest Mile of Scenery in Colorado."
 
 **Insider Tips:**
@@ -99,7 +99,7 @@ Beyond the "big three," the Pikes Peak region is a massive playground for outdoo
 
 ### 4. Hike and Bike at Red Rock Canyon Open Space
 
-**Address:** 3550 W High St, Colorado Springs, CO 80904
+**Address:** [3550 W High St, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=3550+W+High+St+Colorado+Springs+CO+80904)
 **Why it's a must-see:** Think of it as Garden of the Gods' more rugged, less-crowded cousin. With a vast network of trails, this is a local favorite for hiking, trail running, mountain biking, and rock climbing. The former quarry site has been beautifully reclaimed by nature.
 
 **Insider Tip:** The Contemplative Trail offers fantastic views and a slightly less strenuous hike, while the old quarry area provides a fun, off-leash dog park with a pond for your furry friends to cool off.
@@ -115,7 +115,7 @@ Beyond the "big three," the Pikes Peak region is a massive playground for outdoo
 
 ### 6. Meet the Residents at Cheyenne Mountain Zoo
 
-**Address:** 4250 Cheyenne Mountain Zoo Rd, Colorado Springs, CO 80906
+**Address:** [4250 Cheyenne Mountain Zoo Rd, Colorado Springs, CO 80906](https://www.google.com/maps/search/?api=1&query=4250+Cheyenne+Mountain+Zoo+Rd+Colorado+Springs+CO+80906)
 **Why it's a must-see:** This isn't your average zoo. Built on the side of a mountain, it’s America's only mountain zoo. The unique elevation provides incredible views of the city below and more naturalistic habitats for the animals.
 
 **Insider Tip:** The highlight for many is hand-feeding the massive giraffe herd. They have one of the largest herds in North America, and getting up close with these gentle giants is an experience your family will never forget.
@@ -146,7 +146,7 @@ Get a feel for the city's unique personality by exploring its historic neighborh
 
 ### 9. Tour the U.S. Olympic & Paralympic Museum
 
-**Address:** 200 S Sierra Madre St, Colorado Springs, CO 80905
+**Address:** [200 S Sierra Madre St, Colorado Springs, CO 80905](https://www.google.com/maps/search/?api=1&query=200+S+Sierra+Madre+St+Colorado+Springs+CO+80905)
 **Why it's a must-see:** As "Olympic City USA," Colorado Springs is home to this state-of-the-art museum. It's an incredibly interactive and inspiring experience, celebrating the stories and dedication of Team USA athletes. It's a must-do, rain or shine.
 
 For families and large groups looking to create a home base for these diverse adventures, having a space to relax and reconnect is key. A property packed with amenities can be the highlight of the trip itself. For an unforgettable stay, check out the **[Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)**. After a day exploring, imagine returning to your private mini-golf course, a relaxing sauna, and a game room to keep everyone entertained. This amazing property, also known as **19 Clover Springline Stays**, is designed for creating memories.

@@ -48,7 +48,7 @@ If you only have time for one thing in Colorado Springs, this is it. Garden of t
 *   **Photo Spots:** Besides the Siamese Twins, don't miss Balanced Rock near the south entrance for a classic tourist photo.
 
 ### Practical Info
-*   **Address:** 1805 N 30th St, Colorado Springs, CO 80904
+*   **Address:** [1805 N 30th St, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=1805+N+30th+St+Colorado+Springs+CO+80904)
 *   **Cost:** Free!
 *   **Hours:** 5 AM – 10 PM (Summer), 5 AM – 9 PM (Winter)
 
@@ -120,7 +120,7 @@ Often called the "local's Garden of the Gods," Red Rock Canyon Open Space offers
 
 ### Why We Love It
 It provides the same breathtaking scenery as its more famous neighbor but with a more relaxed, adventurous vibe. It's the perfect place to pack a picnic and spend an afternoon enjoying the Colorado sunshine.
-*   **Address:** 3550 W High St, Colorado Springs, CO 80904
+*   **Address:** [3550 W High St, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=3550+W+High+St+Colorado+Springs+CO+80904)
 *   **Cost:** Free!
 
 ## #7: Climb the Stairs at The Broadmoor Seven Falls

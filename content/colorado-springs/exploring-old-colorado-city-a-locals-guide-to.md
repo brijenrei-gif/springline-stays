@@ -53,17 +53,17 @@ For food lovers, Old Colorado City is a paradise. From casual BBQ joints with li
 Starting your day of exploration on the right foot is crucial, and OCC delivers with fantastic breakfast and coffee options.
 
 *   **Bon Ton's Cafe**
-    *   **Address:** 2601 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2601 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2601+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** A true local institution. This classic American diner has been serving up hearty breakfasts for decades in a building that dates back to the 1890s.
     *   **Local's Tip:** You can't go wrong with their famous "Mountain Man" breakfast. It’s busy on weekends, so be prepared for a short wait—it's worth it!
 
 *   **La Baguette French Bakery**
-    *   **Address:** 2417 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2417 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2417+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** Step into a charming Parisian-style cafe. The smell of freshly baked bread and pastries is intoxicating.
     *   **Local's Tip:** Grab a chocolate almond croissant and a latte to go, or settle in for a delightful quiche or their famous French Onion Soup for an early lunch.
 
 *   **Jives Coffee Lounge**
-    *   **Address:** 16 Colbrunn Ct, Colorado Springs, CO 80904
+    *   **Address:** [16 Colbrunn Ct, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=16+Colbrunn+Ct+Colorado+Springs+CO+80904)
     *   **Vibe:** Tucked just off the main drag, Jives is the quintessential cozy coffee shop with comfy chairs, local art on the walls, and expertly crafted coffee drinks.
     *   **Local's Tip:** It's a great spot to relax with a book or catch up on emails. Their seasonal drink specials are always creative and delicious.
 
@@ -73,17 +73,17 @@ Starting your day of exploration on the right foot is crucial, and OCC delivers 
 After a morning of shopping or hiking, refuel at one of these fantastic lunch spots.
 
 *   **Pizzeria Rustica**
-    *   **Address:** 2527 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2527 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2527+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** Authentic Neapolitan pizza served in a beautifully restored historic building with a charming back patio.
     *   **Local's Tip:** Their wood-fired pizzas are certified by the Associazione Verace Pizza Napoletana, a testament to their authenticity. The Salsiccia e Funghi is a crowd-pleaser. They have a fantastic wine list, too!
 
 *   **Front Range Barbeque**
-    *   **Address:** 2330 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2330 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2330+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** Casual, fun, and always lively. This is the spot for Southern-style BBQ, live music, and a laid-back atmosphere.
     *   **Local's Tip:** Their outdoor patio, "The Hog-Pen," is the place to be on a sunny afternoon. Try the brisket and a side of their smoked mac-n-cheese. Check their schedule for live blues and bluegrass music.
 
 *   **Tapateria**
-    *   **Address:** 2607 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2607 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2607+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** A vibrant and colorful spot serving Spanish-inspired tapas. Perfect for sharing and trying a little bit of everything.
     *   **Local's Tip:** Go with a group and order a variety of plates. The Bacon-Wrapped Dates and Patatas Bravas are must-orders. Their sangria is the perfect accompaniment.
 
@@ -93,17 +93,17 @@ After a morning of shopping or hiking, refuel at one of these fantastic lunch sp
 When the sun sets and the historic gas lamps begin to glow, Old Colorado City transforms into a romantic and inviting destination for dinner.
 
 *   **Paravicini's Italian Bistro**
-    *   **Address:** 2802 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2802 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2802+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** Loud, bustling, and unapologetically classic Italian-American. It feels like you're having dinner with a big, happy family. Famously featured on Food Network's "Diners, Drive-Ins and Dives."
     *   **Local's Tip:** Reservations are highly recommended, especially on weekends. The Veal Saltimbocca is legendary, and you can't go wrong with any of their homemade pasta dishes.
 
 *   **Jake and Telly's Greek Taverna**
-    *   **Address:** 2616 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2616 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2616+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Vibe:** A cozy and authentic Greek restaurant that transports you straight to the Mediterranean.
     *   **Local's Tip:** Start with the Saganaki (flaming cheese) for a bit of tableside drama. Their lamb dishes are succulent and flavorful, and the interior is surprisingly romantic.
 
 *   **Carlos' Bistro**
-    *   **Address:** 1025 S 21st St, Colorado Springs, CO 80904
+    *   **Address:** [1025 S 21st St, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=1025+S+21st+St+Colorado+Springs+CO+80904)
     *   **Vibe:** Just on the edge of OCC, this is the place for a special occasion. Expect impeccable service, an award-winning wine list, and innovative global cuisine in an elegant setting.
     *   **Local's Tip:** This is a true fine-dining experience. Trust the recommendations of Carlos himself, who is often there to greet guests. It's a splurge that's worth every penny.
 
@@ -133,19 +133,19 @@ The atmosphere is electric. You'll find locals and visitors strolling from galle
 Even if you can't make it for a First Friday, the galleries are a highlight of any visit. Here are a few standouts:
 
 *   **Hunter-Wolff Gallery**
-    *   **Address:** 2510 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2510 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2510+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Specialty:** A premier gallery representing a diverse group of over 40 professional American artists. You'll find everything from stunning oil paintings of the Rocky Mountains to bronze sculptures and intricate jewelry.
 
 *   **The Squash Blossom**
-    *   **Address:** 2531 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2531 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2531+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Specialty:** A Colorado Springs icon for nearly 50 years, The Squash Blossom specializes in fine art, jewelry, and bronze sculptures with a focus on Southwestern and Native American artists. Their collection of turquoise jewelry is breathtaking.
 
 *   **Michael Garman Museum & Gallery**
-    *   **Address:** 2418 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2418 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2418+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Specialty:** This place is pure magic. Step into "Magic Town," a 1/6-scale miniature city created by sculptor Michael Garman. It's a fascinating and slightly gritty depiction of urban America, complete with holographic characters and incredible detail. A must-see for all ages.
 
 *   **45° Gallery**
-    *   **Address:** 2528 W Colorado Ave, Colorado Springs, CO 80904
+    *   **Address:** [2528 W Colorado Ave, Colorado Springs, CO 80904](https://www.google.com/maps/search/?api=1&query=2528+W+Colorado+Ave+Colorado+Springs+CO+80904)
     *   **Specialty:** A bright and welcoming space focused on contemporary fine crafts from Colorado and regional artists. You'll find unique ceramics, glasswork, woodworking, and jewelry that make for perfect souvenirs.
 
 <a id="more-things"></a>

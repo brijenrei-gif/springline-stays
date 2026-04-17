@@ -46,7 +46,7 @@ Gainesville's central location makes it the perfect launchpad for exploring the 
 ## Ichetucknee Springs State Park: The Crown Jewel of Tubing
 
 **Drive Time from Gainesville:** Approx. 45-50 minutes
-**Address:** 12087 SW U.S. Highway 27, Fort White, FL 32038
+**Address:** [12087 SW U.S. Highway 27, Fort White, FL 32038](https://www.google.com/maps/search/?api=1&query=12087+SW+U.S.+Highway+27+Fort+White+FL+32038)
 
 If you ask any Gainesville local about the springs, Ichetucknee will almost certainly be the first name they mention. Designated a National Natural Landmark, this park is home to a six-mile, crystal-clear river fed by nine different springs. It is, without a doubt, the quintessential Florida tubing experience.
 
@@ -70,7 +70,7 @@ Beyond tubing, you can also **kayak**, **paddleboard**, or **snorkel** the river
 ## Ginnie Springs: The Adventurer's Paradise
 
 **Drive Time from Gainesville:** Approx. 35-40 minutes
-**Address:** 7300 Ginnie Springs Rd, High Springs, FL 32643
+**Address:** [7300 Ginnie Springs Rd, High Springs, FL 32643](https://www.google.com/maps/search/?api=1&query=7300+Ginnie+Springs+Rd+High+Springs+FL+32643)
 
 While Ichetucknee is the picture of preserved nature, Ginnie Springs is its fun-loving, slightly wilder cousin. As a privately-owned park, the rules are more relaxed, making it a popular spot for University of Florida students, campers, and scuba divers from around the world.
 
@@ -91,7 +91,7 @@ For certified divers, Ginnie offers some of the most accessible and stunning **c
 ## Gilchrist Blue Springs State Park: The Photographer's Dream
 
 **Drive Time from Gainesville:** Approx. 35-40 minutes
-**Address:** 7450 NE 60th St, High Springs, FL 32643
+**Address:** [7450 NE 60th St, High Springs, FL 32643](https://www.google.com/maps/search/?api=1&query=7450+NE+60th+St+High+Springs+FL+32643)
 
 One of Florida's newest state parks, Gilchrist Blue is a gem that was a beloved local secret for years. The main spring, a large and exceptionally clear pool, pumps out an average of 44 million gallons of water daily. A picturesque boardwalk frames the swimming area, making it one of the most photogenic springs in the area.
 
@@ -110,7 +110,7 @@ The main attraction is **swimming and snorkeling** in the brilliant turquoise he
 ## Poe Springs Park: The Family-Friendly Local Favorite
 
 **Drive Time from Gainesville:** Approx. 30 minutes
-**Address:** 28800 NW 182nd Ave, High Springs, FL 32643
+**Address:** [28800 NW 182nd Ave, High Springs, FL 32643](https://www.google.com/maps/search/?api=1&query=28800+NW+182nd+Ave+High+Springs+FL+32643)
 
 Operated by Alachua County, Poe Springs is a fantastic, budget-friendly option for families. The spring basin is a massive, shallow swimming area, making it ideal for visitors with small children who want to splash and play safely.
 
@@ -134,7 +134,7 @@ For larger groups, our **[Spacious Retreat Near UF & Shands](https://book.spring
 ## Rainbow Springs State Park: An Oasis Worth the Drive
 
 **Drive Time from Gainesville:** Approx. 50-60 minutes
-**Address:** 19158 SW 81st Pl Rd, Dunnellon, FL 34432
+**Address:** [19158 SW 81st Pl Rd, Dunnellon, FL 34432](https://www.google.com/maps/search/?api=1&query=19158+SW+81st+Pl+Rd+Dunnellon+FL+34432)
 
 While a bit further afield, Rainbow Springs is absolutely worth the drive. This first-magnitude spring is the headwater of the stunningly beautiful Rainbow River. What sets this park apart is its history; for decades, it was a privately-owned attraction, and the park retains the beautifully landscaped gardens, man-made waterfalls, and paved walking paths from that era.
 
@@ -161,7 +161,7 @@ Our **[Walk to University, Pet Friendly, Cozy Townhome](https://book.springlines
 ## A Different Kind of Spring: Devil's Millhopper
 
 **Drive Time from Gainesville:** Approx. 15-20 minutes
-**Address:** 4732 Millhopper Rd, Gainesville, FL 32653
+**Address:** [4732 Millhopper Rd, Gainesville, FL 32653](https://www.google.com/maps/search/?api=1&query=4732+Millhopper+Rd+Gainesville+FL+32653)
 
 This one is a bit of a curveball. You can't swim here, but Devil's Millhopper Geological State Park is a must-see for any nature lover visiting Gainesville. It’s a massive, 120-foot-deep bowl-shaped cavity that is essentially a miniature rainforest. Small streams trickle down the limestone walls, disappearing into a sinkhole at the bottom—the same geological process that forms the springs.
 
