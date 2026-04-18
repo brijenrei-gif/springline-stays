@@ -14,6 +14,7 @@ Usage:
 import os
 import sys
 import json
+import re
 import random
 import argparse
 import requests
@@ -343,7 +344,10 @@ We already have posts with the following titles in this market. You MUST NOT wri
 1. {topic_instruction}
 2. Write in an authoritative, friendly tone — like a well-traveled local sharing insider tips.
 3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
-4. **Images**: When mentioning our properties in the body, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos. **DO NOT** use these property images as the `hero_image` in the frontmatter. The `hero_image` should be left empty (""). The build system will automatically fetch a topic-relevant image from Unsplash.
+4. **Images**: 
+   - When mentioning our properties in the body, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos.
+   - **DO NOT** use these property images as the `hero_image` in the frontmatter. The `hero_image` should be left empty (""). The build system will automatically fetch a topic-relevant image from Unsplash.
+   - For other points of interest, landmarks, or content sections where a visual would be beneficial, insert an image placeholder using this EXACT syntax: `![Unsplash Query: specific description of the photo needed](placeholder)`. For example: `![Unsplash Query: colorful Pier Park storefronts at sunset](placeholder)`. Aim for 2-3 such placeholders in the body, placed logically near the relevant content.
 5. Include a Table of Contents with anchor links.
 6. Include a FAQ section (3-5 questions) at the bottom targeting Google featured snippets.
 7. End with a soft CTA encouraging readers to book directly with Springline Stays.
@@ -404,6 +408,26 @@ Then write the full blog post in Markdown format. Do NOT include the title again
         content = content[first_newline + 1:]
     if content.endswith('```'):
         content = content[:-3].strip()
+
+    # Fetch and replace body images based on placeholders
+    blog_images_dir = STATIC_DIR / 'images' / 'blog' / market_id
+    placeholder_pattern = r'!\[Unsplash Query: (.*?)\]\(placeholder\)'
+    placeholders = re.findall(placeholder_pattern, content)
+    print(f"  🔍 Found {len(placeholders)} image placeholders in body.")
+    
+    for query in placeholders:
+        print(f"  Fetching image for body placeholder: '{query}'...")
+        img_path = fetch_unsplash_image(query, str(blog_images_dir))
+        if img_path:
+            # Replace the specific placeholder with the actual image tag
+            target = f"![Unsplash Query: {query}](placeholder)"
+            replacement = f"![{query}]({img_path})"
+            content = content.replace(target, replacement)
+            print(f"    Replaced placeholder with: {img_path}")
+        else:
+            print(f"    ⚠ Failed to fetch image for query: '{query}', removing placeholder.")
+            target = f"![Unsplash Query: {query}](placeholder)"
+            content = content.replace(target, "")
 
     # Fetch hero image from Unsplash
     blog_images_dir = STATIC_DIR / 'images' / 'blog' / market_id
