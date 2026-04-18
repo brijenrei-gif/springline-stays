@@ -48,6 +48,7 @@ The undisputed star of the show, however, is the **SkyWheel**. Towering nearly 2
 1.  **From the Ground**: Stand back and capture the sheer scale of the SkyWheel against a brilliant blue sky. The bright white of the structure contrasts beautifully with the colorful, climate-controlled gondolas. At night, the wheel comes alive with a dazzling LED light show, creating opportunities for stunning long-exposure shots or vibrant, moody portraits.
 2.  **From the Top**: The 360-degree views from inside a gondola are breathtaking. This is your chance to get that coveted aerial shot of the Emerald Coast, the sprawling cityscape of Pier Park, and the seemingly endless horizon. Time your ride for sunset for a truly magical, golden-hour experience that will have your followers swooning.
 
+![Selfie Example: Smiling traveler with the colorful SkyWheel in the background](/static/images/blog/panama-city-beach/skywheel-selfie-placeholder.jpg)
 *Selfie Tip: Stand slightly to the side to get the full wheel in the frame. At night, use Night Mode to capture the glowing lights. [Find examples on Unsplash](https://unsplash.com/s/photos/panama-city-beach-pier-park)*
 
 **Insider Tip**: For a unique angle, walk across the street towards the beach. You can frame the SkyWheel with palm trees in the foreground for a classic tropical vibe.
@@ -63,6 +64,7 @@ Stretching over 1,500 feet into the Gulf of Mexico, both the Russell-Fields Pier
 *   **Leading Lines**: Use the long wooden planks and railings of the pier as leading lines to draw the viewer's eye out towards the vast expanse of the Gulf. This is a classic compositional technique that creates a sense of depth and scale.
 *   **Under the Pier**: Don't neglect the view from below! At low tide, the forest of weathered pylons creates a dramatic, almost architectural scene. The play of light and shadow under the pier is perfect for moody, artistic shots, especially in black and white.
 
+![Selfie Example: Looking down the long expanse of the pier, creating depth](/static/images/blog/panama-city-beach/pier-selfie-placeholder.jpg)
 *Selfie Tip: Use the wooden railings as leading lines pointing towards you and the horizon. [Find examples on Unsplash](https://unsplash.com/s/photos/Russell-Fields-Pier-Panama-City-Beach)*
 
 **Insider Tip**: A small fee is required to walk out onto the pier, but it's worth every penny for the unobstructed views. Bring a wide-angle lens if you have one to capture the full scope of the scene.
@@ -81,6 +83,7 @@ Consistently ranked as one of the best beaches in the country, St. Andrews State
 *   **Sugar-White Sand Dunes**: The park is home to pristine, rolling sand dunes dotted with sea oats. These create a beautiful, textured backdrop for portraits and landscape shots. Remember to stay on designated paths to protect this fragile ecosystem.
 *   **"Kiddie Pool" Lagoon**: This protected, shallow lagoon on the bay side offers incredibly calm, crystal-clear emerald water. It's the perfect place for those "floating in paradise" shots, or capturing reflections on the mirror-like surface.
 
+![Selfie Example: Floating in the calm, emerald water of the lagoon](/static/images/blog/panama-city-beach/lagoon-selfie-placeholder.jpg)
 *Selfie Tip: A waterproof phone pouch is a must here! Get a low-angle shot just above the water surface. [Find examples on Unsplash](https://unsplash.com/s/photos/st-andrews-state-park-panama-city-beach)*
 
 **Insider Tip**: The park is home to a resident population of deer that are quite accustomed to people. If you're lucky, you might capture a magical shot of a deer on the beach, especially in the early morning or late afternoon.
@@ -95,6 +98,7 @@ If you want photos that look like they were taken on a deserted Caribbean island
 *   **Driftwood & Shells**: As its name suggests, the island is a treasure trove for shell collectors. But it's also a great place to find unique pieces of sun-bleached driftwood, which make for fantastic foreground elements in your photos.
 *   **Dolphin Sightings**: The boat ride to and from the island is a photo op in itself. The waters are teeming with bottlenose dolphins, and capturing a shot of them playing in the boat's wake is a quintessential PCB memory.
 
+![Selfie Example: Pure white sand and clear water behind a smiling face](/static/images/blog/panama-city-beach/shell-island-selfie-placeholder.jpg)
 *Selfie Tip: The lack of crowds makes it easy to get a clean shot. Pose with some sun-bleached driftwood for that "castaway" look. [Find examples on Unsplash](https://unsplash.com/s/photos/shell-island-panama-city-beach)*
 
 **Insider Tip**: Pack light, but don't forget water, snacks, and sun protection, as there are no facilities on the island. The best light is in the morning before the sun gets too harsh.
@@ -109,6 +113,7 @@ For a change of scenery from the beach, head inland to Conservation Park. This 2
 *   **Lush Greenery**: The dense canopy of trees creates a beautiful, diffused light that is perfect for portraits. The vibrant greens of the ferns and cypress trees provide a rich, natural color palette.
 *   **Wildlife Photography**: The park is a haven for birds, deer, and other wildlife. Bring a zoom lens and a little patience, and you might be rewarded with some incredible nature shots.
 
+![Selfie Example: Walking along the wooden boardwalk surrounded by lush greenery](/static/images/blog/panama-city-beach/boardwalk-selfie-placeholder.jpg)
 *Selfie Tip: Let the boardwalk stretch out behind you to create a sense of depth and adventure. [Find examples on Unsplash](https://unsplash.com/s/photos/panama-city-beach-conservation-park)*
 
 **Insider Tip**: Visit during the "golden hour" just before sunset. The low-angled light filtering through the trees creates long, dramatic shadows and a warm, magical glow over the entire park.
@@ -123,6 +128,7 @@ Beyond the beaches and parks, PCB has a growing collection of public art that ma
 
 No Instagram tour of a city is complete without a shot in front of a "Greetings From" mural, and PCB's is a classic. Painted on the side of the official Visitor Information Center, this large, colorful mural features iconic local scenes within each letter. It’s the perfect way to announce your arrival and create a digital postcard for your friends and family back home.
 
+![Panama City Beach mural](/static/images/blog/panama-city-beach/mural-selfie-placeholder.jpg)
 *Selfie Tip: Dress in solid colors to avoid clashing with the detailed artwork of the mural.*
 
 **Insider Tip**: The lighting is best in the morning or on a slightly overcast day to avoid harsh shadows. Stand a little to the side to get the full mural in the frame without your own shadow getting in the way.
