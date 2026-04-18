@@ -180,7 +180,7 @@ markets:
     pillar: Events
     status: planned
     title: Where to Watch 4th of July Fireworks in Panama City Beach
-  - file: content/panama-city-beach/the-most-instagrammable-spots-in-panama-city-beach.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/panama-city-beach/beyond-the-selfie-a-guide-to-panama-city.md
     keywords:
     - instagrammable pcb
     - best photo spots panama city beach
@@ -188,7 +188,7 @@ markets:
     meta_description: Capture the perfect beach aesthetic! Discover the most Instagrammable
       spots in Panama City Beach for your vacation feed.
     pillar: Social
-    status: planned
+    status: published
     title: The Most Instagrammable Spots in Panama City Beach
   - file: content/panama-city-beach/pcb-with-toddlers-best-family-friendly-activities.md
     keywords:

@@ -1,12 +1,14 @@
 ---
-title: "The Ultimate Guide to an Ichetucknee Springs Day Trip from Gainesville"
+title: The Ultimate Guide to an Ichetucknee Springs Day Trip from Gainesville
 date: 2026-04-17
-description: "Plan the perfect day trip to Ichetucknee Springs from Gainesville. Our complete guide covers everything you need to know about tubing, kayaking, wildlife, and pro tips for your visit."
-hero_image: ""
+description: Plan the perfect day trip to Ichetucknee Springs from Gainesville. Our
+  complete guide covers everything you need to know about tubing, kayaking, wildlife,
+  and pro tips for your visit.
+hero_image: /static/images/blog/gainesville/the-ultimate-guide-to-an-ichetucknee-springs-day-t.jpg
 tags:
-  - ichetucknee springs
-  - day trips
-  - gainesville
+- ichetucknee springs
+- day trips
+- gainesville
 market: gainesville
 ---
 
