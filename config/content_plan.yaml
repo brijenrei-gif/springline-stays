@@ -119,7 +119,7 @@ markets:
     pillar: Social
     status: planned
     title: 'Insta-Worthy Gainesville: Best Photo Ops on Campus and in Nature'
-  - file: content/gainesville/top-free-things-to-do-in-gainesville-for-families.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/gainesville/gainesville-on-a-dime-your-guide-to-the.md
     keywords:
     - free things to do gainesville
     - budget gainesville activities
@@ -127,7 +127,7 @@ markets:
     meta_description: Explore Gainesville on a budget! Discover the top free things
       to do in Gainesville for families with kids of all ages.
     pillar: Activities
-    status: planned
+    status: published
     title: Top Free Things to Do in Gainesville for Families
   - file: content/gainesville/a-weekend-in-gainesville-the-perfect-itinerary-for-uf-parents.md
     keywords:
