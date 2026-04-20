@@ -1,12 +1,14 @@
 ---
-title: "Gainesville on a Dime: Your Guide to the Best Free Family Activities"
+title: 'Gainesville on a Dime: Your Guide to the Best Free Family Activities'
 date: 2026-04-19
-description: "Visiting Gainesville with the family on a budget? Discover the absolute best free activities for kids, from iconic bat houses to amazing splash pads and museums. Your wallet will thank you!"
-hero_image: ""
+description: Visiting Gainesville with the family on a budget? Discover the absolute
+  best free activities for kids, from iconic bat houses to amazing splash pads and
+  museums. Your wallet will thank you!
+hero_image: /static/images/blog/gainesville/gainesville.jpg
 tags:
-  - travel
-  - family fun
-  - gainesville
+- travel
+- family fun
+- gainesville
 market: gainesville
 ---
 Let's be real—a family vacation can get expensive fast. But one of the best things about Gainesville is that you don't need a huge budget to have an incredible time. Some of our most iconic, memory-making experiences won't cost you a single penny.

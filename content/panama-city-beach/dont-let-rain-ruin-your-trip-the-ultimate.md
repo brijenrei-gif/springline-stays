@@ -1,10 +1,13 @@
 ---
-title: "Don't Let Rain Ruin Your Trip: The Ultimate Guide to Indoor Activities in Panama City Beach"
+title: 'Don''t Let Rain Ruin Your Trip: The Ultimate Guide to Indoor Activities in
+  Panama City Beach'
 date: 2026-04-18
-description: "Panama City Beach weather can be unpredictable. Discover the best indoor activities, from mind-bending museums and arcades to unique shopping and dining, to save your rainy day vacation."
-hero_image: ""
+description: Panama City Beach weather can be unpredictable. Discover the best indoor
+  activities, from mind-bending museums and arcades to unique shopping and dining,
+  to save your rainy day vacation.
+hero_image: /static/images/blog/panama-city-beach/dont-let-rain-ruin-your-trip-the-ultimate-guide-to.jpg
 tags:
-  - travel
+- travel
 market: panama-city-beach
 ---
 

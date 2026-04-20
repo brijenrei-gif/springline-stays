@@ -1,11 +1,13 @@
 ---
-title: "The Ultimate Guide to Gainesville's Best Coffee Shops for Remote Work & Studying"
+title: The Ultimate Guide to Gainesville's Best Coffee Shops for Remote Work & Studying
 date: 2026-04-17
-description: "Ditch the home office. Discover Gainesville's best coffee shops for remote work and studying, complete with local tips on outlets, Wi-Fi, and the best things to order."
-hero_image: ""
+description: Ditch the home office. Discover Gainesville's best coffee shops for remote
+  work and studying, complete with local tips on outlets, Wi-Fi, and the best things
+  to order.
+hero_image: /static/images/blog/gainesville/gainesville.jpg
 tags:
-  - travel
-  - food & drink
+- travel
+- food & drink
 market: gainesville
 ---
 

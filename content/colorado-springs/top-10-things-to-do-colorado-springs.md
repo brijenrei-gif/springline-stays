@@ -1,10 +1,12 @@
 ---
-title: "Top 10 Things to Do in Colorado Springs This Season"
+title: Top 10 Things to Do in Colorado Springs This Season
 date: 2026-04-07
-description: "Discover the ultimate local's guide to the top 10 things to do in Colorado Springs this season. From secret Pikes Peak tips to the best local eats, plan your adventure now."
-hero_image: ""
+description: Discover the ultimate local's guide to the top 10 things to do in Colorado
+  Springs this season. From secret Pikes Peak tips to the best local eats, plan your
+  adventure now.
+hero_image: /static/images/blog/colorado-springs/top-10-things-to-do-in-colorado-springs-this-seaso.jpg
 tags:
-  - travel
+- travel
 market: colorado-springs
 ---
 

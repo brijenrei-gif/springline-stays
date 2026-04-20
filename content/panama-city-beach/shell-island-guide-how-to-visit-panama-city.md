@@ -1,13 +1,15 @@
 ---
-title: "Shell Island Guide: How to Visit Panama City Beach's Best Kept Secret"
+title: 'Shell Island Guide: How to Visit Panama City Beach''s Best Kept Secret'
 date: 2026-04-10
-description: "Your complete insider's guide to visiting Shell Island in Panama City Beach. Discover the best ways to get there, what to pack, and local tips for an unforgettable day on this pristine barrier island."
-hero_image: ""
+description: Your complete insider's guide to visiting Shell Island in Panama City
+  Beach. Discover the best ways to get there, what to pack, and local tips for an
+  unforgettable day on this pristine barrier island.
+hero_image: /static/images/blog/panama-city-beach/panama-city-beach.jpg
 tags:
-  - travel
-  - panama-city-beach
-  - shell-island
-  - florida
+- travel
+- panama-city-beach
+- shell-island
+- florida
 market: panama-city-beach
 ---
 

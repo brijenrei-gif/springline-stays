@@ -1,13 +1,15 @@
 ---
-title: "Beyond the Selfie: A Guide to Panama City Beach's Most Instagram-Worthy Spots"
+title: 'Beyond the Selfie: A Guide to Panama City Beach''s Most Instagram-Worthy Spots'
 date: 2026-04-18
-description: "Tired of the same old beach selfie? Discover Panama City Beach's most unique and Instagram-worthy photo spots, from hidden murals to stunning state parks. A local's guide."
-hero_image: ""
+description: Tired of the same old beach selfie? Discover Panama City Beach's most
+  unique and Instagram-worthy photo spots, from hidden murals to stunning state parks.
+  A local's guide.
+hero_image: /static/images/blog/panama-city-beach/panama-city-beach.jpg
 tags:
-  - travel
-  - panama-city-beach-fl
-  - instagram-spots
-  - photography
+- travel
+- panama-city-beach-fl
+- instagram-spots
+- photography
 market: panama-city-beach
 ---
 

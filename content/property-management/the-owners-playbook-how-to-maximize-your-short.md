@@ -1,12 +1,15 @@
 ---
-title: "The Owner's Playbook: How to Maximize Your Short-Term Rental ROI"
+title: 'The Owner''s Playbook: How to Maximize Your Short-Term Rental ROI'
 date: 2026-04-15
-description: "Tired of leaving money on the table? Our owner's playbook reveals expert strategies for dynamic pricing, 5-star guest experiences, and smart automation to maximize your short-term rental ROI. Learn the secrets to turning your property into a top performer."
-hero_image: ""
+description: Tired of leaving money on the table? Our owner's playbook reveals expert
+  strategies for dynamic pricing, 5-star guest experiences, and smart automation to
+  maximize your short-term rental ROI. Learn the secrets to turning your property
+  into a top performer.
+hero_image: /static/images/blog/property-management/the-owners-playbook-how-to-maximize-your-short-ter.jpg
 tags:
-  - property-management
-  - vacation-rentals
-  - real-estate-investing
+- property-management
+- vacation-rentals
+- real-estate-investing
 market: property-management
 ---
 

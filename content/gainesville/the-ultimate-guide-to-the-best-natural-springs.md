@@ -1,13 +1,15 @@
 ---
-title: "The Ultimate Guide to the Best Natural Springs Near Gainesville, FL"
+title: The Ultimate Guide to the Best Natural Springs Near Gainesville, FL
 date: 2026-04-08
-description: "Discover the crystal-clear waters of the best natural springs near Gainesville, FL. Our local guide covers Ginnie Springs, Ichetucknee, Silver Springs, and more for swimming, tubing, and kayaking."
-hero_image: ""
+description: Discover the crystal-clear waters of the best natural springs near Gainesville,
+  FL. Our local guide covers Ginnie Springs, Ichetucknee, Silver Springs, and more
+  for swimming, tubing, and kayaking.
+hero_image: /static/images/blog/gainesville/the-ultimate-guide-to-the-best-natural-springs-nea.jpg
 tags:
-  - travel
-  - florida springs
-  - gainesville
-  - outdoors
+- travel
+- florida springs
+- gainesville
+- outdoors
 market: gainesville
 ---
 

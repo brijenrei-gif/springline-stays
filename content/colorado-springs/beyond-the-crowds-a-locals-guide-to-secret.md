@@ -1,12 +1,14 @@
 ---
-title: "Beyond the Crowds: A Local's Guide to Secret Hiking Trails in Colorado Springs"
+title: 'Beyond the Crowds: A Local''s Guide to Secret Hiking Trails in Colorado Springs'
 date: 2026-04-16
-description: "Ditch the crowds at Garden of the Gods and Pikes Peak. Discover truly secret hiking trails in Colorado Springs with this local's guide to hidden gems and quiet paths."
-hero_image: ""
+description: Ditch the crowds at Garden of the Gods and Pikes Peak. Discover truly
+  secret hiking trails in Colorado Springs with this local's guide to hidden gems
+  and quiet paths.
+hero_image: /static/images/blog/colorado-springs/beyond-the-crowds-a-locals-guide-to-secret-hiking.jpg
 tags:
-  - travel
-  - hiking
-  - colorado
+- travel
+- hiking
+- colorado
 market: colorado-springs
 ---
 

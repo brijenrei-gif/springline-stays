@@ -1,12 +1,14 @@
 ---
-title: "The Ultimate UF Game Day Survival Guide in Gainesville, FL"
+title: The Ultimate UF Game Day Survival Guide in Gainesville, FL
 date: 2026-04-09
-description: "Your expert, no-fluff guide to conquering a Florida Gators game day in Gainesville. Find the best tailgates, food, and pro tips to navigate The Swamp like a local."
-hero_image: ""
+description: Your expert, no-fluff guide to conquering a Florida Gators game day in
+  Gainesville. Find the best tailgates, food, and pro tips to navigate The Swamp like
+  a local.
+hero_image: /static/images/blog/gainesville/gainesville.jpg
 tags:
-  - travel
-  - gainesville
-  - uf gators
+- travel
+- gainesville
+- uf gators
 market: gainesville
 ---
 
