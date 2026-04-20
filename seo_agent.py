@@ -88,7 +88,8 @@ def fetch_unsplash_image(query, save_dir):
     slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
     slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
     slug = slug.strip('-')
-    filename = f"{slug}.jpg"
+    import uuid
+    filename = f"{slug}-{uuid.uuid4().hex[:6]}.jpg"
     filepath = os.path.join(save_dir, filename)
     
     if os.path.exists(filepath):
