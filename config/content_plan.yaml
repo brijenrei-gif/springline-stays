@@ -200,7 +200,7 @@ markets:
     pillar: Activities
     status: planned
     title: 'PCB with Toddlers: Best Family-Friendly Activities'
-  - file: content/panama-city-beach/rainy-day-guide-to-panama-city-beach-best-indoor-activities.md
+  - file: /usr/local/google/home/braval/projects/springline-stays/content/panama-city-beach/dont-let-rain-ruin-your-trip-the-ultimate.md
     keywords:
     - rainy day pcb
     - indoor activities panama city beach
@@ -208,7 +208,7 @@ markets:
     meta_description: Rain in the forecast? Don't let it ruin your vacation with our
       rainy day guide to the best indoor activities in Panama City Beach.
     pillar: Activities
-    status: planned
+    status: published
     title: 'Rainy Day Guide to Panama City Beach: Best Indoor Activities'
 topics:
   property-management:
