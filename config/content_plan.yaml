@@ -160,7 +160,7 @@ markets:
     pillar: Local
     status: published
     title: 'Best Seafood Restaurants in Panama City Beach: A Local''s Guide'
-  - file: content/panama-city-beach/a-locals-guide-to-the-best-seafood-in-panama-city.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/panama-city-beach/forget-the-tourist-traps-where-locals-eat-seafood.md
     keywords:
     - best seafood pcb
     - local seafood panama city beach
@@ -168,7 +168,7 @@ markets:
     meta_description: Craving fresh seafood? Discover the best local seafood restaurants
       in Panama City Beach that the locals actually eat at.
     pillar: Dining
-    status: planned
+    status: published
     title: A Local's Guide to the Best Seafood in Panama City Beach
   - file: content/panama-city-beach/where-to-watch-4th-of-July-fireworks-in-panama-city.md
     keywords:
