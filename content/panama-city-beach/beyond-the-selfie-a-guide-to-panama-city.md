@@ -3,7 +3,7 @@ date: 2026-04-18
 description: Tired of the same old beach pics? Discover Panama City Beach's most Instagram-worthy
   spots, from secret murals to stunning state parks. Your ultimate guide to a photo-ready
   PCB vacation.
-hero_image: ''
+hero_image: /static/images/blog/panama-city-beach/panama-city-beach-66ecfd.jpg
 market: panama-city-beach
 tags:
 - travel

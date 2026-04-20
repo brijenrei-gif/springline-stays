@@ -3,7 +3,7 @@ date: 2026-04-16
 description: Ditch the crowds at Garden of the Gods. Discover truly secret, local-favorite
   hiking trails in Colorado Springs for stunning views and solitude. Your insider
   guide is here.
-hero_image: ''
+hero_image: /static/images/blog/colorado-springs/beyond-the-crowds-a-locals-guide-to-secret-hiking-85961a.jpg
 market: colorado-springs
 tags:
 - travel

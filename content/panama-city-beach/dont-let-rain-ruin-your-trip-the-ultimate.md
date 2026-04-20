@@ -3,7 +3,7 @@ date: 2026-04-18
 description: That dreaded rain cloud on the forecast doesn't have to ruin your vacation.
   Discover the best indoor activities in Panama City Beach, from mind-bending museums
   to epic arcades.
-hero_image: ''
+hero_image: /static/images/blog/panama-city-beach/dont-let-rain-ruin-your-trip-the-ultimate-guide-to-53abba.jpg
 market: panama-city-beach
 tags:
 - travel

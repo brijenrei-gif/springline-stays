@@ -3,7 +3,7 @@ date: 2026-04-17
 description: Your complete local's guide to the perfect Ichetucknee Springs day trip
   from Gainesville. Discover which entrance to use, pro tubing tips, where to eat,
   and more.
-hero_image: ''
+hero_image: /static/images/blog/gainesville/the-ultimate-guide-to-an-ichetucknee-springs-day-t-97b9ee.jpg
 market: gainesville
 tags:
 - travel

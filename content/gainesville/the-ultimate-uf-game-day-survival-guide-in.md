@@ -2,7 +2,7 @@
 date: 2026-04-09
 description: Your insider's guide to UF Game Day in Gainesville, FL. Find the best
   tailgating spots, secret parking tips, where to eat, and what to wear. Go Gators!
-hero_image: ''
+hero_image: /static/images/blog/gainesville/gainesville-f9f23b.jpg
 market: gainesville
 tags:
 - travel

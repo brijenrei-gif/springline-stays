@@ -3,7 +3,7 @@ date: 2026-04-08
 description: Forget the beach. Discover the crystal-clear, 72-degree magic of North
   Florida's natural springs. Our local's guide covers the best springs near Gainesville
   for tubing, diving, and relaxing.
-hero_image: ''
+hero_image: /static/images/blog/gainesville/the-ultimate-guide-to-the-best-natural-springs-nea-5f6f5c.jpg
 market: gainesville
 tags:
 - travel

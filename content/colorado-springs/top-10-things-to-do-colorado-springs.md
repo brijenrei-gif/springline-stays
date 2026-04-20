@@ -3,7 +3,7 @@ date: 2026-04-07
 description: Skip the tourist traps. Discover the 10 best things to do in Colorado
   Springs this season, from hidden hiking trails to the best local eats. Your insider's
   guide awaits.
-hero_image: ''
+hero_image: /static/images/blog/colorado-springs/top-10-things-to-do-in-colorado-springs-this-seaso-09a6ce.jpg
 market: colorado-springs
 tags:
 - travel

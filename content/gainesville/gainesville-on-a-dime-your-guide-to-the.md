@@ -3,7 +3,7 @@ date: 2026-04-19
 description: Discover the best free family activities in Gainesville, FL! Our local's
   guide covers everything from museums and parks to seeing wild gators, all without
   spending a cent.
-hero_image: ''
+hero_image: /static/images/blog/gainesville/gainesville-fc26fc.jpg
 market: gainesville
 tags:
 - travel

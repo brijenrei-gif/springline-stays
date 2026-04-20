@@ -3,7 +3,7 @@ date: 2026-04-17
 description: Tired of your home office? Discover Gainesville's best coffee shops for
   remote work and studying. Our insider's guide covers wifi, outlets, parking, and
   the best lattes.
-hero_image: ''
+hero_image: /static/images/blog/gainesville/gainesville-84266e.jpg
 market: gainesville
 tags:
 - travel

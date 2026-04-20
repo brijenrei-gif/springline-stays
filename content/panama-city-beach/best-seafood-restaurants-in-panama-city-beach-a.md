@@ -2,7 +2,7 @@
 date: 2026-04-11
 description: Skip the tourist traps. A local's guide to the absolute best seafood
   restaurants in Panama City Beach, from waterfront views to hidden-gem oyster bars.
-hero_image: ''
+hero_image: /static/images/blog/panama-city-beach/best-seafood-restaurants-in-panama-city-beach-a-lo-a01454.jpg
 market: panama-city-beach
 tags:
 - travel

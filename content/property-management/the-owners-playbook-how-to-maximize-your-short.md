@@ -3,7 +3,7 @@ date: 2026-04-15
 description: Stop leaving money on the table. Our owner's playbook reveals expert
   strategies for dynamic pricing, must-have amenities, and direct bookings to maximize
   your short-term rental ROI.
-hero_image: ''
+hero_image: /static/images/blog/property-management/the-owners-playbook-how-to-maximize-your-short-ter-4e81e2.jpg
 market: property-management
 tags:
 - travel

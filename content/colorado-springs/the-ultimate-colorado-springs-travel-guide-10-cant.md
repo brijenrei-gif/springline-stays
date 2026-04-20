@@ -3,7 +3,7 @@ date: 2026-04-13
 description: Planning a trip to the Springs? Skip the tourist traps. Our local's guide
   reveals 10 can't-miss experiences, from conquering the Manitou Incline to finding
   the best local eats. Your ultimate Colorado adventure starts here.
-hero_image: ''
+hero_image: /static/images/blog/colorado-springs/the-ultimate-colorado-springs-travel-guide-10-cant-0de0b8.jpg
 market: colorado-springs
 tags:
 - travel
