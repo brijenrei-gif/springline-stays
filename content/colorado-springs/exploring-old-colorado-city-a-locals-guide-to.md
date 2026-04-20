@@ -1,101 +1,116 @@
 ---
 date: 2026-04-08
-description: Discover the best of Old Colorado City with our insider's guide. Find
-  the top restaurants, unique art galleries, hidden gems, and local tips for your
-  trip.
-hero_image: /static/images/blog/colorado-springs/exploring-old-colorado-city-a-locals-guide-to-dini-35fbbf.jpg
+description: Skip the tourist traps. Get a true local's guide to the best restaurants,
+  art galleries, and hidden gems in historic Old Colorado City, Colorado Springs.
+hero_image: /static/images/blog/colorado-springs/exploring-old-colorado-city-a-locals-guide-to-dini-ce6471.jpg
 market: colorado-springs
 tags:
 - travel
+- things to do
 title: 'Exploring Old Colorado City: A Local''s Guide to Dining, Art & More'
 ---
 
 
-The first thing you need to know about Old Colorado City is that it’s more than just a charming main street. It’s the original capital of the Colorado Territory, and that history lives in the brick-lined alleys, the quirky architecture, and the fiercely independent spirit of its shops and restaurants. Forget the generic tourist traps; this is where you go for an authentic slice of Colorado Springs.
+Forget what you think you know about historic districts. Old Colorado City isn't a stuffy, preserved-in-amber tourist trap. It's the living, breathing heart of Colorado Springs, where the grit of the Old West meets a vibrant, modern arts scene—all set against the backdrop of Pikes Peak.
 
-Whether you have a full day or just a few hours, you can pack in a lot of great food, art, and discovery. Here’s how to do it right.
+This is where we go for a perfect Saturday. It's where we take visiting friends to show them the *real* Colorado Springs. Ditch the generic travel blogs and let's walk through the brick-lined streets like you've lived here for years.
 
 ### Table of Contents
-*   [Where to Eat: From Cozy Bistros to Lively Patios](#where-to-eat-from-cozy-bistros-to-lively-patios)
-*   [Strolling and Shopping: The Best Art Galleries and Boutiques](#strolling-and-shopping-the-best-art-galleries-and-boutiques)
-*   [Caffeine Fixes and Sweet Treats](#caffeine-fixes-and-sweet-treats)
-*   [Beyond the Main Drag: Local Secrets](#beyond-the-main-drag-local-secrets)
-*   [Your Old Colorado City Questions, Answered](#your-old-colorado-city-questions-answered)
-
-## Where to Eat: From Cozy Bistros to Lively Patios
-
-Let's be honest, exploring is hungry work. Old Colorado City (or OCC, as you'll hear it called) has some of the best independent restaurants in the city. You won't find many big chains here, and that's exactly why we love it.
-
-### Paravicini's Italian Bistro
-If you're craving incredible, no-nonsense Italian food, this is the spot. It's loud, it's bustling, and the food is consistently fantastic. It feels like you stepped into a classic East Coast joint.
-*   **Local Tip:** It gets packed. Seriously. Make a reservation, even on a weeknight. If you can't, try for a late lunch.
-*   **Must-Order:** The Veal Saltimbocca is legendary, but my personal go-to is the simple, perfect Linguine and Clams.
-
-### Monse's Pupuseria
-This place is a true gem and a local obsession. If you've never had a pupusa (a thick, handmade corn tortilla stuffed with cheese, beans, or meat), you're in for a treat. It's affordable, authentic, and utterly delicious.
-*   **Local Tip:** Don't skip the curtido (a tangy cabbage slaw) and the sauces they provide. They are essential to the experience. A little of each on every bite is the way to go.
-*   **Must-Order:** The Revuelta (pork, cheese, and beans) is the classic, but the Loroco & Cheese (an edible flower) is a fantastic vegetarian option. Get one of each.
-
-### Front Range Barbeque
-Looking for a laid-back vibe with killer food? Head to Front Range BBQ. Their sprawling patio is one of the best hangs in town, especially when they have live music. The smoker is always going, and the smell alone will draw you in from a block away.
-*   **Local Tip:** Their music schedule is posted on their website. It's worth planning your visit around a good blues or bluegrass band on the patio.
-*   **Must-Order:** You can't go wrong with the pulled pork, but the Smoked Wings are the real stars of the show.
-
-## Strolling and Shopping: The Best Art Galleries and Boutiques
-
-The heart and soul of Old Colorado City is its art scene. You could spend an entire afternoon just wandering in and out of galleries, from fine art to funky local crafts.
-
-### Top-Tier Art Galleries
-*   **Hunter-Wolff Gallery:** This place showcases some of the most talented fine artists in the region. It’s a must-visit if you're a serious collector or just appreciate incredible painting and sculpture.
-*   **The Squash Blossom:** An OCC institution for decades, specializing in stunning Native American jewelry and fine art. Even if you're just window shopping, the craftsmanship on display is breathtaking.
-
-### Unique Boutiques and Shops
-*   **Eclectic Co.:** This isn't your average gift shop. It's a cooperative boutique featuring goods from over 50 local Colorado makers. You'll find everything from handmade jewelry and ceramics to locally designed apparel. It's the perfect place to find a souvenir that isn't a cheesy t-shirt.
-*   **Eve's Revolution:** For a curated collection of women's clothing, accessories, and unique gifts, this is the place. It's one of those shops where you always find something you didn't know you needed.
-
-## Caffeine Fixes and Sweet Treats
-
-You'll need a little pick-me-up between all that walking and shopping.
-
-### Jives Coffee Lounge
-With its funky decor and cozy nooks, Jives is the quintessential neighborhood coffee shop. It's the perfect spot to rest your feet, grab a latte, and people-watch through the big front windows.
-
-### Carnelian Coffee Co.
-A bit more modern and bright, Carnelian serves up excellent espresso drinks and a solid selection of pastries. Their seasonal lattes are always creative and delicious.
-
-### Michael's Cookies
-A tiny, can't-miss-it shop serving up fresh, warm, no-frills cookies. Grab one to go as you continue your stroll down Colorado Avenue. The snickerdoodle is pure perfection.
-
-## Beyond the Main Drag: Local Secrets
-
-Want to really experience OCC like someone who lives here? Venture just a few steps off the beaten path.
-
-### The Alleyways and Courtyards
-The secret to Old Colorado City is in its hidden spaces. Duck into the alleyways behind the main storefronts. You'll find beautiful courtyards, hidden art installations, and the back entrances to some of the best spots. The courtyard behind Paravicini's is particularly charming.
-
-### Bancroft Park Farmer's Market
-If you're in town on a Saturday morning from June through October, you absolutely have to visit the farmer's market in Bancroft Park. It's a bustling scene with local produce, fresh-baked bread, Colorado-made honey, and food trucks. It’s the perfect way to start a weekend.
-
-### Simpich Showcase
-This is one of the most unique and magical places in the city. The Simpich family has been handcrafting incredible marionettes and character dolls for generations. Their Showcase is a small museum and store that feels like stepping into a fairytale. It’s a quiet, wonderful escape from the main street hustle.
-
-## Your Old Colorado City Questions, Answered
-
-### What is Old Colorado City known for?
-Old Colorado City is famous for being the first capital of the Colorado Territory. Today, it's known for its charming Victorian architecture, a high concentration of art galleries, independent boutiques, and fantastic local restaurants. It’s a nationally registered historic district.
-
-### Is Old Colorado City walkable?
-Absolutely. The main historic area spans just a few blocks along Colorado Avenue, with plenty to see on the adjacent side streets. You can easily park your car and spend several hours exploring entirely on foot.
-
-### How much time do you need in Old Colorado City?
-You can get a good feel for the area in 2-3 hours if you're just browsing. To fully experience it—enjoying a leisurely meal, visiting multiple galleries, and exploring the shops—plan for a half-day or more.
-
-### Where is the best place to park in Old Colorado City?
-The secret that locals use is the **free public parking garage** located just off 26th Street and Cucharras. It’s a block south of Colorado Avenue and almost always has spots. Otherwise, there is free 2-hour street parking along the main avenue and side streets, but it can be competitive on busy days.
+*   [Where to Eat & Drink in Old Colorado City](#where-to-eat--drink-in-old-colorado-city)
+*   [Immerse Yourself in the Art Scene](#immerse-yourself-in-the-art-scene)
+*   [Shop Like a Local (No Tourist Traps)](#shop-like-a-local-no-tourist-traps)
+*   [Beyond the Main Drag](#beyond-the-main-drag)
+*   [Frequently Asked Questions](#frequently-asked-questions)
 
 ---
 
-After a full day of exploring the historic streets and art-filled alleys of Old Colorado City, you'll need the perfect place to relax and recharge. Our homes are just a short drive away, offering a comfortable and stylish base for all your Colorado Springs adventures.
+## Where to Eat & Drink in Old Colorado City
 
-Ready to find your home away from home? **[Book your stay directly with Springline Stays](#) and start planning your perfect Colorado getaway.**
+This is serious business. OCC has an incredible density of fantastic, independently-owned restaurants. Here’s how to navigate them.
+
+### H3: For Your Morning Coffee Fix
+Skip the big chains and head straight to **Jives Coffee Lounge**. The vibe is pure comfort, with cozy armchairs and local art on the walls. It’s the perfect place to caffeinate and plan your day. My go-to is their classic latte, but their seasonal specials are always worth a try. If you want something a bit more historic, **Bon Ton's Cafe** has been a neighborhood staple for decades, serving up diner-style breakfast and strong coffee.
+
+### H3: The Perfect Lunch Spot
+When you need a midday refuel, **La Baguette French Bakery** is the answer. Their sandwiches, served on crusty, house-made bread, are legendary. Grab a "Le Parisian" and snag a spot on their charming, tree-covered patio. Pro-tip: The line can look long, but it moves fast, and the reward is always worth the wait.
+
+Craving pizza? **Pizzeria Rustica** serves authentic, wood-fired Neapolitan pizza that will ruin you for all other pizzas. It’s a bit of a hidden gem, tucked away in a historic building with a fantastic courtyard.
+
+### H3: A Dinner You'll Dream About
+For a date night or a special occasion, you can't beat **Paravicini's Italian Bistro**. It's loud, it's classic, and the food is phenomenal. You absolutely need a reservation. Ask for a table in the main dining room to soak up the energy. You can't go wrong with the Veal Saltimbocca or Franco’s Sugo.
+
+If you prefer a more relaxed, tapas-style experience, **TAPAteria** is incredible. It’s a Spanish-inspired wine and tapas bar with a cozy, intimate atmosphere. Order a flight of sherry and share a few plates—the Bacon Wrapped Dates are non-negotiable.
+
+### H3: For a Sweet Treat
+Nothing beats a post-dinner stroll down Colorado Avenue with an ice cream cone. **Colorado City Creamery** makes their ice cream in-house, and you can taste the difference. They have classic flavors and some creative local-inspired ones, too.
+
+---
+
+## Immerse Yourself in the Art Scene
+
+Old Colorado City is a designated Creative District for a reason. You could spend a whole day just wandering through galleries.
+
+### H3: Must-Visit Galleries
+Don't be intimidated; the gallery owners here are friendly and passionate. Start at the **Hunter-Wolff Gallery**, which showcases an impressive collection of fine art from Colorado and nationally recognized artists.
+
+For something completely different, you have to visit the **Michael Garman Museum & Gallery**. It’s less of a gallery and more of an experience. Garman creates miniature cityscapes called "Magic Town," a gritty, detailed, and slightly surreal 1/6-scale urban neighborhood. It's quirky, fascinating, and uniquely Colorado Springs.
+
+### H3: Pro-Tip: Catch the First Friday ArtWalk
+If your visit lines up with the first Friday of the month (April through December), you're in luck. The **First Friday ArtWalk** is when all the galleries open their doors from 5-8 PM, often with live music, artist demonstrations, and complimentary wine and snacks. It’s the best way to experience the neighborhood's creative energy.
+
+---
+
+## Shop Like a Local (No Tourist Traps)
+
+Sure, there are souvenir shops, but the real treasures are in the independent boutiques.
+
+### H3: For Unique Gifts & Home Decor
+**Eclectic Co.** is a cooperative boutique featuring dozens of local artisans. You can find everything from handmade jewelry and ceramics to witty t-shirts and beautiful prints. It's my go-to for finding a gift that feels personal and supports local makers. For beautiful home goods and a wonderfully curated selection of women's apparel, **Eve's Revolution** is a must.
+
+### H3: For the Bookworm
+While not a traditional bookstore, **Everyday Moments** has a fantastic selection of journals, unique cards, and thoughtfully chosen books alongside their gift selection. It's the perfect place to find a travel journal or a new read.
+
+### H3: For Outdoor & Colorado Gear
+**Merrell** has a storefront right on the main drag for quality footwear, but for a more local feel, pop into one of the smaller shops that carry Colorado-themed apparel that goes beyond the typical tourist fare.
+
+---
+
+## Beyond the Main Drag
+
+There’s more to OCC than just Colorado Avenue.
+
+### H3: Relax in Bancroft Park
+This is the green heart of the neighborhood. In the summer, **Bancroft Park** hosts a fantastic farmers market every Saturday morning from 8 AM to 1 PM. Grab a coffee and a pastry and browse the stalls for local produce, honey, and crafts. It's also where you'll find Territory Days over Memorial Day weekend and other seasonal festivals.
+
+### H3: Step Back in Time
+Remember, this was the first capital of the Colorado Territory. As you walk, look up at the historic plaques on the brick buildings. You’re walking through history—past saloons, boarding houses, and shops that served the gold miners heading up to Pikes Peak. No need for a formal tour; the history is written on the walls.
+
+---
+
+## Frequently Asked Questions
+
+### Is Old Colorado City worth visiting?
+Absolutely. It's one of the most charming and authentic neighborhoods in Colorado Springs, offering a perfect blend of history, fantastic food, a vibrant art scene, and unique shopping, all with stunning views of Pikes Peak. It's a must-do for any visitor.
+
+### How much time do you need in Old Colorado City?
+You can walk the main street and get a feel for the area in 2-3 hours. To truly experience it—enjoy a leisurely meal, browse several art galleries, and explore the shops—plan on spending at least half a day or a full evening.
+
+### Is Old Colorado City the same as downtown Colorado Springs?
+No, they are two distinct neighborhoods. Old Colorado City is on the west side of town and was the original capital. Downtown Colorado Springs is about two miles to the east and is the city's modern central business district. Both are worth visiting and are easily connected by car or the local bus system.
+
+### Is there free parking in Old Colorado City?
+Yes! One of the best local secrets is the free parking garage located just behind Colorado Avenue on 26th Street. There is also plenty of free street parking on the side streets off the main avenue. Avoid circling for a spot on Colorado Avenue itself and head straight for the side streets.
+
+---
+
+Ready to explore Old Colorado City with the perfect home base to come back to? After a full day of walking the historic streets, you'll want a comfortable and stylish space to relax and recharge.
+
+**Find your perfect Colorado Springs vacation rental with Springline Stays and live like a local.**
 ```
+
+![Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games](/static/images/properties/clover/image_2.jpg)
+*[Epic Family Home: Mini-Golf, Sauna, Hot Tub, Games — Book your stay →](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)*
+
+
+![Views | 2 mins to OCC | Fire Pit | Games | Pets](/static/images/properties/arch/image_1.jpg)
+*[Views | 2 mins to OCC | Fire Pit | Games | Pets — Book your stay →](https://book.springlinestays.com/property/views-2-mins-to-occ-fire-pit-games-pets)*
