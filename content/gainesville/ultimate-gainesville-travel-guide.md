@@ -1,4 +1,3 @@
-```
 ---
 title: "Ultimate Gainesville Travel Guide: Beyond the Campus"
 date: 2026-04-05
@@ -119,4 +118,3 @@ A: To truly experience what Gainesville has to offer beyond the campus, a long w
 Ready to explore the real Gainesville? Don't just visit—live like a local for a few days. Instead of a sterile hotel room, imagine having a comfortable, stylish home base to return to after a day of exploring the springs or sampling local brews.
 
 **Check out our curated collection of Springline Stays homes in Gainesville's best neighborhoods and book your perfect getaway directly with us.**
-```

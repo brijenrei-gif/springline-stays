@@ -1,4 +1,3 @@
-```
 ---
 title: "The Ultimate Guide to an Ichetucknee Springs Day Trip from Gainesville"
 date: 2026-04-17
@@ -144,4 +143,3 @@ While alligators are native to every freshwater body in Florida, they are very r
 A day spent on the Ichetucknee is a day you won't forget. It's the perfect way to unplug and experience the natural beauty that makes North Florida so special.
 
 When you're planning your Gainesville adventures, you need a home base that’s as comfortable and convenient as it is beautiful. After a long day of floating, come back to your own private space to relax and recharge. **[Book your stay with Springline Stays](#) and discover the best of Gainesville, right at your doorstep.**
-```

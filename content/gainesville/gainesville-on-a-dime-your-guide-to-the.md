@@ -1,4 +1,3 @@
-```yaml
 ---
 title: "Gainesville on a Dime: Your Guide to the Best Free Family Activities"
 date: 2026-04-19

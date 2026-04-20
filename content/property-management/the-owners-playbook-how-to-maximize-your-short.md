@@ -1,4 +1,3 @@
-```
 ---
 title: "The Owner's Playbook: How to Maximize Your Short-Term Rental ROI"
 date: 2026-04-15
@@ -124,4 +123,3 @@ Self-management offers more control and saves you the management fee, but it's a
 If this playbook feels like a full-time job, that's because, done right, it is. Running a top-tier vacation rental is a complex, demanding business.
 
 When you're ready to hand over the keys and focus purely on the ROI without the 2 a.m. guest calls, we're here to help. At Springline Stays, we live and breathe this stuff. We can implement this entire playbook for you, turning your property into the high-performing asset it deserves to be.
-```

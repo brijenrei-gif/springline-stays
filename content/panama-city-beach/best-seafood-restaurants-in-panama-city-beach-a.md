@@ -1,4 +1,3 @@
-```
 ---
 title: "Best Seafood Restaurants in Panama City Beach: A Local's Guide"
 date: 2026-04-11
@@ -94,4 +93,3 @@ During peak season (Spring Break and summer), reservations are highly recommende
 After a day of exploring the incredible culinary scene of Panama City Beach, you’ll need the perfect place to relax and unwind. Instead of a cramped hotel room, come home to the comfort and style of a private vacation rental.
 
 At Springline Stays, we offer beautifully curated homes that put you right in the heart of the action. **[Book your Panama City Beach getaway directly with Springline Stays](https://springlinestays.com/)** and enjoy more space, more amenities, and zero booking fees.
-```

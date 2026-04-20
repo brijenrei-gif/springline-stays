@@ -1,4 +1,3 @@
-```
 ---
 title: "Beyond the Crowds: A Local's Guide to Secret Hiking Trails in Colorado Springs"
 date: 2026-04-16
@@ -120,4 +119,3 @@ After a day of exploring these hidden gems, you’ll need the perfect place to k
 Find your home base with Springline Stays. Our curated vacation rentals offer the local comfort and space you need to truly experience Colorado Springs.
 
 [**Check availability and book your stay directly with us!**](https://www.springlinestays.com)
-```

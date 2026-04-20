@@ -1,4 +1,3 @@
-```
 ---
 title: "Maximizing Your ROI: Short-Term Rental Tips for Property Owners"
 date: 2026-04-08
@@ -106,4 +105,3 @@ A: It's a trade-off. Allowing pets opens your property up to a larger pool of po
 Feeling a little overwhelmed by the details? You don't have to manage everything yourself. The difference between a good rental and a great one is expert, on-the-ground management that handles the pricing, guest communication, and operational details so you don't have to.
 
 At Springline Stays, this is what we live and breathe. We treat your property like our own, applying these very strategies to maximize your income and give your guests a five-star experience every time. If you're ready to unlock your property's full potential, let's talk.
-```

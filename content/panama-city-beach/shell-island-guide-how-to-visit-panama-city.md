@@ -1,4 +1,3 @@
-```yaml
 ---
 title: "Shell Island Guide: How to Visit Panama City Beach's Best Kept Secret"
 date: 2026-04-10
@@ -11,7 +10,6 @@ tags:
   - florida
 market: panama-city-beach
 ---
-```
 
 Let's get one thing straight before we go any further: Shell Island isn't *technically* an island. It's a 7-mile-long, undeveloped barrier peninsula separating St. Andrew Bay from the Gulf of Mexico. But semantics aside, it feels like a completely different world. There are no condos, no snack bars, no roads—just pure, wild Florida coastline. It's the perfect escape from the hustle of Front Beach Road, and getting there is an adventure in itself.
 

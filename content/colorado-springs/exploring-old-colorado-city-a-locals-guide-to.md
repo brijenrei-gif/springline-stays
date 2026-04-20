@@ -1,4 +1,3 @@
-```
 ---
 title: "Exploring Old Colorado City: A Local's Guide to Dining, Art & More"
 date: 2026-04-08
@@ -103,4 +102,3 @@ Parking can be tight, especially on weekends. While there is free street parking
 After a day of exploring the historic streets and shops, you'll want a comfortable and stylish place to come back to. Our Springline Stays homes are just a short drive away, providing the perfect modern retreat to relax and recharge for your next Colorado Springs adventure.
 
 **[Book your perfect Colorado Springs getaway with Springline Stays!](/colorado-springs)**
-```

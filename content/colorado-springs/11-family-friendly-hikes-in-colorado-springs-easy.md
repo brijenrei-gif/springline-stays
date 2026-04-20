@@ -1,4 +1,3 @@
-```
 ---
 title: "11 Family-Friendly Hikes in Colorado Springs: Easy Trails with Big Views"
 date: 2026-04-08
@@ -233,4 +232,3 @@ While Colorado Springs is at a high elevation (~6,035 feet), it's unlikely you o
 After a day of exploring these stunning trails, you'll need a comfortable place to kick off your hiking boots. Our homes at **Springline Stays** are the perfect basecamp for your Colorado Springs adventure, with plenty of space for the whole family to relax and recharge. Each home is thoughtfully designed to be your home away from home.
 
 [**Find the perfect home for your family's adventure.**](/properties)
-```

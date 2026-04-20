@@ -1,4 +1,3 @@
-```yaml
 ---
 title: "Beyond the Selfie: A Guide to Panama City Beach's Most Instagram-Worthy Spots"
 date: 2026-04-18

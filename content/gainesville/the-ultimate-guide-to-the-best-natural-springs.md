@@ -1,4 +1,3 @@
-```
 ---
 title: "The Ultimate Guide to the Best Natural Springs Near Gainesville, FL"
 date: 2026-04-08
@@ -125,4 +124,3 @@ Poe Springs and Gilchrist Blue Springs are fantastic choices for families. They 
 After a long day of swimming, tubing, and exploring Florida's natural wonders, you’ll need the perfect place to clean up, relax, and get ready for your next adventure. Our Springline Stays homes are just a short drive from these amazing springs, offering the comfort and convenience you deserve.
 
 **[Ready to plan your spring-hopping trip? Book your Gainesville stay with us directly!](https://www.springlinestays.com/)**
-```

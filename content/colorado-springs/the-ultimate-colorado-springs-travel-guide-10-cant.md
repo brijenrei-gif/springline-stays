@@ -1,4 +1,3 @@
-```
 ---
 title: "The Ultimate Colorado Springs Travel Guide: 10 Can't-Miss Experiences"
 date: 2026-04-13
@@ -149,4 +148,3 @@ After a long day of conquering mountains and chasing waterfalls, you’ll need t
 At Springline Stays, our homes are thoughtfully designed to be your home base for exploration. With full kitchens, cozy living areas, and prime locations close to everything on this list, you'll have everything you need for an unforgettable trip.
 
 **[Ready to plan your adventure? Book your stay with Springline Stays directly and get the best rates.](https://www.springlinestays.com/)**
-```

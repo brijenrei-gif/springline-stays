@@ -1,4 +1,3 @@
-```
 ---
 title: "Don't Let Rain Ruin Your Trip: The Ultimate Guide to Indoor Activities in Panama City Beach"
 date: 2026-04-18
@@ -103,4 +102,3 @@ Yes, Pier Park can still be a great option. While it's an open-air mall, covered
 The best part about a rainy day in Panama City Beach? Knowing you have a comfortable, spacious place to come back to. When the adventure is over, you can dry off, order a pizza, and relax in a space that feels like home.
 
 If you're looking for that perfect home base for your next PCB trip, rain or shine, check out our properties at **Springline Stays**. We've got you covered.
-```

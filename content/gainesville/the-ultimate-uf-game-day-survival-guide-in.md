@@ -1,4 +1,3 @@
-```
 ---
 title: "The Ultimate UF Game Day Survival Guide in Gainesville, FL"
 date: 2026-04-09
@@ -120,4 +119,3 @@ Now that you have the complete game plan, all that’s left is to find the perfe
 Our homes at **Springline Stays** are right in the heart of Gainesville, giving you the ideal launchpad for your game day adventures. You get the space, the comfort, and the local touch that makes a good trip a great one.
 
 [**Check out our Gainesville properties and book your game day stay today!**](#)
-```

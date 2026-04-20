@@ -1,4 +1,3 @@
-```yaml
 ---
 title: "Top 10 Things to Do in Colorado Springs This Season"
 date: 2026-04-07
@@ -8,7 +7,6 @@ tags:
   - travel
 market: colorado-springs
 ---
-```
 
 Look, you can find a million lists of things to do in Colorado Springs, but they all say the same thing. You're here for the real deal—the tips that turn a good vacation into an unforgettable one. So let's skip the fluff and get right to the good stuff. Here’s what you should *actually* be doing in the Springs.
 
