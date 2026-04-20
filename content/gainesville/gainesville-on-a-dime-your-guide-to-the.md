@@ -3,7 +3,7 @@ date: 2026-04-19
 description: Discover the best free family activities in Gainesville, FL! Our local's
   guide covers everything from museums and parks to seeing wild gators, all without
   spending a cent.
-hero_image: ''
+hero_image: /static/images/blog/gainesville/gainesville-f01a97.jpg
 market: gainesville
 tags:
 - travel
@@ -111,5 +111,5 @@ The best and safest place to see wild alligators for free is from the boardwalks
 
 After a full day of exploring Gainesville's best free attractions, you'll need a comfortable, family-friendly place to land. Our homes at Springline Stays are the perfect home base, offering the space and amenities you need to relax and recharge for your next adventure.
 
-**[Book your Gainesville family getaway directly with Springline Stays and save!](/search/gainesville)**
+**[Book your Gainesville family getaway directly with Springline Stays and save!](/gainesville/)**
 ```

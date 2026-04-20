@@ -3,7 +3,7 @@ date: 2026-04-05
 description: Discover the best of Gainesville beyond the UF campus. Our local's guide
   covers hidden nature spots, amazing food, and unique things to do. Your ultimate
   GNV adventure starts here.
-hero_image: ''
+hero_image: /static/images/blog/gainesville/gainesville-7a0a6f.jpg
 market: gainesville
 tags:
 - travel

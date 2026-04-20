@@ -3,7 +3,7 @@ date: 2026-04-13
 description: Planning a trip to the Springs? Skip the tourist traps. Our local's guide
   reveals 10 can't-miss experiences, from conquering the Manitou Incline to finding
   the best local eats. Your ultimate Colorado adventure starts here.
-hero_image: ''
+hero_image: /static/images/blog/colorado-springs/the-ultimate-colorado-springs-travel-guide-10-cant-a7c365.jpg
 market: colorado-springs
 tags:
 - travel
@@ -124,4 +124,4 @@ A long weekend of 3-4 days is perfect for hitting the major highlights like Pike
 
 After a day of conquering mountains and exploring the city, you’ll need the perfect place to relax and recharge. Forget the generic hotels. Find your perfect home base for all these adventures by exploring our unique, hand-picked vacation rentals.
 
-[**Find Your Perfect Colorado Springs Stay with Springline Stays**](/colorado-springs)
+[**Find Your Perfect Colorado Springs Stay with Springline Stays**](/colorado-springs/)

@@ -3,7 +3,7 @@ date: 2026-04-08
 description: Unlock higher profits and stellar reviews with these expert, actionable
   tips for short-term rental owners. Learn dynamic pricing, guest experience secrets,
   and how to boost your ROI.
-hero_image: ''
+hero_image: /static/images/blog/property-management/maximizing-your-roi-short-term-rental-tips-for-pro-9a354a.jpg
 market: None
 tags:
 - short-term rental

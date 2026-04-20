@@ -3,7 +3,7 @@ date: 2026-04-10
 description: Your ultimate insider's guide to visiting Shell Island in Panama City
   Beach. Learn the best ways to get there, what to pack, and local secrets for an
   unforgettable day.
-hero_image: ''
+hero_image: /static/images/blog/panama-city-beach/panama-city-beach-dd763c.jpg
 market: panama-city-beach
 tags:
 - travel

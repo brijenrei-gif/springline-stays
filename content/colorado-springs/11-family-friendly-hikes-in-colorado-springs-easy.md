@@ -3,7 +3,7 @@ date: 2026-04-08
 description: Discover the best family-friendly hikes in Colorado Springs. From stroller-friendly
   loops in Garden of the Gods to stunning waterfall trails, these 11 easy hikes are
   perfect for kids and deliver huge scenic payoffs.
-hero_image: ''
+hero_image: /static/images/blog/colorado-springs/11-family-friendly-hikes-in-colorado-springs-easy-7f5ee7.jpg
 market: colorado-springs
 tags:
 - travel

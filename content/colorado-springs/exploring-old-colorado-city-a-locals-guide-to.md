@@ -3,7 +3,7 @@ date: 2026-04-08
 description: Discover the best of Old Colorado City with our insider's guide. Find
   the top restaurants, unique art galleries, hidden gems, and local tips for your
   trip.
-hero_image: ''
+hero_image: /static/images/blog/colorado-springs/exploring-old-colorado-city-a-locals-guide-to-dini-35fbbf.jpg
 market: colorado-springs
 tags:
 - travel
