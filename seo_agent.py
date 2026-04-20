@@ -340,10 +340,14 @@ Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website S
 We already have posts with the following titles in this market. You MUST NOT write a post with a similar title or topic. Choose a distinctly different angle or focus.
 {existing_titles_str}
 
-**Requirements**:
-1. {topic_instruction}
-2. Write in an authoritative, friendly tone — like a well-traveled local sharing insider tips.
-3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
+    **Requirements**:
+    1. {topic_instruction}
+    2. Write in an authoritative, conversational tone — like a hyper-local friend giving direct recommendations to another friend.
+       - **AVOID** robotic openings like "Welcome to [City]" or "Planning a trip can be hard..."
+       - **AVOID** referring to yourself as "locals who love sharing". Let the quality of the tips prove you are a local.
+       - Start directly with a hook or the first point.
+       - Include hyper-local specifics or opinions (e.g., "The secret to avoiding the crowd here is...", "My absolute favorite thing to order at [Place] is...").
+    3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
 4. **Images**: 
    - When mentioning our properties in the body, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos.
    - **DO NOT** use these property images as the `hero_image` in the frontmatter. The `hero_image` should be left empty (""). The build system will automatically fetch a topic-relevant image from Unsplash.
