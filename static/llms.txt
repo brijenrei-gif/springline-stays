@@ -1,0 +1,19 @@
+# Springline Stays
+
+Springline Stays offers premium short-term rentals and professional property management services in Colorado Springs and Gainesville.
+
+## Core Offerings
+- **Short-Term Rentals**: High-quality, data-optimized stays for travelers.
+- **Property Management**: Full-service management for owners looking to maximize ROI.
+
+## Key Locations
+- **Colorado Springs**: Luxury stays near major attractions like Garden of the Gods.
+- **Gainesville**: Convenient stays near the University of Florida and local hotspots.
+
+## For Guests
+- Direct booking available at [springlinestays.com](https://springlinestays.com)
+- Optimized for clean, fast, server-rendered content.
+
+## For Owners
+- Professional management services.
+- Data-driven pricing and listing optimization.
