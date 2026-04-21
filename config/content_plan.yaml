@@ -59,7 +59,7 @@ markets:
     pillar: Activities
     status: planned
     title: Best Dog-Friendly Activities in Colorado Springs
-  - file: content/colorado-springs/a-guide-to-colorado-springs-thriving-microbrewery-scene.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/the-ultimate-beer-drinkers-guide-to-colorado-springs.md
     keywords:
     - colorado springs breweries
     - craft beer co springs
@@ -67,7 +67,7 @@ markets:
     meta_description: Thirsty? Explore the thriving craft beer scene in Colorado Springs
       with our local guide to the best microbreweries and taprooms.
     pillar: Dining/Nightlife
-    status: planned
+    status: published
     title: A Guide to Colorado Springs' Thriving Microbrewery Scene
   gainesville:
   - file: content/gainesville/ultimate-gainesville-travel-guide.md
