@@ -391,7 +391,7 @@ def build():
             r_prop_name = r.get('property_name')
             r_prop_public = r.get('property_public_name')
             
-            if (prop_name and r_prop_name == prop_name) or (prop_headline and r_prop_public == prop_headline):
+            if (prop_name and r_prop_name == prop_name) or (prop_headline and r_prop_public and r_prop_public.lower() == prop_headline.lower()):
                 prop_reviews.append(r)
                 
         p['reviews'] = prop_reviews
