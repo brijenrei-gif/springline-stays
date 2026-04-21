@@ -612,6 +612,12 @@ def build():
 
         market_properties = [p for p in properties if p['market'] == market_id and p.get('active')]
         market_posts = [p for p in all_posts if p['market'] == market_id]
+        
+        # Collect reviews for this market
+        market_reviews = []
+        for p in market_properties:
+            if p.get('reviews'):
+                market_reviews.extend(p['reviews'])
 
         hub_template = env.get_template('location_hub.html')
         urls.append(f"/{market_id}/")
@@ -621,6 +627,7 @@ def build():
             market=market,
             market_properties=market_properties,
             market_posts=market_posts[:9],
+            market_reviews=market_reviews[:6],  # Limit to 6 reviews for display
             booking_domain=brand.get('hospitable_base', '#'),
             request_path=f'/{market_id}/',
         )

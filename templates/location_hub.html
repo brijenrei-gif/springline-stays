@@ -188,6 +188,37 @@
     </div>
 </section>
 
+<!-- Guest Reviews -->
+{% if market_reviews %}
+<section class="py-16 md:py-24 bg-brand-charcoal/50 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-cream mb-4">What Our Guests Say</h2>
+            <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for review in market_reviews %}
+            <div class="bg-brand-charcoal p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center mb-4">
+                        {% for i in range(review.rating | int) %}
+                        <span class="text-brand-gold">★</span>
+                        {% endfor %}
+                    </div>
+                    <p class="font-body text-brand-cream/80 text-sm mb-4 italic">"{{ review.text }}"</p>
+                </div>
+                <div class="mt-auto pt-4 border-t border-white/10 flex justify-between items-center text-xs text-brand-cream/60">
+                    <span>{{ review.author }}</span>
+                    <span>{{ review.date }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <!-- Blog Feed -->
 {% if market_posts %}
 <section class="py-16 md:py-24 bg-brand-charcoal px-4">
