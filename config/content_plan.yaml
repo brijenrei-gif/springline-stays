@@ -29,7 +29,7 @@ markets:
     pillar: Activities
     status: published
     title: 'Secret Hiking Trails in Colorado Springs: A Local''s Guide'
-  - file: content/colorado-springs/the-ultimate-3-day-pikes-peak-adventure-itinerary.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/the-ultimate-3-day-pikes-peak-itinerary-a.md
     keywords:
     - pikes peak itinerary
     - colorado springs 3 day itinerary
@@ -37,7 +37,7 @@ markets:
     meta_description: Planning a trip to Pikes Peak? Follow our ultimate 3-day Colorado
       Springs itinerary for the best adventure, dining, and photo spots.
     pillar: Itineraries
-    status: planned
+    status: published
     title: The Ultimate 3-Day Pikes Peak Adventure Itinerary
   - file: content/colorado-springs/top-10-instagram-worthy-spots-in-colorado-springs.md
     keywords:
