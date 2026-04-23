@@ -129,7 +129,7 @@ markets:
     pillar: Activities
     status: published
     title: Top Free Things to Do in Gainesville for Families
-  - file: content/gainesville/a-weekend-in-gainesville-the-perfect-itinerary-for-uf-parents.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/gainesville/beyond-the-dorm-a-uf-parents-guide-to.md
     keywords:
     - uf parents weekend
     - gainesville itinerary parents
@@ -137,7 +137,7 @@ markets:
     meta_description: Visiting your student at UF? Follow the perfect weekend itinerary
       for UF parents, featuring local dining, campus tours, and more.
     pillar: Events/Itineraries
-    status: planned
+    status: published
     title: 'A Weekend in Gainesville: The Perfect Itinerary for UF Parents'
   panama-city-beach:
   - file: content/panama-city-beach/the-ultimate-year-round-panama-city-beach-travel.md
