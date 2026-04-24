@@ -102,16 +102,7 @@
             }{% if not loop.last %},{% endif %}
             {% endfor %}
           ]
-          {% endif %},
-          "containsPlace": {
-            "@type": "Accommodation",
-            "numberOfBedrooms": {{ property.bedrooms }},
-            "numberOfBathroomsTotal": {{ property.bathrooms }},
-            "occupancy": {
-              "@type": "QuantitativeValue",
-              "value": {{ property.guests }}
-            }
-          }
+          {% endif %}
         }
       }{% if not loop.last %},{% endif %}
       {% endfor %}
