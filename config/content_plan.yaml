@@ -170,7 +170,7 @@ markets:
     pillar: Dining
     status: published
     title: A Local's Guide to the Best Seafood in Panama City Beach
-  - file: content/panama-city-beach/where-to-watch-4th-of-July-fireworks-in-panama-city.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/panama-city-beach/your-ultimate-guide-to-4th-of-july-fireworks.md
     keywords:
     - pcb 4th of july
     - fireworks panama city beach
@@ -178,7 +178,7 @@ markets:
     meta_description: Don't miss the best views! Here is where to watch 4th of July
       fireworks in Panama City Beach for an unforgettable Independence Day.
     pillar: Events
-    status: planned
+    status: published
     title: Where to Watch 4th of July Fireworks in Panama City Beach
   - file: /home/runner/work/springline-stays/springline-stays/content/panama-city-beach/beyond-the-selfie-a-guide-to-panama-city.md
     keywords:
