@@ -1,7 +1,7 @@
 ---
 date: 2026-04-24
 description: Master the IRS material participation rules and the 500-hour rule to unlock massive tax savings with REPS or the STR loophole.
-hero_image: /static/images/blog/tax-strategy/tax-strategy-hero.jpg
+hero_image: /static/images/blog/property-management/tax-strategy-hero.jpg
 market: education
 tags:
 - tax-strategy
