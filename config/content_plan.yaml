@@ -39,7 +39,7 @@ markets:
     pillar: Itineraries
     status: published
     title: The Ultimate 3-Day Pikes Peak Adventure Itinerary
-  - file: content/colorado-springs/top-10-instagram-worthy-spots-in-colorado-springs.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/beyond-the-postcard-10-jaw-dropping-instagram-spots.md
     keywords:
     - instagrammable colorado springs
     - best photo spots colorado springs
@@ -47,7 +47,7 @@ markets:
     meta_description: Level up your feed! Here are the top 10 most Instagrammable
       spots in Colorado Springs you need to visit on your next vacation.
     pillar: Social
-    status: planned
+    status: published
     title: Top 10 Instagram-Worthy Spots in Colorado Springs
   - file: content/colorado-springs/best-dog-friendly-activities-in-colorado-springs.md
     keywords:
