@@ -190,7 +190,7 @@ markets:
     pillar: Social
     status: published
     title: The Most Instagrammable Spots in Panama City Beach
-  - file: content/panama-city-beach/pcb-with-toddlers-best-family-friendly-activities.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/panama-city-beach/the-toddler-proof-itinerary-for-panama-city-beach.md
     keywords:
     - pcb with toddlers
     - family friendly panama city beach
@@ -198,7 +198,7 @@ markets:
     meta_description: Traveling to PCB with small kids? Here are the best family-friendly
       activities and calm beaches perfect for toddlers.
     pillar: Activities
-    status: planned
+    status: published
     title: 'PCB with Toddlers: Best Family-Friendly Activities'
   - file: /usr/local/google/home/braval/projects/springline-stays/content/panama-city-beach/dont-let-rain-ruin-your-trip-the-ultimate.md
     keywords:
