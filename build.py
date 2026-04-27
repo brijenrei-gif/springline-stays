@@ -293,7 +293,7 @@ def verify_assets_and_links(all_posts, markets, properties):
     errors = []
 
     # Build valid routes
-    valid_routes = {'/', '/blog/'}
+    valid_routes = {'/', '/blog/', '/contact/', '/faq/', '/property-management/', '/mentorship/'}
     for m in markets:
         valid_routes.add(f"/{m['id']}/")
         valid_routes.add(f"/{m['id']}/blog/")
