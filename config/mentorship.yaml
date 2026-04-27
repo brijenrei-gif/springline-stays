@@ -107,10 +107,10 @@ faq:
 
 social_proof:
   stats:
-    - value: "3+"
-      label: "Properties Self-Managed"
-    - value: "2"
-      label: "States / Markets"
+    - value: "8+"
+      label: "Properties Managed"
+    - value: "4"
+      label: "Markets"
     - value: "$0"
       label: "Paid to Property Managers"
     - value: "100%"
