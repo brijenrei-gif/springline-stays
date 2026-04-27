@@ -9,6 +9,7 @@ tags:
 - property-management
 - str-tips
 title: 'Self-Managing vs. Hiring a Property Manager: Which Path is Right for You?'
+hero_image: /static/images/blog/property-management/self-managing-vs.-hiring-a-property-manager-which-73701f.jpg
 ---
 
 
