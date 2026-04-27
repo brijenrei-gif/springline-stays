@@ -20,7 +20,7 @@ If your property grosses $60,000 a year and your PM takes 20%, that's $12,000 go
 1. [#what-a-property-manager-actually-does](#what-a-property-manager-actually-does)
 2. [#what-you-can-automate-today](#what-you-can-automate-today)
 3. [#the-parts-that-actually-require-skill](#the-parts-that-actually-require-skill)
-4. [#the-self-management-tech-stack](#the-self-management-tech-stack)
+4. [#the-real-cost-of-self-management](#the-real-cost-of-self-management)
 5. [#when-self-management-doesnt-make-sense](#when-self-management-doesnt-make-sense)
 6. [#faq](#faq)
 
@@ -45,16 +45,16 @@ You're paying $12,000 a year for 2-3 hours of weekly work. That's roughly $80/ho
 The biggest myth in STR ownership is that guest management is a full-time job. It's not. Here's what runs on autopilot:
 
 ### Guest Communication
-Tools like Hospitable or OwnerRez send automated messages at every touchpoint — booking confirmation, pre-arrival instructions (with door codes), mid-stay check-in, checkout reminders, and review requests. I haven't manually sent a check-in message in over a year.
+There are tools that send automated messages at every touchpoint — booking confirmation, pre-arrival instructions (with door codes), mid-stay check-in, checkout reminders, and review requests. I haven't manually sent a check-in message in over a year. The right messaging platform handles it all.
 
 ### Dynamic Pricing
-PriceLabs or Wheelhouse connects to your listing and adjusts your nightly rate every single day based on local demand, events, competitor pricing, and seasonality. Set your minimum and maximum rates, configure your strategy, and let the algorithm work. I've seen revenue increases of 15-25% just from switching off manual pricing.
+Dynamic pricing software connects to your listing and adjusts your nightly rate every single day based on local demand, events, competitor pricing, and seasonality. Set your minimum and maximum rates, configure your strategy, and let the algorithm work. I've seen revenue increases of 15-25% just from switching off manual pricing.
 
 ### Calendar & Channel Management
 If you're listed on both Airbnb and VRBO (you should be), a channel manager prevents double bookings and syncs availability across platforms automatically. This used to be the #1 reason owners hired PMs — and now it's a solved problem.
 
 ### Review Responses
-Most guest reviews follow predictable patterns. Create a set of 5-6 template responses that you personalize with the guest's name and one specific detail from their stay. It takes 30 seconds per review.
+Most guest reviews follow predictable patterns. Create a set of template responses that you personalize with the guest's name and one specific detail from their stay. It takes 30 seconds per review.
 
 <a name="the-parts-that-actually-require-skill"></a>
 ## The Parts That Actually Require Skill
@@ -78,21 +78,21 @@ The key is building your vendor network *before* you need it:
 
 Save their numbers, keep them on good terms (tip well, pay fast), and you'll get the same response time as any PM — often better, because you're the direct client, not a middleman's account.
 
-<a name="the-self-management-tech-stack"></a>
-## The Self-Management Tech Stack
+<a name="the-real-cost-of-self-management"></a>
+## The Real Cost of Self-Management
 
-Here's my actual setup. Total cost: ~$75/month.
+The tools you need to self-manage fall into a few categories:
 
-| Tool | Purpose | Cost |
-|---|---|---|
-| **PriceLabs** | Dynamic pricing | ~$20/mo per listing |
-| **Hospitable** | Automated messaging & channel management | ~$25/mo per listing |
-| **Smart locks** (Yale/August) | Keyless entry with auto-generated codes | One-time hardware cost |
-| **Ring cameras** | Exterior monitoring & noise detection | ~$10/mo |
-| **Google Sheets** | Bookkeeping & expense tracking | Free |
-| **Turno** | Cleaning scheduling & coordination | Free tier available |
+- **Dynamic pricing software** — adjusts your rates daily based on market data
+- **Guest messaging & channel management** — automates communication and prevents double bookings
+- **Smart access hardware** — keyless entry with unique guest codes
+- **Security & monitoring** — exterior cameras and noise detection
+- **Cleaning coordination** — scheduling and quality control
+- **Financial tracking** — revenue, expenses, and tax reporting
 
-Compare that $75/month ($900/year) to $12,000/year for a PM. The ROI on self-management isn't marginal — it's a 13x return.
+The total cost of software and subscriptions to run all of this? A fraction of what a PM charges. My full stack costs less per *year* than what most PMs charge in a single *month*.
+
+The exact tools and how to configure them are part of what I cover in my [mentorship program](/mentorship/) — including which ones are worth paying for, which have free alternatives, and the specific settings I use across 8+ properties.
 
 <a name="when-self-management-doesnt-make-sense"></a>
 ## When Self-Management Doesn't Make Sense
