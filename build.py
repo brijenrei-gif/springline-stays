@@ -558,6 +558,27 @@ def build():
     with open(os.path.join(pm_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(pm_html)
 
+    # ─── Build Mentorship Page ───
+    print("Building mentorship page...")
+    mentorship_template = env.get_template('mentorship.html')
+    mentorship_dir = os.path.join(OUTPUT_DIR, 'mentorship')
+    os.makedirs(mentorship_dir, exist_ok=True)
+    urls.append("/mentorship/")
+
+    mentorship_config_path = os.path.join(os.path.dirname(CONFIG_PATH), 'mentorship.yaml')
+    mentorship_data = {}
+    if os.path.exists(mentorship_config_path):
+        with open(mentorship_config_path, 'r', encoding='utf-8') as f:
+            mentorship_data = yaml.safe_load(f) or {}
+
+    mentorship_html = mentorship_template.render(
+        booking_domain=brand.get('hospitable_base', '#'),
+        request_path='/mentorship/',
+        **mentorship_data
+    )
+    with open(os.path.join(mentorship_dir, 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(mentorship_html)
+
     # ─── Build Property Management Blog Posts ───
     pm_blog_dir = os.path.join(pm_dir, 'blog')
     os.makedirs(pm_blog_dir, exist_ok=True)

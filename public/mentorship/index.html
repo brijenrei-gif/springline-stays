@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="RzdYyEj_go5iaXJfoKvqtay9WQQGQpnc9eqnT8rg18M" />
+    
+    <title>Self-Management Mentorship — Learn to Run Your Own STR | Springline Stays</title>
+    <meta name="description" content="Stop paying 20% to a property manager. Our 12-month mentorship teaches you to self-manage your short-term rental and keep 100% of your revenue.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Self-Management Mentorship — Learn to Run Your Own STR | Springline Stays">
+    <meta property="og:description" content="Stop paying 20% to a property manager. Our 12-month mentorship teaches you to self-manage your short-term rental and keep 100% of your revenue.">
+    <meta property="og:image" content="/static/images/og-image.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Springline Stays">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Self-Management Mentorship — Learn to Run Your Own STR | Springline Stays">
+    <meta name="twitter:description" content="Stop paying 20% to a property manager. Our 12-month mentorship teaches you to self-manage your short-term rental and keep 100% of your revenue.">
+    <meta name="twitter:image" content="/static/images/og-image.jpg">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://springlinestays.com/mentorship/">
+
+    <!-- Google Analytics -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9BRBB2S9B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y9BRBB2S9B');
+    </script>
+    
+
+    <!-- Structured Data -->
+    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#C8963E',
+                        'brand-sage': '#8B9D83',
+                        'brand-cream': '#FAFAF8',
+                        'brand-light-gold': '#F5EBD9',
+                        'brand-charcoal': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'heading': ['"Playfair Display"', 'serif'],
+                        'body': ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .font-heading {
+                font-family: 'Playfair Display', serif;
+            }
+            .font-body {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        body {
+            @apply font-body bg-brand-charcoal text-brand-cream;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-heading;
+        }
+    </style>
+
+    
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-black text-brand-cream shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="font-heading font-bold text-2xl tracking-wide flex flex-col">
+                        <span>Springline Stays<span class="text-brand-gold">.</span></span>
+                        <span class="font-body text-xs uppercase tracking-widest text-brand-gold mt-0.5">Vacation Rentals</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="/colorado-springs" class="hover:text-brand-gold transition duration-200">Colorado Springs</a>
+                    <a href="/gainesville" class="hover:text-brand-gold transition duration-200">Gainesville</a>
+                    <a href="/panama-city-beach" class="hover:text-brand-gold transition duration-200">Panama City Beach</a>
+                    <a href="/blog" class="hover:text-brand-gold transition duration-200">Blog</a>
+                    <a href="/property-management" class="hover:text-brand-gold transition duration-200">Property Management</a>
+                    <a href="/mentorship" class="hover:text-brand-gold transition duration-200">Mentorship</a>
+                    <a href="/contact/" class="hover:text-brand-gold transition duration-200">Contact</a>
+                    <a href="https://book.springlinestays.com" class="bg-brand-gold hover:bg-brand-gold/90 text-white font-medium py-2.5 px-6 rounded-md transition duration-200 block">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="hover:text-brand-gold focus:outline-none focus:text-brand-gold transition" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white text-brand-charcoal shadow-lg absolute w-full top-20 left-0" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="/colorado-springs" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Colorado Springs</a>
+                <a href="/gainesville" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Gainesville</a>
+                <a href="/panama-city-beach" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Panama City Beach</a>
+                <a href="/blog" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Blog</a>
+                <a href="/property-management" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Property Management</a>
+                <a href="/mentorship" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Mentorship</a>
+                <a href="/contact/" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-50 hover:text-brand-gold">Contact</a>
+                <a href="https://book.springlinestays.com" class="block px-3 py-2 mt-4 text-center bg-brand-gold text-white rounded-md font-medium hover:bg-brand-gold/90">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+<main class="bg-brand-charcoal text-brand-cream min-h-screen">
+
+    <!-- Hero Section -->
+    <div class="bg-brand-charcoal border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-brand-gold font-body text-sm uppercase tracking-widest mb-4">1-on-1 Mentorship Program</p>
+                <h1 class="font-heading text-5xl md:text-7xl font-bold mb-6 tracking-tight text-brand-cream leading-tight">
+                    Learn to Self-Manage Your Rental
+                </h1>
+                <p class="font-body text-xl md:text-2xl font-light tracking-wide text-brand-cream/70 mt-5 max-w-2xl mx-auto leading-relaxed">
+                    Stop paying 20% to a property manager. In 12 months, I'll teach you everything I know — then you keep 100% of your profits.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="/contact/" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-white bg-brand-gold hover:bg-brand-gold/90 transition-colors duration-200 shadow-lg">
+                        Book a Free Strategy Call
+                    </a>
+                    <a href="#how-it-works" class="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-base font-medium rounded-md text-brand-cream hover:bg-white/5 transition-colors duration-200">
+                        See How It Works ↓
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    
+    <div class="border-b border-white/10 bg-black/30">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                
+                <div>
+                    <p class="text-3xl md:text-4xl font-heading font-bold text-brand-gold">3+</p>
+                    <p class="text-sm text-brand-cream/60 mt-1 font-body">Properties Self-Managed</p>
+                </div>
+                
+                <div>
+                    <p class="text-3xl md:text-4xl font-heading font-bold text-brand-gold">2</p>
+                    <p class="text-sm text-brand-cream/60 mt-1 font-body">States / Markets</p>
+                </div>
+                
+                <div>
+                    <p class="text-3xl md:text-4xl font-heading font-bold text-brand-gold">$0</p>
+                    <p class="text-sm text-brand-cream/60 mt-1 font-body">Paid to Property Managers</p>
+                </div>
+                
+                <div>
+                    <p class="text-3xl md:text-4xl font-heading font-bold text-brand-gold">100%</p>
+                    <p class="text-sm text-brand-cream/60 mt-1 font-body">Revenue Kept</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- The Problem / Intro -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="text-center mb-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-cream">What If You Could Fire Your Property Manager?</h2>
+        </div>
+        <div class="mt-8 bg-white/5 rounded-2xl border border-white/10 p-8 md:p-10">
+            <p class="text-lg text-brand-cream/80 leading-relaxed font-body whitespace-pre-line">Most property managers take 20% of your gross revenue — year after year. On a property earning $60,000/year, that's $12,000 out of your pocket annually. Over 5 years? That's $60,000 you'll never see again. I built my own systems, hired my own teams, and self-manage multiple short-term rentals across multiple states. Now I'm offering to teach you exactly how I do it.
+</p>
+        </div>
+    </div>
+
+    <!-- Savings Comparison Table -->
+    <div class="bg-black/20 border-y border-white/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-cream">The Math Speaks for Itself</h2>
+                <p class="mt-3 text-brand-cream/60 font-body">Based on a property earning $60,000/year gross revenue</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-4 px-4 text-brand-cream/60 text-sm font-body font-medium uppercase tracking-wider"></th>
+                            <th class="py-4 px-4 text-brand-cream/60 text-sm font-body font-medium uppercase tracking-wider">Year 1</th>
+                            <th class="py-4 px-4 text-brand-cream/60 text-sm font-body font-medium uppercase tracking-wider">Year 2+</th>
+                            <th class="py-4 px-4 text-brand-cream/60 text-sm font-body font-medium uppercase tracking-wider">5-Year Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr class="border-b border-white/10 ">
+                            <td class="py-4 px-4 font-medium text-brand-cream ">Traditional PM (20%)</td>
+                            <td class="py-4 px-4 text-brand-cream/80 ">$12,000</td>
+                            <td class="py-4 px-4 text-brand-cream/80 ">$12,000/yr</td>
+                            <td class="py-4 px-4 text-brand-cream/80 ">$60,000</td>
+                        </tr>
+                        
+                        <tr class="border-b border-white/10 ">
+                            <td class="py-4 px-4 font-medium text-brand-cream ">Self-Management Mentorship</td>
+                            <td class="py-4 px-4 text-brand-cream/80 ">$4,500 + 10% ($6,000)</td>
+                            <td class="py-4 px-4 text-brand-cream/80 ">$0</td>
+                            <td class="py-4 px-4 text-brand-cream/80 ">$10,500 total</td>
+                        </tr>
+                        
+                        <tr class="border-b border-white/10 bg-brand-gold/10 border-brand-gold/30">
+                            <td class="py-4 px-4 font-medium text-brand-cream text-brand-gold font-bold">Your Savings Over 5 Years</td>
+                            <td class="py-4 px-4 text-brand-cream/80 text-brand-gold font-bold"></td>
+                            <td class="py-4 px-4 text-brand-cream/80 text-brand-gold font-bold"></td>
+                            <td class="py-4 px-4 text-brand-cream/80 text-brand-gold font-bold text-lg">$49,500</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 text-center">
+                <p class="text-2xl font-heading font-bold text-brand-gold">One investment. Lifetime of savings.</p>
+                <p class="text-brand-cream/60 mt-2 font-body">$4,500 upfront + 10% commission for 12 months</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works — Phased Timeline -->
+    <div id="how-it-works" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-cream">Your 12-Month Roadmap</h2>
+            <p class="mt-3 text-brand-cream/60 font-body text-lg">From dependent to independent in three phases</p>
+        </div>
+
+        <div class="space-y-8">
+            
+            <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:border-brand-gold/30 transition-colors duration-200">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-6">
+                        <span class="text-4xl">🚀</span>
+                        <div>
+                            <h3 class="text-2xl font-bold text-brand-cream">Setup & Launch</h3>
+                            <p class="text-brand-gold font-body text-sm font-medium mt-1">Months 1–2</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Listing audit & optimization (titles, photos, descriptions)</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Pricing tool setup (PriceLabs or similar)</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Channel manager & OTA configuration</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Smart lock, cameras, and tech stack installation</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Guest communication templates & automation</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Cleaning team recruitment & vetting</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:border-brand-gold/30 transition-colors duration-200">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-6">
+                        <span class="text-4xl">⚙️</span>
+                        <div>
+                            <h3 class="text-2xl font-bold text-brand-cream">Live Operations</h3>
+                            <p class="text-brand-gold font-body text-sm font-medium mt-1">Months 3–6</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Real-time support during your first bookings</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Guest issue resolution — I walk you through it live</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Maintenance vendor network setup</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Bookkeeping & expense tracking system</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Review management & response strategy</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Revenue optimization & seasonal pricing</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:border-brand-gold/30 transition-colors duration-200">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-6">
+                        <span class="text-4xl">🎯</span>
+                        <div>
+                            <h3 class="text-2xl font-bold text-brand-cream">Independence</h3>
+                            <p class="text-brand-gold font-body text-sm font-medium mt-1">Months 7–12</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">You run everything — I'm on-call for escalations</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Monthly check-ins & performance reviews</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Advanced strategies: multi-property, direct booking site</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Emergency runbook & contingency planning</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Final handoff: SOPs, vendor contacts, full system access</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-brand-cream/80 text-sm font-body">Graduation — you're a self-managing operator</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- What You Get -->
+    <div class="bg-black/20 border-y border-white/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-cream">What You Walk Away With</h2>
+                <p class="mt-3 text-brand-cream/60 font-body text-lg">Everything you need to run your rental like a pro — forever</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white/5 rounded-lg border border-white/10 p-6 hover:border-brand-gold/30 transition-colors duration-200">
+                    <span class="text-3xl mb-4 block">📋</span>
+                    <h3 class="text-lg font-bold text-brand-cream mb-2">Complete SOP Library</h3>
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Step-by-step procedures for every aspect of STR operations — check-in, cleaning, maintenance, emergencies.</p>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10 p-6 hover:border-brand-gold/30 transition-colors duration-200">
+                    <span class="text-3xl mb-4 block">📱</span>
+                    <h3 class="text-lg font-bold text-brand-cream mb-2">Tech Stack Blueprint</h3>
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Exact tools, apps, and automations I use daily. No guessing — just plug and play.</p>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10 p-6 hover:border-brand-gold/30 transition-colors duration-200">
+                    <span class="text-3xl mb-4 block">🤝</span>
+                    <h3 class="text-lg font-bold text-brand-cream mb-2">Vendor Network</h3>
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">My vetted cleaners, handymen, and contractors. Relationships that took years to build.</p>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10 p-6 hover:border-brand-gold/30 transition-colors duration-200">
+                    <span class="text-3xl mb-4 block">💰</span>
+                    <h3 class="text-lg font-bold text-brand-cream mb-2">Pricing Playbook</h3>
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Dynamic pricing strategies, seasonal adjustments, and competitor analysis frameworks.</p>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10 p-6 hover:border-brand-gold/30 transition-colors duration-200">
+                    <span class="text-3xl mb-4 block">📞</span>
+                    <h3 class="text-lg font-bold text-brand-cream mb-2">Guest Communication Templates</h3>
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Pre-written messages for every scenario — booking confirmations, check-in instructions, reviews, complaints.</p>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10 p-6 hover:border-brand-gold/30 transition-colors duration-200">
+                    <span class="text-3xl mb-4 block">📊</span>
+                    <h3 class="text-lg font-bold text-brand-cream mb-2">Financial Dashboard</h3>
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Spreadsheets and tracking tools to monitor revenue, expenses, and profitability per property.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-cream">Common Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">How is this different from a course?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Courses are passive — you watch videos alone. This is 1-on-1 mentorship with an active operator. When your guest locks themselves out at 2am, I'm the one you call. You learn by doing, with real support.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">Why do you charge 10% commission during the year?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">It aligns our incentives. I make more when you make more, so I'm motivated to help you maximize revenue — not just collect a flat fee and disappear.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">What happens after the 12 months?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">You're fully independent. No ongoing fees, no commission split. You keep 100% of your revenue and own all the systems, templates, and vendor relationships.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">Can I do this if my property is in a different city?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Yes. The operational systems and strategies are market-agnostic. I'll help you adapt them to your specific location. The only market-specific piece is vendor sourcing, which we'll do together.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">What if I already have a property manager?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">Perfect — we'll build your self-management systems in parallel. When you're ready, you transition smoothly with zero downtime. Most owners can transition within the first 3 months.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">How many mentees do you take at once?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">I cap it at 5 active mentees to ensure quality. This isn't a mass-market product — it's hands-on coaching.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 rounded-lg border border-white/10 overflow-hidden">
+                <button 
+                    onclick="toggleFaq(this)"
+                    class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-150"
+                >
+                    <span class="font-medium text-brand-cream pr-4">What if self-management isn't for me?</span>
+                    <svg class="faq-chevron w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-5">
+                    <p class="text-brand-cream/70 text-sm font-body leading-relaxed">We'll know within the first 60 days. If it's genuinely not a fit, we'll discuss options. But honestly? If you're organized enough to own an investment property, you can self-manage one.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="border-t border-white/10 bg-black/30">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-cream mb-4">Ready to Take Control?</h2>
+            <p class="text-lg text-brand-cream/70 font-body mb-8 max-w-xl mx-auto">
+                Book a free 30-minute strategy call. No pitch, no pressure — just an honest conversation about whether self-management is right for you.
+            </p>
+            <a href="/contact/" class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-brand-gold hover:bg-brand-gold/90 transition-colors duration-200 shadow-lg">
+                Book a Free Strategy Call
+            </a>
+            <p class="text-brand-cream/40 text-sm mt-4 font-body">Limited to 5 mentees at a time</p>
+        </div>
+    </div>
+
+</main>
+
+<!-- FAQ Toggle Script -->
+<script>
+    function toggleFaq(button) {
+        const answer = button.nextElementSibling;
+        const chevron = button.querySelector('.faq-chevron');
+        
+        answer.classList.toggle('hidden');
+        chevron.classList.toggle('rotate-180');
+    }
+</script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- About -->
+                <div>
+                    <h3 class="font-heading text-2xl font-semibold mb-4">Springline Stays</h3>
+                    <p class="text-gray-400 font-body leading-relaxed">
+                        Curating exceptional vacation experiences with premium properties in sought-after destinations. Where comfort meets unforgettable memories.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-xl font-medium mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="/colorado-springs" class="hover:text-brand-gold transition">Colorado Springs</a></li>
+                        <li><a href="/gainesville" class="hover:text-brand-gold transition">Gainesville</a></li>
+                        <li><a href="/panama-city-beach" class="hover:text-brand-gold transition">Panama City Beach</a></li>
+                        <li><a href="/blog" class="hover:text-brand-gold transition">Our Blog</a></li>
+                        <li><a href="/contact/" class="hover:text-brand-gold transition">Contact</a></li>
+                        <li><a href="/faq/" class="hover:text-brand-gold transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Follow Us -->
+                <div>
+                    <h4 class="font-heading text-xl font-medium mb-4">Follow Us</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest properties and travel guides.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/springlinestays" class="text-gray-400 hover:text-brand-gold transition" target="_blank" rel="noopener noreferrer">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2026 Springline Stays. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            var isTransparentNav = false;
+            
+            if (isTransparentNav) {
+                if (window.scrollY > 10) {
+                    navbar.classList.remove('bg-transparent', 'text-white');
+                    navbar.classList.add('bg-white', 'text-brand-charcoal', 'shadow-sm');
+                } else {
+                    navbar.classList.add('bg-transparent', 'text-white');
+                    navbar.classList.remove('bg-white', 'text-brand-charcoal', 'shadow-sm');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

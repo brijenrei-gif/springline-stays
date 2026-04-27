@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block title %}Interactive Map of Colorado Springs | Springline Stays{% endblock %}
+{% block description %}Explore the best spots in Colorado Springs with our interactive map.{% endblock %}
+
+{% block content %}
+<main class="bg-brand-charcoal text-brand-cream min-h-screen">
+    <!-- Hero Section -->
+    <div class="bg-brand-charcoal border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <div class="text-center">
+                <h1 class="font-heading text-5xl md:text-7xl font-bold mb-4 tracking-tight text-brand-cream">
+                    Colorado Springs Interactive Map
+                </h1>
+                <p class="font-body text-xl md:text-2xl font-light tracking-wide text-brand-light-gold drop-shadow-md mt-5 max-w-xl mx-auto">
+                    Discover local favorites and hidden gems in Old Colorado City.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white/5 rounded-lg shadow-sm border border-white/10 p-6">
+            <!-- Map Container -->
+            <div id="map" class="h-[600px] w-full rounded-lg"></div>
+        </div>
+    </div>
+
+    <!-- Legend / Info Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-white/10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl font-bold text-brand-cream mb-4">Featured Spots</h2>
+                <ul class="space-y-4 text-brand-cream/70">
+                    <li><strong class="text-brand-gold">Mountain Shadows Restaurant:</strong> Famous for giant cinnamon rolls.</li>
+                    <li><strong class="text-brand-gold">Pizzeria Rustica:</strong> Authentic Neapolitan pizza on a hidden patio.</li>
+                    <li><strong class="text-brand-gold">TAPAteria:</strong> Incredible Spanish tapas, 100% gluten-free.</li>
+                    <li><strong class="text-brand-gold">Michael Garman’s Magic Town:</strong> A unique miniature city experience.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-brand-cream mb-4">About This Map</h2>
+                <p class="text-brand-cream/70">
+                    This map is a curated list of our favorite spots in Old Colorado City. We've put together this guide to help you experience the area like a local.
+                </p>
+                <p class="mt-4 text-brand-cream/70">
+                    <strong>Tip:</strong> Click on the markers to see details about each location.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Google Maps JS API -->
+<!-- WARNING: Replace YOUR_API_KEY with your actual Google Maps API Key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<script>
+    function initMap() {
+        // Center on Old Colorado City
+        const occ = { lat: 38.8486, lng: -104.8664 };
+        
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: occ,
+            styles: [
+                // Dark mode styles to match site theme
+                { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+                { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+                {
+                    featureType: "administrative.locality",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#d59563" }]
+                },
+                {
+                    featureType: "poi",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#d59563" }]
+                },
+                {
+                    featureType: "poi.park",
+                    elementType: "geometry",
+                    stylers: [{ color: "#263c3f" }]
+                },
+                {
+                    featureType: "poi.park",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#6b9a76" }]
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [{ color: "#38414e" }]
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry.stroke",
+                    stylers: [{ color: "#212a37" }]
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#9ca5b4" }]
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "geometry",
+                    stylers: [{ color: "#746855" }]
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "geometry.stroke",
+                    stylers: [{ color: "#1f2835" }]
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#f3d19c" }]
+                },
+                {
+                    featureType: "water",
+                    elementType: "geometry",
+                    stylers: [{ color: "#17263c" }]
+                },
+                {
+                    featureType: "water",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#515c6d" }]
+                },
+                {
+                    featureType: "water",
+                    elementType: "labels.text.stroke",
+                    stylers: [{ color: "#17263c" }]
+                }
+            ]
+        });
+
+        const pois = [
+            {
+                title: "Mountain Shadows Restaurant",
+                position: { lat: 38.8486, lng: -104.8664 },
+                description: "Famous for giant cinnamon rolls."
+            },
+            {
+                title: "Pizzeria Rustica",
+                position: { lat: 38.8490, lng: -104.8670 },
+                description: "Authentic Neapolitan pizza on a hidden patio."
+            },
+            {
+                title: "TAPAteria",
+                position: { lat: 38.8480, lng: -104.8660 },
+                description: "Incredible Spanish tapas, 100% gluten-free."
+            },
+            {
+                title: "Michael Garman's Magic Town",
+                position: { lat: 38.8470, lng: -104.8650 },
+                description: "A unique miniature city experience."
+            }
+        ];
+
+        pois.forEach(poi => {
+            const marker = new google.maps.Marker({
+                position: poi.position,
+                map: map,
+                title: poi.title
+            });
+
+            const infowindow = new google.maps.InfoWindow({
+                content: `<div class="text-gray-900 p-2"><strong class="text-lg">${poi.title}</strong><br>${poi.description}</div>`
+            });
+
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
+            });
+        });
+    }
+</script>
+{% endblock %}

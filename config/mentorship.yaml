@@ -1,0 +1,117 @@
+hero:
+  title: "Learn to Self-Manage Your Rental"
+  subtitle: "Stop paying 20% to a property manager. In 12 months, I'll teach you everything I know — then you keep 100% of your profits."
+  cta_text: "Book a Free Strategy Call"
+  cta_link: "/contact/"
+
+intro:
+  headline: "What If You Could Fire Your Property Manager?"
+  body: >
+    Most property managers take 20% of your gross revenue — year after year.
+    On a property earning $60,000/year, that's $12,000 out of your pocket annually.
+    Over 5 years? That's $60,000 you'll never see again.
+    I built my own systems, hired my own teams, and self-manage multiple
+    short-term rentals across multiple states. Now I'm offering to teach you
+    exactly how I do it.
+
+pricing:
+  mentorship_fee: "$4,500"
+  commission_rate: "10%"
+  pm_rate: "20%"
+  duration: "12 months"
+  tagline: "One investment. Lifetime of savings."
+  comparison:
+    - label: "Traditional PM (20%)"
+      year1: "$12,000"
+      year2: "$12,000/yr"
+      year5: "$60,000"
+    - label: "Self-Management Mentorship"
+      year1: "$4,500 + 10% ($6,000)"
+      year2: "$0"
+      year5: "$10,500 total"
+    - label: "Your Savings Over 5 Years"
+      year1: ""
+      year2: ""
+      year5: "$49,500"
+
+phases:
+  - id: "setup"
+    title: "Setup & Launch"
+    timeline: "Months 1–2"
+    icon: "🚀"
+    checklist:
+      - "Listing audit & optimization (titles, photos, descriptions)"
+      - "Pricing tool setup (PriceLabs or similar)"
+      - "Channel manager & OTA configuration"
+      - "Smart lock, cameras, and tech stack installation"
+      - "Guest communication templates & automation"
+      - "Cleaning team recruitment & vetting"
+  - id: "operations"
+    title: "Live Operations"
+    timeline: "Months 3–6"
+    icon: "⚙️"
+    checklist:
+      - "Real-time support during your first bookings"
+      - "Guest issue resolution — I walk you through it live"
+      - "Maintenance vendor network setup"
+      - "Bookkeeping & expense tracking system"
+      - "Review management & response strategy"
+      - "Revenue optimization & seasonal pricing"
+  - id: "independence"
+    title: "Independence"
+    timeline: "Months 7–12"
+    icon: "🎯"
+    checklist:
+      - "You run everything — I'm on-call for escalations"
+      - "Monthly check-ins & performance reviews"
+      - "Advanced strategies: multi-property, direct booking site"
+      - "Emergency runbook & contingency planning"
+      - "Final handoff: SOPs, vendor contacts, full system access"
+      - "Graduation — you're a self-managing operator"
+
+deliverables:
+  - icon: "📋"
+    title: "Complete SOP Library"
+    description: "Step-by-step procedures for every aspect of STR operations — check-in, cleaning, maintenance, emergencies."
+  - icon: "📱"
+    title: "Tech Stack Blueprint"
+    description: "Exact tools, apps, and automations I use daily. No guessing — just plug and play."
+  - icon: "🤝"
+    title: "Vendor Network"
+    description: "My vetted cleaners, handymen, and contractors. Relationships that took years to build."
+  - icon: "💰"
+    title: "Pricing Playbook"
+    description: "Dynamic pricing strategies, seasonal adjustments, and competitor analysis frameworks."
+  - icon: "📞"
+    title: "Guest Communication Templates"
+    description: "Pre-written messages for every scenario — booking confirmations, check-in instructions, reviews, complaints."
+  - icon: "📊"
+    title: "Financial Dashboard"
+    description: "Spreadsheets and tracking tools to monitor revenue, expenses, and profitability per property."
+
+faq:
+  - question: "How is this different from a course?"
+    answer: "Courses are passive — you watch videos alone. This is 1-on-1 mentorship with an active operator. When your guest locks themselves out at 2am, I'm the one you call. You learn by doing, with real support."
+  - question: "Why do you charge 10% commission during the year?"
+    answer: "It aligns our incentives. I make more when you make more, so I'm motivated to help you maximize revenue — not just collect a flat fee and disappear."
+  - question: "What happens after the 12 months?"
+    answer: "You're fully independent. No ongoing fees, no commission split. You keep 100% of your revenue and own all the systems, templates, and vendor relationships."
+  - question: "Can I do this if my property is in a different city?"
+    answer: "Yes. The operational systems and strategies are market-agnostic. I'll help you adapt them to your specific location. The only market-specific piece is vendor sourcing, which we'll do together."
+  - question: "What if I already have a property manager?"
+    answer: "Perfect — we'll build your self-management systems in parallel. When you're ready, you transition smoothly with zero downtime. Most owners can transition within the first 3 months."
+  - question: "How many mentees do you take at once?"
+    answer: "I cap it at 5 active mentees to ensure quality. This isn't a mass-market product — it's hands-on coaching."
+  - question: "What if self-management isn't for me?"
+    answer: "We'll know within the first 60 days. If it's genuinely not a fit, we'll discuss options. But honestly? If you're organized enough to own an investment property, you can self-manage one."
+
+social_proof:
+  stats:
+    - value: "3+"
+      label: "Properties Self-Managed"
+    - value: "2"
+      label: "States / Markets"
+    - value: "$0"
+      label: "Paid to Property Managers"
+    - value: "100%"
+      label: "Revenue Kept"
