@@ -49,7 +49,7 @@ markets:
     pillar: Social
     status: published
     title: Top 10 Instagram-Worthy Spots in Colorado Springs
-  - file: content/colorado-springs/best-dog-friendly-activities-in-colorado-springs.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/unleashed-the-ultimate-guide-to-dog-friendly-colorado.md
     keywords:
     - dog friendly colorado springs
     - pet friendly trails co springs
@@ -57,7 +57,7 @@ markets:
     meta_description: Bringing your pup to Colorado Springs? Discover the best dog-friendly
       activities, parks, and pet-friendly trails for a perfect trip.
     pillar: Activities
-    status: planned
+    status: published
     title: Best Dog-Friendly Activities in Colorado Springs
   - file: /home/runner/work/springline-stays/springline-stays/content/colorado-springs/the-ultimate-beer-drinkers-guide-to-colorado-springs.md
     keywords:
