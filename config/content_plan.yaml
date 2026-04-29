@@ -109,7 +109,7 @@ markets:
     pillar: Activities
     status: published
     title: 'Day Trip to Ichetucknee Springs from Gainesville: Complete Guide'
-  - file: content/gainesville/insta-worthy-gainesville-best-photo-ops-on-campus-and-in.md
+  - file: /home/runner/work/springline-stays/springline-stays/content/gainesville/beyond-the-swamp-gainesvilles-top-11-most-instagrammable.md
     keywords:
     - instagrammable gainesville
     - photo spots gainesville
@@ -117,7 +117,7 @@ markets:
     meta_description: Find the most Instagrammable spots in Gainesville! From UF campus
       landmarks to stunning natural springs, get your camera ready.
     pillar: Social
-    status: planned
+    status: published
     title: 'Insta-Worthy Gainesville: Best Photo Ops on Campus and in Nature'
   - file: /home/runner/work/springline-stays/springline-stays/content/gainesville/gainesville-on-a-dime-your-guide-to-the.md
     keywords:
