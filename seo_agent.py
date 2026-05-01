@@ -274,10 +274,18 @@ def generate_blog_post(config, market_id, planned_post=None):
 
     market = get_market_config(config, market_id)
     properties = get_market_properties(config, market_id)
+    is_topic = False
 
     if not market:
-        print(f"❌ Market '{market_id}' not found in config")
-        return None
+        # Check if it's a topic in content plan
+        plan = load_content_plan()
+        if market_id in plan.get('topics', {}):
+            is_topic = True
+            market = {'name': market_id.replace('-', ' ').title(), 'id': market_id, 'state': 'General'}
+            properties = [p for p in config['properties'] if p.get('active', True)]
+        else:
+            print(f"❌ Market or Topic '{market_id}' not found in config or plan")
+            return None
 
     print(f"\n🖊  Generating post for {market['name']}, {market['state']}...")
 
@@ -303,7 +311,11 @@ def generate_blog_post(config, market_id, planned_post=None):
 
     # Get existing titles for this market to avoid duplicates
     plan = load_content_plan()
-    market_posts = plan.get('markets', {}).get(market_id, [])
+    if is_topic:
+        market_posts = plan.get('topics', {}).get(market_id, [])
+    else:
+        market_posts = plan.get('markets', {}).get(market_id, [])
+        
     existing_titles = [p['title'] for p in market_posts if 'title' in p]
     existing_titles_str = "\n".join([f"- {t}" for t in existing_titles])
 
@@ -312,14 +324,23 @@ def generate_blog_post(config, market_id, planned_post=None):
         keywords_list = planned_post.get('keywords', [])
         description_val = f'"{planned_post.get("meta_description", "")}"' if planned_post.get('meta_description') else '"A 150-160 character meta description with primary keyword."'
     else:
-        topic_instruction = f"Choose a compelling topic about visiting {market['name']} — things to do, seasonal guides, local dining, hidden gems, best neighborhoods, etc."
-        keywords_list = [
-            f"things to do in {market['name']}",
-            f"{market['name']} vacation rental",
-            f"where to stay in {market['name']}",
-            f"{market['name']} travel guide",
-            f"book direct {market['name']}"
-        ]
+        if is_topic:
+             topic_instruction = f"Choose a compelling topic about {market['name']} for short-term rental owners or guests."
+             keywords_list = [
+                 f"{market['name']} tips",
+                 f"short term rental {market['name']}",
+                 "vacation rental management",
+                 "book direct"
+             ]
+        else:
+             topic_instruction = f"Choose a compelling topic about visiting {market['name']} — things to do, seasonal guides, local dining, hidden gems, best neighborhoods, etc."
+             keywords_list = [
+                 f"things to do in {market['name']}",
+                 f"{market['name']} vacation rental",
+                 f"where to stay in {market['name']}",
+                 f"{market['name']} travel guide",
+                 f"book direct {market['name']}"
+             ]
         description_val = '"A 150-160 character meta description with primary keyword."'
         # Add property-specific keywords to capture direct booking intent
         for p in properties:
@@ -328,26 +349,35 @@ def generate_blog_post(config, market_id, planned_post=None):
 
     keywords_str = "\n".join([f"- {k}" for k in keywords_list])
 
+    if is_topic:
+        context_str = f"""**Topic**: {market['name']}
+**Our Properties** (Use as examples of professionally managed rentals):
+{property_context}"""
+        tone_instruction = "Write in an authoritative, conversational tone — like an experienced property manager or investor sharing valuable insights."
+    else:
+        context_str = f"""**Market**: {market['name']}, {market['state']}
+**Nearby attractions**: {', '.join(attractions)}
+**Our properties in this market**:
+{property_context}"""
+        tone_instruction = """Write in an authoritative, conversational tone — like a hyper-local friend giving direct recommendations to another friend.
+       - **AVOID** robotic openings like "Welcome to [City]" or "Planning a trip can be hard..."
+       - **AVOID** referring to yourself as "locals who love sharing". Let the quality of the tips prove you are a local.
+       - Start directly with a hook or the first point.
+       - Include hyper-local specifics or opinions (e.g., "The secret to avoiding the crowd here is...", "My absolute favorite thing to order at [Place] is...")."""
+
     prompt = f"""You are an expert SEO content writer specializing in short-term vacation rentals.
 
 Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website SpringlineStays.com.
 
-**Market**: {market['name']}, {market['state']}
-**Nearby attractions**: {', '.join(attractions)}
-**Our properties in this market**:
-{property_context}
+{context_str}
 
 **IMPORTANT: Avoid Duplicate Topics**
-We already have posts with the following titles in this market. You MUST NOT write a post with a similar title or topic. Choose a distinctly different angle or focus.
+We already have posts with the following titles in this market/topic. You MUST NOT write a post with a similar title or topic. Choose a distinctly different angle or focus.
 {existing_titles_str}
 
     **Requirements**:
     1. {topic_instruction}
-    2. Write in an authoritative, conversational tone — like a hyper-local friend giving direct recommendations to another friend.
-       - **AVOID** robotic openings like "Welcome to [City]" or "Planning a trip can be hard..."
-       - **AVOID** referring to yourself as "locals who love sharing". Let the quality of the tips prove you are a local.
-       - Start directly with a hook or the first point.
-       - Include hyper-local specifics or opinions (e.g., "The secret to avoiding the crowd here is...", "My absolute favorite thing to order at [Place] is...").
+    2. {tone_instruction}
     3. Naturally weave in 1-2 mentions of our properties with their booking links. Don't be salesy — make it feel like a helpful suggestion. Example: "For groups of up to 11, the [Epic Family Home](booking_url) puts you minutes from Garden of the Gods with a private hot tub for après-hike relaxation."
 4. **Images**: 
    - When mentioning our properties in the body, embed one of the available images listed for that property using markdown image syntax: `![Alt text](image_path)`. Prefer these local property images over Unsplash for property photos.
@@ -363,7 +393,7 @@ We already have posts with the following titles in this market. You MUST NOT wri
 
 ```
 ---
-title: "Your SEO-Optimized Title (Include Location)"
+title: "Your SEO-Optimized Title (Include Topic or Location)"
 date: {today}
 description: {description_val}
 hero_image: ""
@@ -533,6 +563,14 @@ def main():
                 if p['status'] == 'planned':
                     planned_post = p
                     break
+            
+            if not planned_post:
+                # Check topics if not found in markets
+                topic_posts = plan.get('topics', {}).get(target_market, [])
+                for p in topic_posts:
+                    if p['status'] == 'planned':
+                        planned_post = p
+                        break
         else:
             # Find all available planned posts
             all_planned = []
@@ -541,6 +579,12 @@ def main():
                 for p in market_posts:
                     if p['status'] == 'planned':
                         all_planned.append((market_id, p))
+            
+            topics = plan.get('topics', {})
+            for topic_id, topic_posts in topics.items():
+                for p in topic_posts:
+                    if p['status'] == 'planned':
+                        all_planned.append((topic_id, p))
             
             if all_planned:
                 target_market, planned_post = random.choice(all_planned)
