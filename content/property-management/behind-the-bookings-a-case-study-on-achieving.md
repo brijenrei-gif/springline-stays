@@ -3,7 +3,7 @@ title: 'Behind the Bookings: A Case Study on Achieving 90% Summer Occupancy'
 date: 2026-05-01
 description: 'Case Study: Learn the exact strategies we used to maintain a 90% short-term
   rental occupancy rate all summer long.'
-hero_image: /static/images/blog/property-management/behind-the-bookings-a-case-study-on-achieving-90%-e67436.jpg
+hero_image: /static/images/blog/property-management/behind-the-bookings-a-case-study-on-achieving-90-e67436.jpg
 tags:
 - property management
 - occupancy rate

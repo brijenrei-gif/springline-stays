@@ -85,7 +85,7 @@ def fetch_unsplash_image(query, save_dir):
         print("  ⚠  No Unsplash API key, skipping image fetch")
         return ""
 
-    slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
+    slug = query.lower().replace(' ', '-').replace(',', '').replace(':', '').replace('?', '').replace('%', '')
     slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')[:50]
     slug = slug.strip('-')
     import uuid
