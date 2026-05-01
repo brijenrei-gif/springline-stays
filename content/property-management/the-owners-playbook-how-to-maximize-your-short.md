@@ -14,11 +14,11 @@ title: 'The Owner''s Playbook: How to Maximize Your Short-Term Rental ROI'
 If you’re still setting your nightly rates based on what your neighbor did in 2022, you’re effectively handing money back to the platforms. The difference between a property that merely covers its mortgage and one that generates a significant monthly yield isn't luck—it’s a calculated play. In markets like the Florida Panhandle or the mountain escapes of Blue Ridge, the competition is fierce, and "good enough" is the fastest way to get buried on page ten of the search results.
 
 ### Table of Contents
-1. [#design-for-the-scroll](#design-for-the-scroll)
-2. [#dynamic-pricing-strategies](#dynamic-pricing-strategies)
-3. [#the-hyper-local-guest-experience](#the-hyper-local-guest-experience)
-4. [#operational-efficiency-and-automation](#operational-efficiency-and-automation)
-5. [#faq](#faq)
+1. [Design for the Scroll](#design-for-the-scroll)
+2. [Dynamic Pricing Strategies](#dynamic-pricing-strategies)
+3. [The Hyper-Local Guest Experience](#the-hyper-local-guest-experience)
+4. [Operational Efficiency and Automation](#operational-efficiency-and-automation)
+5. [FAQ](#faq)
 
 <a name="design-for-the-scroll"></a>
 ## Design for the Scroll: First Impressions are Financial

@@ -60,7 +60,7 @@ Every guest is going to Google "things to do in [Your City]," but your job is to
 ### Segment Your Suggestions
 Organize your list into categories that make it easy for guests to find what they're looking for. This shows you've put real thought into their trip.
 
-*   **For the Family:** Mention the park with the best playground ([Explorer Park, 123 Adventure Lane](https://www.google.com/maps/search/?api=1&query=123+Adventure+Lane)), the local ice cream shop with kid-friendly flavors, and a nearby trail that's easy for little legs.
+*   **For the Family:** Mention the park with the best playground (like [Garden of the Gods](https://www.google.com/maps/search/?api=1&query=Garden+of+the+Gods)), the local ice cream shop with kid-friendly flavors, and a nearby trail that's easy for little legs.
 *   **For the Couple:** Suggest a romantic viewpoint for sunset, a cozy wine bar, or a specific walking route through a charming part of town.
 *   **For the Adventurer:** Detail your favorite challenging hike, the best spot to rent kayaks, or the local outfitter for rock climbing gear. Give them a pro-tip, like "The trailhead for Cascade Peak gets packed by 9 AM on weekends, so go early or try a late afternoon hike for golden hour views."
 *   **Rainy Day Itinerary:** This is a game-changer! Suggest a local museum, an independent movie theater, a cool bookstore, or a brewery with board games. Having a pre-made plan for bad weather can salvage a guest's day.
@@ -76,7 +76,7 @@ Anyone can use Yelp. Your guests are counting on you for the recommendations tha
 ### Structure Your Food Guide Like a Local
 Organize by meal or vibe, not just cuisine type.
 
-*   **Best Coffee & Quick Breakfast:** Where's the spot with the killer espresso and homemade pastries? Tell them *what* to order. "The Daily Grind ([456 Main Street](https://www.google.com/maps/search/?api=1&query=456+Main+Street)) has the best almond croissants in town, but they sell out by 10 AM."
+*   **Best Coffee & Quick Breakfast:** Where's the spot with the killer espresso and homemade pastries? Tell them *what* to order. For example, "Head to the local coffee shop early to grab the best pastries before they sell out."
 *   **Casual Lunch Spots:** Recommend the place with the best tacos, sandwiches, or salads. Include details about counter service vs. table service.
 *   **Can't-Miss Dinner:** Offer a few options at different price points.
     *   **The Splurge:** The spot for an anniversary or special occasion. Advise them to make reservations well in advance.
@@ -86,9 +86,7 @@ Organize by meal or vibe, not just cuisine type.
 
 ![cozy and rustic restaurant interior with warm lighting at night](/static/images/blog/property-management/cozy-and-rustic-restaurant-interior-with-warm-ligh-9240fc.jpg)
 
-For properties designed for group getaways, a well-stocked kitchen is just as important as a dining guide. When we set up a new home, like **The Hillside Haven**, we always ensure the kitchen has everything a group needs to cook a fantastic meal together. It's located just a short drive from the local farmers' market, and we provide guests with a guide to our favorite seasonal produce and local vendors. It encourages them to connect with the local food scene right from their own kitchen.
-
-![A cozy living room with a fireplace and large windows at The Hillside Haven](https://springlinestays.com/images/hillside-haven-living-room.jpg)
+For properties designed for group getaways, a well-stocked kitchen is just as important as a dining guide. We ensure the kitchen has everything a group needs to cook a fantastic meal together. Providing guests with a guide to local farmers' markets and seasonal produce encourages them to connect with the local food scene right from their own kitchen.
 
 <a id="hidden-gems"></a>
 ## Unlocking Hidden Gems & Seasonal Secrets
@@ -122,9 +120,7 @@ A great experience is also a frictionless one. Small, thoughtful details can eli
     *   A bottle of local wine or a six-pack of local craft beer with a welcome note.
 *   **Grocery & Gear:** Provide information on the nearest grocery store, including its address and hours. If you're in an adventure-focused market, include the name and number of a good rental shop for bikes, skis, or paddleboards.
 
-For urban explorers, having a central base is key. Our **Downtown Loft** is a perfect example of a property that answers the question of "where to stay in Property Management" for those who want to be in the heart of the action. We provide guests with a detailed walking map to the best nearby cafes, breweries, and boutiques, so they can ditch the car and live like a local from the moment they arrive.
-
-![A modern kitchen with city views at The Downtown Loft](https://springlinestays.com/images/downtown-loft-kitchen.jpg)
+For those who want to be in the heart of the action, having a central base is key. We provide guests with a detailed walking map to the best nearby cafes, breweries, and boutiques, so they can ditch the car and live like a local from the moment they arrive.
 
 <a id="pros"></a>
 ## When to Call in the Pros: Elevating Your Property Management
