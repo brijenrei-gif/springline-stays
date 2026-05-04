@@ -579,47 +579,28 @@ def build():
     with open(os.path.join(mentorship_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(mentorship_html)
 
-    # ─── Build Property Management Blog Posts ───
-    pm_blog_dir = os.path.join(pm_dir, 'blog')
-    os.makedirs(pm_blog_dir, exist_ok=True)
+    # ─── Build Topic Blog Posts (Non-Market Categories) ───
+    all_market_ids = set(p['market'] for p in all_posts)
+    config_market_ids = set(m['id'] for m in markets)
+    topics = all_market_ids - config_market_ids
+    
     post_template = env.get_template('blog_post.html')
     
-    synthetic_market = {'id': 'property-management', 'name': 'Property Management'}
-    
-    for post in pm_posts:
-        print(f"  Building property management post: {post['slug']}...")
+    for topic_id in topics:
+        topic_posts = [p for p in all_posts if p.get('market') == topic_id]
+        if not topic_posts:
+            continue
+            
+        print(f"Building blog posts for topic: {topic_id}...")
+        topic_dir = os.path.join(OUTPUT_DIR, topic_id)
+        topic_blog_dir = os.path.join(topic_dir, 'blog')
+        os.makedirs(topic_blog_dir, exist_ok=True)
         
-        sidebar_properties = [p for p in properties if p.get('active')]
-        related_posts = find_related_posts(post, all_posts)
+        topic_name = topic_id.replace('-', ' ').title()
+        synthetic_market = {'id': topic_id, 'name': topic_name}
         
-        urls.append(post['url'])
-        post_html = post_template.render(
-            page_title=f"{post['title']} — Springline Stays",
-            page_description=post['description'],
-            post=post,
-            market=synthetic_market,
-            sidebar_properties=sidebar_properties,
-            related_posts=related_posts,
-            booking_domain=brand.get('hospitable_base', '#'),
-            request_path=post['url'],
-        )
-        
-        post_path = os.path.join(pm_blog_dir, f"{post['slug']}.html")
-        with open(post_path, 'w', encoding='utf-8') as f:
-            f.write(post_html)
-
-    # ─── Build Travel Tips Blog Posts ───
-    tt_posts = [p for p in all_posts if p.get('market') == 'travel-tips']
-    if tt_posts:
-        tt_dir = os.path.join(OUTPUT_DIR, 'travel-tips')
-        tt_blog_dir = os.path.join(tt_dir, 'blog')
-        os.makedirs(tt_blog_dir, exist_ok=True)
-        post_template = env.get_template('blog_post.html')
-        
-        synthetic_market = {'id': 'travel-tips', 'name': 'Travel Tips'}
-        
-        for post in tt_posts:
-            print(f"  Building travel tips post: {post['slug']}...")
+        for post in topic_posts:
+            print(f"  Building {topic_id} post: {post['slug']}...")
             
             sidebar_properties = [p for p in properties if p.get('active')]
             related_posts = find_related_posts(post, all_posts)
@@ -636,7 +617,7 @@ def build():
                 request_path=post['url'],
             )
             
-            post_path = os.path.join(tt_blog_dir, f"{post['slug']}.html")
+            post_path = os.path.join(topic_blog_dir, f"{post['slug']}.html")
             with open(post_path, 'w', encoding='utf-8') as f:
                 f.write(post_html)
 
