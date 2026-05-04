@@ -157,7 +157,7 @@ A full-service manager handles everything: marketing and photography, listing ma
 
 Ready to experience the beauty of a vacation rental without the burden of managing it? When you stay with Springline Stays, you're experiencing the gold standard of professional management. Every detail is handled, so you can simply relax and enjoy your trip.
 
-**[Book your next stress-free getaway directly with Springline Stays!](/properties)**
+**[Book your next stress-free getaway directly with Springline Stays!](https://book.springlinestays.com/)**
 
 ![Stunning Mountain Views, Hot Tub, Game Room](/static/images/properties/family-friendly-firepit-hottub-views-games/image_10.jpg)
 *[Stunning Mountain Views, Hot Tub, Game Room — Book your stay →](https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games)*
