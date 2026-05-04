@@ -608,6 +608,38 @@ def build():
         with open(post_path, 'w', encoding='utf-8') as f:
             f.write(post_html)
 
+    # ─── Build Travel Tips Blog Posts ───
+    tt_posts = [p for p in all_posts if p.get('market') == 'travel-tips']
+    if tt_posts:
+        tt_dir = os.path.join(OUTPUT_DIR, 'travel-tips')
+        tt_blog_dir = os.path.join(tt_dir, 'blog')
+        os.makedirs(tt_blog_dir, exist_ok=True)
+        post_template = env.get_template('blog_post.html')
+        
+        synthetic_market = {'id': 'travel-tips', 'name': 'Travel Tips'}
+        
+        for post in tt_posts:
+            print(f"  Building travel tips post: {post['slug']}...")
+            
+            sidebar_properties = [p for p in properties if p.get('active')]
+            related_posts = find_related_posts(post, all_posts)
+            
+            urls.append(post['url'])
+            post_html = post_template.render(
+                page_title=f"{post['title']} — Springline Stays",
+                page_description=post['description'],
+                post=post,
+                market=synthetic_market,
+                sidebar_properties=sidebar_properties,
+                related_posts=related_posts,
+                booking_domain=brand.get('hospitable_base', '#'),
+                request_path=post['url'],
+            )
+            
+            post_path = os.path.join(tt_blog_dir, f"{post['slug']}.html")
+            with open(post_path, 'w', encoding='utf-8') as f:
+                f.write(post_html)
+
     # ─── Build FAQ Page ───
     print("Building FAQ page...")
     faq_template = env.get_template('faq.html')
