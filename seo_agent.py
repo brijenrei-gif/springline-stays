@@ -572,22 +572,25 @@ def main():
                         planned_post = p
                         break
         else:
-            # Find all available planned posts
-            all_planned = []
+            # Find all available planned posts, grouped by category
+            planned_by_category = {}
             for market_id in market_ids:
                 market_posts = plan.get('markets', {}).get(market_id, [])
-                for p in market_posts:
-                    if p['status'] == 'planned':
-                        all_planned.append((market_id, p))
+                planned_posts = [p for p in market_posts if p['status'] == 'planned']
+                if planned_posts:
+                    planned_by_category[market_id] = planned_posts
             
             topics = plan.get('topics', {})
             for topic_id, topic_posts in topics.items():
-                for p in topic_posts:
-                    if p['status'] == 'planned':
-                        all_planned.append((topic_id, p))
+                planned_posts = [p for p in topic_posts if p['status'] == 'planned']
+                if planned_posts:
+                    planned_by_category[topic_id] = planned_posts
             
-            if all_planned:
-                target_market, planned_post = random.choice(all_planned)
+            if planned_by_category:
+                # First pick a category randomly to ensure variety
+                target_market = random.choice(list(planned_by_category.keys()))
+                # Then pick a planned post from that category
+                planned_post = random.choice(planned_by_category[target_market])
             else:
                 print("ℹ️ No planned posts found in content plan. Falling back to market with fewest posts.")
                 market_counts = {}
