@@ -11,7 +11,7 @@ Springline Stays offers premium short-term rentals and professional property man
 - **Gainesville**: Convenient stays near the University of Florida and local hotspots.
 
 ## For Guests
-- Direct booking available at [springlinestays.com](https://springlinestays.com)
+- Direct booking available at [springlinestays.com](https://www.springlinestays.com)
 - Optimized for clean, fast, server-rendered content.
 
 ## For Owners

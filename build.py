@@ -424,7 +424,7 @@ def build():
             "name": p.get('headline'),
             "url": p.get('booking_url'),
             "description": p.get('description', '').replace('\n', ' '),
-            "image": [f"https://springlinestays.com{img}" for img in p.get('images', [])],
+            "image": [f"https://www.springlinestays.com{img}" for img in p.get('images', [])],
             "address": address_dict,
             "containsPlace": {
                 "@type": "Accommodation",
@@ -473,7 +473,7 @@ def build():
     env.globals['brand'] = brand
     env.globals['markets'] = markets
     env.globals['current_year'] = datetime.now().year
-    env.globals['site_url'] = 'https://springlinestays.com'
+    env.globals['site_url'] = 'https://www.springlinestays.com'
 
     urls = ['/']
 
@@ -746,7 +746,7 @@ def generate_sitemap(urls, output_path):
     xml.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
     
     for url in urls:
-        full_url = f"https://springlinestays.com{url}"
+        full_url = f"https://www.springlinestays.com{url}"
         
         # Determine priority based on URL structure
         if url == '/':
