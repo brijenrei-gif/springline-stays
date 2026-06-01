@@ -81,7 +81,7 @@ The water clarity in PCB is highest when there has been a steady north wind for 
 ### Experience PCB Like a Local
 The best photos aren't taken from a balcony—they’re found at the end of a trail or on a hidden stretch of sand. When you’re done exploring the most photogenic corners of the Panhandle, you’ll want a place to kick back that’s just as stylish as your camera roll.
 
-**[Book your stay directly with Springline Stays](https://springlinestays.com)** for a curated experience and a home base that’s close to all the spots on this list. Skip the generic high-rises and stay somewhere that feels like home.
+**[Book your stay directly with Springline Stays](https://www.springlinestays.com)** for a curated experience and a home base that’s close to all the spots on this list. Skip the generic high-rises and stay somewhere that feels like home.
 
 
 ![On the Beach | Ocean Views | Sleeps 6](/static/images/properties/pcb/image_8.jpg)

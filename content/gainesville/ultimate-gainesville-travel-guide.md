@@ -81,7 +81,7 @@ Across from Lake Alice on the UF campus, there are massive wooden structures hou
 ---
 
 **Ready to explore the real Gainesville?** 
-Don't settle for a generic hotel stay. Experience the city like a local by staying in one of our hand-picked, stylish neighborhood homes. [Book your stay with Springline Stays today](https://springlinestays.com) and get the keys to the best Gainesville has to offer.
+Don't settle for a generic hotel stay. Experience the city like a local by staying in one of our hand-picked, stylish neighborhood homes. [Book your stay with Springline Stays today](https://www.springlinestays.com) and get the keys to the best Gainesville has to offer.
 
 
 ![Walk to University, Pet Friendly, Cozy Townhome](/static/images/properties/818_2/image_5.jpg)

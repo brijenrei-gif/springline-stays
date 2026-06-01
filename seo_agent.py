@@ -367,7 +367,7 @@ def generate_blog_post(config, market_id, planned_post=None):
 
     prompt = f"""You are an expert SEO content writer specializing in short-term vacation rentals.
 
-Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website SpringlineStays.com.
+Write a long-form, SEO-optimized blog post (2,000-3,000 words) for the website www.springlinestays.com.
 
 {context_str}
 
@@ -385,7 +385,7 @@ We already have posts with the following titles in this market/topic. You MUST N
    - For other points of interest, landmarks, or content sections where a visual would be beneficial, insert an image placeholder using this EXACT syntax: `![Unsplash Query: specific description of the photo needed](placeholder)`. For example: `![Unsplash Query: colorful Pier Park storefronts at sunset](placeholder)`. Aim for 2-3 such placeholders in the body, placed logically near the relevant content.
 5. Include a Table of Contents with anchor links.
 6. Include a FAQ section (3-5 questions) at the bottom targeting Google featured snippets.
-7. End with a soft CTA encouraging readers to book directly with Springline Stays.
+7. End with a soft CTA encouraging readers to book directly with Springline Stays (always link to the canonical URL: https://www.springlinestays.com).
 8. Use H2 and H3 headings liberally for SEO.
 9. Include specific details — addresses, drive times, tips, seasonal info. **IMPORTANT**: When providing an address, wrap it in a markdown link to a Google Maps search for that address. Example: `[1023 SE 4th Ave](https://www.google.com/maps/search/?api=1&query=1023+SE+4th+Ave+Gainesville+FL)`.
 

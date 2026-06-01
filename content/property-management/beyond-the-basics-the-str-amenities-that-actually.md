@@ -74,7 +74,7 @@ Properties that offer these kinds of unique, resort-style experiences can not on
 
 For example, our **[Epic Family Home](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)** is a masterclass in experiential amenities. It doesn't just have a bed; it has a private sauna, a bubbling hot tub, and even its own mini-golf course. This combination of features makes it an easy choice for families and groups looking for a vacation packed with fun, ensuring it stays booked far in advance.
 
-![The inviting hot tub and outdoor space at the Epic Family Home.](https://springlinestays.com/static/images/properties/clover/image_10.jpg)
+![The inviting hot tub and outdoor space at the Epic Family Home.](https://www.springlinestays.com/static/images/properties/clover/image_10.jpg)
 
 #### Game Rooms & Themed Spaces
 A dedicated game room is a guaranteed hit with families and groups of friends. You don't need a massive arcade; even a well-outfitted corner can do the trick.
@@ -100,7 +100,7 @@ Go beyond a single picnic table. Think about creating different "zones" in your 
 
 For travelers heading to scenic destinations, the view itself is a primary amenity. A property like our **[Stunning Mountain Views, Hot Tub, Game Room](https://book.springlinestays.com/property/family-friendly-firepit-hottub-views-games)** rental leverages this perfectly. The deck is furnished with comfortable seating oriented towards the breathtaking landscape, making it the perfect spot for morning coffee or sunset cocktails. The addition of a hot tub on that same deck elevates the experience from simply *seeing* the view to *immersing* in it.
 
-![Stunning mountain views from the deck of a Springline Stays property.](https://springlinestays.com/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg)
+![Stunning mountain views from the deck of a Springline Stays property.](https://www.springlinestays.com/static/images/properties/family-friendly-firepit-hottub-views-games/image_1.jpg)
 
 ### Catering to the Modern Traveler: Work-from-Anywhere Setups
 

@@ -83,7 +83,7 @@ Yes! The Man in the Sea Museum and the Science Center (across the bridge) are ex
 
 Don't let a little Gulf weather dampen your spirits. The best way to survive a rainy day is to have a home base that feels like a sanctuary, not a cramped hotel room. When the storms roll in, you'll want plenty of space to spread out, a full kitchen to brew some local coffee, and a cozy living area to watch the clouds move over the water. 
 
-**Ready for a better way to stay? [Browse our collection of premium Panama City Beach rentals at Springline Stays](https://springlinestays.com) and book your next coastal escape directly.**
+**Ready for a better way to stay? [Browse our collection of premium Panama City Beach rentals at Springline Stays](https://www.springlinestays.com) and book your next coastal escape directly.**
 
 
 ![On the Beach | Ocean Views | Sleeps 6](/static/images/properties/pcb/image_1.jpg)

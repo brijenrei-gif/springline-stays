@@ -91,7 +91,7 @@ Yes, Garden of the Gods is a public park and entrance is completely free. This i
 
 ---
 
-Ready to explore the Rockies? Don't settle for a generic hotel room. Experience the city like a local by staying in one of our hand-picked neighborhood homes. **[Book your stay with Springline Stays today](https://springlinestays.com)** and get our full list of "insider-only" restaurant recommendations delivered straight to your inbox.
+Ready to explore the Rockies? Don't settle for a generic hotel room. Experience the city like a local by staying in one of our hand-picked neighborhood homes. **[Book your stay with Springline Stays today](https://www.springlinestays.com)** and get our full list of "insider-only" restaurant recommendations delivered straight to your inbox.
 
 
 ![Stunning Mountain Views, Hot Tub, Game Room](/static/images/properties/family-friendly-firepit-hottub-views-games/image_5.jpg)

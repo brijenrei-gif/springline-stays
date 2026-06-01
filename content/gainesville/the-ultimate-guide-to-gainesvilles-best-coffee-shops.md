@@ -91,7 +91,7 @@ While many shops close by 6:00 PM or 7:00 PM, **Maude’s Side Car** downtown of
 ### Stay Productive in Style
 Planning a "work-cation" or a deep-dive study weekend in the Swamp? Don't settle for a cramped hotel desk. Book one of our **Springline Stays** properties to enjoy a comfortable home base with high-speed internet, located just minutes away from these top-rated local haunts. 
 
-[**Browse our Gainesville properties and book your stay here.**](https://springlinestays.com)
+[**Browse our Gainesville properties and book your stay here.**](https://www.springlinestays.com)
 
 
 ![Walk to University, Pet Friendly, Cozy Townhome](/static/images/properties/818_2/image_4.jpg)

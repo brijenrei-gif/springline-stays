@@ -61,7 +61,7 @@ High ROI isn't just about how much money comes in; it's about how much stays in 
 
 Investing in a short-term rental is a marathon, not a sprint. By focusing on high-impact design, data-driven pricing, and a guest experience that feels genuinely local, you transform a property from a liability into a high-yield engine.
 
-If you’re looking to step back from the day-to-day grind while seeing these kinds of results, consider partnering with a team that knows the local market inside and out. At Springline Stays, we handle the heavy lifting so you can enjoy the returns. [Reach out to us today to see how we can optimize your portfolio.](https://springlinestays.com)
+If you’re looking to step back from the day-to-day grind while seeing these kinds of results, consider partnering with a team that knows the local market inside and out. At Springline Stays, we handle the heavy lifting so you can enjoy the returns. [Reach out to us today to see how we can optimize your portfolio.](https://www.springlinestays.com)
 
 ***
 

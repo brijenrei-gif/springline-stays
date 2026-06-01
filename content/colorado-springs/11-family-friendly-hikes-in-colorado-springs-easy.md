@@ -123,7 +123,7 @@ The most important thing is hydration. Start drinking extra water the day before
 ---
 
 ### Ready for your Colorado adventure?
-The best way to experience the Springs is to live like a local. Skip the generic hotels and settle into a home that actually feels like home. **[Book your stay with Springline Stays](https://springlinestays.com)** and get a front-row seat to the mountains and easy access to all these trailheads. We’ve got the coffee waiting.
+The best way to experience the Springs is to live like a local. Skip the generic hotels and settle into a home that actually feels like home. **[Book your stay with Springline Stays](https://www.springlinestays.com)** and get a front-row seat to the mountains and easy access to all these trailheads. We’ve got the coffee waiting.
 
 
 ![Views | 2 mins to OCC | Fire Pit | Games | Pets](/static/images/properties/arch/image_7.jpg)

@@ -90,7 +90,7 @@ Yes! Places like Loblolly Woods and the Solar Walk are very family-friendly. Jus
 
 Ready to explore Gainesville like a local? Whether you're here for a Gator game or a quiet nature retreat, having the right home base makes all the difference. Skip the cramped hotel rooms and stay in a space designed for real living. 
 
-**[Browse our curated Gainesville rentals at Springline Stays and book your next family getaway today.](https://springlinestays.com)**
+**[Browse our curated Gainesville rentals at Springline Stays and book your next family getaway today.](https://www.springlinestays.com)**
 
 
 ![Walk to University, Pet Friendly, Cozy Townhome](/static/images/properties/818_2/image_3.jpg)

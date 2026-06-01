@@ -25,7 +25,7 @@
         "description": {{ property.description | replace('\n', ' ') | tojson }},
         "image": [
           {% for img in property.images %}
-          {{ ("https://springlinestays.com" ~ img) | tojson }}{% if not loop.last %},{% endif %}
+          {{ ("https://www.springlinestays.com" ~ img) | tojson }}{% if not loop.last %},{% endif %}
           {% endfor %}
         ],
         "url": {{ property.booking_url | tojson }},

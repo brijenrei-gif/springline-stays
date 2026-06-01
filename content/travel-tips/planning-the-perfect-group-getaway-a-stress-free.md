@@ -94,7 +94,7 @@ The right amenities can transform a rental from a simple lodging to the main eve
 
 Our **Epic Family Home in Colorado Springs** is a masterclass in group-friendly amenities. It’s not just a house; it’s a private resort. With a hot tub, a sauna, a game room, and even a private mini-golf course in the backyard, it offers built-in entertainment for every member of the group, ensuring there's never a dull moment.
 
-[![A stunning view of the backyard at the Epic Family Home, featuring a private mini-golf course, hot tub, and seating area.](https://springlinestays.com/static/images/properties/clover/image_1.jpg)](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)
+[![A stunning view of the backyard at the Epic Family Home, featuring a private mini-golf course, hot tub, and seating area.](https://www.springlinestays.com/static/images/properties/clover/image_1.jpg)](https://book.springlinestays.com/property/epic-family-home-mini-golf-sauna-hot-tub-games)
 
 #### Parking Considerations
 This is one of the most frequently overlooked details. If your group is arriving in multiple vehicles, verify the parking situation. Is there a garage? A driveway? Is street parking available and/or restricted? A property with limited parking can cause major headaches right at check-in. The listing details or a quick message to the host should clarify this.

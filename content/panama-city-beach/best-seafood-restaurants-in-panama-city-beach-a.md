@@ -81,7 +81,7 @@ For Gulf-front dining (sand in your toes), **Schooners** is the top pick. For la
 
 ---
 
-Ready to taste the best the Gulf has to offer? The best way to experience Panama City Beach like a local is to stay like one. **[Book your stay directly with Springline Stays](https://springlinestays.com)** to get the best rates on premium vacation rentals, putting you just minutes away from these iconic seafood spots.
+Ready to taste the best the Gulf has to offer? The best way to experience Panama City Beach like a local is to stay like one. **[Book your stay directly with Springline Stays](https://www.springlinestays.com)** to get the best rates on premium vacation rentals, putting you just minutes away from these iconic seafood spots.
 
 
 ![On the Beach | Ocean Views | Sleeps 6](/static/images/properties/pcb/image_2.jpg)

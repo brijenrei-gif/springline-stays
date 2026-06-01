@@ -80,7 +80,7 @@ The short answer: you don't. The long answer: hang out in Midtown or Downtown fo
 
 ---
 
-**Ready to experience the magic of The Swamp without the stress?** Skip the overpriced, cramped hotels and stay like a local. **[Book your stay with Springline Stays](https://springlinestays.com)** to secure a comfortable home base in the heart of Gainesville, just minutes away from the stadium action. Go Gators!
+**Ready to experience the magic of The Swamp without the stress?** Skip the overpriced, cramped hotels and stay like a local. **[Book your stay with Springline Stays](https://www.springlinestays.com)** to secure a comfortable home base in the heart of Gainesville, just minutes away from the stadium action. Go Gators!
 
 
 ![Walk to UF Stadium, No Cleanup, Cozy Townhome](/static/images/properties/818_1/image_9.jpg)

@@ -115,7 +115,7 @@ No, entry to the park is free and no reservations are required. However, for the
 ## Your Home Base for Adventure
 After a day of hiking the Incline or exploring the red rocks, you shouldn't have to settle for a cramped hotel room. At **Springline Stays**, we offer curated, locally-owned vacation rentals that put you exactly where you want to be—from historic Westside bungalows to modern downtown lofts. 
 
-**Ready to explore the Rockies like a local? [Browse our Colorado Springs properties and book your stay directly with Springline Stays today.](https://springlinestays.com)**
+**Ready to explore the Rockies like a local? [Browse our Colorado Springs properties and book your stay directly with Springline Stays today.](https://www.springlinestays.com)**
 
 
 ![Stunning Mountain Views, Hot Tub, Game Room](/static/images/properties/family-friendly-firepit-hottub-views-games/image_3.jpg)

@@ -124,7 +124,7 @@ Pack comfortable walking shoes—you'll be doing a lot of it! The weather can be
 
 Planning a visit to see your favorite Gator shouldn't be stressful. It's a chance to see them shine in their new environment and explore the city they now call home. By mixing campus life with Gainesville's local gems, you'll create new memories and leave with a deeper appreciation for this unique Florida town.
 
-When you're ready to plan your trip, skip the cramped hotel and find your home away from home. **[Browse our Gainesville properties](https://springlinestays.com/gainesville/)** and book your perfect parent's weekend stay directly with Springline Stays.
+When you're ready to plan your trip, skip the cramped hotel and find your home away from home. **[Browse our Gainesville properties](https://www.springlinestays.com/gainesville/)** and book your perfect parent's weekend stay directly with Springline Stays.
 
 ![Kanapaha Botanical Gardens](/static/images/blog/gainesville/kanapaha-botanical-gardens-gainesville-fl-37b05d.jpg)
 *Kanapaha Botanical Gardens — a must-visit near our Gainesville properties.*

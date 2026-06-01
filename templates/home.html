@@ -11,13 +11,13 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Springline Stays",
-    "url": "https://springlinestays.com"
+    "url": "https://www.springlinestays.com"
   },
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Springline Stays",
-    "url": "https://springlinestays.com",
+    "url": "https://www.springlinestays.com",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -46,7 +46,7 @@
           "description": {{ property.description | replace('\n', ' ') | tojson }},
           "image": [
             {% for img in property.images %}
-            {{ ("https://springlinestays.com" ~ img) | tojson }}{% if not loop.last %},{% endif %}
+            {{ ("https://www.springlinestays.com" ~ img) | tojson }}{% if not loop.last %},{% endif %}
             {% endfor %}
           ],
           "url": {{ property.booking_url | tojson }},

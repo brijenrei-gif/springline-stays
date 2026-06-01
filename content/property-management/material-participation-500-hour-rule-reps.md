@@ -112,4 +112,4 @@ If you use a full-service property manager, it becomes very difficult to pass th
 ### Stay Compliant and Scale Your Portfolio
 Mastering tax strategy is just one part of running a successful short-term rental business. Ready to take your operations to the next level? Book one of our **Springline Stays** properties to experience first-hand how we deliver high-quality, seamless stays for guests—or contact us to learn how we can help you optimize your portfolio.
 
-[**Browse our properties and see the Springline difference here.**](https://springlinestays.com)
+[**Browse our properties and see the Springline difference here.**](https://www.springlinestays.com)

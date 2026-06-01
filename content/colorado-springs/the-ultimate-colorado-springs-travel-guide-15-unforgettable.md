@@ -143,7 +143,7 @@ While downtown is walkable, the best attractions (Pikes Peak, the Zoo, the hikin
 ### Stay Like a Local
 The best way to experience the Springs is to have a home base that feels like home. Skip the generic hotels on the interstate and stay in a neighborhood where you can walk to the local coffee shop. 
 
-**[Browse our curated collection of Colorado Springs rentals at Springline Stays and book your mountain getaway today.](https://springlinestays.com)**
+**[Browse our curated collection of Colorado Springs rentals at Springline Stays and book your mountain getaway today.](https://www.springlinestays.com)**
 
 
 ![Views | 2 mins to OCC | Fire Pit | Games | Pets](/static/images/properties/arch/image_3.jpg)

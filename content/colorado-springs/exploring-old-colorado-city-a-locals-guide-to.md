@@ -85,7 +85,7 @@ Extremely. The historic district spans about 10-12 blocks, all connected by wide
 
 Old Colorado City is best experienced when you aren't rushed. Take the time to poke your head into the side-street shops and stay for that second glass of wine on the patio. 
 
-Ready to experience the historic charm of the West for yourself? **[Book your stay with Springline Stays](https://springlinestays.com)** and get settled into one of our locally-curated homes just minutes from the heart of Old Colorado City.
+Ready to experience the historic charm of the West for yourself? **[Book your stay with Springline Stays](https://www.springlinestays.com)** and get settled into one of our locally-curated homes just minutes from the heart of Old Colorado City.
 
 
 ![Stunning Mountain Views, Hot Tub, Game Room](/static/images/properties/family-friendly-firepit-hottub-views-games/image_3.jpg)
