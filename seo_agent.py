@@ -501,8 +501,10 @@ Then write the full blog post in Markdown format. Do NOT include the title again
         title = f'blog-{today}'
 
     slug = title.lower()
-    slug = slug.replace(' ', '-').replace(',', '').replace(':', '').replace('?', '')
-    slug = slug.replace('(', '').replace(')', '').replace("'", '').replace('"', '')
+    slug = slug.replace('%', 'percent').replace('&', 'and')
+    slug = slug.replace(' ', '-').replace('_', '-')
+    slug = re.sub(r'[^a-z0-9\-]', '', slug)
+    slug = re.sub(r'-+', '-', slug)
     slug = '-'.join(slug.split('-')[:8])  # Limit slug length
     slug = slug.strip('-')
 
