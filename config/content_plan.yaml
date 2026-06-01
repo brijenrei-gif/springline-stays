@@ -228,7 +228,7 @@ topics:
     meta_description: 'Case Study: Learn the exact strategies we used to maintain
       a 90% short-term rental occupancy rate all summer long.'
     pillar: Case Study
-    status: planned
+    status: published
     title: How We Maintained 90% Occupancy Last Summer
   - file: content/property-management/the-real-cost-of-self-managing-your-short-term-rental.md
     keywords:
@@ -238,7 +238,7 @@ topics:
     meta_description: Is self-managing your STR worth the time? Discover the real
       hidden costs of self-managing vs hiring a professional.
     pillar: ROI
-    status: planned
+    status: published
     title: The Real Cost of Self-Managing Your Short-Term Rental
   - file: content/property-management/how-to-turn-your-vacation-home-into-a-passive-income-stream.md
     keywords:
@@ -248,7 +248,7 @@ topics:
     meta_description: Ready to earn hands-free income? Learn how to turn your vacation
       home into a passive income stream with turnkey management.
     pillar: Strategy
-    status: planned
+    status: published
     title: How to Turn Your Vacation Home into a Passive Income Stream
   - file: content/property-management/top-amenities-that-boost-short-term-rental-bookings.md
     keywords:
@@ -258,7 +258,7 @@ topics:
     meta_description: Want to increase bookings? Discover the top vacation rental
       amenities that high-paying guests are searching for right now.
     pillar: ROI
-    status: planned
+    status: published
     title: Top Amenities That Boost Short-Term Rental Bookings
   travel-tips:
   - file: content/travel-tips/the-ultimate-guide-to-booking-direct-save-money-on.md
@@ -269,7 +269,7 @@ topics:
     meta_description: Stop paying extra fees! Learn why booking direct with Springline
       Stays is the best way to save money on your next vacation.
     pillar: Booking Strategy
-    status: planned
+    status: published
     title: 'The Ultimate Guide to Booking Direct: Save Money on Your Next Stay'
   - file: content/travel-tips/how-to-find-the-best-vacation-rental-for-large-groups.md
     keywords:
@@ -279,5 +279,5 @@ topics:
     meta_description: Planning a group trip? Here is how to find and book the best
       large group vacation rentals for a stress-free stay.
     pillar: Planning
-    status: planned
+    status: published
     title: How to Find the Best Vacation Rental for Large Groups

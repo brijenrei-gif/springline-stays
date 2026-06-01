@@ -525,8 +525,12 @@ Then write the full blog post in Markdown format. Do NOT include the title again
 
     if planned_post:
         plan = load_content_plan()
-        market_posts = plan.get('markets', {}).get(market_id, [])
-        for p in market_posts:
+        if is_topic:
+            posts = plan.get('topics', {}).get(market_id, [])
+        else:
+            posts = plan.get('markets', {}).get(market_id, [])
+            
+        for p in posts:
             if p['title'] == planned_post['title'] and p['status'] == 'planned':
                 p['status'] = 'published'
                 p['file'] = str(output_path)
